@@ -42,24 +42,24 @@ function getPath(lang: string) {
 }
 ---
 
-<div class="language-picker relative w-full lg:w-auto" data-language-picker>
+<div class="language-picker relative w-full lg:w-auto group" data-language-picker>
   <button
-    class="language-toggle py-2 px-5 text-white rounded-full button-glass flex items-center justify-center gap-2 w-full lg:w-auto"
+    class="language-toggle button-glass flex items-center justify-center gap-2 italic text-sm "
     data-language-toggle
   >
-    <span>{currentLang.toUpperCase()}</span>
+    <p class="group-hover:!text-[var(--color-primary)]">{currentLang.toUpperCase()}</p>
     <svg
-      class="language-arrow fill-current h-4 w-4 transition-transform duration-300"
-      data-language-arrow
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      ><path
-        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-      ></path></svg
+      class="language-arrow fill-current h-4 w-4 transition-transform duration-300 group"
+      viewBox="0 0 24 24"
     >
+      <path
+        class="fill-black group-hover:fill-[var(--color-primary)]"
+        d="m12 15l5-5H7z"></path>
+    </svg>
   </button>
   <div
-    class="language-menu bottom-full mb-2 lg:top-full lg:bottom-auto lg:mb-0 left-0 z-20 absolute flex w-full flex-col gap-2 opacity-0 shadow-[0_8px_20px_rgba(0,0,0,0.4)] p-[10px] rounded-[8px] transition-all duration-200 pointer-events-none"
+    class="language-menu bottom-full mb-2 lg:top-full lg:bottom-auto lg:mb-0 left-0 z-20 absolute flex w-full flex-col gap-2 opacity-0 bg-[var(--color-primary)]/75 backdrop-blur-sm rounded-b-sm transition-all duration-200 pointer-events-none"
     data-language-menu
   >
     {
@@ -68,7 +68,7 @@ function getPath(lang: string) {
           return (
             <a
               href={getPath(lang)}
-              class="block text-center text-white p-2 rounded-md transition-colors hover:bg-white/15"
+              class="block text-center !text-white w-full italic text-sm py-2 transition-colors hover:bg-black/20"
             >
               {lang.toUpperCase()}
             </a>
@@ -80,12 +80,6 @@ function getPath(lang: string) {
 </div>
 
 <style>
-  .language-menu {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-  }
-
   @media (min-width: 1024px) {
     .language-picker:hover .language-menu {
       opacity: 1;
@@ -98,46 +92,46 @@ function getPath(lang: string) {
 </style>
 
 <script is:inline>
-  (function() {
+  (function () {
     let initialized = false;
 
     function setupPicker(picker) {
       if (picker.dataset.initialized) return;
-      picker.dataset.initialized = 'true';
+      picker.dataset.initialized = "true";
 
-      const toggle = picker.querySelector('[data-language-toggle]');
-      const menu = picker.querySelector('[data-language-menu]');
-      const arrow = picker.querySelector('[data-language-arrow]');
+      const toggle = picker.querySelector("[data-language-toggle]");
+      const menu = picker.querySelector("[data-language-menu]");
+      const arrow = picker.querySelector("[data-language-arrow]");
 
       if (!toggle || !menu || !arrow) return;
 
       // Solo agregar funcionalidad de click en móvil
       const isMobile = () => window.innerWidth < 1024;
 
-      toggle.addEventListener('click', function(e) {
+      toggle.addEventListener("click", function (e) {
         if (!isMobile()) return; // En desktop usar hover
-        
+
         e.preventDefault();
         e.stopPropagation();
-        
-        const isOpen = menu.classList.contains('opacity-100');
-        
+
+        const isOpen = menu.classList.contains("opacity-100");
+
         if (isOpen) {
-          menu.classList.remove('opacity-100', 'pointer-events-auto');
-          menu.classList.add('opacity-0', 'pointer-events-none');
-          arrow.classList.remove('rotate-180');
+          menu.classList.remove("opacity-100", "pointer-events-auto");
+          menu.classList.add("opacity-0", "pointer-events-none");
+          arrow.classList.remove("rotate-180");
         } else {
-          menu.classList.remove('opacity-0', 'pointer-events-none');
-          menu.classList.add('opacity-100', 'pointer-events-auto');
-          arrow.classList.add('rotate-180');
+          menu.classList.remove("opacity-0", "pointer-events-none");
+          menu.classList.add("opacity-100", "pointer-events-auto");
+          arrow.classList.add("rotate-180");
         }
       });
 
-      document.addEventListener('click', function(e) {
+      document.addEventListener("click", function (e) {
         if (!isMobile() || !picker.contains(e.target)) {
-          menu.classList.remove('opacity-100', 'pointer-events-auto');
-          menu.classList.add('opacity-0', 'pointer-events-none');
-          arrow.classList.remove('rotate-180');
+          menu.classList.remove("opacity-100", "pointer-events-auto");
+          menu.classList.add("opacity-0", "pointer-events-none");
+          arrow.classList.remove("rotate-180");
         }
       });
     }
@@ -146,12 +140,12 @@ function getPath(lang: string) {
       if (initialized) return;
       initialized = true;
 
-      const pickers = document.querySelectorAll('[data-language-picker]');
+      const pickers = document.querySelectorAll("[data-language-picker]");
       pickers.forEach(setupPicker);
     }
 
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', init);
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
     } else {
       init();
     }
