@@ -1,0 +1,263 @@
+---
+const { i18n } = Astro.props;
+---
+
+<form id="registerInfoForm" class="flex flex-col" novalidate>
+  <div class="mt-4">
+    <input
+      name="name"
+      id="ri-name"
+      type="text"
+      placeholder={i18n.REGISTER_INFORMATION.FORM.NAME_PLACEHOLDER}
+      class="bg-gray-100 p-4 px-6 rounded-full w-full focus:outline-none"
+    />
+  </div>
+  <div class="mt-4">
+    <input
+      name="position"
+      id="ri-position"
+      type="text"
+      placeholder={i18n.REGISTER_INFORMATION.FORM.POSITION_PLACEHOLDER}
+      class="bg-gray-100 p-4 px-6 rounded-full w-full focus:outline-none"
+    />
+  </div>
+  <div class="mt-4">
+    <input
+      name="company"
+      id="ri-company"
+      type="text"
+      placeholder={i18n.REGISTER_INFORMATION.FORM.COMPANY_PLACEHOLDER}
+      class="bg-gray-100 p-4 px-6 rounded-full w-full focus:outline-none"
+    />
+  </div>
+
+  <div class="mt-4">
+    <input
+      name="email"
+      id="ri-email"
+      type="email"
+      placeholder={i18n.REGISTER_INFORMATION.FORM.EMAIL_PLACEHOLDER}
+      class="bg-gray-100 p-4 px-6 rounded-full w-full focus:outline-none"
+    />
+  </div>
+
+  <div class="flex flex-row mt-4 items-center justify-center">
+    <p class="block text-[var(--color-blue)] w-2/5 text-lg font-semibold">
+      {i18n.REGISTER_INFORMATION.FORM.INTEREST_LABEL}
+    </p>
+    <select
+      name="interest"
+      id="ri-interest"
+      class="bg-gray-100 p-4 px-6 rounded-full w-full focus:outline-none"
+    >
+      <option value="" disabled selected>
+        {i18n.REGISTER_INFORMATION.FORM.INTEREST_PLACEHOLDER[0]}
+      </option>
+      {
+        i18n.REGISTER_INFORMATION.FORM.INTEREST_PLACEHOLDER.slice(1).map(
+          (option: any) => <option value={option}>{option}</option>,
+        )
+      }
+    </select>
+  </div>
+
+  <div class="mt-4">
+    <textarea
+      name="message"
+      id="ri-message"
+      placeholder={i18n.REGISTER_INFORMATION.FORM.MESSAGE_PLACEHOLDER}
+      class="bg-gray-100 p-4 rounded-xl w-full focus:outline-none"></textarea>
+  </div>
+
+  <div class="mt-6">
+    <button
+      id="ri-submit"
+      type="submit"
+      data-default={i18n.REGISTER_INFORMATION.FORM.SUBMIT_BUTTON}
+      data-sending="Enviando..."
+      data-sent="Enviado"
+      class="bg-[var(--color-bg-1)] hover:bg-[var(--color-title)] hover:scale-105 transition-all transform gradient-shineButton w-full py-4 rounded-full text-2xl font-semibold text-white"
+      aria-live="polite"
+    >
+      {i18n.REGISTER_INFORMATION.FORM.SUBMIT_BUTTON}
+    </button>
+  </div>
+
+  <!-- Mensajes de estado -->
+  <p
+    id="registerMsg"
+    class="mt-4 mx-auto text-center text-sm text-cyan-600"
+    aria-live="polite"
+  >
+  </p>
+</form>
+<style>
+  .gradient-shineButton {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gradient-shineButton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      110deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.6) 50%,
+      transparent 70%
+    );
+    transform: translateX(-120%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .gradient-shineButton::after {
+  }
+
+  .gradient-shineButton.loading::after {
+    animation: shineButton 1s infinite;
+    opacity: 1;
+  }
+
+  @keyframes shineButton {
+    0% {
+      transform: translateX(-120%);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(120%);
+      opacity: 0;
+    }
+  }
+</style>
+<script type="">
+  (function () {
+    const form = document.getElementById("registerInfoForm");
+    const submitBtn = document.getElementById("ri-submit");
+    const msgEl = document.getElementById("registerMsg");
+
+    // helper email simple
+    const isEmail = (s) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      msgEl.textContent = "";
+      submitBtn.disabled = true;
+      submitBtn.classList.add("loading");
+      submitBtn.classList.add("bg-[var(--color-title)]");
+
+      const name = (document.getElementById("ri-name").value || "").trim();
+      const position = (
+        document.getElementById("ri-position").value || ""
+      ).trim();
+      const company = (
+        document.getElementById("ri-company").value || ""
+      ).trim();
+      const email = (document.getElementById("ri-email").value || "").trim();
+      const interest = (
+        document.getElementById("ri-interest").value || ""
+      ).trim();
+      const message = (
+        document.getElementById("ri-message").value || ""
+      ).trim();
+
+      // validaciones básicas
+      if (!name || !position || !company || !email || !interest || !message) {
+        msgEl.textContent = "Por favor completa todos los campos.";
+        submitBtn.classList.remove("loading");
+        submitBtn.classList.remove("bg-[var(--color-title)]");
+        submitBtn.disabled = false;
+        return;
+      }
+      if (!isEmail(email)) {
+        msgEl.textContent = "Por favor ingresa un email válido.";
+        submitBtn.classList.remove("loading");
+        submitBtn.classList.remove("bg-[var(--color-title)]");
+        submitBtn.disabled = false;
+        return;
+      }
+      if (
+        name.length > 200 ||
+        position.length > 200 ||
+        company.length > 200 ||
+        email.length > 200 ||
+        interest.length > 200 ||
+        message.length > 5000
+      ) {
+        msgEl.textContent =
+          "Alguno de los campos excede la longitud permitida.";
+        submitBtn.classList.remove("loading");
+        submitBtn.classList.remove("bg-[var(--color-title)]");
+        submitBtn.disabled = false;
+        return;
+      }
+
+      // show sending on the button
+      submitBtn.textContent = submitBtn.dataset.sending || "Enviando...";
+
+      try {
+        // usamos FormData para mantener compatibilidad
+        const fd = new FormData();
+        fd.append("name", name);
+        fd.append("position", position);
+        fd.append("company", company);
+        fd.append("email", email);
+        fd.append("interest", interest);
+        fd.append("message", message);
+
+        const res = await fetch("https://glaci.city/api/register-info", {
+          method: "POST",
+          body: fd,
+          credentials: "omit", // o 'include' si necesitas cookies
+        });
+
+        // algunos servidores pueden devolver no-JSON; manejamos eso
+        const text = await res.text();
+        let data = {};
+        try {
+          data = JSON.parse(text);
+        } catch (err) {
+          data = null;
+        }
+
+        if (res.ok && data && data.success) {
+          // stop the shineButton, show "Enviado" on the button for a few seconds, then reset
+          form.reset();
+          submitBtn.classList.remove("loading");
+          submitBtn.classList.remove("bg-[var(--color-title)]");
+          submitBtn.textContent = submitBtn.dataset.sent || "Enviado";
+          setTimeout(() => {
+            submitBtn.textContent =
+              submitBtn.dataset.default ||
+              i18n.REGISTER_INFORMATION.FORM.SUBMIT_BUTTON;
+            submitBtn.disabled = false;
+            msgEl.textContent = "";
+          }, 2500);
+        } else {
+          // Prioriza el error del backend, si existe
+          const serverError = data && (data.error || data.message);
+          msgEl.textContent =
+            serverError || "Hubo un error al enviar. Intenta más tarde.";
+          submitBtn.classList.remove("loading");
+          submitBtn.classList.remove("bg-[var(--color-title)]");
+          submitBtn.textContent =
+            submitBtn.dataset.default ||
+            i18n.REGISTER_INFORMATION.FORM.SUBMIT_BUTTON;
+          submitBtn.disabled = false;
+        }
+      } catch (err) {
+        console.error("Register fetch error:", err);
+        msgEl.textContent = "Error de red. Intenta de nuevo.";
+        submitBtn.classList.remove("loading");
+        submitBtn.classList.remove("bg-[var(--color-title)]");
+        submitBtn.textContent =
+          submitBtn.dataset.default ||
+          i18n.REGISTER_INFORMATION.FORM.SUBMIT_BUTTON;
+        submitBtn.disabled = false;
+      }
+    });
+  })();
+</script>

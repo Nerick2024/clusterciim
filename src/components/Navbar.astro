@@ -1,0 +1,36 @@
+---
+import { getLangFromUrl, useTranslation, slugify } from "@/i18n";
+import LanguagePicker from "@/i18n/LanguagePicker.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const i18n = await useTranslation(lang);
+---
+
+<header class="z-50 fixed w-full bg-white">
+  <div
+    class="relative flex justify-between items-center max-w-7xl mx-auto"
+  >
+    <!-- Logo -->
+    <a href={`/${lang}/`} class="z-50 shrink-0">
+      <img
+        loading="lazy"
+        src="/logo/logo.webp"
+        alt="Logo"
+        class="w-16 lg:w-36 h-auto"
+      />
+    </a>
+
+    <!-- Desktop Navbar -->
+    <nav class="hidden lg:flex items-center gap-8">
+      {i18n.NAVBAR.map((item) => (
+        <a
+          href={`/${lang}/${item.HREF}`}
+          class="text-sm italic transition-colors duration-300 hover:!text-blue-500"
+        >{item.TITLE}</a>
+      ))}
+      <a href={`/${lang}/${i18n.ACCESS.HREF}`} class="text-sm font-bold text-white">
+        {i18n.ACCESS.TITLE}
+      </a>
+    </nav>
+  </div>
+</header>

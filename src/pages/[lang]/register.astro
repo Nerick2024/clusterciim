@@ -1,0 +1,68 @@
+---
+import { getLangFromUrl } from "@/i18n";
+import { translations } from "@/i18n/config";
+
+import Layout from "@/layouts/Layout.astro";
+import RegisterInfo from "@/components/RegisterInfo.astro";
+
+export function getStaticPaths() {
+  return Object.keys(translations).map((lang) => ({ params: { lang } }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const i18n = await translations[lang]();
+---
+
+<!-- Root: bg gris suave como en la foto -->
+<Layout title="G L A C I">
+  <div class="min-h-screen">
+    <!-- CABECERA AZUL (full width) -->
+    <header class="w-full pt-24 sm:pt-36 container mx-auto px-6 pb-8 sm:pb-16">
+      <p
+        class="text-[var(--color-title))] font-semibold text-4xl sm:text-6xl leading-tight"
+        set:html={i18n.REGISTER_INFORMATION.TITLE}
+      />
+    </header>
+
+    <section class="w-full md:-mt-8 pb-20">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-8 h-full items-start">
+          <div
+            class="w-full md:w-2/5 pt-0 md:pt-12 px-2 flex flex-col justify-center"
+          >
+            <p
+              class="text-white font-semibold text-2xl sm:text-3xl mb-8"
+              set:html={i18n.REGISTER_INFORMATION.SUBTITLE}
+            />
+            <p
+              class="text-white/75 mb-12 md:mb-24 font-medium text-lg"
+              set:html={i18n.REGISTER_INFORMATION.TEXT}
+            />
+            <p
+              class="text-lg font-semibold text-white"
+              set:html={i18n.REGISTER_INFORMATION.WARNING}
+            />
+          </div>
+
+          <!-- Columna derecha: tarjeta del formulario (flotando, solapando el header) -->
+          <main class="w-full md:w-3/5 relative">
+            <!-- Card: negative margin para solapar el header (ajusta -mt según necesites) -->
+            <div class="relative z-20 md:-mt-24">
+              <div class="bg-white rounded-xl shadow-2xl p-8 sm:p-10 sm:px-12">
+                <h3
+                  class="text-[var(--color-blue)] font-semibold text-3xl text-center mb-4"
+                >
+                  {i18n.REGISTER_INFORMATION.FORM.TITLE}
+                </h3>
+                <p class="text-gray-400 mb-8 text-lg text-center">
+                  {i18n.REGISTER_INFORMATION.FORM.SUBTITLE}
+                </p>
+                <RegisterInfo i18n={i18n} lang={lang} />
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

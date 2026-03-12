@@ -1,0 +1,29 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import { translations } from "@/i18n/config";
+
+import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/Hero.astro";
+import Solutions from "@/components/Solutions.astro";
+import TerritoriesAndSustainability from "@/components/TerritoriesAndSustainability.astro";
+import Approach from "@/components/Approach.astro";
+import Philosophy from "@/components/Philosophy.astro";
+import Contact from "@/components/Contact.astro";
+
+export function getStaticPaths() {
+  return Object.keys(translations).map((lang) => ({ params: { lang } }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+
+const t = await useTranslation(lang);
+---
+
+<Layout title="CLUSTERCIIM">
+  <Hero />
+  <Solutions />
+  <TerritoriesAndSustainability />
+  <Approach />
+  <Philosophy />
+  <Contact /></Layout
+>

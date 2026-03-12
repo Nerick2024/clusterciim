@@ -1,0 +1,68 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+const lang = getLangFromUrl(Astro.url);
+const i18n = await useTranslation(lang);
+---
+
+<section
+  id="Contact"
+  class="container max-w-7xl text-white mx-auto px-6 py-20 md:py-32 relative"
+>
+  <!-- Header -->
+  <div class="mb-16 md:mb-24" data-aos="fade-up" data-aos-duration="800">
+    <div class="inline-block mb-4">
+      <span
+        class="text-xs md:text-sm uppercase tracking-[0.3em] text-gray-400 font-light"
+        >Get in Touch</span
+      >
+    </div>
+    <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-8 bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent">
+      {i18n.CONTACT.TITLE}
+    </h2>
+    <p class="text-base md:text-lg text-gray-300 leading-relaxed max-w-2xl">
+      {i18n.CONTACT.DESCRIPTION}
+    </p>
+  </div>
+
+  <!-- Contact Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {
+      i18n.CONTACT.ELEMENTS.map((contact, index) => (
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay={index * 100} class="h-full">
+          <a
+          href={contact.HREF}
+          target="_blank"
+          class="group card-grain relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-zinc-700/70 hover:border-zinc-600/90 transition-all duration-500 hover:shadow-2xl hover:shadow-zinc-800/50 hover:-translate-y-2 flex items-center gap-6 h-full"
+        >
+          <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full aspect-square opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"
+            style="background: radial-gradient(circle, var(--grain-light-primary) 0%, var(--grain-light-secondary) 30%, rgba(0,0,0,0.3) 80%);"
+          >
+          </div>
+          <div class="flex-shrink-0">
+            <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-lg">
+              <img
+                loading="lazy"
+                src={contact.ICON}
+                alt={contact.TYPE}
+                class="w-8 h-8 object-contain filter brightness-110"
+              />
+            </div>
+          </div>
+
+          <div class="flex-1">
+            <h3 class="text-sm uppercase tracking-wider text-gray-400 mb-3 font-light">
+              {contact.TYPE}
+            </h3>
+            <p class="text-base md:text-lg text-white font-medium group-hover:text-gray-100 transition-colors duration-300">
+              {contact.DATA}
+            </p>
+          </div>
+
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-zinc-700/0 to-zinc-800/0 group-hover:from-zinc-600/15 group-hover:to-zinc-700/15 transition-all duration-500 pointer-events-none z-0" />
+        </a>
+        </div>
+      ))
+    }
+  </div>
+</section>

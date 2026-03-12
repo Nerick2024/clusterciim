@@ -1,0 +1,23 @@
+---
+import { defaultLang } from "@/i18n/config";
+import { useTranslation } from "@/i18n";
+import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/Hero.astro";
+import Solutions from "@/components/Solutions.astro";
+import TerritoriesAndSustainability from "@/components/TerritoriesAndSustainability.astro";
+import Approach from "@/components/Approach.astro";
+import Philosophy from "@/components/Philosophy.astro";
+import Contact from "@/components/Contact.astro";
+
+const lang = defaultLang;
+const t = await useTranslation(lang as any);
+---
+
+<Layout title="CLUSTERCIIM">
+  <Hero />
+  <Solutions />
+  <TerritoriesAndSustainability />
+  <Approach />
+  <Philosophy />
+  <Contact />
+</Layout>

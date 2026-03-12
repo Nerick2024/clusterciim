@@ -1,0 +1,207 @@
+{
+  "NAVBAR": {
+    "HERO": "Home",
+    "SOLUTIONS": "Solutions",
+    "TERRITORIESANDSUSTAINABILITY": "Territories and Sustainability",
+    "APPROACH": "Approach",
+    "PHILOSOPHY": "Philosophy",
+    "CONTACT": "Contact",
+    "INFORMATION": "Receive more information"
+  },
+  "NETWORKS": [
+    {
+      "IMG": "/icons/networks/email.svg",
+      "TITLE": "EMAIL",
+      "HREF": ""
+    },
+    {
+      "IMG": "/icons/networks/facebook.svg",
+      "TITLE": "FACEBOOK",
+      "HREF": ""
+    },
+    {
+      "IMG": "/icons/networks/instagram.svg",
+      "TITLE": "INSTAGRAM",
+      "HREF": ""
+    },
+    {
+      "IMG": "/icons/networks/linkedin.svg",
+      "TITLE": "LINKEDIN",
+      "HREF": ""
+    }
+  ],
+  "HERO": {
+    "TITLE": "We design the future.<br/>We build realities.",
+    "DESCRIPTION": "For over 30 years, at TERA Technologies we have driven the transformation of the AECO sector (Architecture, Engineering, Construction and Operations) in Mexico and Latin America. We are a firm that combines technology, precision engineering, and strategic thinking to turn ideas into executable, efficient, and sustainable projects. <br> <br> Our essence lies in the union of architectural vision, advanced engineering, and digital intelligence. We don’t just build: we design processes, data, and measurable results that elevate the standards of the built environment."
+  },
+  "TEAM": {
+    "TITLE": "Team",
+    "DESCRIPTION": "Our team is made up of experts in technology, engineering, architecture, and sustainability who share a common vision of transformation and progress. Together, we work to create innovative solutions that drive sustainable development and global prosperity.",
+    "DIRECTORS": [
+      {
+        "NAME": "Osvaldo Mireles",
+        "SEMBLANCE": "Expert in technology and sustainable development specializing in Smart Cities, BIM, Blockchain, AI, and the New Urban Agenda.",
+        "IMG": "/directors/osvaldo.webp"
+      },
+      {
+        "NAME": "Jorge Moreno",
+        "SEMBLANCE": "Expert in disruptive technologies, MIT Certified. 13 years leading innovation in smart cities, IoT, and sustainable projects.",
+        "IMG": "/directors/jorge.webp"
+      },
+      {
+        "NAME": "Angel Luis Tendero",
+        "SEMBLANCE": "Architect and project manager. A benchmark in architecture, featured in ABC, El Mundo, and El País for his career achievements.",
+        "IMG": "/directors/angel_.webp"
+      },
+      {
+        "NAME": "Guillermo Sánchez",
+        "SEMBLANCE": "PhD Architect in Urban Planning. 20 years in urban and regional development strategies. Expert in sustainable cities.",
+        "IMG": "/directors/guillermo.webp"
+      },
+      {
+        "NAME": "Tania Sánchez",
+        "SEMBLANCE": "Senior architect and urban planner with national and international experience. Specialized in sustainable urban design and planning.",
+        "IMG": "/directors/tania.webp"
+      },
+      {
+        "NAME": "Héctor Miranda Martínez",
+        "SEMBLANCE": "Expert in roadway construction with extensive experience in planning, execution, and quality control in public and industrial infrastructure projects.",
+        "IMG": "/directors/HectorM.webp"
+      },
+      {
+        "NAME": "Mauricio Hernandez",
+        "SEMBLANCE": "Economist with a PhD in Administrative Sciences and advanced specialization in finance. Over 26 years of experience in strategic and financial planning, board participation, and postgraduate teaching.",
+        "IMG": "/directors/MauricioH.webp"
+      }
+    ]
+  },
+  "ANIMATION": {
+    "LOADING": "Loading"
+  },
+  "PHILOSOPHY": {
+    "TITLE": "Our Philosophy",
+    "TEXT": "We are an integrated firm in applied engineering and technological transformation serving the built environment. We believe in a new generation of projects: clear, traceable, digital, and sustainable.",
+    "TEXT_2": "We work with discipline, long-term thinking, and an impact-driven vision.",
+    "TEXT_3": "We design with precision. We build with method. We operate with intelligence."
+  },
+  "APPROACH": {
+    "TITLE": "Differential Approach",
+    "ELEMENTS": [
+      {
+        "IMG": "/icons/approach/Experiencia.svg",
+        "DESCRIPTION": "More than 30 years of proven experience in the AECO sector."
+      },
+      {
+        "IMG": "/icons/approach/Tecnología.svg",
+        "DESCRIPTION": "Technology applied to real execution, not just design."
+      },
+      {
+        "IMG": "/icons/approach/Procesos.svg",
+        "DESCRIPTION": "Industrialized processes with direct impact on time, cost, and quality."
+      },
+      {
+        "IMG": "/icons/approach/GestionDigital.svg",
+        "DESCRIPTION": "Comprehensive digital management, from the BIM model to the operational digital twin."
+      },
+      {
+        "IMG": "/icons/approach/Sostenibilidad.svg",
+        "DESCRIPTION": "Measurable sustainability, with efficiency, energy, and circularity indicators."
+      },
+      {
+        "IMG": "/icons/approach/Aliados.svg",
+        "DESCRIPTION": "Innovation ecosystem connecting partners, governments, academia, and industry."
+      }
+    ]
+  },
+  "TERRITORIES_SUSTAINABILITY": {
+    "TITLE": "Territories and Sustainability",
+    "TEXT": "Our vision goes beyond the building. We design projects aligned with the Sustainable Development Goals (SDGs) and with strategies for energy efficiency, circular economy, and low environmental impact. Each development integrates into its urban context, creating intelligent, resilient, and connected territories.",
+    "TEXT_2": "Sustainability at TERA is not rhetoric: it is an operational model. Every technical decision translates into resource savings, lower carbon footprint, and greater value for communities."
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "DESCRIPTION": "Do you have any questions or comments? Don’t hesitate to get in touch with us. We’re here to help.",
+    "ELEMENTS": [
+      {
+        "ICON": "/icons/contact/email.svg",
+        "TYPE": "Email",
+        "DATA": "info@grupo-tera.com",
+        "HREF": "mailto:info@grupo-tera.com"
+      },
+      {
+        "ICON": "/icons/contact/phone.svg",
+        "TYPE": "Phone",
+        "DATA": "+52 442 415 3053",
+        "HREF": "tel:+524424153053"
+      },
+      {
+        "ICON": "/icons/contact/whatsapp.svg",
+        "TYPE": "WhatsApp",
+        "DATA": "+52 442 415 3053",
+        "HREF": "https://wa.me/5214424153053"
+      }
+    ]
+  },
+  "SOLUTIONS": {
+    "TITLE": "Comprehensive Solutions with a Technological Approach",
+    "DESCRIPTION": "Every project we develop is born from a systemic vision: physical, digital, and human elements operating as a single ecosystem. We integrate BIM, VDC, Lean Construction, DFMA, and Smart Data methodologies to guarantee full traceability from conception to delivery.",
+    "LABELS": [
+      {
+        "IMG": "/icons/solutions/Proyectos.svg",
+        "TITLE": "BIM Executive Projects",
+        "DESCRIPTION": "Parametric and coordinated models with millimetric precision, under ISO 19650 standards, full interoperability, and multidisciplinary control."
+      },
+      {
+        "IMG": "/icons/solutions/Construccion.svg",
+        "TITLE": "Industrialized Engineering and Construction",
+        "DESCRIPTION": "We apply Modular Manufacturing (MMC) and Design for Manufacturing and Assembly (DFMA) to reduce time, costs, and on-site errors, ensuring quality and sustainability. Our industrialized model enables off-site fabrication, digital traceability, and CO₂ emissions reduction."
+      },
+      {
+        "IMG": "/icons/solutions/Obra.svg",
+        "TITLE": "Digital Project Management and Construction Oversight",
+        "DESCRIPTION": "We implement VDC, 4D/5D simulations, smart dashboards, and real-time Lean control. Every project is managed with technical precision, operational efficiency, and full transparency."
+      },
+      {
+        "IMG": "/icons/solutions/Edificaciones.svg",
+        "TITLE": "Smart and Connected Buildings",
+        "DESCRIPTION": "We design and execute buildings with IoT, BMS, energy monitoring, sensors, and automation, achieving safer, more efficient, and human-centered spaces."
+      },
+      {
+        "IMG": "/icons/solutions/Soluciones.svg",
+        "TITLE": "Turnkey Solutions",
+        "DESCRIPTION": "From conceptual design to final delivery, TERA guarantees comprehensive control: architecture, engineering, construction, and technology under one unified front."
+      }
+    ]
+  },
+  "FOOTER": {
+    "TITLE": "Connect with TERA",
+    "DESCRIPTION": "We are available on our official platforms.",
+    "SUBTITLE_1": "Explore more",
+    "SUBTITLE_2": "Official contact"
+  },
+  "REGISTER_INFORMATION": {
+    "TITLE": "Do you need <br/> information?",
+    "SUBTITLE": "At TERA TECHNOLOGIES <br/> we are at your service.",
+    "TEXT": "If you are interested in learning more about the topic or if you have any questions or suggestions, we invite you to fill out the registration form with accurate information so we can contact you properly and provide you with the tools and information you need.",
+    "WARNING": "* Rest assured that your data will be handled securely.",
+    "FORM": {
+      "TITLE": "Register to request information about a topic of your interest.",
+      "SUBTITLE": "Your registration allows us to send you the requested information.",
+      "NAME_PLACEHOLDER": "Name",
+      "POSITION_PLACEHOLDER": "Position",
+      "COMPANY_PLACEHOLDER": "Company",
+      "EMAIL_PLACEHOLDER": "Email",
+      "INTEREST_LABEL": "Topic of interest",
+      "INTEREST_PLACEHOLDER": [
+        "Select an option",
+        "Smart Economy",
+        "Smart Governance",
+        "Smart Mobility and Infrastructure",
+        "Smart Environment",
+        "Smart Habitat and Services"
+      ],
+      "MESSAGE_PLACEHOLDER": "Message",
+      "SUBMIT_BUTTON": "Submit"
+    }
+  }
+}
