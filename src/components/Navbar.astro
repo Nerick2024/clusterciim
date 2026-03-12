@@ -6,29 +6,57 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<header class="z-50 fixed w-full bg-white">
-  <div
-    class="relative flex justify-between items-center max-w-7xl mx-auto"
-  >
+<header class="z-50 fixed w-full bg-white p-4">
+  <div class="relative flex justify-between items-center max-w-6xl mx-auto">
     <!-- Logo -->
     <a href={`/${lang}/`} class="z-50 shrink-0">
       <img
         loading="lazy"
-        src="/logo/logo.webp"
+        src="https://ccic.cat/wp-content/uploads/2025/05/ccic-logo.svg"
         alt="Logo"
-        class="w-16 lg:w-36 h-auto"
+        class="w-16 lg:w-28 h-auto object-contain"
       />
     </a>
 
     <!-- Desktop Navbar -->
-    <nav class="hidden lg:flex items-center gap-8">
-      {i18n.NAVBAR.map((item) => (
-        <a
-          href={`/${lang}/${item.HREF}`}
-          class="text-sm italic transition-colors duration-300 hover:!text-blue-500"
-        >{item.TITLE}</a>
-      ))}
-      <a href={`/${lang}/${i18n.ACCESS.HREF}`} class="text-sm font-bold text-white">
+    <nav class="hidden lg:flex items-center gap-1">
+      {
+        i18n.NAVBAR.map((item: any) => (
+          <div class="relative group flex items-center">
+            <a
+              href={`/${lang}/${item.HREF}`}
+              class="flex items-center text-sm italic p-2 transition-colors duration-300 hover:text-[var(--color-primary)]! border-b-2 border-transparent hover:border-[var(--color-primary)]"
+            >
+              {item.TITLE}{" "}
+              {item.MORE && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 object-contain group"
+                  viewBox="0 0 24 24"
+                >
+                  <path class="fill-black group-hover:fill-[var(--color-primary)]" d="m12 15l5-5H7z" />
+                </svg>
+              )}
+            </a>
+            {item.MORE && (
+              <div class="bg-[var(--color-primary)]/75 backdrop-blur-sm absolute w-full top-full left-0 shadow-xl rounded-b-sm flex flex-col opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                {item.MORE.map((subitem: any) => (
+                  <a
+                    href={`/${lang}/${subitem.HREF}`}
+                    class="block py-2 w-full text-center text-xs italic !text-white hover:bg-black/20 transition-colors whitespace-nowrap"
+                  >
+                    {subitem.TITLE}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        ))
+      }
+      <a
+        href={`/${lang}/${i18n.ACCESS.HREF}`}
+        class="text-sm font-bold !text-white bg-[var(--color-primary)] p-2 px-6 mx-4 rounded-full"
+      >
         {i18n.ACCESS.TITLE}
       </a>
     </nav>
