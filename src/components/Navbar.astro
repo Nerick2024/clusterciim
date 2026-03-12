@@ -25,16 +25,19 @@ const i18n = await useTranslation(lang);
           <div class="relative group flex items-center">
             <a
               href={`/${lang}/${item.HREF}`}
-              class="flex items-center text-sm italic p-2 transition-colors duration-300 hover:text-[var(--color-primary)]! border-b-2 border-transparent hover:border-[var(--color-primary)]"
+              class="flex items-center text-sm italic p-2 transition-colors duration-300 group-hover:text-[var(--color-primary)]! border-b-2 border-transparent hover:border-[var(--color-primary)]"
             >
               {item.TITLE}{" "}
               {item.MORE && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-4 w-4 object-contain group"
+                  class="language-arrow fill-current h-4 w-4 transition-transform group-hover:rotate-180 duration-300 group"
                   viewBox="0 0 24 24"
                 >
-                  <path class="fill-black group-hover:fill-[var(--color-primary)]" d="m12 15l5-5H7z" />
+                  <path
+                    class="fill-black group-hover:fill-[var(--color-primary)]"
+                    d="m12 15l5-5H7z"
+                  />
                 </svg>
               )}
             </a>
@@ -59,6 +62,162 @@ const i18n = await useTranslation(lang);
       >
         {i18n.ACCESS.TITLE}
       </a>
+      <LanguagePicker />
     </nav>
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="mobile-menu-btn"
+      class="lg:hidden relative z-50 w-8 h-8 flex flex-col justify-center items-center gap-1.5 focus:outline-none"
+      aria-label="Menu"
+    >
+      <span
+        class="w-6 h-[2px] bg-black transition-all duration-300 origin-center block"
+      ></span>
+      <span
+        class="w-6 h-[2px] bg-black transition-all duration-300 origin-center block"
+      ></span>
+      <span
+        class="w-6 h-[2px] bg-black transition-all duration-300 origin-center block"
+      ></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 bg-white z-40 flex flex-col gap-2 pt-24 px-6 overflow-y-auto w-full h-screen transition-transform duration-300 translate-x-full lg:hidden"
+  >
+    {
+      i18n.NAVBAR.map((item: any, index: number) => (
+        <div class="flex flex-col border-b border-gray-100">
+          {item.MORE ? (
+            <button
+              class="mobile-dropdown-btn flex items-center justify-between text-lg font-medium p-2 transition-colors duration-300 hover:text-[var(--color-primary)]! border-b-2 border-transparent hover:border-[var(--color-primary)] w-full text-left"
+              data-target={`mobile-submenu-${index}`}
+            >
+              <span>{item.TITLE}</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 transition-transform duration-300"
+                viewBox="0 0 24 24"
+              >
+                <path class="fill-current" d="m12 15l5-5H7z" />
+              </svg>
+            </button>
+          ) : (
+            <a
+              href={`/${lang}/${item.HREF}`}
+              class="text-lg italic p-2 transition-colors duration-300 hover:text-[var(--color-primary)]! border-b-2 border-transparent hover:border-[var(--color-primary)] block"
+            >
+              {item.TITLE}
+            </a>
+          )}
+
+          {item.MORE && (
+            <div
+              id={`mobile-submenu-${index}`}
+              class="max-h-0 overflow-hidden transition-all duration-300 flex flex-col border-l-2 border-[var(--color-primary)] ml-2 mt-0"
+            >
+              <div class="flex flex-col">
+                {item.MORE.map((subitem: any) => (
+                  <a
+                    href={`/${lang}/${subitem.HREF}`}
+                    class="block text-sm italic text-gray-600 hover:bg-[var(--color-primary)]/25 w-full py-2 pl-4 transition-colors duration-300 hover:text-[var(--color-primary)]! border-b border-transparent hover:border-[var(--color-primary)]"
+                  >
+                    {subitem.TITLE}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      ))
+    }
+    <a
+      href={`/${lang}/${i18n.ACCESS.HREF}`}
+      class="text-center text-lg font-bold !text-white bg-[var(--color-primary)] p-3 rounded-full mt-4"
+    >
+      {i18n.ACCESS.TITLE}
+    </a>
+    <LanguagePicker />
   </div>
 </header>
+
+<script>
+  const initMobileMenu = () => {
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    const spans = btn?.querySelectorAll("span");
+
+    // Remove any existing listener to prevent duplicates on Astro page transitions
+    const newBtn = btn?.cloneNode(true);
+    if (btn?.parentNode && newBtn) {
+      btn.parentNode.replaceChild(newBtn, btn);
+    }
+
+    newBtn?.addEventListener("click", () => {
+      const isOpen = menu?.classList.contains("translate-x-0");
+      if (isOpen) {
+        menu?.classList.remove("translate-x-0");
+        menu?.classList.add("translate-x-full");
+
+        if (spans && spans.length === 3) {
+          spans[0].classList.remove("rotate-45", "translate-y-[8px]");
+          spans[1].classList.remove("opacity-0");
+          spans[2].classList.remove("-rotate-45", "-translate-y-[8px]");
+        }
+      } else {
+        menu?.classList.remove("translate-x-full");
+        menu?.classList.add("translate-x-0");
+
+        if (spans && spans.length === 3) {
+          spans[0].classList.add("rotate-45", "translate-y-[8px]");
+          spans[1].classList.add("opacity-0");
+          spans[2].classList.add("-rotate-45", "-translate-y-[8px]");
+        }
+      }
+    });
+
+    // Mobile dropdowns logic
+    const dropdownBtns = document.querySelectorAll(".mobile-dropdown-btn");
+    dropdownBtns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        const targetId = (e.currentTarget as HTMLElement).getAttribute(
+          "data-target",
+        );
+        if (!targetId) return;
+
+        const submenu = document.getElementById(targetId);
+        const icon = (e.currentTarget as HTMLElement).querySelector("svg");
+
+        if (submenu) {
+          if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
+            submenu.style.maxHeight = "0px";
+            icon?.classList.remove("rotate-180");
+          } else {
+            submenu.style.maxHeight = submenu.scrollHeight + "px";
+            icon?.classList.add("rotate-180");
+          }
+        }
+      });
+    });
+
+    // Option to click links and close the menu
+    const menuLinks = menu?.querySelectorAll("a");
+    menuLinks?.forEach((link) => {
+      link.addEventListener("click", () => {
+        menu?.classList.remove("translate-x-0");
+        menu?.classList.add("translate-x-full");
+        if (spans && spans.length === 3) {
+          spans[0].classList.remove("rotate-45", "translate-y-[8px]");
+          spans[1].classList.remove("opacity-0");
+          spans[2].classList.remove("-rotate-45", "-translate-y-[8px]");
+        }
+      });
+    });
+  };
+
+  document.addEventListener("astro:page-load", initMobileMenu);
+  document.addEventListener("DOMContentLoaded", initMobileMenu);
+</script>

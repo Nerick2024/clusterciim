@@ -5,24 +5,46 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<main id="hero" class="relative border-b border-white/20 text-white flex items-center min-h-screen">
-  
+<main
+  id="hero"
+  class="relative border-b border-white/20 text-white flex items-center min-h-screen"
+>
   <div class="container mx-auto px-6 py-20 relative z-20">
-      <!-- Label -->
-      <div class="inline-block mb-6" data-aos="fade-up" data-aos-duration="800">
-        <span class="text-xs md:text-sm uppercase tracking-[0.3em] text-gray-400 font-light">Welcome to TERA</span>
-      </div>
-      
-      <!-- Title -->
-      <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold lg:leading-20 mb-8 bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent" set:html={i18n.HERO.TITLE} data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"></h1>
-      
-      <!-- Description -->
-      <p class="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-3xl" set:html={i18n.HERO.DESCRIPTION} data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"></p>
+    <!-- Label -->
+    <div class="inline-block mb-6" data-aos="fade-up" data-aos-duration="800">
+      <span
+        class="text-xs md:text-sm uppercase tracking-[0.3em] text-gray-400 font-light"
+        >Welcome to TERA</span
+      >
+    </div>
+
+    <!-- Title -->
+    <h1
+      class="text-5xl md:text-6xl lg:text-8xl font-bold lg:leading-20 mb-8 bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent"
+      set:html={i18n.HERO.TITLE}
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay="100"
+    />
+
+    <!-- Description -->
+    <p
+      class="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-3xl"
+      set:html={i18n.HERO.DESCRIPTION}
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay="200"
+    />
   </div>
 </main>
 <style>
   #hero {
-background: linear-gradient(180deg, rgba(5, 43, 83, 0.7) 50%, rgba(0, 14, 28, 0.8) 80%, #000);
+    background-image:
+      linear-gradient(rgba(50, 89, 105, 0.4), rgba(50, 89, 105, 0.4)),
+      url("https://ccic.cat/wp-content/uploads/2025/10/Cluster-de-la-Construccio-Industrialitzada-de-Catalunya.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   #blur-container {
     position: absolute;
@@ -30,7 +52,7 @@ background: linear-gradient(180deg, rgba(5, 43, 83, 0.7) 50%, rgba(0, 14, 28, 0.
     overflow: hidden;
   }
   #blur-container::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     backdrop-filter: blur(2px);
@@ -39,7 +61,7 @@ background: linear-gradient(180deg, rgba(5, 43, 83, 0.7) 50%, rgba(0, 14, 28, 0.
     -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
   }
   #blur-container::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     backdrop-filter: blur(0px);

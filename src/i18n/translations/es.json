@@ -10,11 +10,7 @@
     },
     {
       "HREF": "#Strategies",
-      "TITLE": "Estrategias"
-    },
-    {
-      "HREF": "#Associats",
-      "TITLE": "Asociados",
+      "TITLE": "Estrategias",
       "MORE": [
         {
           "HREF": "#co-factory",
@@ -29,6 +25,10 @@
           "TITLE": "Co-Mentor"
         }
       ]
+    },
+    {
+      "HREF": "#Associats",
+      "TITLE": "Asociados"
     },
     {
       "HREF": "#Join",
