@@ -73,94 +73,6 @@
       "HREF": ""
     }
   ],
-  "HERO": {
-    "TITLE": "Diseñamos el futuro.<br/>Construimos realidades.",
-    "DESCRIPTION": "Durante más de 30 años, en TERA Technologies hemos impulsado la transformación del sector AECO (Arquitectura, Ingeniería, Construcción y Operación) en México y Latinoamérica. Somos una firma que combina tecnología, ingeniería de precisión y pensamiento estratégico para convertir ideas en proyectos ejecutables, eficientes y sostenibles. <br> <br> Nuestra esencia está en la unión entre la visión arquitectónica, la ingeniería avanzada y la inteligencia digital. No solo construimos: diseñamos procesos, datos y resultados medibles que elevan los estándares del entorno construido."
-  },
-  "TEAM": {
-    "TITLE": "Equipo",
-    "DESCRIPTION": "Nuestro equipo está conformado por expertos en tecnología, ingeniería, arquitectura y sostenibilidad, que comparten una visión común de transformación y progreso. Juntos, trabajamos para crear soluciones innovadoras que impulsen el desarrollo sostenible y la prosperidad global.",
-    "DIRECTORS": [
-      {
-        "NAME": "Osvaldo Mireles",
-        "SEMBLANCE": "Experto en tecnología y desarrollo sostenible con especialización en Smart Cities, BIM, Blockchain, AI y la Nueva Agenda Urbana.",
-        "IMG": "/directors/osvaldo.webp"
-      },
-      {
-        "NAME": "Jorge Moreno",
-        "SEMBLANCE": "Experto en tecnologías disruptivas, MIT Certified. 13 años liderando innovación en smart cities, IoT y proyectos sostenibles.",
-        "IMG": "/directors/jorge.webp"
-      },
-      {
-        "NAME": "Angel Luis Tendero",
-        "SEMBLANCE": "Arquitecto y gestor de proyectos. Referente en arquitectura, ha sido portada en ABC, El Mundo y El País por su trayectoria.",
-        "IMG": "/directors/angel_.webp"
-      },
-      {
-        "NAME": "Guillermo Sánchez",
-        "SEMBLANCE": "Doctor Arquitecto en Planificación Urbana. 20 años en estrategias de desarrollo urbano y regional. Experto en ciudades sostenibles.",
-        "IMG": "/directors/guillermo.webp"
-      },
-      {
-        "NAME": "Tania Sánchez",
-        "SEMBLANCE": "Arquitecta senior y urbanista con experiencia nacional e internacional. Especializada en diseño urbano sustentable y planificación.",
-        "IMG": "/directors/tania.webp"
-      },
-      {
-        "NAME": "Héctor Miranda Martínez",
-        "SEMBLANCE": "Experto en construcción de vías terrestres con amplia experiencia en planeación,  ejecución y control de calidad en proyectos de infraestructura en sectores público e industrial.",
-        "IMG": "/directors/HectorM.webp"
-      },
-      {
-        "NAME": "Mauricio Hernandez",
-        "SEMBLANCE": "Economista con doctorado en Ciencias Administrativas y especialización avanzada en finanzas. Cuenta con más de 26 años de experiencia en planeación estratégica y financiera, participación en consejos de administración y docencia de posgrado.",
-        "IMG": "/directors/MauricioH.webp"
-      }
-    ]
-  },
-  "ANIMATION": {
-    "LOADING": "Cargando"
-  },
-  "PHILOSOPHY": {
-    "TITLE": "Nuestra Filosofía",
-    "TEXT": "Somos una firma integral de ingeniería aplicada y transformación tecnológica al servicio del entorno construido. Creemos en una nueva generación de proyectos: claros, trazables, digitales y sostenibles.",
-    "TEXT_2": "Trabajamos con disciplina, pensamiento a largo plazo y visión de impacto.",
-    "TEXT_3": "Diseñamos con precisión. Construimos con método. Operamos con inteligencia."
-  },
-  "APPROACH": {
-    "TITLE": "Enfoque Diferencial",
-    "ELEMENTS": [
-      {
-        "IMG": "/icons/approach/Experiencia.svg",
-        "DESCRIPTION": "Más de 30 años de experiencia comprobada en el sector AECO. "
-      },
-      {
-        "IMG": "/icons/approach/Tecnología.svg",
-        "DESCRIPTION": "Tecnología aplicada a la ejecución real, no solo al diseño. "
-      },
-      {
-        "IMG": "/icons/approach/Procesos.svg",
-        "DESCRIPTION": "Procesos industrializados con impacto directo en tiempo, costo y calidad."
-      },
-      {
-        "IMG": "/icons/approach/GestionDigital.svg",
-        "DESCRIPTION": "Gestión digital integral, desde el modelo BIM hasta el gemelo digital operativo."
-      },
-      {
-        "IMG": "/icons/approach/Sostenibilidad.svg",
-        "DESCRIPTION": "Sostenibilidad medible, con indicadores de eficiencia, energía y circularidad. "
-      },
-      {
-        "IMG": "/icons/approach/Aliados.svg",
-        "DESCRIPTION": "Ecosistema de innovación que conecta aliados, gobiernos, academia e industria."
-      }
-    ]
-  },
-  "TERRITORIES_SUSTAINABILITY": {
-    "TITLE": "Territorios y Sostenibilidad",
-    "TEXT": "Nuestra visión va más allá del edificio. Diseñamos proyectos alineados con los Objetivos de Desarrollo Sostenible (ODS) y con estrategias de eficiencia energética, economía circular y bajo impacto ambiental. Cada desarrollo se integra a su contexto urbano, creando territorios inteligentes, resilientes y conectados.",
-    "TEXT_2": "La sostenibilidad en TERA no es discurso: es un modelo operativo. Cada decisión técnica se traduce en ahorro de recursos, menor huella de carbono y mayor valor para las comunidades."
-  },
   "CONTACT": {
     "TITLE": "Contacto",
     "DESCRIPTION": "¿Tienes alguna pregunta o comentario? ¡No dudes en ponerte en contacto con nosotros! Estamos aquí para ayudarte.",
@@ -185,66 +97,53 @@
       }
     ]
   },
-  "SOLUTIONS": {
-    "TITLE": "Soluciones Integrales con Enfoque Tecnológico",
-    "DESCRIPTION": "Cada proyecto que desarrollamos nace desde una visión sistémica: lo físico, lo digital y lo humano funcionando como un solo ecosistema. Integramos metodologías BIM, VDC, Lean Construction, DFMA y Smart Data para garantizar trazabilidad total desde la concepción hasta la entrega.",
-    "LABELS": [
-      {
-        "IMG": "/icons/solutions/Proyectos.svg",
-        "TITLE": "Proyectos Ejecutivos BIM",
-        "DESCRIPTION": "Modelos paramétricos y coordinados con precisión milimétrica, bajo estándares ISO 19650, interoperabilidad total y control multidisciplinario."
-      },
-      {
-        "IMG": "/icons/solutions/Construccion.svg",
-        "TITLE": "Ingeniería y Construcción Industrializada",
-        "DESCRIPTION": "Aplicamos Manufactura Modular (MMC) y Diseño para Manufactura y Ensamble (DFMA) para reducir tiempos, costos y errores en obra, asegurando calidad y sostenibilidad. Nuestro modelo industrializado permite fabricar fuera del sitio, con trazabilidad digital y reducción de emisiones de CO₂."
-      },
-      {
-        "IMG": "/icons/solutions/Obra.svg",
-        "TITLE": "Gerenciamiento y Dirección Digital de Obra",
-        "DESCRIPTION": "Implementamos VDC, simulaciones 4D/5D, dashboards inteligentes y control Lean en tiempo real. Cada obra es gestionada con precisión técnica, eficiencia operativa y total transparencia."
-      },
-      {
-        "IMG": "/icons/solutions/Edificaciones.svg",
-        "TITLE": "Edificaciones Inteligentes y Conectadas",
-        "DESCRIPTION": "Diseñamos y ejecutamos edificios con IoT, BMS, monitoreo energético, sensores y automatización, logrando espacios más seguros, eficientes y humanos."
-      },
-      {
-        "IMG": "/icons/solutions/Soluciones.svg",
-        "TITLE": "Soluciones Llave en Mano",
-        "DESCRIPTION": "Desde el diseño conceptual hasta la entrega final, TERA garantiza control integral: arquitectura, ingeniería, construcción y tecnología bajo un solo frente."
-      }
-    ]
-  },
   "FOOTER": {
-    "TITLE": "Conecta con TERA",
-    "DESCRIPTION": "Estamos disponibles en nuestras plataformas oficiales.",
-    "SUBTITLE_1": "Explora más",
-    "SUBTITLE_2": "Contacto oficial"
+    "LOGOS": [
+      {
+        "IMG": "/Footer/a.avif",
+        "TITLE": "Cambra de Comerc de Valls",
+        "HREF": "https://cambravalls.com/"
+      },
+      {
+        "IMG": "/Footer/b.avif",
+        "TITLE": "ZF Consorci Barcelona Zona Franca",
+        "HREF": "https://www.zfbc.cat/"
+      },
+      {
+        "IMG": "/Footer/c.avif",
+        "TITLE": "Gencat",
+        "HREF": "https://www.gencat.cat/"
+      }
+    ],
+    "TITLE_1": "Más información:",
+    "TITLE_2": "Más información:",
+    "DIRECTION": "Camino del Río s/n, Molí Fariner, 08760 Martorell, Cataluña.",
+    "POLICIES": [
+      {
+        "HREF": "#",
+        "TITLE": "Política de privacidad"
+      },
+      {
+        "HREF": "#",
+        "TITLE": "Política de cookies"
+      },
+      {
+        "HREF": "#",
+        "TITLE": "Aviso legal"
+      }
+    ],
+    "COPYRIGHT": "Todos los derechos reservados."
   },
-  "REGISTER_INFORMATION": {
-    "TITLE": "¿Requieres <br/> información?",
-    "SUBTITLE": "En TERA TECHNOLOGIES <br/> estamos a tus disposición.",
-    "TEXT": "Si te interesa saber más acerca del tema o si tienes alguna duda o sugerencia te invitamos a que llenes el formato de registro con datos reales para poder comunicarnos de manera correcta y poder brindarte las herramientas y la información que necesitas.",
-    "WARNING": "* Ten la seguridad de que tus datos se tratarán de manera segura.",
-    "FORM": {
-      "TITLE": "regístrate para solicitar información acerca de algún tema de tu interés.",
-      "SUBTITLE": "Tu registro nos sirve para enviarte los datos necesarios que solicites.",
-      "NAME_PLACEHOLDER": "Nombre",
-      "POSITION_PLACEHOLDER": "Cargo",
-      "COMPANY_PLACEHOLDER": "Empresa",
-      "EMAIL_PLACEHOLDER": "Correo Electronico",
-      "INTEREST_LABEL": "Tema de interés",
-      "INTEREST_PLACEHOLDER": [
-        "Selecciona una Opcion",
-        "Economía Inteligente",
-        "Gobernanza Inteligente",
-        "Movilidad e Infraestructuras Inteligentes",
-        "Medio Ambiente Inteligente",
-        "Hábitat y Servicios Inteligentes"
-      ],
-      "MESSAGE_PLACEHOLDER": "Mensaje",
-      "SUBMIT_BUTTON": "Enviar"
-    }
+  "HERO": {
+    "TITLE": "The Future<br>Of The Construction<br>is Here"
+  },
+  "STRATEGIC": {
+    "TITLE": "Ejes estratégicos",
+    "AXES": [
+      { "LABEL": "Co-share" },
+      { "LABEL": "Co-mentor" },
+      { "LABEL": "Co-factory" }
+    ],
+    "CTA": "Transformamos empresas"
   }
 }

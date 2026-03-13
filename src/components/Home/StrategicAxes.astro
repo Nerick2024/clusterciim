@@ -1,0 +1,32 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const i18n = await useTranslation(lang);
+---
+
+<section class="py-16 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col items-center gap-12">
+    <h2 class="text-3xl font-bold self-start">
+      {i18n.STRATEGIC.TITLE}
+    </h2>
+
+    <div class="flex flex-wrap justify-around w-full">
+      {
+        i18n.STRATEGIC.AXES.map((item: any) => (
+          <div class="w-50 aspect-square rounded-full border-12 border-[var(--color-primary)] flex items-center justify-center">
+            <p class="text-xl italic font-bold text-center px-4">
+              {item.LABEL}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+    <a
+      href={`/${lang}/unir-se`}
+      class="bg-[var(--color-primary)] hover:bg-black !text-white text-sm italic font-bold px-10 py-4 transition-colors duration-300"
+    >
+      {i18n.STRATEGIC.CTA}
+    </a>
+  </div>
+</section>
