@@ -1,59 +1,61 @@
 ---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+
 const currentYear = new Date().getFullYear();
+const lang = getLangFromUrl(Astro.url);
+const i18n = await useTranslation(lang);
 ---
-
-<footer class="bg-gray-50 pt-16 pb-8 border-t border-gray-200">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-      
-      <div class="flex flex-col space-y-4">
-        <img 
-          src="https://ccic.cat/wp-content/uploads/2023/02/logo-ccic.png" 
-          alt="CCIC Logo" 
-          class="h-14 w-fit opacity-80 grayscale hover:grayscale-0 transition"
-        />
-        <p class="text-gray-500 text-sm leading-relaxed">
-          Transformem el sector cap a una construcció més eficient, sostenible i preparada per al futur.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="text-gray-900 font-bold uppercase text-sm mb-6 tracking-widest">Més informació</h3>
-        <ul class="text-gray-600 text-sm space-y-3">
-          <li class="flex items-start">
-            <span class="font-bold mr-2">Telèfon:</span> 
-            <a href="tel:+34626931144" class="hover:text-blue-600">+34 626 931 144</a>
-          </li>
-          <li class="flex items-start">
-            <span class="font-bold mr-2">Email:</span> 
-            <a href="mailto:cluster@ccic.cat" class="hover:text-blue-600">cluster@ccic.cat</a>
-          </li>
-          <li class="flex items-start leading-snug">
-            <span class="font-bold mr-2">Direcció:</span> 
-            Cami del Riu s/n, Molí Fariner, 08760 Martorell, Catalunya.
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-gray-900 font-bold uppercase text-sm mb-6 tracking-widest">Eixos estratègics</h3>
-        <ul class="text-gray-600 text-sm space-y-2">
-          <li><a href="#" class="hover:text-blue-600">Co-share</a></li>
-          <li><a href="#" class="hover:text-blue-600">Co-mentor</a></li>
-          <li><a href="#" class="hover:text-blue-600">Co-factory</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
-      <div class="flex space-x-4 mb-4 md:mb-0">
-        <a href="#" class="hover:underline text-gray-500">Politica de privacitat</a>
-        <a href="#" class="hover:underline text-gray-500">Política de cookies</a>
-        <a href="#" class="hover:underline text-gray-500">Avís legal</a>
-      </div>
-      <p>
-        © {currentYear} CCIC. Desenvolupada per: <span class="font-semibold italic text-gray-500">Destino Bahamas</span>
-      </p>
+<div class="bg-[#f5f5f5]">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-row items-center justify-between gap-2">
+      {
+        i18n.FOOTER.LOGOS.map((logo: any) => (
+          <a href={logo.HREF} class="flex flex-row gap-2 p-6">
+            <img src={logo.IMG} alt={logo.TITLE} title={logo.TITLE} class="h-14 w-auto object-contain" />
+            <p class="!text-white italic">{logo.TITLE}</p>
+          </a>
+        ))
+      }
     </div>
   </div>
+</div>
+<footer class="bg-[var(--color-primary)] !text-white text-sm p-40 py-6 ">
+  <div
+    class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3"
+  >
+    <div class="flex flex-col gap-2">
+      <h1 class="font-semibold">{i18n.FOOTER.TITLE_1}</h1>
+      <ul class="flex flex-col gap-1">
+        {
+          i18n.CONTACT.ELEMENTS.map((items: any) => (
+            <li class="flex flex-row gap-2">
+              <p class="!text-white italic">{items.TYPE}:</p>
+              <a href={items.HREF} class="!text-white italic">
+                {items.DATA}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="flex flex-col gap-2">
+      <h1 class="font-semibold">{i18n.FOOTER.TITLE_2}</h1>
+      <p class="!text-white italic">{i18n.FOOTER.DIRECTION}</p>
+    </div>
+    <ul class="flex flex-col gap-2 items-end">
+      {
+        i18n.FOOTER.POLICIES.map((policy: any) => (
+          <li>
+            <a class="!text-white italic" target="_blank" href={policy.HREF}>
+              {policy.TITLE}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <p class="text-center !text-white italic">
+    Copyright © {currentYear}
+    {i18n.FOOTER.COPYRIGHT}
+  </p>
 </footer>
