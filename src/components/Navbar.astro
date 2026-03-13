@@ -6,7 +6,7 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<header class="z-50 fixed w-full bg-white p-4">
+<header class="z-50 fixed w-full bg-white shadow-md p-4">
   <div class="relative flex justify-between items-center max-w-6xl mx-auto">
     <!-- Logo -->
     <a href={`/${lang}/`} class="z-50 shrink-0">
