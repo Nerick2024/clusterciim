@@ -1,0 +1,34 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const i18n = await useTranslation(lang);
+---
+
+<main id="hero" class="relative text-white flex items-center min-h-screen">
+  <div
+    class="max-w-7xl flex items-center justify-center flex-col lg:flex-row mx-auto relative z-20 w-full"
+  >
+    <div class="w-full lg:w-1/2 shrink-0">
+      <h1
+        data-aos="fade-up"
+        class="text-5xl lg:text-7xl font-bold"
+        set:html={i18n.HERO.TITLE}
+      />
+    </div>
+    <div class="flex items-center justify-end w-full lg:w-1/2">
+      <div class="w-[80%] h-screen bg-white/25 backdrop-blur-md"></div>
+    </div>
+  </div>
+</main>
+
+<style>
+  #hero {
+    background-image:
+      linear-gradient(rgba(50, 89, 105, 0.4), rgba(50, 89, 105, 0.4)),
+      url("https://ccic.cat/wp-content/uploads/2025/10/Cluster-de-la-Construccio-Industrialitzada-de-Catalunya.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>
