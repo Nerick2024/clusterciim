@@ -3,7 +3,7 @@
  */
 export const locales = {
   es: "ES",
-  en: "EN",
+  // en: "EN",
 };
 
 /**
@@ -16,7 +16,7 @@ export const defaultLang: Locale = "es";
  */
 export const translations = {
   es: () => import("./translations/es.json").then((module) => module.default),
-  en: () => import("./translations/en.json").then((module) => module.default),
+  // en: () => import("./translations/en.json").then((module) => module.default),
 } as const;
 
 /**
