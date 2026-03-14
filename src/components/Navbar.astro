@@ -4,6 +4,26 @@ import LanguagePicker from "@/i18n/LanguagePicker.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
+
+const isActive = (href: string) => {
+  const currentPath = Astro.url.pathname;
+  if (href === "" || href === "/") {
+    return currentPath === `/${lang}/` || currentPath === `/${lang}`;
+  }
+  const fullPath = `/${lang}/${href}`;
+  return currentPath === fullPath || currentPath.startsWith(fullPath + "/");
+};
+
+const isSubitemActive = (href: string) => {
+  return isActive(href);
+};
+
+const isParentActive = (item: any) => {
+  if (item.MORE) {
+    return item.MORE.some((sub: any) => isSubitemActive(sub.HREF));
+  }
+  return isActive(item.HREF);
+};
 ---
 
 <header class="z-50 fixed w-full bg-white shadow-md p-4">
@@ -21,40 +41,59 @@ const i18n = await useTranslation(lang);
     <!-- Desktop Navbar -->
     <nav class="hidden lg:flex items-center">
       {
-        i18n.NAVBAR.map((item: any) => (
-          <div class="relative group flex items-center">
-            <a
-              href={`/${lang}/${item.HREF}`}
-              class="flex items-center text-sm italic p-4 transition-colors duration-300 group-hover:text-[var(--color-primary)]! border-b-2 border-transparent hover:border-[var(--color-primary)]"
-            >
-              {item.TITLE}
-              {item.MORE && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="language-arrow fill-current h-4 w-4 transition-transform group-hover:rotate-180 duration-300 group"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    class="fill-black group-hover:fill-[var(--color-primary)]"
-                    d="m12 15l5-5H7z"
-                  />
-                </svg>
-              )}
-            </a>
-            {item.MORE && (
-              <div class="bg-[var(--color-primary)]/75 backdrop-blur-sm absolute w-full top-full left-0 shadow-xl rounded-b-sm flex flex-col opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                {item.MORE.map((subitem: any) => (
-                  <a
-                    href={`/${lang}/${subitem.HREF}`}
-                    class="block py-2 w-full text-center text-xs italic !text-white hover:bg-black/20 transition-colors whitespace-nowrap"
+        i18n.NAVBAR.map((item: any) => {
+          const active = isParentActive(item);
+          return (
+            <div class="relative group flex items-center">
+              <a
+                href={`/${lang}/${item.HREF}`}
+                class:list={[
+                  "flex items-center text-sm italic p-4 transition-colors duration-300 border-b-2",
+                  active
+                    ? "text-[var(--color-primary)]! border-[var(--color-primary)]"
+                    : "border-transparent hover:text-[var(--color-primary)]! hover:border-[var(--color-primary)]",
+                ]}
+              >
+                {item.TITLE}
+                {item.MORE && (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="language-arrow fill-current h-4 w-4 transition-transform group-hover:rotate-180 duration-300 group"
+                    viewBox="0 0 24 24"
                   >
-                    {subitem.TITLE}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
-        ))
+                    <path
+                      class:list={[
+                        "group-hover:fill-[var(--color-primary)]",
+                        active ? "fill-[var(--color-primary)]" : "fill-black",
+                      ]}
+                      d="m12 15l5-5H7z"
+                    />
+                  </svg>
+                )}
+              </a>
+              {item.MORE && (
+                <div class="bg-[var(--color-primary)]/75 backdrop-blur-sm absolute w-full top-full left-0 shadow-xl rounded-b-sm flex flex-col opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                  {item.MORE.map((subitem: any) => {
+                    const subActive = isSubitemActive(subitem.HREF);
+                    return (
+                      <a
+                        href={`/${lang}/${subitem.HREF}`}
+                        class:list={[
+                          "block py-2 w-full text-center text-xs italic !text-white transition-colors whitespace-nowrap",
+                          subActive
+                            ? "bg-black/30 font-semibold"
+                            : "hover:bg-black/20",
+                        ]}
+                      >
+                        {subitem.TITLE}
+                      </a>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          );
+        })
       }
       <a
         href={`/${lang}/${i18n.ACCESS.HREF}`}
@@ -89,50 +128,71 @@ const i18n = await useTranslation(lang);
     class="fixed inset-0 bg-white z-40 flex flex-col gap-2 pt-24 px-6 overflow-y-auto w-full h-screen transition-transform duration-300 translate-x-full lg:hidden"
   >
     {
-      i18n.NAVBAR.map((item: any, index: number) => (
-        <div class="flex flex-col border-b border-gray-100">
-          {item.MORE ? (
-            <button
-              class="mobile-dropdown-btn flex items-center justify-between text-lg font-medium p-2 transition-colors duration-300 hover:text-[var(--color-primary)]! border-b-2 border-transparent hover:border-[var(--color-primary)] w-full text-left"
-              data-target={`mobile-submenu-${index}`}
-            >
-              <span>{item.TITLE}</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 transition-transform duration-300"
-                viewBox="0 0 24 24"
+      i18n.NAVBAR.map((item: any, index: number) => {
+        const active = isParentActive(item);
+        return (
+          <div class="flex flex-col border-b border-gray-100">
+            {item.MORE ? (
+              <button
+                class:list={[
+                  "mobile-dropdown-btn flex items-center justify-between text-lg font-medium p-2 transition-colors duration-300 border-b-2 w-full text-left",
+                  active
+                    ? "border-[var(--color-primary)] text-[var(--color-primary)]"
+                    : "border-transparent hover:text-[var(--color-primary)]! hover:border-[var(--color-primary)]",
+                ]}
+                data-target={`mobile-submenu-${index}`}
               >
-                <path class="fill-current" d="m12 15l5-5H7z" />
-              </svg>
-            </button>
-          ) : (
-            <a
-              href={`/${lang}/${item.HREF}`}
-              class="text-lg italic p-2 transition-colors duration-300 hover:text-[var(--color-primary)]! border-b-2 border-transparent hover:border-[var(--color-primary)] block"
-            >
-              {item.TITLE}
-            </a>
-          )}
+                <span>{item.TITLE}</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 transition-transform duration-300"
+                  viewBox="0 0 24 24"
+                >
+                  <path class="fill-current" d="m12 15l5-5H7z" />
+                </svg>
+              </button>
+            ) : (
+              <a
+                href={`/${lang}/${item.HREF}`}
+                class:list={[
+                  "text-lg italic p-2 transition-colors duration-300 border-b-2 block",
+                  active
+                    ? "border-[var(--color-primary)] text-[var(--color-primary)]"
+                    : "border-transparent hover:text-[var(--color-primary)]! hover:border-[var(--color-primary)]",
+                ]}
+              >
+                {item.TITLE}
+              </a>
+            )}
 
-          {item.MORE && (
-            <div
-              id={`mobile-submenu-${index}`}
-              class="max-h-0 overflow-hidden transition-all duration-300 flex flex-col border-l-2 border-[var(--color-primary)] ml-2 mt-0"
-            >
-              <div class="flex flex-col">
-                {item.MORE.map((subitem: any) => (
-                  <a
-                    href={`/${lang}/${subitem.HREF}`}
-                    class="block text-sm italic text-gray-600 hover:bg-[var(--color-primary)]/25 w-full py-2 pl-4 transition-colors duration-300 hover:text-[var(--color-primary)]! border-b border-transparent hover:border-[var(--color-primary)]"
-                  >
-                    {subitem.TITLE}
-                  </a>
-                ))}
+            {item.MORE && (
+              <div
+                id={`mobile-submenu-${index}`}
+                class="max-h-0 overflow-hidden transition-all duration-300 flex flex-col border-l-2 border-[var(--color-primary)] ml-2 mt-0"
+              >
+                <div class="flex flex-col">
+                  {item.MORE.map((subitem: any) => {
+                    const subActive = isSubitemActive(subitem.HREF);
+                    return (
+                      <a
+                        href={`/${lang}/${subitem.HREF}`}
+                        class:list={[
+                          "block text-sm italic w-full py-2 pl-4 transition-colors duration-300 border-b border-transparent",
+                          subActive
+                            ? "text-[var(--color-primary)]! bg-[var(--color-primary)]/15 font-semibold"
+                            : "text-gray-600 hover:bg-[var(--color-primary)]/25 hover:text-[var(--color-primary)]! hover:border-[var(--color-primary)]",
+                        ]}
+                      >
+                        {subitem.TITLE}
+                      </a>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          )}
-        </div>
-      ))
+            )}
+          </div>
+        );
+      })
     }
     <a
       href={`/${lang}/${i18n.ACCESS.HREF}`}
@@ -150,7 +210,6 @@ const i18n = await useTranslation(lang);
     const menu = document.getElementById("mobile-menu");
     const spans = btn?.querySelectorAll("span");
 
-    // Remove any existing listener to prevent duplicates on Astro page transitions
     const newBtn = btn?.cloneNode(true);
     if (btn?.parentNode && newBtn) {
       btn.parentNode.replaceChild(newBtn, btn);
@@ -161,7 +220,6 @@ const i18n = await useTranslation(lang);
       if (isOpen) {
         menu?.classList.remove("translate-x-0");
         menu?.classList.add("translate-x-full");
-
         if (spans && spans.length === 3) {
           spans[0].classList.remove("rotate-45", "translate-y-[8px]");
           spans[1].classList.remove("opacity-0");
@@ -170,7 +228,6 @@ const i18n = await useTranslation(lang);
       } else {
         menu?.classList.remove("translate-x-full");
         menu?.classList.add("translate-x-0");
-
         if (spans && spans.length === 3) {
           spans[0].classList.add("rotate-45", "translate-y-[8px]");
           spans[1].classList.add("opacity-0");
@@ -179,7 +236,6 @@ const i18n = await useTranslation(lang);
       }
     });
 
-    // Mobile dropdowns logic
     const dropdownBtns = document.querySelectorAll(".mobile-dropdown-btn");
     dropdownBtns.forEach((btn) => {
       btn.addEventListener("click", (e) => {
@@ -203,7 +259,6 @@ const i18n = await useTranslation(lang);
       });
     });
 
-    // Option to click links and close the menu
     const menuLinks = menu?.querySelectorAll("a");
     menuLinks?.forEach((link) => {
       link.addEventListener("click", () => {
