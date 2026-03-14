@@ -1,0 +1,28 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const i18n = await useTranslation(lang);
+---
+
+<main id="hero" class="relative text-white flex items-center h-[70vh]">
+  <div
+    class="h-full w-full absolute after:absolute after:inset-0 after:bg-[var(--color-primary)]/25 after:z-10"
+  >
+    <img
+      src="/Associats/portada1.avif"
+      alt="banner background"
+      class="w-full h-full object-cover brightness-80"
+    />
+  </div>
+  <div
+    class="max-w-7xl w-full mx-auto flex items-center justify-center flex-col relative z-20 m-6 gap-4"
+  >
+    <h1
+      data-aos="fade-right"
+      class="text-5xl lg:text-7xl font-bold text-left w-full text-white"
+      set:html={i18n.ASSOCIATS.TITLE}
+    />
+    <p data-aos="fade-right" class="text-3xl lg:text-5xl font-semibold text-left w-full !text-white" set:html={i18n.ASSOCIATS.SUBTITLE} />
+  </div>
+</main>

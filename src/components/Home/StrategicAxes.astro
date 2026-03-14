@@ -24,6 +24,7 @@ const i18n = await useTranslation(lang);
       {
         i18n.NAVBAR[2].MORE?.map((item: any) => (
           <a
+            data-aos="zoom-in"
             href={`/${lang}/${item.HREF}`}
             class="w-52 aspect-square rounded-full border-18 border-[var(--color-primary)] flex items-center justify-center"
           >
