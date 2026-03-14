@@ -149,5 +149,18 @@
     "TITLE": "Bienvenido al Futuro de la Construcción",
     "SUBTITLE": "Forma parte del cambio. Conecta. Transforma. Construye.",
     "BODY": "El Clúster de la Construcción Industrializada de Cataluña no es sólo una red de empresas: es el núcleo en el que convergen aquellos que están rediseñando el sector. Formar parte del CCIC es entrar en una comunidad activa de innovación, donde la experiencia se mezcla con la disrupción y se abren oportunidades reales de colaboración, visibilidad y crecimiento.<br><br><b>Aquí se generan conexiones con empresas líderes del sector y una diversidad de PYMES y profesionales visionarios</b>. Estamos replanteando cada proceso constructivo para su industrialización, buscando mejorar la eficiencia y la sostenibilidad. Desde nuevos productos y sistemas modulares hasta algoritmos que piensan más rápido que la normativa, el ecosistema avanza… y tú puedes formar parte de él.<br><br><i>Si crees que la industrialización, los datos y la inteligencia aplicada pueden transformar la forma de construir, estás en el lugar adecuado. Si buscas sumar capacidades, compartir proyectos o escalar tu impacto, únete hoy.</i><br><br><b>Pre-regístrate, me pondré en contacto contigo y te enviaré información detallada para acceder a nuestra red.</b>"
+  },
+  "ASSOCIATS": {
+    "TITLE": "Asociados Estratégicos",
+    "IMG":"/Associats/bg.avif"
+  },
+  "AREAS": {
+    "TITLE": "Áreas Estratégicas",
+    "SUBTITLE": "Optimizar la cadena de valor",
+    "IMG":"/Areas/bg.avif"
+  },
+  "NEWS": {
+    "TITLE": "Noticias",
+    "IMG":"/News/bg.avif"
   }
 }
