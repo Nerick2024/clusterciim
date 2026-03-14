@@ -12,8 +12,8 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<section class="py-16 px-6">
-  <div class="max-w-6xl mx-auto flex flex-col items-center gap-12">
+<section class="py-20 px-6">
+  <div class="max-w-7xl mx-auto flex flex-col items-center gap-12">
     {
       showTitle && (
         <h2 class="text-3xl font-bold self-start">{i18n.STRATEGIC.TITLE}</h2>
@@ -22,12 +22,15 @@ const i18n = await useTranslation(lang);
 
     <div class="flex flex-wrap justify-around w-full">
       {
-        i18n.STRATEGIC.AXES.map((item: { LABEL: string }) => (
-          <div class="w-[12.5rem] aspect-square rounded-full border-8 border-[var(--color-primary)] flex items-center justify-center">
-            <p class="text-xl italic font-bold text-center px-4">
-              {item.LABEL}
+        i18n.NAVBAR[2].MORE?.map((item: any) => (
+          <a
+            href={`/${lang}/${item.HREF}`}
+            class="w-52 aspect-square rounded-full border-18 border-[var(--color-primary)] flex items-center justify-center"
+          >
+            <p class="text-2xl italic font-bold text-center px-4">
+              {item.TITLE}
             </p>
-          </div>
+          </a>
         ))
       }
     </div>
