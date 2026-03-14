@@ -7,27 +7,27 @@ const i18n = await useTranslation(lang);
 ---
 
 <header class="z-50 fixed w-full bg-white shadow-md p-4">
-  <div class="relative flex justify-between items-center max-w-6xl mx-auto">
+  <div class="relative flex justify-between items-center max-w-7xl mx-auto">
     <!-- Logo -->
     <a href={`/${lang}/`} class="z-50 shrink-0">
       <img
         loading="lazy"
         src="https://ccic.cat/wp-content/uploads/2025/05/ccic-logo.svg"
         alt="Logo"
-        class="w-16 lg:w-28 h-auto object-contain"
+        class="w-16 lg:w-36 h-auto object-contain"
       />
     </a>
 
     <!-- Desktop Navbar -->
-    <nav class="hidden lg:flex items-center gap-1">
+    <nav class="hidden lg:flex items-center">
       {
         i18n.NAVBAR.map((item: any) => (
           <div class="relative group flex items-center">
             <a
               href={`/${lang}/${item.HREF}`}
-              class="flex items-center text-sm italic p-2 transition-colors duration-300 group-hover:text-[var(--color-primary)]! border-b-2 border-transparent hover:border-[var(--color-primary)]"
+              class="flex items-center text-sm italic p-4 transition-colors duration-300 group-hover:text-[var(--color-primary)]! border-b-2 border-transparent hover:border-[var(--color-primary)]"
             >
-              {item.TITLE}{" "}
+              {item.TITLE}
               {item.MORE && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

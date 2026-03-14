@@ -5,27 +5,32 @@ const currentYear = new Date().getFullYear();
 const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
+
 <div class="bg-[#f5f5f5]">
-  <div class="max-w-6xl mx-auto">
-    <div class="flex flex-row items-center justify-between gap-2">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-2">
       {
         i18n.FOOTER.LOGOS.map((logo: any) => (
           <a href={logo.HREF} class="flex flex-row gap-2 p-6">
-            <img src={logo.IMG} alt={logo.TITLE} title={logo.TITLE} class="h-14 w-auto object-contain" />
-            <p class="!text-white italic">{logo.TITLE}</p>
+            <img
+              src={logo.IMG}
+              alt={logo.TITLE}
+              title={logo.TITLE}
+              class="h-16 w-auto object-contain"
+            />
           </a>
         ))
       }
     </div>
   </div>
 </div>
-<footer class="bg-[var(--color-primary)] !text-white text-sm p-40 py-6 ">
+<footer class="bg-[var(--color-primary)] !text-white text-sm p-6">
   <div
-    class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3"
+    class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-5 text-center lg:text-left"
   >
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 flex-1">
       <h1 class="font-semibold">{i18n.FOOTER.TITLE_1}</h1>
-      <ul class="flex flex-col gap-1">
+      <ul class="flex flex-col items-center lg:items-start gap-2">
         {
           i18n.CONTACT.ELEMENTS.map((items: any) => (
             <li class="flex flex-row gap-2">
@@ -38,11 +43,11 @@ const i18n = await useTranslation(lang);
         }
       </ul>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 flex-1">
       <h1 class="font-semibold">{i18n.FOOTER.TITLE_2}</h1>
       <p class="!text-white italic">{i18n.FOOTER.DIRECTION}</p>
     </div>
-    <ul class="flex flex-col gap-2 items-end">
+    <ul class="flex flex-col gap-2 flex-1 lg:items-end">
       {
         i18n.FOOTER.POLICIES.map((policy: any) => (
           <li>
@@ -54,7 +59,7 @@ const i18n = await useTranslation(lang);
       }
     </ul>
   </div>
-  <p class="text-center !text-white italic">
+  <p class="text-center !text-white italic mt-8">
     Copyright © {currentYear}
     {i18n.FOOTER.COPYRIGHT}
   </p>
