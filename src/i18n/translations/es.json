@@ -5,50 +5,50 @@
       "TITLE": "Inicio"
     },
     {
-      "HREF": "#Areas",
+      "HREF": "Areas",
       "TITLE": "Áreas"
     },
     {
-      "HREF": "#Strategies",
+      "HREF": "Strategies",
       "TITLE": "Estrategias",
       "MORE": [
         {
-          "HREF": "#co-factory",
+          "HREF": "Co-factory",
           "TITLE": "Co-Factory"
         },
         {
-          "HREF": "#co-share",
+          "HREF": "Co-share",
           "TITLE": "Co-Share"
         },
         {
-          "HREF": "#co-mentor",
+          "HREF": "Co-mentor",
           "TITLE": "Co-Mentor"
         }
       ]
     },
     {
-      "HREF": "#Associats",
+      "HREF": "Associats",
       "TITLE": "Asociados"
     },
     {
-      "HREF": "#Join",
+      "HREF": "Join",
       "TITLE": "Unirse"
     },
     {
-      "HREF": "#News",
+      "HREF": "News",
       "TITLE": "Noticias"
     },
     {
-      "HREF": "#Team",
+      "HREF": "Team",
       "TITLE": "Equipo"
     },
     {
-      "HREF": "#Contact",
+      "HREF": "Contact",
       "TITLE": "Contacto"
     }
   ],
   "ACCESS": {
-    "HREF": "#Access",
+    "HREF": "Access",
     "TITLE": "Acceder"
   },
   "NETWORKS": [
@@ -116,7 +116,7 @@
       }
     ],
     "TITLE_1": "Más información:",
-    "TITLE_2": "Más información:",
+    "TITLE_2": "Dirección:",
     "DIRECTION": "Camino del Río s/n, Molí Fariner, 08760 Martorell, Cataluña.",
     "POLICIES": [
       {
@@ -139,11 +139,15 @@
   },
   "STRATEGIC": {
     "TITLE": "Ejes estratégicos",
-    "AXES": [
-      { "LABEL": "Co-share" },
-      { "LABEL": "Co-mentor" },
-      { "LABEL": "Co-factory" }
-    ],
     "CTA": "Transformamos empresas"
+  },
+  "NEWSLETTER": {
+    "FORM_TITLE": "Pre Regístrate",
+    "NAME_LABEL": "Tu nombre",
+    "EMAIL_LABEL": "Tu correo electrónico",
+    "SUBMIT": "Enviar",
+    "TITLE": "Bienvenido al Futuro de la Construcción",
+    "SUBTITLE": "Forma parte del cambio. Conecta. Transforma. Construye.",
+    "BODY": "El Clúster de la Construcción Industrializada de Cataluña no es sólo una red de empresas: es el núcleo en el que convergen aquellos que están rediseñando el sector. Formar parte del CCIC es entrar en una comunidad activa de innovación, donde la experiencia se mezcla con la disrupción y se abren oportunidades reales de colaboración, visibilidad y crecimiento.<br><br><b>Aquí se generan conexiones con empresas líderes del sector y una diversidad de PYMES y profesionales visionarios</b>. Estamos replanteando cada proceso constructivo para su industrialización, buscando mejorar la eficiencia y la sostenibilidad. Desde nuevos productos y sistemas modulares hasta algoritmos que piensan más rápido que la normativa, el ecosistema avanza… y tú puedes formar parte de él.<br><br><i>Si crees que la industrialización, los datos y la inteligencia aplicada pueden transformar la forma de construir, estás en el lugar adecuado. Si buscas sumar capacidades, compartir proyectos o escalar tu impacto, únete hoy.</i><br><br><b>Pre-regístrate, me pondré en contacto contigo y te enviaré información detallada para acceder a nuestra red.</b>"
   }
 }
