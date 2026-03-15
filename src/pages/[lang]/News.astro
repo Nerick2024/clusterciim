@@ -1,9 +1,11 @@
 ---
 import { getLangFromUrl, useTranslation } from "@/i18n";
 import { translations } from "@/i18n/config";
+import { getCollection } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
 import Banner from "@/components/Banner.astro";
+import CardNews from "@/components/CardNews.astro";
 
 export function getStaticPaths() {
   return Object.keys(translations).map((lang) => ({ params: { lang } }));
@@ -12,8 +14,24 @@ export function getStaticPaths() {
 const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 
+const collectionName = `news-${lang}` as 'news-es' | 'news-en';
+const allNews = await getCollection(collectionName);
+const sortedNews = allNews.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <Layout title="CLUSTERCIIM">
   <Banner CONTENT={i18n.NEWS} MT />
+  <section class="max-w-7xl lg:mx-auto mx-6 mt-24 lg:mt-36 mb-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {sortedNews.map((news) => (
+        <CardNews
+          title={news.data.title}
+          description={news.data.description}
+          image={news.data.image}
+          slug={news.id.replace('.md', '')}
+          lang={lang}
+        />
+      ))}
+    </div>
+  </section>
 </Layout>
