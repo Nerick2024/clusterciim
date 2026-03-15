@@ -1,0 +1,122 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+const lang = getLangFromUrl(Astro.url);
+const i18n = await useTranslation(lang);
+
+const CONTACT = i18n.CONTACT;
+---
+
+<section class="max-w-7xl lg:mx-auto mx-6 mt-24 lg:mt-36 mb-24">
+  <div class="flex flex-col-reverse lg:flex-row gap-12">
+    <!-- Columna izquierda -->
+    <aside class="flex flex-col gap-6 text-sm">
+      <a
+        href={`mailto:${CONTACT.EMAIL}`}
+        class="!text-[var(--color-primary)] font-semibold italic"
+      >
+        {CONTACT.EMAIL}
+      </a>
+
+      {
+        CONTACT.PERSONS.map((person: any) => (
+          <div class="flex flex-col gap-0.5">
+            <span class="font-semibold text-gray-800">{person.NAME}</span>
+            <a
+              href={`tel:${person.PHONE.replace(/\s/g, "")}`}
+              class="!text-[var(--color-primary)] italic"
+            >
+              {person.PHONE}
+            </a>
+          </div>
+        ))
+      }
+
+      {
+        CONTACT.LINKEDIN && (
+          <a
+            href={CONTACT.LINKEDIN}
+            target="_blank"
+            class="!text-[var(--color-primary)] italic"
+          >
+            Linkedin
+          </a>
+        )
+      }
+
+      {
+        CONTACT.ADDRESS && (
+          <a
+            href={CONTACT.ADDRESS_HREF}
+            target="_blank"
+            class="!text-[var(--color-primary)] italic leading-snug"
+          >
+            {CONTACT.ADDRESS}
+          </a>
+        )
+      }
+    </aside>
+
+    <!-- Columna derecha -->
+    <div class="flex flex-col gap-6">
+      <div>
+        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900">
+          {CONTACT.FORM.HEADING}
+        </h2>
+        <p class="text-sm text-gray-700 mt-1 leading-relaxed">
+          {CONTACT.FORM.DESCRIPTION}
+        </p>
+      </div>
+
+      <form class="flex flex-col gap-4" method="POST">
+        <div class="flex flex-col gap-1">
+          <label class="text-sm text-gray-700">{CONTACT.FORM.NAME_LABEL}</label>
+          <input
+            type="text"
+            name="name"
+            class="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-[var(--color-primary)]"
+          />
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="text-sm text-gray-700">{CONTACT.FORM.EMAIL_LABEL}</label
+          >
+          <input
+            type="email"
+            name="email"
+            class="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-[var(--color-primary)]"
+          />
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="text-sm text-gray-700">{CONTACT.FORM.PHONE_LABEL}</label
+          >
+          <input
+            type="tel"
+            name="phone"
+            class="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-[var(--color-primary)]"
+          />
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="text-sm text-gray-700"
+            >{CONTACT.FORM.MESSAGE_LABEL}</label
+          >
+          <textarea
+            name="message"
+            rows="8"
+            class="border border-gray-300 rounded px-3 py-2 text-sm resize-y focus:outline-none focus:border-[var(--color-primary)]"
+          ></textarea>
+        </div>
+
+        <div>
+          <button
+            type="submit"
+            class="bg-[var(--color-primary)] !text-white text-sm font-bold px-6 py-2 rounded hover:bg-black transition-colors"
+          >
+            {CONTACT.FORM.SUBMIT_LABEL}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
