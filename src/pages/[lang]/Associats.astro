@@ -4,6 +4,7 @@ import { translations } from "@/i18n/config";
 
 import Layout from "@/layouts/Layout.astro";
 import Banner from "@/components/Banner.astro";
+import Associat from "@/components/Associats/Associats.astro";
 
 export function getStaticPaths() {
   return Object.keys(translations).map((lang) => ({ params: { lang } }));
@@ -14,5 +15,8 @@ const i18n = await useTranslation(lang);
 ---
 
 <Layout title="CLUSTERCIIM">
-  <Banner content={i18n.ASSOCIATS} mt />
+  <Banner CONTENT={i18n.ASSOCIATS} mt />
+  <Associat CONTENT={i18n.ASSOCIATS.PARTNERS[0]} />
+  <Associat CONTENT={i18n.ASSOCIATS.PARTNERS[1]} />
+  <Associat CONTENT={i18n.ASSOCIATS.PARTNERS[2]} MB />
 </Layout>

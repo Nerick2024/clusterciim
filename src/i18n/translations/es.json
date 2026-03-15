@@ -74,8 +74,25 @@
     }
   ],
   "CONTACT": {
-    "TITLE": "Contacto",
-    "DESCRIPTION": "¿Tienes alguna pregunta o comentario? ¡No dudes en ponerte en contacto con nosotros! Estamos aquí para ayudarte.",
+    "EMAIL": "cluster@ccic.cat",
+    "PERSONS": [
+      { "NAME": "Josep Vila", "PHONE": "+34 626 931 144" },
+      { "NAME": "Pere Armora", "PHONE": "+34 639 108 574" },
+      { "NAME": "Jorge Cuevas", "PHONE": "+34 600 434 105" },
+      { "NAME": "Ignasi Pérez Arnal", "PHONE": "+34 616 393 806" }
+    ],
+    "LINKEDIN": "https://linkedin.com/...",
+    "ADDRESS": "Camí del Riu s/n.",
+    "ADDRESS_HREF": "https://maps.google.com/?q=Camí+del+Riu",
+    "FORM": {
+      "HEADING": "Alta Asociación / Pedir Información:",
+      "DESCRIPTION": "La asociación tiene como finalidad principal promover y poner en valor el tejido industrial y profesional dentro del sector de la construcción, las empresas y las organizaciones que trabajan para definir un nuevo modelo de construcción industrializada (off-site, prefabricada, sostenible y cumpliendo criterios de economía circular), favoreciendo la competitividad y la colaboración entre los miembros asociados infraestructuras dentro del sector de la construcción.",
+      "NAME_LABEL": "Tu nombre",
+      "EMAIL_LABEL": "Tu correo electrónico",
+      "PHONE_LABEL": "teléfono celular",
+      "MESSAGE_LABEL": "Tu mensaje",
+      "SUBMIT_LABEL": "Enviar"
+    },
     "ELEMENTS": [
       {
         "ICON": "/icons/contact/email.svg",
@@ -152,15 +169,277 @@
   },
   "ASSOCIATS": {
     "TITLE": "Asociados Estratégicos",
-    "IMG":"/Associats/bg.avif"
+    "IMG": "/Associats/bg.avif",
+    "PARTNERS": [
+      {
+        "TITLE": "Socios Fundadores",
+        "ITEMS": [
+          {
+            "IMG": "/Associats/FoundingPartners/logo-aykos.png",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/FoundingPartners/logo-bim-768x209.png",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/FoundingPartners/logo-jorgecuevas-768x209.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/FoundingPartners/logo-smart-768x136.png",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/FoundingPartners/logo-elecnor-768x296.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/FoundingPartners/logo-rubau.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/FoundingPartners/logo-pich-768x128.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/FoundingPartners/logo-itec.avif",
+            "HREF": "",
+            "TITLE": ""
+          }
+        ]
+      },
+      {
+        "TITLE": "Socios Corporativos",
+        "ITEMS": [
+          {
+            "IMG": "/Associats/CorporatePartners/logo-cambra.png",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/CorporatePartners/logo-consorci.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/CorporatePartners/logo-martorell.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/CorporatePartners/logo-eurecat.jpg",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/CorporatePartners/cambra-de-terrassa.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/CorporatePartners/cambra-de-valls.avif",
+            "HREF": "",
+            "TITLE": ""
+          }
+        ]
+      },
+      {
+        "TITLE": "Asociados",
+        "ITEMS": [
+          {
+            "IMG": "/Associats/Associates/logo-exe-768x98.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-seed.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-enginesa.png",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-simbiosy.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-cambra-empreses.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-apce.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-buildlovers-768x258.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-mepal.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-iraco.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-sj12.jpg",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-costa.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-jfg.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-sga.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-ddv.jpg",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/evsagroup.com_.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-gobain.jpg",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-cd4iot.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/logo-ccoc.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/compacthabit.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/dAro.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/Macusa.png",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/pmp-pretaporter.com_-768x154.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/https___www.lamp_.es_.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/https_www.tallfusta.com_es_inicio-2_.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/https___www.certis.cat_-1.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/https___isoltex.com_.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/evsagroup.com_.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/https___edalso.com_.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/https___armangue.net_.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/constructoracardoner.comX_.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/blakrea.com_.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/https___alier.com_-1.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/ardex.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/salas.avif",
+            "HREF": "",
+            "TITLE": ""
+          },
+          {
+            "IMG": "/Associats/Associates/sms.avif",
+            "HREF": "",
+            "TITLE": ""
+          }
+        ]
+      }
+    ]
   },
   "AREAS": {
     "TITLE": "Áreas Estratégicas",
     "SUBTITLE": "Optimizar la cadena de valor",
-    "IMG":"/Areas/bg.avif"
+    "IMG": "/Areas/bg.avif"
   },
   "NEWS": {
     "TITLE": "Noticias",
-    "IMG":"/News/bg.avif"
+    "IMG": "/News/bg.avif"
   }
 }
