@@ -3,6 +3,7 @@ title: "Primera Noticia del Cluster"
 description: "Esta es la primera noticia de ejemplo para el sistema de noticias dinámicas"
 image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800"
 date: 2024-01-15
+category: "Trends"
 ---
 
 # Primera Noticia del Cluster

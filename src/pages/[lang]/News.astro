@@ -17,21 +17,104 @@ const i18n = await useTranslation(lang);
 const collectionName = `news-${lang}` as 'news-es' | 'news-en';
 const allNews = await getCollection(collectionName);
 const sortedNews = allNews.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const categories = [...new Set(allNews.map(news => news.data.category))];
+
+const getCategoryCount = (category: string) => {
+  return allNews.filter(news => news.data.category === category).length;
+};
 ---
 
 <Layout title="CLUSTERCIIM">
   <Banner CONTENT={i18n.NEWS} MT />
   <section class="max-w-7xl lg:mx-auto mx-6 mt-24 lg:mt-36 mb-24">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {sortedNews.map((news) => (
-        <CardNews
-          title={news.data.title}
-          description={news.data.description}
-          image={news.data.image}
-          slug={news.id.replace('.md', '')}
-          lang={lang}
-        />
-      ))}
+    <div class="flex flex-col lg:flex-row gap-8">
+      <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6" id="news-grid">
+        {sortedNews.map((news) => (
+          <div data-category={news.data.category}>
+            <CardNews
+              title={news.data.title}
+              description={news.data.description}
+              image={news.data.image}
+              slug={news.id.replace('.md', '')}
+              lang={lang}
+            />
+          </div>
+        ))}
+      </div>
+      <aside class="lg:w-64">
+        <div class="bg-white rounded-lg shadow-lg p-6 sticky top-24">
+          <h3 class="text-xl font-bold mb-4">Categories</h3>
+          <ul class="space-y-2">
+            <li>
+              <button 
+                data-category="all"
+                class="category-btn w-full flex justify-between items-center px-4 py-2 rounded transition-colors hover:bg-gray-100 text-left"
+              >
+                <span>All</span>
+                <span class="text-sm font-semibold text-gray-500">({allNews.length})</span>
+              </button>
+            </li>
+            {categories.map((category) => (
+              <li>
+                <button 
+                  data-category={category}
+                  class="category-btn w-full flex justify-between items-center px-4 py-2 rounded transition-colors hover:bg-gray-100 text-left"
+                >
+                  <span>{category}</span>
+                  <span class="text-sm font-semibold text-gray-500">({getCategoryCount(category)})</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </aside>
     </div>
   </section>
 </Layout>
+
+<script>
+  let activeCategory = 'all';
+
+  function filterNews(category: string) {
+    activeCategory = category;
+    const newsItems = document.querySelectorAll('#news-grid > div');
+    const buttons = document.querySelectorAll('.category-btn');
+    
+    buttons.forEach(btn => {
+      const btnCategory = btn.getAttribute('data-category');
+      if (btnCategory === category) {
+        btn.classList.add('bg-blue-600', 'text-white');
+        btn.classList.remove('hover:bg-gray-100');
+        const counter = btn.querySelector('span:last-child');
+        if (counter) counter.classList.replace('text-gray-500', 'text-white');
+      } else {
+        btn.classList.remove('bg-blue-600', 'text-white');
+        btn.classList.add('hover:bg-gray-100');
+        const counter = btn.querySelector('span:last-child');
+        if (counter) counter.classList.replace('text-white', 'text-gray-500');
+      }
+    });
+    
+    newsItems.forEach(item => {
+      const itemCategory = item.getAttribute('data-category');
+      if (category === 'all' || itemCategory === category) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.category-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const category = btn.getAttribute('data-category');
+        if (category) filterNews(category);
+      });
+    });
+    
+    filterNews('all');
+  });
+</script>

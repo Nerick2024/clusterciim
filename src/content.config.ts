@@ -8,6 +8,7 @@ const newsEs = defineCollection({
     description: z.string(),
     image: z.string(),
     date: z.coerce.date(),
+    category: z.enum(['Trends', 'Sustainability', 'Innovation', 'Events']).default('Uncategorized'),
   }),
 });
 
@@ -18,6 +19,7 @@ const newsEn = defineCollection({
     description: z.string(),
     image: z.string(),
     date: z.coerce.date(),
+    category: z.enum(['Trends', 'Sustainability', 'Innovation', 'Events']).default('Uncategorized'),
   }),
 });
 
