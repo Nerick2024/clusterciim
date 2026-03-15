@@ -23,6 +23,25 @@ const categories = [...new Set(allNews.map(news => news.data.category))];
 const getCategoryCount = (category: string) => {
   return allNews.filter(news => news.data.category === category).length;
 };
+
+const translations_text = {
+  es: {
+    sortByDate: 'Ordenar por Fecha',
+    newestFirst: 'Más Reciente',
+    oldestFirst: 'Más Antiguo',
+    categories: 'Categorías',
+    all: 'Todas'
+  },
+  en: {
+    sortByDate: 'Sort by Date',
+    newestFirst: 'Newest First',
+    oldestFirst: 'Oldest First',
+    categories: 'Categories',
+    all: 'All'
+  }
+};
+
+const t = translations_text[lang as 'es' | 'en'];
 ---
 
 <Layout title="CLUSTERCIIM">
@@ -45,22 +64,22 @@ const getCategoryCount = (category: string) => {
       <aside class="lg:w-64">
         <div class="bg-white rounded-lg shadow-lg p-6 sticky top-24 space-y-6">
           <div>
-            <h3 class="text-xl font-bold mb-4">Sort by Date</h3>
+            <h3 class="text-xl font-bold mb-4">{t.sortByDate}</h3>
             <select id="sort-select" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
-              <option value="newest">Newest First</option>
-              <option value="oldest">Oldest First</option>
+              <option value="newest">{t.newestFirst}</option>
+              <option value="oldest">{t.oldestFirst}</option>
             </select>
           </div>
           
           <div>
-            <h3 class="text-xl font-bold mb-4">Categories</h3>
+            <h3 class="text-xl font-bold mb-4">{t.categories}</h3>
             <ul class="space-y-2">
               <li>
                 <button 
                   data-category="all"
                   class="category-btn w-full flex justify-between items-center px-4 py-2 rounded transition-colors hover:bg-gray-100 text-left"
                 >
-                  <span>All</span>
+                  <span>{t.all}</span>
                   <span class="text-sm font-semibold text-gray-500">({allNews.length})</span>
                 </button>
               </li>

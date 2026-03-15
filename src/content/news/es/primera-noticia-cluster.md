@@ -4,6 +4,7 @@ description: "Esta es la primera noticia de ejemplo para el sistema de noticias 
 image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800"
 date: 2024-01-15
 category: "Trends"
+equivalentSlug: "first-cluster-news"
 ---
 
 # Primera Noticia del Cluster

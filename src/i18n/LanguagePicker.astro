@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, locales, useTranslation, slugify } from ".";
+import { getCollection } from "astro:content";
 const currentLang = getLangFromUrl(Astro.url);
 
 // Build a map of route slugs per language based on translation labels
@@ -26,7 +27,7 @@ function detectRouteKey() {
 
 const routeKey = detectRouteKey();
 
-function getPath(lang: string) {
+async function getPath(lang: string) {
   let newPath = `/${lang}/`;
   if (routeKey && routeKey !== "home") {
     const newSlug = SLUGS[lang] && SLUGS[lang][routeKey];
@@ -34,7 +35,41 @@ function getPath(lang: string) {
   } else if (!routeKey) {
     const pathParts = path.split("/").filter(Boolean);
     const pagePath = pathParts.slice(1).join("/");
-    if (pagePath) {
+    
+    // Check if this is a news article page
+    if (pathParts[1] === "news" && pathParts[2]) {
+      const currentSlug = pathParts[2];
+      const targetLang = lang === 'es' ? 'es' : 'en';
+      const currentCollection = `news-${currentLang}` as 'news-es' | 'news-en';
+      const targetCollection = `news-${targetLang}` as 'news-es' | 'news-en';
+      
+      try {
+        const currentNews = await getCollection(currentCollection);
+        const targetNews = await getCollection(targetCollection);
+        
+        // Find current article
+        const currentArticle = currentNews.find(article => 
+          article.id.replace('.md', '') === currentSlug
+        );
+        
+        if (currentArticle && currentArticle.data.equivalentSlug) {
+          // Find equivalent article in target language
+          const equivalentArticle = targetNews.find(article => 
+            article.id.replace('.md', '') === currentArticle.data.equivalentSlug
+          );
+          
+          if (equivalentArticle) {
+            newPath = `/${lang}/news/${equivalentArticle.id.replace('.md', '')}/`;
+          } else {
+            newPath = `/${lang}/News/`; // Fallback to news list
+          }
+        } else {
+          newPath = `/${lang}/News/`; // Fallback to news list
+        }
+      } catch (error) {
+        newPath = `/${lang}/News/`; // Fallback to news list
+      }
+    } else if (pagePath) {
       newPath = `/${lang}/${pagePath}/`;
     }
   }
@@ -63,11 +98,12 @@ function getPath(lang: string) {
     data-language-menu
   >
     {
-      Object.entries(locales).map(([lang, label]) => {
+      Object.entries(locales).map(async ([lang, label]) => {
         if (lang !== currentLang) {
+          const linkPath = await getPath(lang);
           return (
             <a
-              href={getPath(lang)}
+              href={linkPath}
               class="block text-center !text-white w-full italic text-xs py-2 transition-colors hover:bg-black/20"
             >
               {lang.toUpperCase()}

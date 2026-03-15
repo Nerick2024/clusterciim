@@ -4,6 +4,7 @@ description: "This is the first example news for the dynamic news system"
 image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800"
 date: 2024-01-15
 category: "Trends"
+equivalentSlug: "primera-noticia-cluster"
 ---
 
 # First Cluster News
