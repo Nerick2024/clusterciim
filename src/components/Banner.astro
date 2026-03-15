@@ -1,14 +1,14 @@
 ---
 interface Props {
-  content: {
+  CONTENT: {
     IMG?: string;
     TITLE?: string;
     SUBTITLE?: string;
   };
-  mt?: boolean;
+  MT?: boolean;
 }
 
-const { content, mt } = Astro.props;
+const { CONTENT, MT } = Astro.props;
 ---
 
 <main id="hero" class="relative text-white flex items-center h-[68vh]">
@@ -16,25 +16,25 @@ const { content, mt } = Astro.props;
     class="h-full w-full absolute after:absolute after:inset-0 after:bg-[var(--color-primary)]/25 after:z-10"
   >
     <img
-      src={content.IMG}
+      src={CONTENT.IMG}
       alt="banner background"
       class="w-full h-full object-cover brightness-80"
     />
   </div>
   <div
-    class={`max-w-7xl w-full lg:mx-auto flex items-center justify-center flex-col relative z-20 mx-6 gap-4 ${mt ? "mt-12 lg:mt-32" : ""}`}
+    class={`max-w-7xl w-full lg:mx-auto flex items-center justify-center flex-col relative z-20 mx-6 gap-4 ${MT ? "mt-12 lg:mt-32" : ""}`}
   >
     <h1
       data-aos="fade-right"
-      class="text-5xl lg:text-7xl font-bold text-left w-full text-white"
-      set:html={content.TITLE}
+      class="text-5xl lg:text-6xl font-bold text-left w-full text-white"
+      set:html={CONTENT.TITLE}
     />
     {
-      content.SUBTITLE && (
+      CONTENT.SUBTITLE && (
         <p
           data-aos="fade-right"
           class="text-3xl lg:text-5xl font-semibold text-left w-full !text-white"
-          set:html={content.SUBTITLE}
+          set:html={CONTENT.SUBTITLE}
         />
       )
     }

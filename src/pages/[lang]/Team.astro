@@ -9,8 +9,7 @@ export function getStaticPaths() {
 }
 
 const lang = getLangFromUrl(Astro.url);
-
-const t = await useTranslation(lang);
+const i18n = await useTranslation(lang);
 ---
 
 <Layout title="CLUSTERCIIM">
