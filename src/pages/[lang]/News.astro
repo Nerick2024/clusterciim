@@ -31,7 +31,7 @@ const getCategoryCount = (category: string) => {
     <div class="flex flex-col lg:flex-row gap-8">
       <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6" id="news-grid">
         {sortedNews.map((news) => (
-          <div data-category={news.data.category}>
+          <div data-category={news.data.category} data-date={news.data.date.getTime()}>
             <CardNews
               title={news.data.title}
               description={news.data.description}
@@ -43,30 +43,40 @@ const getCategoryCount = (category: string) => {
         ))}
       </div>
       <aside class="lg:w-64">
-        <div class="bg-white rounded-lg shadow-lg p-6 sticky top-24">
-          <h3 class="text-xl font-bold mb-4">Categories</h3>
-          <ul class="space-y-2">
-            <li>
-              <button 
-                data-category="all"
-                class="category-btn w-full flex justify-between items-center px-4 py-2 rounded transition-colors hover:bg-gray-100 text-left"
-              >
-                <span>All</span>
-                <span class="text-sm font-semibold text-gray-500">({allNews.length})</span>
-              </button>
-            </li>
-            {categories.map((category) => (
+        <div class="bg-white rounded-lg shadow-lg p-6 sticky top-24 space-y-6">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Sort by Date</h3>
+            <select id="sort-select" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+              <option value="newest">Newest First</option>
+              <option value="oldest">Oldest First</option>
+            </select>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-bold mb-4">Categories</h3>
+            <ul class="space-y-2">
               <li>
                 <button 
-                  data-category={category}
+                  data-category="all"
                   class="category-btn w-full flex justify-between items-center px-4 py-2 rounded transition-colors hover:bg-gray-100 text-left"
                 >
-                  <span>{category}</span>
-                  <span class="text-sm font-semibold text-gray-500">({getCategoryCount(category)})</span>
+                  <span>All</span>
+                  <span class="text-sm font-semibold text-gray-500">({allNews.length})</span>
                 </button>
               </li>
-            ))}
-          </ul>
+              {categories.map((category) => (
+                <li>
+                  <button 
+                    data-category={category}
+                    class="category-btn w-full flex justify-between items-center px-4 py-2 rounded transition-colors hover:bg-gray-100 text-left"
+                  >
+                    <span>{category}</span>
+                    <span class="text-sm font-semibold text-gray-500">({getCategoryCount(category)})</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </aside>
     </div>
@@ -75,15 +85,40 @@ const getCategoryCount = (category: string) => {
 
 <script>
   let activeCategory = 'all';
+  let sortOrder: 'newest' | 'oldest' = 'newest';
 
-  function filterNews(category: string) {
-    activeCategory = category;
-    const newsItems = document.querySelectorAll('#news-grid > div');
-    const buttons = document.querySelectorAll('.category-btn');
+  function sortAndFilterNews() {
+    const newsGrid = document.getElementById('news-grid');
+    if (!newsGrid) return;
+
+    const newsItems = Array.from(newsGrid.querySelectorAll(':scope > div')) as HTMLElement[];
     
+    // Sort
+    newsItems.sort((a, b) => {
+      const dateA = parseInt(a.getAttribute('data-date') || '0');
+      const dateB = parseInt(b.getAttribute('data-date') || '0');
+      return sortOrder === 'newest' ? dateB - dateA : dateA - dateB;
+    });
+    
+    // Clear and re-append in sorted order
+    newsItems.forEach(item => newsGrid.appendChild(item));
+    
+    // Filter by category
+    newsItems.forEach(item => {
+      const itemCategory = item.getAttribute('data-category');
+      if (activeCategory === 'all' || itemCategory === activeCategory) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  function updateCategoryButtons() {
+    const buttons = document.querySelectorAll('.category-btn');
     buttons.forEach(btn => {
       const btnCategory = btn.getAttribute('data-category');
-      if (btnCategory === category) {
+      if (btnCategory === activeCategory) {
         btn.classList.add('bg-blue-600', 'text-white');
         btn.classList.remove('hover:bg-gray-100');
         const counter = btn.querySelector('span:last-child');
@@ -95,26 +130,32 @@ const getCategoryCount = (category: string) => {
         if (counter) counter.classList.replace('text-white', 'text-gray-500');
       }
     });
-    
-    newsItems.forEach(item => {
-      const itemCategory = item.getAttribute('data-category');
-      if (category === 'all' || itemCategory === category) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
-    });
   }
 
   document.addEventListener('DOMContentLoaded', () => {
+    // Category filter
     const buttons = document.querySelectorAll('.category-btn');
     buttons.forEach(btn => {
       btn.addEventListener('click', () => {
         const category = btn.getAttribute('data-category');
-        if (category) filterNews(category);
+        if (category) {
+          activeCategory = category;
+          updateCategoryButtons();
+          sortAndFilterNews();
+        }
       });
     });
     
-    filterNews('all');
+    // Sort select
+    const sortSelect = document.getElementById('sort-select') as HTMLSelectElement;
+    if (sortSelect) {
+      sortSelect.addEventListener('change', () => {
+        sortOrder = sortSelect.value as 'newest' | 'oldest';
+        sortAndFilterNews();
+      });
+    }
+    
+    updateCategoryButtons();
+    sortAndFilterNews();
   });
 </script>
