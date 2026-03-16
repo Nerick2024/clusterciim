@@ -17,33 +17,48 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Clusterciim the future of the construction is here" />
-    <meta name="keywords" content="BIM, construcción industrializada, ingeniería AECO, arquitectura sostenible, smart cities, VDC, Lean Construction, DFMA, gemelo digital, edificios inteligentes, IoT construcción, México" />
+    <meta
+      name="description"
+      content="Clusterciim the future of the construction is here"
+    />
+    <meta
+      name="keywords"
+      content="BIM, construcción industrializada, ingeniería AECO, arquitectura sostenible, smart cities, VDC, Lean Construction, DFMA, gemelo digital, edificios inteligentes, IoT construcción, México"
+    />
     <meta name="author" content="Clusterciim" />
     <link rel="icon" type="image/webp" href="/logo/icon.webp" />
     <link rel="canonical" href={Astro.url.href} />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url.href} />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content="Clusterciim the future of the construction is here" />
+    <meta
+      property="og:description"
+      content="Clusterciim the future of the construction is here"
+    />
     <meta property="og:image" content="/logo/icon.webp" />
-    <meta property="og:locale" content={lang === 'es' ? 'es_MX' : lang === 'en' ? 'en_US' : 'de_DE'} />
-    
+    <meta
+      property="og:locale"
+      content={lang === "es" ? "es_MX" : lang === "en" ? "en_US" : "de_DE"}
+    />
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content={Astro.url.href} />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content="Clusterciim the future of the construction is here" />
+    <meta
+      name="twitter:description"
+      content="Clusterciim the future of the construction is here"
+    />
     <meta name="twitter:image" content="/logo/icon.webp" />
-    
+
     <!-- Additional SEO -->
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
     <meta name="theme-color" content="#00010b" />
     <meta name="generator" content={Astro.generator} />
-    
+
     <title>{title}</title>
   </head>
   <body>
@@ -63,7 +78,7 @@ const { title } = Astro.props;
 <style is:global>
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Display:wght@400..800&display=swap");
   :root {
-    --color-text:#000000;
+    --color-text: #000000;
     --color-bg: #ffffff;
     --color-primary: rgb(50, 89, 105);
   }
@@ -98,6 +113,7 @@ const { title } = Astro.props;
   textarea {
     /* font-family: "Wix Madefor Text", sans-serif; */
     color: var(--color-text);
+    font-size: 0.875rem;
   }
 
   .glass-effect {
@@ -105,9 +121,48 @@ const { title } = Astro.props;
     backdrop-filter: blur(5px);
   }
 
-  .button-glass{
+  .button-glass {
     background-color: rgba(255, 255, 255, 0.08);
     border: solid 1px rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+  }
+
+  /* Estilos para contenido de noticias */
+  h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    text-align: left;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: left;
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 4.5rem;
+    }
+    
+    h2 {
+      font-size: 3rem;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    li,
+    a,
+    button,
+    input,
+    textarea {
+      font-size: 1rem;
+    }
   }
 </style>
