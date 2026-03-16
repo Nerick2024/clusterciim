@@ -440,6 +440,12 @@
   },
   "NEWS": {
     "TITLE": "Noticias",
-    "IMG": "/News/bg.avif"
+    "IMG": "/News/bg.avif",
+    "SORT_BY_DATE": "Ordenar por Fecha",
+    "NEWEST_FIRST": "Más Reciente",
+    "OLDEST_FIRST": "Más Antiguo",
+    "CATEGORIES": "Categorías",
+    "ALL": "Todas",
+    "READ_MORE": "Leer Más →"
   }
 }

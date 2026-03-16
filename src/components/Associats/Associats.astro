@@ -5,9 +5,9 @@ const { CONTENT, MB = false } = Astro.props;
 <section
   class={`flex flex-col max-w-7xl mx-6 lg:mx-auto mt-24 gap-4 ${MB ? "mb-24" : ""}`}
 >
-  <h1 class="text-4xl lg:text-5xl font-bold text-left w-full">
+  <h2 class="text-4xl lg:text-5xl font-bold text-left w-full">
     {CONTENT.TITLE}
-  </h1>
+  </h2>
   <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
     {
       CONTENT.ITEMS.map((item: any, index: number) => (

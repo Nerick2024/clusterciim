@@ -5,18 +5,26 @@ interface Props {
   image: string;
   slug: string;
   lang: string;
+  readMoreText: string;
 }
 
-const { title, description, image, slug, lang } = Astro.props;
+const { title, description, image, slug, lang, readMoreText } = Astro.props;
 ---
 
-<div class="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-  <img src={image} alt={title} class="w-full h-48 object-cover" />
-  <div class="flex flex-col flex-1 p-6">
-    <h2 class="text-2xl font-bold mb-2">{title}</h2>
-    <p class="text-gray-600 mb-4 flex-1">{description}</p>
-    <a href={`/${lang}/news/${slug}`} class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-center">
-      Leer más
+<div
+  class="flex flex-col lg:h-[600px] bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+>
+  <img loading="lazy" src={image} alt={title} class="w-full aspect-square object-cover" />
+  <div class="flex flex-col justify-between flex-1 p-3 gap-3">
+    <div class="flex flex-col gap-3">
+      <h3 class="!text-lg lg:!text-xl italic font-semibold">{title}</h3>
+      <p class="text-gray-600 !text-sm lg:!text-base">{description}</p>
+    </div>
+    <a
+      href={`/${lang}/news/${slug}`}
+      class="!text-[var(--color-primary)] text-left"
+    >
+      {readMoreText}
     </a>
   </div>
 </div>

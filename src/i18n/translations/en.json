@@ -192,6 +192,12 @@
   },
   "NEWS": {
     "TITLE": "News",
-    "IMG": "/News/bg.avif"
+    "IMG": "/News/bg.avif",
+    "SORT_BY_DATE": "Sort by Date",
+    "NEWEST_FIRST": "Newest First",
+    "OLDEST_FIRST": "Oldest First",
+    "CATEGORIES": "Categories",
+    "ALL": "All",
+    "READ_MORE": "Read More →"
   }
 }

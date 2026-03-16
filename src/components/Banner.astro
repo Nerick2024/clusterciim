@@ -22,7 +22,7 @@ const { CONTENT, MT } = Astro.props;
     />
   </div>
   <div
-    class={`max-w-7xl w-full lg:mx-auto flex items-center justify-center flex-col relative z-20 mx-6 gap-4 ${MT ? "mt-12 lg:mt-32" : ""}`}
+    class={`max-w-7xl w-full lg:mx-auto flex items-center justify-center flex-col relative z-20 px-6 gap-4 ${MT ? "mt-12 lg:mt-32" : ""}`}
   >
     <h1
       data-aos="fade-right"
@@ -31,9 +31,9 @@ const { CONTENT, MT } = Astro.props;
     />
     {
       CONTENT.SUBTITLE && (
-        <p
+        <h2
           data-aos="fade-right"
-          class="text-3xl lg:text-5xl font-semibold text-left w-full !text-white"
+          class="!font-normal text-left w-full !text-white"
           set:html={CONTENT.SUBTITLE}
         />
       )

@@ -1,22 +1,22 @@
 ---
-title: "Innovación en el Sector Industrial"
-description: "Descubre las últimas tendencias en innovación industrial y tecnología"
-image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800"
+title: "Construir el futuro de la vivienda es un reto colectivo"
+description: "Desde el CCiC hemos trabajado conjuntamente con diversas empresas socias, para presentar un estudio estratégico para el Ayuntamiento de Barcelona"
+image: "/News/new-1/a.jpg"
 date: 2024-01-20
-category: "Innovation"
+category: "Tendencias"
 equivalentSlug: "innovation-industrial-sector"
 ---
 
-# Innovación en el Sector Industrial
+# Construir el futuro de la vivienda es un reto colectivo
 
-El sector industrial está experimentando una transformación digital sin precedentes.
+![Equipo CCiC frente a Ca l'Alier](/News/new-1/a.jpg)
 
-## Nuevas Tecnologías
+Esto es precisamente lo que define la misión del **Clúster de la Construcción Industrializada de Cataluña**:
 
-Las empresas están adoptando:
+**Conectar empresas + Conocimiento + Innovación = Transformar la forma en que construimos hoy mirando hacia el futuro.**
 
-- Inteligencia Artificial
-- Internet de las Cosas (IoT)
-- Automatización avanzada
+Desde el CCiC hemos trabajado conjuntamente con diversas empresas socias, para presentar un **estudio estratégico para el Ayuntamiento de Barcelona** por iniciativa de **BitHabitat**, centrado en el papel de la industria en la vivienda nueva y en la rehabilitación. Un proyecto que plantea **nuevos retos y prototipos** para avanzar hacia modelos más eficientes, industrializados y sostenibles a largo plazo.
 
-Estas tecnologías están revolucionando la forma en que trabajamos.
+Cuando empresas diferentes colaboran, el resultado es más que un proyecto: es **una nueva forma de pensar la ciudad y el futuro de la vivienda**.
+
+Gracias a todas las empresas del cluster que participan. ¡Gran #EquipCCiC!
