@@ -3,6 +3,7 @@ import { getLangFromUrl, useTranslation } from "@/i18n";
 import { translations } from "@/i18n/config";
 
 import Layout from "@/layouts/Layout.astro";
+import Directors from "@/components/Team/Directors.astro";
 
 export function getStaticPaths() {
   return Object.keys(translations).map((lang) => ({ params: { lang } }));
@@ -13,4 +14,5 @@ const i18n = await useTranslation(lang);
 ---
 
 <Layout title="CLUSTERCIIM">
+  <Directors />
 </Layout>
