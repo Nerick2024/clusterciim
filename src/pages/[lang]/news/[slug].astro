@@ -44,13 +44,15 @@ const lang = getLangFromUrl(Astro.url);
   }
 
   .prose :global(h1) {
+    font-size: 2.25rem;
+    line-height: 1;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    line-height: 1;
   }
 
   .prose :global(h2) {
     font-size: 1.875rem;
+    line-height: 1;
     font-weight: 700;
   }
   .prose :global(img) {
@@ -64,6 +66,9 @@ const lang = getLangFromUrl(Astro.url);
   }
 
   @media (min-width: 1024px) {
+    .prose :global(h1) {
+      font-size: 3rem;
+    }
     .prose :global(h2) {
       font-size: 2.25rem;
     }

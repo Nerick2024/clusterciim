@@ -16,19 +16,19 @@ const i18n = await useTranslation(lang);
   <div class="max-w-7xl mx-auto flex flex-col items-center gap-12">
     {
       showTitle && (
-        <h2 class="text-4xl lg:text-5xl font-bold text-left w-full">
+        <h2>
           {i18n.STRATEGIC.TITLE}
         </h2>
       )
     }
 
-    <div class="flex flex-wrap justify-around w-full">
+    <div class="flex flex-wrap justify-around w-full gap-6">
       {
         i18n.NAVBAR[2].MORE?.map((item: any) => (
           <a
             data-aos="zoom-in"
             href={`/${lang}/${item.HREF}`}
-            class="w-52 aspect-square rounded-full border-18 border-[var(--color-primary)] flex items-center justify-center"
+            class="w-40 lg:w-52 aspect-square rounded-full border-18 border-[var(--color-primary)] flex items-center justify-center"
           >
             <p class="!text-lg lg:!text-2xl italic font-bold text-center px-4">
               {item.TITLE}

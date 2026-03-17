@@ -10,7 +10,7 @@ const i18n = await useTranslation(lang);
 >
   <!-- Formulario -->
   <div class="flex flex-col w-full lg:w-[28%] gap-6">
-    <h2 class="text-4xl lg:text-5xl font-bold">
+    <h2>
       {i18n.NEWSLETTER.FORM_TITLE}
     </h2>
 
@@ -56,11 +56,11 @@ const i18n = await useTranslation(lang);
       class="w-1/3 h-auto object-contain"
     />
     <div class="flex lg:w-2/3 flex-col gap-4">
-      <h2 class="text-4xl lg:text-5xl font-bold">
+      <h2>
         {i18n.NEWSLETTER.TITLE}
       </h2>
       <p class="font-bold">{i18n.NEWSLETTER.SUBTITLE}</p>
-      <p class="text-sm" set:html={i18n.NEWSLETTER.BODY} />
+      <p set:html={i18n.NEWSLETTER.BODY} />
     </div>
   </div>
 </section>
