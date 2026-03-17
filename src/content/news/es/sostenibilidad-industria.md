@@ -4,7 +4,7 @@ title: "El futuro está abierto: digitalización, datos y cultura compartida"
 description: "La construcción del futuro pasa por la digitalización y la colaboración. Desde el Clúster de la Construcción Industrializada de Cataluña"
 image: "/News/new-3/a.jpg"
 date: 2026-02-12
-category: "Sustainability"
+category: "Sostenibilidad"
 ---
 # El futuro está abierto: digitalización, datos y cultura compartida
 

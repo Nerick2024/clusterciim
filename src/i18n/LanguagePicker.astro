@@ -59,7 +59,7 @@ async function getPath(lang: string) {
           );
           
           if (equivalentArticle) {
-            newPath = `/${lang}/news/${equivalentArticle.id.replace('.md', '')}/`;
+            newPath = `/${lang}/News/${equivalentArticle.id.replace('.md', '')}/`;
           } else {
             newPath = `/${lang}/News/`; // Fallback to news list
           }

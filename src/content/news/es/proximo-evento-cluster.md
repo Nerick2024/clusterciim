@@ -4,7 +4,7 @@ title: "Sensores inteligentes: la clave para edificios energéticamente eficient
 description: "Los sensores inteligentes permiten monitorizar en tiempo real variables como el empleo, la temperatura o la calidad del aire en los edificios."
 image: "/News/new-2/a.png"
 date: 2026-02-12
-category: "Innovation"
+category: "Inovación"
 ---
 
 # Sensores inteligentes: la clave para edificios energéticamente eficientes
