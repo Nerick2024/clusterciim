@@ -13,15 +13,15 @@
       "TITLE": "Estrategias",
       "MORE": [
         {
-          "HREF": "Co-factory",
+          "HREF": "Co-Factory",
           "TITLE": "Co-Factory"
         },
         {
-          "HREF": "Co-share",
+          "HREF": "Co-Share",
           "TITLE": "Co-Share"
         },
         {
-          "HREF": "Co-mentor",
+          "HREF": "Co-Mentor",
           "TITLE": "Co-Mentor"
         }
       ]
@@ -441,11 +441,60 @@
   "NEWS": {
     "TITLE": "Noticias",
     "IMG": "/News/bg.avif",
-    "SORT_BY_DATE": "Ordenar por Fecha",
+    "SORT_BY_DATE": "Ordenar por:",
     "NEWEST_FIRST": "Más Reciente",
     "OLDEST_FIRST": "Más Antiguo",
-    "CATEGORIES": "Categorías",
+    "CATEGORIES": "Categorías:",
     "ALL": "Todas",
     "READ_MORE": "Leer Más →"
+  },
+  "TRANSFORMATION_OF_THE_CONSTRUCTION_SECTOR": {
+    "TITLE": "Transformación del sector de la construcción",
+    "SUBTITLE": "",
+    "IMG": "/Home/a.avif",
+    "ALT": "Construcción industrializada",
+    "DESCRIPTION": "<strong>El Clúster de la Construcción Industrializada de Cataluña (CCIC)</strong> nace de la unión de profesionales con trayectorias sólidas y complementarias: desde la salud aplicada a la vivienda hasta la innovación arquitectónica, la ingeniería aplicada, la eficiencia energética y la gestión industrial; esta alianza estratégica nos permite dar forma a un espacio de transformación.<br><br>Apostamos por un nuevo modelo constructivo basado en la coordinación, digitalización y eficiencia, utilizando metodologías algorítmicas con las existentes BIM, CAD, lo que <strong>permite integrar procesos industrializados personalizados de cada empresa</strong> desde la conceptualización hasta la entrega de llaves.<br><br>El mundo es digital y automatizado, plataformas de cocreación procedural que exploran la intersección entre sistemas y detalles constructivos, tecnología, diseño, sostenibilidad, marketing, seguimiento son herramientas que aportan nuevas perspectivas sobre cambios profundos en la forma de construir.<br><br>Con esta suma de visiones, nos consolidamos como un actor clave para liderar el cambio de paradigma en el sector de la construcción en Cataluña, con una mirada abierta, integradora y preparada para afrontar los retos de un mundo en continua evolución.",
+    "TAGS": [
+      {
+        "TITLE": "Industrialización",
+        "HREF": "Areas#industrializacion"
+      },
+      {
+        "TITLE": "Digitalización",
+        "HREF": "Areas#digitalizacion"
+      },
+      {
+        "TITLE": "Sostenibilidad",
+        "HREF": "Areas#sostenibilidad"
+      },
+      {
+        "TITLE": "Formación",
+        "HREF": "Areas#formacion"
+      }
+    ]
+  },
+  "CONEXION_CREATING_COLLABORATIONS": {
+    "TITLE": "Conexión, creando colaboraciones",
+    "SUBTITLE": "",
+    "IMG": "/Home/b.avif",
+    "ALT": "Conexión, creando colaboraciones",
+    "DESCRIPTION": "Actuamos como un conector dentro del ecosistema de la construcción industrializada, generando espacios donde empresas, profesionales, administraciones públicas y centros de conocimiento se pueden encontrar para compartir desafíos, visiones y estrategias. Gracias a la diversidad y experiencia de sus miembros, se crea una red activa de confianza que facilita el surgimiento de colaboraciones reales.<br><br>Estas conexiones se convierten en colaboraciones tangibles, proyectos compartidos y alianzas estratégicas que permiten abordar retos complejos desde un enfoque colectivo. Creamos un puente entre innovación y acción, fomentando una cultura colaborativa en la que diferentes perspectivas confluyen con un mismo propósito: transformar el sector hacia una construcción más eficiente, sostenible y preparada para el futuro.",
+    "TAGS": [{
+      "TITLE": "Co-Factory",
+      "HREF": "/Co-Factory"
+    }, {
+      "TITLE": "Co-Share",
+      "HREF": "/Co-Share"
+    }, {
+      "TITLE": "Co-Mentor",
+      "HREF": "/Co-Mentor"
+    }]
+  },
+  "TECHNOLOGICAL_IMPLEMENTATION": {
+    "TITLE": "Implantación tecnológica",
+    "SUBTITLE": "Caso Éxito",
+    "IMG": "/Home/c.jpg",
+    "ALT": "Implantación tecnológica caso de éxito",
+    "DESCRIPTION": "<strong>Caso de éxito</strong> : Colaboración entre diversas empresas del sector y un estudio de diseño computacional especializado en geometrías paramétricas. <strong>El objetivo: desarrollar un sistema modular para viviendas sostenibles, adaptable a distintos contextos.</strong> Combinando procesos industrializados con algoritmos generativos, se generaron múltiples variantes de diseño optimizadas según datos locales como clima, materiales, cultura.<br><br><em>El resultado fue contundente: <strong>reducción del tiempo de diseño en un 70% y de residuos en obra en un 50%.</strong> El modelo, ahora replicado en varios municipios, demuestra cómo la unión entre fabricación avanzada, digitalización y diseño algorítmico acelera la innovación y fomenta la colaboración entre equipos diversos, bajo una lógica compartida basada en datos y eficiencia.</em>"
   }
 }

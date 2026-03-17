@@ -2,8 +2,8 @@
 title: "Construir el futuro de la vivienda es un reto colectivo"
 description: "Desde el CCiC hemos trabajado conjuntamente con diversas empresas socias, para presentar un estudio estratégico para el Ayuntamiento de Barcelona"
 image: "/News/new-1/a.jpg"
-date: 2024-01-20
-category: "Tendencias"
+date: 2026-02-26
+category: "Innovation"
 equivalentSlug: "innovation-industrial-sector"
 ---
 

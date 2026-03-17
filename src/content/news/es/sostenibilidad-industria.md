@@ -1,20 +1,26 @@
 ---
-title: "Sostenibilidad en la Industria"
-description: "Cómo las empresas están adoptando prácticas sostenibles"
-image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800"
-date: 2024-01-25
+title: "El futuro está abierto: digitalización, datos y cultura compartida"
+description: "La construcción del futuro pasa por la digitalización y la colaboración. Desde el Clúster de la Construcción Industrializada de Cataluña"
+image: "/News/new-3/a.jpg"
+date: 2026-02-12
 category: "Sustainability"
 equivalentSlug: "sustainability-industry"
 ---
+# El futuro está abierto: digitalización, datos y cultura compartida
 
-# Sostenibilidad en la Industria
+![foto](/News/new-3/a.jpg)
 
-La sostenibilidad se ha convertido en una prioridad para las empresas industriales.
+La **industrialización de la construcción** no puede avanzar sin una **transformación digital profunda**. Tecnologías como el **BIM**, la **inteligencia artificial** o los **mercados digitales de componentes** están redefiniendo la forma en que proyectamos, producimos y gestionamos los edificios. ¿El resultado? Un proceso **más eficiente, más conectado y más transparente**.
 
-## Prácticas Sostenibles
+Desde el **CCiC**, apostamos por un **modelo abierto e interoperable**, donde **los datos, los diseños y los procesos se compartan** para generar **innovación colectiva**. Creemos que la creación de un **ecosistema digital común** es la clave para escalar el modelo industrializado y hacerlo llegar a todo el territorio.
 
-- Reducción de emisiones
-- Energías renovables
-- Economía circular
+Por eso impulsamos:
 
-El futuro es verde y sostenible.
+- **Programas de transformación digital** adaptados a la realidad del sector.
+- **Apoyo a la certificación energética avanzada**, para construir con criterios Net Zero.
+- **Adopción tecnológica** en las pequeñas y medianas empresas, garantizando que nadie quede atrás.
+
+Sólo así podemos asegurar que la **industrialización sea un cambio estructural e inclusivo**, capaz de beneficiar a todo el sector, no sólo a varios actores.
+
+El futuro de la construcción será **colaborativo o no será**.  
+Y desde el **Clúster de la Construcción Industrializada de Cataluña**, continuaremos trabajando para que **Cataluña sea referencia internacional** en una **nueva cultura constructiva: abierta, digital, sostenible y compartida**.

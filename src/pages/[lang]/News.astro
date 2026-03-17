@@ -14,14 +14,16 @@ export function getStaticPaths() {
 const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 
-const collectionName = `news-${lang}` as 'news-es' | 'news-en';
+const collectionName = `news-${lang}` as "news-es" | "news-en";
 const allNews = await getCollection(collectionName);
-const sortedNews = allNews.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const sortedNews = allNews.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
 
-const categories = [...new Set(allNews.map(news => news.data.category))];
+const categories = [...new Set(allNews.map((news) => news.data.category))];
 
 const getCategoryCount = (category: string) => {
-  return allNews.filter(news => news.data.category === category).length;
+  return allNews.filter((news) => news.data.category === category).length;
 };
 ---
 
@@ -29,53 +31,76 @@ const getCategoryCount = (category: string) => {
   <Banner CONTENT={i18n.NEWS} MT />
   <section class="max-w-7xl lg:mx-auto mx-6 mt-24 lg:mt-36 mb-24">
     <div class="flex flex-col lg:flex-row gap-4">
-      <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="news-grid">
-        {sortedNews.map((news) => (
-          <div data-category={news.data.category} data-date={news.data.date.getTime()}>
-            <CardNews
-              title={news.data.title}
-              description={news.data.description}
-              image={news.data.image}
-              slug={news.id.replace('.md', '')}
-              lang={lang}
-              readMoreText={i18n.NEWS.READ_MORE}
-            />
-          </div>
-        ))}
+      <div
+        class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        id="news-grid"
+      >
+        {
+          sortedNews.map((news) => (
+            <div
+              data-category={news.data.category}
+              data-date={news.data.date.getTime()}
+            >
+              <CardNews
+                title={news.data.title}
+                description={news.data.description}
+                image={news.data.image}
+                slug={news.id.replace(".md", "")}
+                lang={lang}
+                readMoreText={i18n.NEWS.READ_MORE}
+              />
+            </div>
+          ))
+        }
       </div>
       <aside class="lg:w-[15%]">
-        <div class="p-2 sticky top-24 gap-4">
+        <div class="p-2 sticky top-24 flex flex-col gap-4">
           <div>
-            <h3 class="text-xl font-bold mb-4">{i18n.NEWS.SORT_BY_DATE}</h3>
-            <select id="sort-select" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <h3 class="!text-xl font-semibold mb-2">{i18n.NEWS.SORT_BY_DATE}</h3>
+            <select
+              id="sort-select"
+              class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+            >
               <option value="newest">{i18n.NEWS.NEWEST_FIRST}</option>
               <option value="oldest">{i18n.NEWS.OLDEST_FIRST}</option>
             </select>
           </div>
-          
+
           <div>
-            <h3 class="text-xl font-bold mb-4">{i18n.NEWS.CATEGORIES}</h3>
-            <ul class="space-y-2">
-              <li>
-                <button 
+            <h3 class="!text-xl font-semibold mb-2">
+              {i18n.NEWS.CATEGORIES}
+            </h3>
+            <ul class="space-y-1">
+              <li class="flex items-center">
+                <span class="mr-2">•</span>
+                <button
                   data-category="all"
-                  class="category-btn w-full text-left"
+                  class="category-btn flex-1 text-left"
                 >
-                  <span>{i18n.NEWS.ALL}</span>
-                  <span class="text-sm font-semibold text-gray-500">({allNews.length})</span>
+                  <span class="!text-[var(--color-primary)] italic"
+                    >{i18n.NEWS.ALL}
+                  </span>
+                  <span class="text-sm text-gray-500">({allNews.length})</span>
                 </button>
               </li>
-              {categories.map((category) => (
-                <li>
-                  <button 
-                    data-category={category}
-                    class="category-btn w-full text-left"
-                  >
-                    <span>{category}</span>
-                    <span class="text-sm font-semibold text-gray-500">({getCategoryCount(category)})</span>
-                  </button>
-                </li>
-              ))}
+              {
+                categories.map((category) => (
+                  <li class="flex items-center">
+                    <span class="mr-2">•</span>
+                    <button
+                      data-category={category}
+                      class="category-btn flex-1 text-left"
+                    >
+                      <span class="!text-[var(--color-primary)] italic">
+                        {category}{" "}
+                      </span>
+                      <span class="text-sm text-gray-500">
+                        ({getCategoryCount(category)})
+                      </span>
+                    </button>
+                  </li>
+                ))
+              }
             </ul>
           </div>
         </div>
@@ -85,60 +110,67 @@ const getCategoryCount = (category: string) => {
 </Layout>
 
 <script>
-  let activeCategory = 'all';
-  let sortOrder: 'newest' | 'oldest' = 'newest';
+  let activeCategory = "all";
+  let sortOrder: "newest" | "oldest" = "newest";
 
   function sortAndFilterNews() {
-    const newsGrid = document.getElementById('news-grid');
+    const newsGrid = document.getElementById("news-grid");
     if (!newsGrid) return;
 
-    const newsItems = Array.from(newsGrid.querySelectorAll(':scope > div')) as HTMLElement[];
-    
+    const newsItems = Array.from(
+      newsGrid.querySelectorAll(":scope > div"),
+    ) as HTMLElement[];
+
     // Sort
     newsItems.sort((a, b) => {
-      const dateA = parseInt(a.getAttribute('data-date') || '0');
-      const dateB = parseInt(b.getAttribute('data-date') || '0');
-      return sortOrder === 'newest' ? dateB - dateA : dateA - dateB;
+      const dateA = parseInt(a.getAttribute("data-date") || "0");
+      const dateB = parseInt(b.getAttribute("data-date") || "0");
+      return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
     });
-    
+
     // Clear and re-append in sorted order
-    newsItems.forEach(item => newsGrid.appendChild(item));
-    
+    newsItems.forEach((item) => newsGrid.appendChild(item));
+
     // Filter by category
-    newsItems.forEach(item => {
-      const itemCategory = item.getAttribute('data-category');
-      if (activeCategory === 'all' || itemCategory === activeCategory) {
-        item.style.display = 'block';
+    newsItems.forEach((item) => {
+      const itemCategory = item.getAttribute("data-category");
+      if (activeCategory === "all" || itemCategory === activeCategory) {
+        item.style.display = "block";
       } else {
-        item.style.display = 'none';
+        item.style.display = "none";
       }
     });
   }
 
   function updateCategoryButtons() {
-    const buttons = document.querySelectorAll('.category-btn');
-    buttons.forEach(btn => {
-      const btnCategory = btn.getAttribute('data-category');
+    const buttons = document.querySelectorAll(".category-btn");
+    buttons.forEach((btn) => {
+      const btnCategory = btn.getAttribute("data-category");
+      const span = btn.querySelector("span:first-child");
+      const counter = btn.querySelector("span:last-child");
+
       if (btnCategory === activeCategory) {
-        btn.classList.add('bg-blue-600', 'text-white');
-        btn.classList.remove('hover:bg-gray-100');
-        const counter = btn.querySelector('span:last-child');
-        if (counter) counter.classList.replace('text-gray-500', 'text-white');
+        if (span) {
+          span.classList.remove("font-medium");
+          span.classList.add("font-bold");
+        }
+        if (counter) counter.classList.add("font-bold");
       } else {
-        btn.classList.remove('bg-blue-600', 'text-white');
-        btn.classList.add('hover:bg-gray-100');
-        const counter = btn.querySelector('span:last-child');
-        if (counter) counter.classList.replace('text-white', 'text-gray-500');
+        if (span) {
+          span.classList.remove("font-bold");
+          span.classList.add("font-medium");
+        }
+        if (counter) counter.classList.remove("font-bold");
       }
     });
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener("DOMContentLoaded", () => {
     // Category filter
-    const buttons = document.querySelectorAll('.category-btn');
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const category = btn.getAttribute('data-category');
+    const buttons = document.querySelectorAll(".category-btn");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const category = btn.getAttribute("data-category");
         if (category) {
           activeCategory = category;
           updateCategoryButtons();
@@ -146,16 +178,18 @@ const getCategoryCount = (category: string) => {
         }
       });
     });
-    
+
     // Sort select
-    const sortSelect = document.getElementById('sort-select') as HTMLSelectElement;
+    const sortSelect = document.getElementById(
+      "sort-select",
+    ) as HTMLSelectElement;
     if (sortSelect) {
-      sortSelect.addEventListener('change', () => {
-        sortOrder = sortSelect.value as 'newest' | 'oldest';
+      sortSelect.addEventListener("change", () => {
+        sortOrder = sortSelect.value as "newest" | "oldest";
         sortAndFilterNews();
       });
     }
-    
+
     updateCategoryButtons();
     sortAndFilterNews();
   });
