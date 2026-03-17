@@ -25,6 +25,19 @@ const categories = [...new Set(allNews.map((news) => news.data.category))];
 const getCategoryCount = (category: string) => {
   return allNews.filter((news) => news.data.category === category).length;
 };
+
+// Función para obtener idiomas disponibles para un artículo
+const getAvailableLanguages = async (articleId: string) => {
+  const availableLangs = [];
+  for (const langKey of Object.keys(translations)) {
+    const collection = `news-${langKey}` as "news-es" | "news-en";
+    const articles = await getCollection(collection);
+    if (articles.some(article => article.data.id === articleId)) {
+      availableLangs.push(langKey);
+    }
+  }
+  return availableLangs;
+};
 ---
 
 <Layout title="CLUSTERCIIM">
@@ -35,23 +48,21 @@ const getCategoryCount = (category: string) => {
         class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
         id="news-grid"
       >
-        {
-          sortedNews.map((news) => (
-            <div
-              data-category={news.data.category}
-              data-date={news.data.date.getTime()}
-            >
-              <CardNews
-                title={news.data.title}
-                description={news.data.description}
-                image={news.data.image}
-                slug={news.id.replace(".md", "")}
-                lang={lang}
-                readMoreText={i18n.NEWS.READ_MORE}
-              />
-            </div>
-          ))
-        }
+        {sortedNews.map((news) => (
+          <div
+            data-category={news.data.category}
+            data-date={news.data.date.getTime()}
+          >
+            <CardNews
+              title={news.data.title}
+              description={news.data.description}
+              image={news.data.image}
+              slug={news.id.replace(".md", "")}
+              lang={lang}
+              readMoreText={i18n.NEWS.READ_MORE}
+            />
+          </div>
+        ))}
       </div>
       <aside class="lg:w-[15%]">
         <div class="p-2 sticky top-24 flex flex-col gap-4">

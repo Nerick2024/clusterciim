@@ -52,10 +52,10 @@ async function getPath(lang: string) {
           article.id.replace('.md', '') === currentSlug
         );
         
-        if (currentArticle && currentArticle.data.equivalentSlug) {
-          // Find equivalent article in target language
+        if (currentArticle && currentArticle.data.id) {
+          // Find equivalent article in target language using the same id
           const equivalentArticle = targetNews.find(article => 
-            article.id.replace('.md', '') === currentArticle.data.equivalentSlug
+            article.data.id === currentArticle.data.id
           );
           
           if (equivalentArticle) {
