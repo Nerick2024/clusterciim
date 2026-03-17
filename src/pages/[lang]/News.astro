@@ -25,25 +25,12 @@ const categories = [...new Set(allNews.map((news) => news.data.category))];
 const getCategoryCount = (category: string) => {
   return allNews.filter((news) => news.data.category === category).length;
 };
-
-// Función para obtener idiomas disponibles para un artículo
-const getAvailableLanguages = async (articleId: string) => {
-  const availableLangs = [];
-  for (const langKey of Object.keys(translations)) {
-    const collection = `news-${langKey}` as "news-es" | "news-en";
-    const articles = await getCollection(collection);
-    if (articles.some(article => article.data.id === articleId)) {
-      availableLangs.push(langKey);
-    }
-  }
-  return availableLangs;
-};
 ---
 
 <Layout title="CLUSTERCIIM">
   <Banner CONTENT={i18n.NEWS} MT />
   <section class="max-w-7xl lg:mx-auto mx-6 mt-24 lg:mt-36 mb-24">
-    <div class="flex flex-col lg:flex-row gap-4">
+    <div class="flex flex-col-reverse lg:flex-row lg:gap-4 gap-12">
       <div
         class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
         id="news-grid"
