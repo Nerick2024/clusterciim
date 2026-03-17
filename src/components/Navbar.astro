@@ -45,17 +45,16 @@ const isParentActive = (item: any) => {
           const active = isParentActive(item);
           return (
             <div class="relative group flex items-center">
-              <a
-                href={`/${lang}/${item.HREF}`}
-                class:list={[
-                  "flex items-center text-sm italic p-4 transition-colors duration-300 border-b-2",
-                  active
-                    ? "text-[var(--color-primary)]! border-[var(--color-primary)]"
-                    : "border-transparent hover:text-[var(--color-primary)]! hover:border-[var(--color-primary)]",
-                ]}
-              >
-                {item.TITLE}
-                {item.MORE && (
+              {item.MORE ? (
+                <span
+                  class:list={[
+                    "flex items-center text-sm italic p-4 transition-colors duration-300 border-b-2 cursor-default",
+                    active
+                      ? "text-[var(--color-primary)]! border-[var(--color-primary)]"
+                      : "border-transparent hover:text-[var(--color-primary)]! hover:border-[var(--color-primary)]",
+                  ]}
+                >
+                  {item.TITLE}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="language-arrow fill-current h-4 w-4 transition-transform group-hover:rotate-180 duration-300 group"
@@ -69,8 +68,20 @@ const isParentActive = (item: any) => {
                       d="m12 15l5-5H7z"
                     />
                   </svg>
-                )}
-              </a>
+                </span>
+              ) : (
+                <a
+                  href={`/${lang}/${item.HREF}`}
+                  class:list={[
+                    "flex items-center text-sm italic p-4 transition-colors duration-300 border-b-2",
+                    active
+                      ? "text-[var(--color-primary)]! border-[var(--color-primary)]"
+                      : "border-transparent hover:text-[var(--color-primary)]! hover:border-[var(--color-primary)]",
+                  ]}
+                >
+                  {item.TITLE}
+                </a>
+              )}
               {item.MORE && (
                 <div class="bg-[var(--color-primary)]/75 backdrop-blur-sm absolute w-full top-full left-0 shadow-xl rounded-b-sm flex flex-col opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                   {item.MORE.map((subitem: any) => {
