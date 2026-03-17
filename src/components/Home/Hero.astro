@@ -5,19 +5,18 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<main id="hero" class="relative text-white flex items-center min-h-screen">
+<main id="hero" class="relative text-white flex items-center h-screen">
   <div
-    class="max-w-7xl flex items-center justify-center flex-col lg:flex-row mx-auto relative z-20 w-full"
+    class="max-w-7xl gap-6 h-full flex items-center justify-center flex-col lg:flex-row mx-auto relative z-20 w-full"
   >
-    <div class="w-full lg:w-1/2 shrink-0">
+    <div class="w-full lg:w-1/2 shrink-0 px-6">
       <h1
         data-aos="fade-right"
-        class="text-6xl lg:text-7xl font-bold"
         set:html={i18n.HERO.TITLE}
       />
     </div>
-    <div class="flex items-center justify-end w-full lg:w-1/2">
-      <div class="w-[80%] h-screen bg-white/25 backdrop-blur-md"></div>
+    <div class="flex items-center justify-end w-full lg:w-1/2 h-1/3 lg:h-full">
+      <div class="w-full lg:w-[80%] h-full bg-white/25 backdrop-blur-md"></div>
     </div>
   </div>
 </main>
