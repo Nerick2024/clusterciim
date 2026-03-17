@@ -448,6 +448,73 @@
     "ALL": "Todas",
     "READ_MORE": "Leer Más →"
   },
+  "TEAM": {
+    "TITLE": "Un gran equipo",
+    "DESCRIPTION": "<b>El Consejo de la Construcción Industrializada de Cataluña (CCIC) nace como respuesta coordinada de los principales agentes públicos y privados del territorio para impulsar un espacio estable de debate, acción y transformación real del sector de la construcción.</b> Con el apoyo de entidades clave como la Cámara de Comercio de Barcelona, el Consorcio de la Zona Franca y la Generalidad de Cataluña, el CCIC se consolida como el punto de encuentro en el que se definen las líneas maestras del futuro constructivo del país.<br><br>Desde su origen, el cluster ha orientado su actividad hacia la modernización profunda de los procesos, con especial atención a la integración de tecnologías digitales, nuevos modelos organizativos y sistemas industrializados. Esta apuesta colectiva por una transformación estructural –basada en la innovación, la sostenibilidad y la colaboración– ha convertido al CCIC en el espacio referente para todas aquellas iniciativas que quieren repensar cómo se diseña, fabrica y gestiona el hábitat del futuro.",
+    "CTA": "Colabora con Nosotros",
+    "DIRECTORS": [
+      {
+        "IMG": "/Team/Directors/PereArmora.jpg",
+        "NAME": "Pedro Armora",
+        "POSITION": "Presidente / Aykos Healthcare",
+        "SEMBLANCE": "Estudios de ingeniería técnica y PDD IESE 2004<br>Socio fundador de Aykos Healthcare / Kosmo / Bosq / CCiC<br>Mi trayectoria profesional ha estado orientada al sector comercial internacional, y me he dedicado a abrir mercados para diferentes sectores (textil, DataCenters, ingeniería, construcción industrializada). He tenido experiencia internacional a través de todas mis empresas y colaboraciones profesionales.<br><br>Desde 2015 soy consultor internacional para grandes empresas; para abrir nuevos mercados internacionales (sector Real Estate e Industrial).<br>Desde 2007 estoy básicamente dedicado a analizar soluciones en el campo de la construcción modular industrializada para el sector hotelero y hospitalario teniendo en cuenta los distintos mercados y necesidades. Dentro de los proyectos elaborados, los más interesantes e innovadores serían el primer hotel 100% modular en África (Dakar), de 90 habitaciones (5+1 plantas) y un hospital en las islas Mauricio, también 100% modular.<br>Desde hace dos años, soy uno de los fundadores del CCiC, la plataforma de innovación en el sector de la construcción y su transformación hacia la industrialización, digitalización, sostenibilidad y formación específica."
+      },
+      {
+        "IMG": "/Team/Directors/arnal.jpg",
+        "NAME": "Ignasi Pérez Arnal",
+        "POSITION": "Vicepresidente / BIM Academy",
+        "SEMBLANCE": "CEO de BIM Academy, crea con el CATEB, el primer evento internacional de ámbito europeo sobre BIM, el European BIM Summit en Barcelona en el 2014, y desde el 2018 dirige el Congreso Nacional de Arquitectura Avanzada y Construcción 4.0 de REBUILD en Barcelona y desde 2021 el Build. Dirige la primera plataforma de e-learning del sector AECO, The BIM Force, que se encuentra actualmente en un proceso de programación y es miembro de Building SMART Spanish Chapter.<br><br>Ha sido director, entre otros, del Máster BIM en Ingeniería Civil y del Máster Construction Project Manager, y actualmente dirige el primer Máster en BIM y Sostenibilidad desde butic The New School.<br>Inicia su formación BIM en 2003 con el proyecto mebss, unos espacios modulares, off-site, industrializados que se pusieron a la venta como producto inmobiliario en Barcelona Meeting Point. La forzosa utilización de softwares avanzados como AECOsim de Bentley, Catia y antes el modelador 3D en Unix, Mountain Top, le aportan una visión distinta de lo que deben ser los procesos de diseño y construcción."
+      },
+      {
+        "IMG": "/Team/Directors/Josep-Vila.jpg",
+        "NAME": "Josep Vila",
+        "POSITION": "Director Ejecutivo / CCIC",
+        "SEMBLANCE": ""
+      },
+      {
+        "IMG": "/Team/Directors/cuevas.jpg",
+        "NAME": "Jorge Cuevas",
+        "POSITION": "Secretario / JC Arquitectos asociados",
+        "SEMBLANCE": ""
+      },
+      {
+        "IMG": "/Team/Directors/David-Cervera.avif",
+        "NAME": "David Cervera",
+        "POSITION": "Tesorero / Elecnor",
+        "SEMBLANCE": ""
+      },
+      {
+        "IMG": "/Team/Directors/RaulLuna.jpg",
+        "NAME": "Raúl Luna",
+        "POSITION": "Vocal / Rubau",
+        "SEMBLANCE": ""
+      },
+      {
+        "IMG": "/Team/Directors/ferranbermejo.jpg",
+        "NAME": "Ferran Bermejo",
+        "POSITION": "Vocal / ITEC",
+        "SEMBLANCE": ""
+      },
+      {
+        "IMG": "/Team/Directors/TeresaBatlle.jpg",
+        "NAME": "Teresa Batlle",
+        "POSITION": "Vocal / Pich Aguilera",
+        "SEMBLANCE": ""
+      },
+      {
+        "IMG": "/Team/Directors/claramunt.jpg",
+        "NAME": "Xavier Claramunt",
+        "POSITION": "Vocal / Smartliving",
+        "SEMBLANCE": ""
+      },
+      {
+        "IMG": "/Team/Directors/Sandra-Gali.avif",
+        "NAME": "Sandra Gali",
+        "POSITION": "Consultora en Comunicación",
+        "SEMBLANCE": ""
+      }
+    ]
+  },
   "TRANSFORMATION_OF_THE_CONSTRUCTION_SECTOR": {
     "TITLE": "Transformación del sector de la construcción",
     "SUBTITLE": "",
@@ -479,16 +546,20 @@
     "IMG": "/Home/b.avif",
     "ALT": "Conexión, creando colaboraciones",
     "DESCRIPTION": "Actuamos como un conector dentro del ecosistema de la construcción industrializada, generando espacios donde empresas, profesionales, administraciones públicas y centros de conocimiento se pueden encontrar para compartir desafíos, visiones y estrategias. Gracias a la diversidad y experiencia de sus miembros, se crea una red activa de confianza que facilita el surgimiento de colaboraciones reales.<br><br>Estas conexiones se convierten en colaboraciones tangibles, proyectos compartidos y alianzas estratégicas que permiten abordar retos complejos desde un enfoque colectivo. Creamos un puente entre innovación y acción, fomentando una cultura colaborativa en la que diferentes perspectivas confluyen con un mismo propósito: transformar el sector hacia una construcción más eficiente, sostenible y preparada para el futuro.",
-    "TAGS": [{
-      "TITLE": "Co-Factory",
-      "HREF": "/Co-Factory"
-    }, {
-      "TITLE": "Co-Share",
-      "HREF": "/Co-Share"
-    }, {
-      "TITLE": "Co-Mentor",
-      "HREF": "/Co-Mentor"
-    }]
+    "TAGS": [
+      {
+        "TITLE": "Co-Factory",
+        "HREF": "/Co-Factory"
+      },
+      {
+        "TITLE": "Co-Share",
+        "HREF": "/Co-Share"
+      },
+      {
+        "TITLE": "Co-Mentor",
+        "HREF": "/Co-Mentor"
+      }
+    ]
   },
   "TECHNOLOGICAL_IMPLEMENTATION": {
     "TITLE": "Implantación tecnológica",
