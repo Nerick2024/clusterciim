@@ -1,0 +1,79 @@
+---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+import { translations } from "@/i18n/config";
+
+import Layout from "@/layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  function createSlug(name: string) {
+    return name
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .trim();
+  }
+
+  const paths = [];
+
+  for (const lang of Object.keys(translations)) {
+    const i18n = await useTranslation(lang as any);
+
+    for (const director of i18n.TEAM.DIRECTORS) {
+      paths.push({
+        params: {
+          lang,
+          slug: createSlug(director.NAME),
+        },
+        props: {
+          director,
+          lang,
+        },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { director } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const i18n = await useTranslation(lang);
+---
+
+<Layout title={`${director.NAME} - CLUSTERCIIM`}>
+  <div class="max-w-7xl mx-auto px-6 my-12 md:mt-28 lg:mt-44 flex flex-col gap-6">
+    <a
+      href={`/${lang}/Team`}
+      class="font-semibold italic"
+    >
+      ← {i18n.TEAM.BACK}
+    </a>
+    <div class="md:flex">
+      <div class="md:w-2/5">
+        <img
+          src={director.IMG}
+          alt={director.NAME}
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="md:w-3/5 p-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">
+          {director.NAME}
+        </h1>
+        <p class="text-xl text-blue-600 font-semibold mb-6">
+          {director.POSITION}
+        </p>
+        {
+          director.SEMBLANCE && (
+            <div
+              class="prose prose-lg text-gray-700"
+              set:html={director.SEMBLANCE}
+            />
+          )
+        }
+      </div>
+    </div>
+  </div>
+</Layout>
