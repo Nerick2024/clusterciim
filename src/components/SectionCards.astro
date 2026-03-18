@@ -1,0 +1,44 @@
+---
+import { getLangFromUrl } from "@/i18n";
+
+interface Props {
+  CONTENT: {
+    TITLE?: string;
+    DESCRIPTION?: string;
+    BUTTON_1?: string;
+    HREF_1?: string;
+    BUTTON_2?: string;
+    HREF_2?: string;
+  };
+}
+
+const { CONTENT } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+---
+
+<section class="py-20 px-6">
+  <div class=`max-w-7xl mx-auto flex flex-col gap-6 items-start`>
+    {CONTENT.TITLE && <h2 set:html={CONTENT.TITLE} />}
+    {CONTENT.DESCRIPTION && <p set:html={CONTENT.DESCRIPTION} />}
+    {
+      CONTENT.BUTTON_1 && CONTENT.HREF_1 && (
+        <a
+          href={`/${lang}/${CONTENT.HREF_1}`}
+          class="bg-[var(--color-primary)] hover:bg-black !text-white text-sm italic font-bold px-10 py-4 transition-colors duration-300"
+        >
+          {CONTENT.BUTTON_1}
+        </a>
+      )
+    }
+    {
+      CONTENT.BUTTON_2 && CONTENT.HREF_2 && (
+        <a
+          href={`/${lang}/${CONTENT.HREF_2}`}
+          class="bg-[var(--color-primary)] hover:bg-black mx-auto !text-white text-sm italic font-bold px-10 py-4 transition-colors duration-300"
+        >
+          {CONTENT.BUTTON_2}
+        </a>
+      )
+    }
+  </div>
+</section>

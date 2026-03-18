@@ -12,15 +12,15 @@
       "TITLE": "Strategies",
       "MORE": [
         {
-          "HREF": "Co-Factory",
+          "HREF": "Strategies/Co-Factory",
           "TITLE": "Co-Factory"
         },
         {
-          "HREF": "Co-Share",
+          "HREF": "Strategies/Co-Share",
           "TITLE": "Co-Share"
         },
         {
-          "HREF": "Co-Mentor",
+          "HREF": "Strategies/Co-Mentor",
           "TITLE": "Co-Mentor"
         }
       ]
@@ -549,15 +549,15 @@
     "TAGS": [
       {
         "TITLE": "Co-Factory",
-        "HREF": "/Co-Factory"
+        "HREF": "Strategies/Co-Factory"
       },
       {
         "TITLE": "Co-Share",
-        "HREF": "/Co-Share"
+        "HREF": "Strategies/Co-Share"
       },
       {
         "TITLE": "Co-Mentor",
-        "HREF": "/Co-Mentor"
+        "HREF": "Strategies/Co-Mentor"
       }
     ]
   },

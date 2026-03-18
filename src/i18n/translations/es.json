@@ -12,15 +12,15 @@
       "TITLE": "Estrategias",
       "MORE": [
         {
-          "HREF": "Co-Factory",
+          "HREF": "Strategies/Co-Factory",
           "TITLE": "Co-Factory"
         },
         {
-          "HREF": "Co-Share",
+          "HREF": "Strategies/Co-Share",
           "TITLE": "Co-Share"
         },
         {
-          "HREF": "Co-Mentor",
+          "HREF": "Strategies/Co-Mentor",
           "TITLE": "Co-Mentor"
         }
       ]
@@ -447,11 +447,26 @@
     "ALL": "Todas",
     "READ_MORE": "Leer Más →"
   },
+  "CO_FACTORY": {
+    "IMG": "/Strategies/Co-Factory/a.png",
+    "TITLE": "Co-Factory",
+    "SUBTITLE": "Impulsamos la industrialización de la construcción"
+  },
+  "CO_SHARE": {
+    "IMG": "/Strategies/Co-Share/a.jpg",
+    "TITLE": "Co-Share",
+    "SUBTITLE": "El cluster organiza eventos bimensuales con partners en lugares emblemáticos, fomentando la creación de red."
+  },
+  "CO_MENTOR": {
+    "IMG": "/Strategies/Co-Mentor/a.jpg",
+    "TITLE": "Co-Mentor",
+    "SUBTITLE": "Ayudamos a construir futuro"  
+  },
   "TEAM": {
     "TITLE": "Un gran equipo",
     "DESCRIPTION": "<b>El Consejo de la Construcción Industrializada de Cataluña (CCIC) nace como respuesta coordinada de los principales agentes públicos y privados del territorio para impulsar un espacio estable de debate, acción y transformación real del sector de la construcción.</b> Con el apoyo de entidades clave como la Cámara de Comercio de Barcelona, el Consorcio de la Zona Franca y la Generalidad de Cataluña, el CCIC se consolida como el punto de encuentro en el que se definen las líneas maestras del futuro constructivo del país.<br><br>Desde su origen, el cluster ha orientado su actividad hacia la modernización profunda de los procesos, con especial atención a la integración de tecnologías digitales, nuevos modelos organizativos y sistemas industrializados. Esta apuesta colectiva por una transformación estructural –basada en la innovación, la sostenibilidad y la colaboración– ha convertido al CCIC en el espacio referente para todas aquellas iniciativas que quieren repensar cómo se diseña, fabrica y gestiona el hábitat del futuro.",
     "CTA": "Colabora con Nosotros",
-    "BACK":"Volver a los miembros del equipo",
+    "BACK": "Volver a los miembros del equipo",
     "DIRECTORS": [
       {
         "IMG": "/Team/Directors/PereArmora.jpg",
@@ -549,15 +564,15 @@
     "TAGS": [
       {
         "TITLE": "Co-Factory",
-        "HREF": "/Co-Factory"
+        "HREF": "Strategies/Co-Factory"
       },
       {
         "TITLE": "Co-Share",
-        "HREF": "/Co-Share"
+        "HREF": "Strategies/Co-Share"
       },
       {
         "TITLE": "Co-Mentor",
-        "HREF": "/Co-Mentor"
+        "HREF": "Strategies/Co-Mentor"
       }
     ]
   },
