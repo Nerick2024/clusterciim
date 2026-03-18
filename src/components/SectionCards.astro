@@ -1,5 +1,7 @@
 ---
 import { getLangFromUrl } from "@/i18n";
+import { getCollection } from "astro:content";
+import CardNews from "@/components/CardNews.astro";
 
 interface Props {
   CONTENT: {
@@ -10,10 +12,23 @@ interface Props {
     BUTTON_2?: string;
     HREF_2?: string;
   };
+  tag?: string;
 }
 
-const { CONTENT } = Astro.props;
+const { CONTENT, tag } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
+
+let filteredNews: any[] = [];
+if (tag) {
+  const collectionName = `news-${lang}` as "news-es" | "news-en";
+  const allNews = await getCollection(collectionName);
+  filteredNews = allNews.filter((news) => {
+    const newsCategories = Array.isArray(news.data.category) 
+      ? news.data.category 
+      : [news.data.category];
+    return newsCategories.includes(tag);
+  });
+}
 ---
 
 <section class="py-20 px-6">
@@ -30,6 +45,27 @@ const lang = getLangFromUrl(Astro.url);
         </a>
       )
     }
+    {filteredNews.length > 0 && (
+      <div class="w-full">
+        <div class="splide carousel-global">
+          <div class="splide__track">
+            <ul class="splide__list !pt-10 !pb-16">
+              {filteredNews.map((news) => (
+                <li class="splide__slide">
+                  <CardNews
+                    title={news.data.title}
+                    description={news.data.description}
+                    image={news.data.image}
+                    slug={news.id.replace(".md", "")}
+                    lang={lang}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    )}
     {
       CONTENT.BUTTON_2 && CONTENT.HREF_2 && (
         <a
@@ -42,3 +78,30 @@ const lang = getLangFromUrl(Astro.url);
     }
   </div>
 </section>
+
+<script>
+  import { Splide } from '@splidejs/splide';
+  import '@splidejs/splide/css';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const carousels = document.querySelectorAll('.carousel-global');
+    carousels.forEach((carousel: Element) => {
+      new Splide(carousel as HTMLElement, {
+        type: 'loop',
+        perPage: 3,
+        perMove: 1,
+        gap: '1rem',
+        breakpoints: {
+          1024: { perPage: 2 },
+          768: { perPage: 1 }
+        }
+      }).mount();
+    });
+  });
+</script>
+
+<style>
+  .splide__slide {
+    height: auto;
+  }
+</style>
