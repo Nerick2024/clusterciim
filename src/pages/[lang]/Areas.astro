@@ -14,32 +14,32 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<Layout title="CLUSTERCIIM">
+<Layout title="ClusterCCIM">
   <Banner CONTENT={i18n.AREAS} MT />
   <SectionCards CONTENT={i18n.AREAS.SECTIONS[0]} tag="Inovación" />
   <main id="hero" class="relative text-white flex items-center JUWS h-[50vh]">
-  <div
-    class="h-full w-full absolute after:absolute after:inset-0 after:bg-[var(--color-primary)]/25 after:z-10"
-  >
-    <img
-      src="/Areas/a.avif"
-      alt="banner background"
-      class="w-full h-full object-cover brightness-80"
-    />
-  </div>
-  <div
-    class={`max-w-7xl w-full lg:mx-auto flex items-start justify-center flex-col relative z-20 px-6 gap-4 mt-12 lg:mt-32`}
-  >
-    {
-      i18n.AREAS.BANNER[0] && (
-        <h1
-          data-aos="fade-left"
-          class="text-5xl lg:text-6xl font-bold !text-right w-full text-white"
-          set:html={i18n.AREAS.BANNER[0]}
-        />
-      )
-    }
-  </div>
-</main>
+    <div
+      class="h-full w-full absolute after:absolute after:inset-0 after:bg-[var(--color-primary)]/25 after:z-10"
+    >
+      <img
+        src="/Areas/a.avif"
+        alt="banner background"
+        class="w-full h-full object-cover brightness-80"
+      />
+    </div>
+    <div
+      class={`max-w-7xl w-full lg:mx-auto flex items-start justify-center flex-col relative z-20 px-6 gap-4 mt-12 lg:mt-32`}
+    >
+      {
+        i18n.AREAS.BANNER[0] && (
+          <h1
+            data-aos="fade-left"
+            class="text-5xl lg:text-6xl font-bold !text-right w-full text-white"
+            set:html={i18n.AREAS.BANNER[0]}
+          />
+        )
+      }
+    </div>
+  </main>
   <SectionCards CONTENT={i18n.AREAS.SECTIONS[1]} tag="Sostenibilidad" />
 </Layout>

@@ -20,21 +20,27 @@ const sortedNews = allNews.sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime(),
 );
 
-const categories = [...new Set(allNews.flatMap((news) => 
-  Array.isArray(news.data.category) ? news.data.category : [news.data.category]
-))];
+const categories = [
+  ...new Set(
+    allNews.flatMap((news) =>
+      Array.isArray(news.data.category)
+        ? news.data.category
+        : [news.data.category],
+    ),
+  ),
+];
 
 const getCategoryCount = (category: string) => {
   return allNews.filter((news) => {
-    const newsCategories = Array.isArray(news.data.category) 
-      ? news.data.category 
+    const newsCategories = Array.isArray(news.data.category)
+      ? news.data.category
       : [news.data.category];
     return newsCategories.includes(category);
   }).length;
 };
 ---
 
-<Layout title="CLUSTERCIIM">
+<Layout title="ClusterCCIM">
   <Banner CONTENT={i18n.NEWS} MT />
   <section class="max-w-7xl lg:mx-auto mx-6 mt-24 lg:mt-36 mb-24">
     <div class="flex flex-col-reverse lg:flex-row lg:gap-4 gap-12">
@@ -42,28 +48,34 @@ const getCategoryCount = (category: string) => {
         class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
         id="news-grid"
       >
-        {sortedNews.map((news) => (
-          <div
-            data-category={Array.isArray(news.data.category) 
-              ? news.data.category.join(',') 
-              : news.data.category}
-            data-date={news.data.date.getTime()}
-          >
-            <CardNews
-              title={news.data.title}
-              description={news.data.description}
-              image={news.data.image}
-              slug={news.id.replace(".md", "")}
-              lang={lang}
-              readMoreText={i18n.NEWS.READ_MORE}
-            />
-          </div>
-        ))}
+        {
+          sortedNews.map((news) => (
+            <div
+              data-category={
+                Array.isArray(news.data.category)
+                  ? news.data.category.join(",")
+                  : news.data.category
+              }
+              data-date={news.data.date.getTime()}
+            >
+              <CardNews
+                title={news.data.title}
+                description={news.data.description}
+                image={news.data.image}
+                slug={news.id.replace(".md", "")}
+                lang={lang}
+                readMoreText={i18n.NEWS.READ_MORE}
+              />
+            </div>
+          ))
+        }
       </div>
       <aside class="lg:w-[15%]">
         <div class="p-2 sticky top-24 flex flex-col gap-4">
           <div>
-            <h3 class="!text-xl font-semibold mb-2">{i18n.NEWS.SORT_BY_DATE}</h3>
+            <h3 class="!text-xl font-semibold mb-2">
+              {i18n.NEWS.SORT_BY_DATE}
+            </h3>
             <select
               id="sort-select"
               class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
@@ -131,9 +143,10 @@ const getCategoryCount = (category: string) => {
     // Filter by category first
     const visibleItems: HTMLElement[] = [];
     const hiddenItems: HTMLElement[] = [];
-    
+
     newsItems.forEach((item) => {
-      const itemCategories = item.getAttribute("data-category")?.split(',') || [];
+      const itemCategories =
+        item.getAttribute("data-category")?.split(",") || [];
       if (activeCategory === "all" || itemCategories.includes(activeCategory)) {
         item.style.display = "block";
         visibleItems.push(item);
