@@ -1,8 +1,18 @@
 ---
 import { getLangFromUrl, useTranslation } from "@/i18n";
+import { getCollection } from "astro:content";
 
 const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
+
+// Obtener las 5 noticias más recientes según el idioma
+const collectionName = lang === "es" ? "news-es" : "news-en";
+const allNews = await getCollection(collectionName);
+const recentNews = allNews
+  .sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  )
+  .slice(0, 5);
 ---
 
 <main id="hero" class="relative text-white flex items-center h-screen">
@@ -10,13 +20,138 @@ const i18n = await useTranslation(lang);
     class="max-w-7xl gap-6 h-full flex items-center justify-center flex-col lg:flex-row mx-auto relative z-20 w-full"
   >
     <div class="w-full lg:w-1/2 shrink-0 px-6">
-      <h1
-        data-aos="fade-right"
-        set:html={i18n.HERO.TITLE}
-      />
+      <h1 data-aos="fade-right" set:html={i18n.HERO.TITLE} />
     </div>
     <div class="flex items-center justify-end w-full lg:w-1/2 h-1/3 lg:h-full">
-      <div class="w-full lg:w-[80%] h-full bg-white/25 backdrop-blur-md"></div>
+      <div
+        class="w-full lg:w-[80%] h-full bg-white/25 backdrop-blur-md relative overflow-hidden"
+      >
+        <div class="splide h-full" id="hero-carousel">
+          <div class="splide__track">
+            <ul class="splide__list h-full">
+              {
+                recentNews.map((news) => (
+                  <li class="splide__slide !mx-auto flex justify-center items-center !h-auto">
+                    <div class="bg-white/90 backdrop-blur-sm h-[82%] w-full max-w-md rounded-lg overflow-hidden flex flex-row shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                      <div class="w-1/3 flex-shrink-0">
+                        <img
+                          loading="lazy"
+                          src={news.data.image}
+                          alt={news.data.title}
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                          <h3 class="text-gray-800 font-semibold text-sm lg:text-base mb-2 line-clamp-2 italic">
+                            {news.data.title}
+                          </h3>
+                          <p class="text-gray-600 text-xs lg:text-sm line-clamp-2 mb-2">
+                            {news.data.description}
+                          </p>
+                          <div class="flex flex-wrap gap-1">
+                            {Array.isArray(news.data.category) ? (
+                              news.data.category
+                                .slice(0, 2)
+                                .map((cat) => (
+                                  <span class="text-xs bg-[var(--color-primary)]/20 text-[var(--color-primary)] px-1.5 py-0.5 rounded">
+                                    {cat}
+                                  </span>
+                                ))
+                            ) : (
+                              <span class="text-xs bg-[var(--color-primary)]/20 text-[var(--color-primary)] px-1.5 py-0.5 rounded">
+                                {news.data.category}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                        <a
+                          href={`/${lang}/News/${news.id}`}
+                          class="text-[var(--color-primary)] text-xs lg:text-sm font-medium mt-2 text-right"
+                        >
+                          {i18n.NEWS?.READ_MORE || "Leer más"}
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+
+          <!-- Botones de navegación -->
+          <div class="splide__arrows hidden lg:block">
+            <button
+              class="splide__arrow splide__arrow--prev absolute top-10 left-1/2 -translate-x-1/2 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200 hover:scale-110"
+            >
+              <svg
+                class="w-4 h-4 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 15l7-7 7 7"></path>
+              </svg>
+            </button>
+            <button
+              class="splide__arrow splide__arrow--next absolute bottom-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200 hover:scale-110"
+            >
+              <svg
+                class="w-4 h-4 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Botones móvil -->
+          <div class="splide__arrows lg:hidden">
+            <button
+              class="splide__arrow splide__arrow--prev absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200 hover:scale-110"
+            >
+              <svg
+                class="w-4 h-4 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </button>
+            <button
+              class="splide__arrow splide__arrow--next absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200 hover:scale-110"
+            >
+              <svg
+                class="w-4 h-4 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </main>
@@ -30,4 +165,145 @@ const i18n = await useTranslation(lang);
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Responsive para cards horizontales */
+  @media (max-width: 640px) {
+    .splide__slide .bg-white\/90 {
+      flex-direction: column;
+      height: 250px;
+    }
+
+    .splide__slide .w-1\/3 {
+      width: 100%;
+      height: 40%;
+    }
+  }
+
+  /* Estilos para el slide activo central */
+  .splide__slide--active-center .bg-white\/90 {
+    transform: scale(1.05);
+    box-shadow:
+      0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .splide__slide:not(.splide__slide--active-center) .bg-white\/90 {
+    opacity: 0.7;
+    transform: scale(0.95);
+  }
+
+  /* Estilos personalizados para botones */
+  .splide__arrow {
+    background: rgba(255, 255, 255, 0.8) !important;
+    border: none !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.2s ease !important;
+    z-index: 10 !important;
+  }
+
+  .splide__arrow:hover {
+    background: rgba(255, 255, 255, 1) !important;
+    transform: scale(1.1) !important;
+  }
+
+  .splide__arrow svg {
+    width: 16px !important;
+    height: 16px !important;
+    color: #374151 !important;
+  }
 </style>
+
+<script>
+  import { Splide } from "@splidejs/splide";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let heroCarousel;
+
+    function initCarousel() {
+      if (heroCarousel) {
+        // Destruir por completo la instancia previa para limpiar estilos en línea
+        heroCarousel.destroy(true);
+      }
+
+      const isDesktop = window.innerWidth >= 1024;
+
+      heroCarousel = new Splide("#hero-carousel", {
+        type: "loop", // Mantiene el bucle infinito
+        direction: isDesktop ? "ttb" : "ltr",
+        height: "100%",
+        autoplay: true,
+        interval: 4000,
+        pauseOnHover: true,
+        arrows: true,
+        pagination: false,
+        perPage: isDesktop ? 3 : 1,
+        perMove: 1,
+        focus: "center",
+        gap: isDesktop ? "0.1rem" : "0.4rem",
+        padding: isDesktop
+          ? {
+              top: "0.5rem",
+              bottom: "0.5rem",
+              left: "0.25rem",
+              right: "0.25rem",
+            }
+          : {
+              top: "0.5rem",
+              bottom: "0.5rem",
+              left: "0.5rem",
+              right: "0.5rem",
+            },
+        wheel: true,
+        wheelSleep: 100,
+        clones: 5, // Fuerza clones extra para evitar un salto o "rewind" al final
+        classes: {
+          active: "splide__slide--active-center",
+        },
+      });
+
+      heroCarousel.mount();
+    }
+
+    initCarousel();
+
+    // Actualizar configuración en resize
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (!heroCarousel) return;
+
+        const wasDesktop = heroCarousel.options.direction === "ttb";
+        const isDesktop = window.innerWidth >= 1024;
+
+        // Splide no soporta cambiar 'direction' dinámicamente con refresh()
+        // Por eso, es necesario reiniciar por completo si el viewport cambia de móbil a escritorio
+        if (wasDesktop !== isDesktop) {
+          initCarousel();
+        } else {
+          heroCarousel.refresh();
+        }
+      }, 250);
+    });
+  });
+</script>
