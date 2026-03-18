@@ -9,7 +9,7 @@ const newsEs = defineCollection({
     description: z.string(),
     image: z.string(),
     date: z.coerce.date(),
-    category: z.string().default('Uncategorized'),
+    category: z.union([z.string(), z.array(z.string())]).default('Uncategorized'),
   }),
 });
 
@@ -21,7 +21,7 @@ const newsEn = defineCollection({
     description: z.string(),
     image: z.string(),
     date: z.coerce.date(),
-    category: z.string().default('Uncategorized'),
+    category: z.union([z.string(), z.array(z.string())]).default('Uncategorized'),
   }),
 });
 

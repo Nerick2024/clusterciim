@@ -20,10 +20,17 @@ const sortedNews = allNews.sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime(),
 );
 
-const categories = [...new Set(allNews.map((news) => news.data.category))];
+const categories = [...new Set(allNews.flatMap((news) => 
+  Array.isArray(news.data.category) ? news.data.category : [news.data.category]
+))];
 
 const getCategoryCount = (category: string) => {
-  return allNews.filter((news) => news.data.category === category).length;
+  return allNews.filter((news) => {
+    const newsCategories = Array.isArray(news.data.category) 
+      ? news.data.category 
+      : [news.data.category];
+    return newsCategories.includes(category);
+  }).length;
 };
 ---
 
@@ -37,7 +44,9 @@ const getCategoryCount = (category: string) => {
       >
         {sortedNews.map((news) => (
           <div
-            data-category={news.data.category}
+            data-category={Array.isArray(news.data.category) 
+              ? news.data.category.join(',') 
+              : news.data.category}
             data-date={news.data.date.getTime()}
           >
             <CardNews
@@ -119,25 +128,32 @@ const getCategoryCount = (category: string) => {
       newsGrid.querySelectorAll(":scope > div"),
     ) as HTMLElement[];
 
-    // Sort
-    newsItems.sort((a, b) => {
+    // Filter by category first
+    const visibleItems: HTMLElement[] = [];
+    const hiddenItems: HTMLElement[] = [];
+    
+    newsItems.forEach((item) => {
+      const itemCategories = item.getAttribute("data-category")?.split(',') || [];
+      if (activeCategory === "all" || itemCategories.includes(activeCategory)) {
+        item.style.display = "block";
+        visibleItems.push(item);
+      } else {
+        item.style.display = "none";
+        hiddenItems.push(item);
+      }
+    });
+
+    // Sort only visible items
+    visibleItems.sort((a, b) => {
       const dateA = parseInt(a.getAttribute("data-date") || "0");
       const dateB = parseInt(b.getAttribute("data-date") || "0");
       return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
     });
 
-    // Clear and re-append in sorted order
-    newsItems.forEach((item) => newsGrid.appendChild(item));
-
-    // Filter by category
-    newsItems.forEach((item) => {
-      const itemCategory = item.getAttribute("data-category");
-      if (activeCategory === "all" || itemCategory === activeCategory) {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-      }
-    });
+    // Clear grid and re-append: visible items first (sorted), then hidden items
+    newsGrid.innerHTML = "";
+    visibleItems.forEach((item) => newsGrid.appendChild(item));
+    hiddenItems.forEach((item) => newsGrid.appendChild(item));
   }
 
   function updateCategoryButtons() {
