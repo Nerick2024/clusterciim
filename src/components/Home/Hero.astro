@@ -26,8 +26,9 @@ const recentNews = allNews
       <div
         class="w-full lg:w-[80%] h-full bg-white/25 backdrop-blur-md relative overflow-hidden"
       >
-        <div class="splide h-full" id="hero-carousel">
-          <div class="splide__track">
+
+        <div class="splide h-full hidden lg:block" id="hero-carousel">
+          <div class="splide__track h-full">
             <ul class="splide__list h-full">
               {
                 recentNews.map((news) => (
@@ -67,7 +68,7 @@ const recentNews = allNews
                         </div>
                         <a
                           href={`/${lang}/News/${news.id}`}
-                          class="text-[var(--color-primary)] text-xs lg:text-sm font-medium mt-2 text-right"
+                          class="!text-[var(--color-primary)] text-xs lg:text-sm font-medium mt-2 text-right"
                         >
                           {i18n.NEWS?.READ_MORE || "Leer más"}
                         </a>
@@ -79,78 +80,82 @@ const recentNews = allNews
             </ul>
           </div>
 
-          <!-- Botones de navegación -->
-          <div class="splide__arrows hidden lg:block">
-            <button
-              class="splide__arrow splide__arrow--prev absolute top-10 left-1/2 -translate-x-1/2 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200 hover:scale-110"
-            >
-              <svg
-                class="w-4 h-4 text-gray-700"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 15l7-7 7 7"></path>
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev absolute top-10 left-1/2 -translate-x-1/2 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200 hover:scale-110">
+              <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
               </svg>
             </button>
-            <button
-              class="splide__arrow splide__arrow--next absolute bottom-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200 hover:scale-110"
-            >
-              <svg
-                class="w-4 h-4 text-gray-700"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </button>
-          </div>
-
-          <!-- Botones móvil -->
-          <div class="splide__arrows lg:hidden">
-            <button
-              class="splide__arrow splide__arrow--prev absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200 hover:scale-110"
-            >
-              <svg
-                class="w-4 h-4 text-gray-700"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 19l-7-7 7-7"></path>
-              </svg>
-            </button>
-            <button
-              class="splide__arrow splide__arrow--next absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200 hover:scale-110"
-            >
-              <svg
-                class="w-4 h-4 text-gray-700"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
+            <button class="splide__arrow splide__arrow--next absolute bottom-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200 hover:scale-110">
+              <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
           </div>
         </div>
+
+        <!-- ======= MÓVIL: carrusel manual ======= -->
+        <div class="lg:hidden w-full h-full flex items-center relative" id="mobile-carousel">
+          <div id="mobile-track" class="flex w-full transition-transform duration-300 ease-in-out">
+            {
+              recentNews.map((news) => (
+                <div class="mobile-slide flex-shrink-0 w-full px-6">
+                  <div class="bg-white/90 rounded-lg overflow-hidden flex flex-col shadow-lg" style="height: 260px;">
+                    <div class="w-full flex-shrink-0" style="height: 45%;">
+                      <img
+                        loading="lazy"
+                        src={news.data.image}
+                        alt={news.data.title}
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between overflow-hidden">
+                      <div>
+                        <h3 class="text-gray-800 font-semibold text-sm mb-1 line-clamp-2 italic">
+                          {news.data.title}
+                        </h3>
+                        <p class="text-gray-600 text-xs line-clamp-2 mb-1">
+                          {news.data.description}
+                        </p>
+                        <div class="flex flex-wrap gap-1">
+                          {Array.isArray(news.data.category) ? (
+                            news.data.category.slice(0, 2).map((cat) => (
+                              <span class="text-xs bg-[var(--color-primary)]/20 text-[var(--color-primary)] px-1.5 py-0.5 rounded">
+                                {cat}
+                              </span>
+                            ))
+                          ) : (
+                            <span class="text-xs bg-[var(--color-primary)]/20 text-[var(--color-primary)] px-1.5 py-0.5 rounded">
+                              {news.data.category}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      <a
+                        href={`/${lang}/News/${news.id}`}
+                        class="!text-[var(--color-primary)] text-xs font-medium text-right"
+                      >
+                        {i18n.NEWS?.READ_MORE || "Leer más"} →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+
+          <button id="mobile-prev" class="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200">
+            <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button id="mobile-next" class="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-md transition-all duration-200">
+            <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
       </div>
     </div>
   </div>
@@ -180,20 +185,14 @@ const recentNews = allNews
     overflow: hidden;
   }
 
-  /* Responsive para cards horizontales */
-  @media (max-width: 640px) {
-    .splide__slide .bg-white\/90 {
-      flex-direction: column;
-      height: 250px;
-    }
-
-    .splide__slide .w-1\/3 {
-      width: 100%;
-      height: 40%;
-    }
+  #mobile-carousel {
+    overflow: hidden;
   }
 
-  /* Estilos para el slide activo central */
+  #mobile-track {
+    will-change: transform;
+  }
+
   .splide__slide--active-center .bg-white\/90 {
     transform: scale(1.05);
     box-shadow:
@@ -206,7 +205,6 @@ const recentNews = allNews
     transform: scale(0.95);
   }
 
-  /* Estilos personalizados para botones */
   .splide__arrow {
     background: rgba(255, 255, 255, 0.8) !important;
     border: none !important;
@@ -237,73 +235,64 @@ const recentNews = allNews
   import { Splide } from "@splidejs/splide";
 
   document.addEventListener("DOMContentLoaded", function () {
-    let heroCarousel;
 
-    function initCarousel() {
-      if (heroCarousel) {
-        // Destruir por completo la instancia previa para limpiar estilos en línea
-        heroCarousel.destroy(true);
-      }
-
-      const isDesktop = window.innerWidth >= 1024;
-
-      heroCarousel = new Splide("#hero-carousel", {
-        type: "loop", // Mantiene el bucle infinito
-        direction: isDesktop ? "ttb" : "ltr",
+    // ── Desktop: Splide vertical ───────────────────────────────────────────
+    if (window.innerWidth >= 1024) {
+      const heroCarousel = new Splide("#hero-carousel", {
+        type: "loop",
+        direction: "ttb",
         height: "100%",
         autoplay: true,
         interval: 4000,
         pauseOnHover: true,
         arrows: true,
         pagination: false,
-        perPage: isDesktop ? 3 : 1,
+        perPage: 3,
         perMove: 1,
         focus: "center",
-        gap: isDesktop ? "0.1rem" : "0.4rem",
-        padding: isDesktop
-          ? {
-              top: "0.5rem",
-              bottom: "0.5rem",
-              left: "0.25rem",
-              right: "0.25rem",
-            }
-          : {
-              top: "0.5rem",
-              bottom: "0.5rem",
-              left: "0.5rem",
-              right: "0.5rem",
-            },
+        gap: "0.1rem",
+        padding: {
+          top: "0.5rem",
+          bottom: "0.5rem",
+          left: "0.25rem",
+          right: "0.25rem",
+        },
         wheel: true,
         wheelSleep: 100,
-        clones: 5, // Fuerza clones extra para evitar un salto o "rewind" al final
+        clones: 5,
         classes: {
           active: "splide__slide--active-center",
         },
       });
-
       heroCarousel.mount();
     }
 
-    initCarousel();
+    // ── Móvil: carrusel manual ─────────────────────────────────────────────
+    const track = document.getElementById("mobile-track");
+    const total = document.querySelectorAll(".mobile-slide").length;
+    let current = 0;
+    let startX = 0;
 
-    // Actualizar configuración en resize
-    let resizeTimer;
-    window.addEventListener("resize", () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        if (!heroCarousel) return;
+    function goTo(index: number) {
+      current = (index + total) % total;
+      (track as HTMLElement).style.transform = `translateX(-${current * 100}%)`;
+    }
 
-        const wasDesktop = heroCarousel.options.direction === "ttb";
-        const isDesktop = window.innerWidth >= 1024;
+    document.getElementById("mobile-next")?.addEventListener("click", () => goTo(current + 1));
+    document.getElementById("mobile-prev")?.addEventListener("click", () => goTo(current - 1));
 
-        // Splide no soporta cambiar 'direction' dinámicamente con refresh()
-        // Por eso, es necesario reiniciar por completo si el viewport cambia de móbil a escritorio
-        if (wasDesktop !== isDesktop) {
-          initCarousel();
-        } else {
-          heroCarousel.refresh();
-        }
-      }, 250);
+    track?.addEventListener("touchstart", (e) => {
+      startX = (e as TouchEvent).touches[0].clientX;
+    }, { passive: true });
+
+    track?.addEventListener("touchend", (e) => {
+      const diff = startX - (e as TouchEvent).changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
     });
+
+    setInterval(() => {
+      if (window.innerWidth < 1024) goTo(current + 1);
+    }, 4000);
+
   });
 </script>
