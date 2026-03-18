@@ -1,14 +1,18 @@
 ---
+import { getLangFromUrl, useTranslation } from "@/i18n";
+
 interface Props {
   title: string;
   description: string;
   image: string;
   slug: string;
   lang: string;
-  readMoreText: string;
+  readMoreText?: string;
 }
 
 const { title, description, image, slug, lang, readMoreText } = Astro.props;
+const i18n = await useTranslation(lang);
+const defaultReadMoreText = readMoreText || i18n.NEWS.READ_MORE;
 ---
 
 <div
@@ -24,7 +28,7 @@ const { title, description, image, slug, lang, readMoreText } = Astro.props;
       href={`/${lang}/News/${slug}`}
       class="!text-[var(--color-primary)] text-left"
     >
-      {readMoreText}
+      {defaultReadMoreText}
     </a>
   </div>
 </div>
