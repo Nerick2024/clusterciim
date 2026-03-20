@@ -25,15 +25,15 @@ const i18n = await useTranslation(lang);
     <div class="flex flex-wrap justify-around w-full gap-6">
       {
         i18n.NAVBAR[2].MORE?.map((item: any) => (
-          <a
+          <div
             data-aos="zoom-in"
-            href={`/${lang}/${item.HREF}`}
-            class="w-40 lg:w-52 aspect-square rounded-full border-18 border-[var(--color-primary)] flex items-center justify-center"
           >
-            <p class="!text-lg lg:!text-2xl italic font-bold text-center px-4">
-              {item.TITLE}
-            </p>
-          </a>
+            <a href={`/${lang}/${item.HREF}`} class="w-40 lg:w-52 aspect-square rounded-full border-18 border-[var(--color-primary)] flex items-center justify-center hover:scale-110 transition-all duration-300">
+              <p class="!text-lg lg:!text-2xl italic font-bold text-center px-4">
+                {item.TITLE}
+              </p>
+            </a>
+          </div>
         ))
       }
     </div>
@@ -41,6 +41,7 @@ const i18n = await useTranslation(lang);
     {
       showCta && (
         <a
+          data-aos="fade-up"
           href={`/${lang}/Join`}
           class="bg-[var(--color-primary)] hover:bg-black !text-white text-sm italic font-bold px-10 py-4 transition-colors duration-300"
         >
