@@ -431,10 +431,12 @@
     "BANNER": ["BIM / BAM"],
     "SECTIONS": [
       {
+        "TAG":"Inovación",
         "TITLE": "Inovación",
         "DESCRIPTION": "La innovación es el motor de la transformación. En el CCIC, fomentamos un entorno donde se desarrollan soluciones disruptivas que revolucionan la cadena de valor de la construcción."
       },
       {
+        "TAG":"Sostenibilidad",
         "TITLE": "Sostenibilidad",
         "DESCRIPTION": "El CCIC promueve la sostenibilidad en la construcción, fomentando prácticas que reducen el impacto ambiental y promueven la economía circular."
       }

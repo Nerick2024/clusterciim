@@ -431,10 +431,12 @@
     "BANNER": ["BIM / BAM"],
     "SECTIONS": [
       {
+        "TAG":"Innovation",
         "TITLE": "Innovation",
         "DESCRIPTION": "Innovation is the engine of transformation. At CCIC, we foster an environment where disruptive solutions are developed that revolutionize the construction value chain."
       },
       {
+        "TAG":"Sustainability",
         "TITLE": "Sustainability",
         "DESCRIPTION": "CCIC promotes sustainability in construction, encouraging practices that reduce environmental impact and advance the circular economy."
       }
