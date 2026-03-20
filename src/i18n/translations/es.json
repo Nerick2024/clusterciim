@@ -73,7 +73,7 @@
     }
   ],
   "CONTACT": {
-    "EMAIL": "cluster@ccic.cat",
+    "EMAIL": "info@clusterciim.org",
     "PERSONS": [
       { "NAME": "Josep Vila", "PHONE": "+34 626 931 144" },
       { "NAME": "Pere Armora", "PHONE": "+34 639 108 574" },
@@ -164,7 +164,7 @@
     "SUBMIT": "Enviar",
     "TITLE": "Bienvenido al Futuro de la Construcción",
     "SUBTITLE": "Forma parte del cambio. Conecta. Transforma. Construye.",
-    "BODY": "El Clúster de la Construcción Industrializada de México no es sólo una red de empresas: es el núcleo en el que convergen aquellos que están rediseñando el sector. Formar parte del CCIC es entrar en una comunidad activa de innovación, donde la experiencia se mezcla con la disrupción y se abren oportunidades reales de colaboración, visibilidad y crecimiento.<br><br><b>Aquí se generan conexiones con empresas líderes del sector y una diversidad de PYMES y profesionales visionarios</b>. Estamos replanteando cada proceso constructivo para su industrialización, buscando mejorar la eficiencia y la sostenibilidad. Desde nuevos productos y sistemas modulares hasta algoritmos que piensan más rápido que la normativa, el ecosistema avanza… y tú puedes formar parte de él.<br><br><i>Si crees que la industrialización, los datos y la inteligencia aplicada pueden transformar la forma de construir, estás en el lugar adecuado. Si buscas sumar capacidades, compartir proyectos o escalar tu impacto, únete hoy.</i><br><br><b>Pre-regístrate, me pondré en contacto contigo y te enviaré información detallada para acceder a nuestra red.</b>"
+    "BODY": "Clúster de Construcción Industrializada de México no es sólo una red de empresas: es el núcleo en el que convergen aquellos que están rediseñando el sector. Formar parte del ClusterCIIM es entrar en una comunidad activa de innovación, donde la experiencia se mezcla con la disrupción y se abren oportunidades reales de colaboración, visibilidad y crecimiento.<br><br><b>Aquí se generan conexiones con empresas líderes del sector y una diversidad de PYMES y profesionales visionarios</b>. Estamos replanteando cada proceso constructivo para su industrialización, buscando mejorar la eficiencia y la sostenibilidad. Desde nuevos productos y sistemas modulares hasta algoritmos que piensan más rápido que la normativa, el ecosistema avanza… y tú puedes formar parte de él.<br><br><i>Si crees que la industrialización, los datos y la inteligencia aplicada pueden transformar la forma de construir, estás en el lugar adecuado. Si buscas sumar capacidades, compartir proyectos o escalar tu impacto, únete hoy.</i><br><br><b>Pre-regístrate, me pondré en contacto contigo y te enviaré información detallada para acceder a nuestra red.</b>"
   },
   "ASSOCIATS": {
     "TITLE": "Asociados Estratégicos",
@@ -431,14 +431,14 @@
     "BANNER": ["BIM / BAM"],
     "SECTIONS": [
       {
-        "TAG":"Inovación",
+        "TAG": "Inovación",
         "TITLE": "Inovación",
-        "DESCRIPTION": "La innovación es el motor de la transformación. En el CCIC, fomentamos un entorno donde se desarrollan soluciones disruptivas que revolucionan la cadena de valor de la construcción."
+        "DESCRIPTION": "La innovación es el motor de la transformación. En el ClusterCIIM, fomentamos un entorno donde se desarrollan soluciones disruptivas que revolucionan la cadena de valor de la construcción."
       },
       {
-        "TAG":"Sostenibilidad",
+        "TAG": "Sostenibilidad",
         "TITLE": "Sostenibilidad",
-        "DESCRIPTION": "El CCIC promueve la sostenibilidad en la construcción, fomentando prácticas que reducen el impacto ambiental y promueven la economía circular."
+        "DESCRIPTION": "El ClusterCIIM promueve la sostenibilidad en la construcción, fomentando prácticas que reducen el impacto ambiental y promueven la economía circular."
       }
     ]
   },
@@ -459,7 +459,7 @@
   },
   "CO_FACTORY_CONTENT": {
     "TITLE": "Inversión de activos <br> Inversión en operaciones",
-    "DESCRIPTION": "Fomentamos un espacio colaborativo con PYMES del CCiC, start ups y profesionales del sector. Nuestra colaboración público-privada es fundamental para el desarrollo empresarial.<br><br>El CCiC no trabajamos sólo en soluciones a corto plazo, sino que hemos creado una herramienta de colaboración y de debate para encontrar las soluciones que necesita el sector que debe transformarse.",
+    "DESCRIPTION": "Fomentamos un espacio colaborativo con PYMES del ClusterCIIM, start ups y profesionales del sector. Nuestra colaboración público-privada es fundamental para el desarrollo empresarial.<br><br>El ClusterCIIM no trabajamos sólo en soluciones a corto plazo, sino que hemos creado una herramienta de colaboración y de debate para encontrar las soluciones que necesita el sector que debe transformarse.",
     "BUTTON_1": "¿Unimos sinergias?",
     "HREF_1": "Join",
     "BUTTON_2": "Más sobre Co-factory",
@@ -491,7 +491,7 @@
   },
   "TEAM": {
     "TITLE": "Un gran equipo",
-    "DESCRIPTION": "<b>El Consejo de la Construcción Industrializada de México (CCIC) nace como respuesta coordinada de los principales agentes públicos y privados del país para impulsar un espacio estable de debate, acción y transformación real del sector de la construcción.</b> Con el apoyo de entidades clave como la Cámara de Comercio de México, el Consejo Nacional Empresarial y el Gobierno de México, el CCIC se consolida como el punto de encuentro en el que se definen las líneas maestras del futuro constructivo del país.<br><br>Desde su origen, el cluster ha orientado su actividad hacia la modernización profunda de los procesos, con especial atención a la integración de tecnologías digitales, nuevos modelos organizativos y sistemas industrializados. Esta apuesta colectiva por una transformación estructural –basada en la innovación, la sostenibilidad y la colaboración– ha convertido al CCIC en el espacio referente para todas aquellas iniciativas que quieren repensar cómo se diseña, fabrica y gestiona el hábitat del futuro.",
+    "DESCRIPTION": "<b>El Consejo de la Construcción Industrializada de México (ClusterCIIM) nace como respuesta coordinada de los principales agentes públicos y privados del país para impulsar un espacio estable de debate, acción y transformación real del sector de la construcción.</b> Con el apoyo de entidades clave como la Cámara de Comercio de México, el Consejo Nacional Empresarial y el Gobierno de México, el ClusterCIIM se consolida como el punto de encuentro en el que se definen las líneas maestras del futuro constructivo del país.<br><br>Desde su origen, el cluster ha orientado su actividad hacia la modernización profunda de los procesos, con especial atención a la integración de tecnologías digitales, nuevos modelos organizativos y sistemas industrializados. Esta apuesta colectiva por una transformación estructural –basada en la innovación, la sostenibilidad y la colaboración– ha convertido al ClusterCIIM en el espacio referente para todas aquellas iniciativas que quieren repensar cómo se diseña, fabrica y gestiona el hábitat del futuro.",
     "CTA": "Colabora con Nosotros",
     "BACK": "Volver a los miembros del equipo",
     "DIRECTORS": [
@@ -499,7 +499,7 @@
         "IMG": "/Team/Directors/PereArmora.jpg",
         "NAME": "Pedro Armora",
         "POSITION": "Presidente / Aykos Healthcare",
-        "SEMBLANCE": "Estudios de ingeniería técnica y PDD IESE 2004<br>Socio fundador de Aykos Healthcare / Kosmo / Bosq / CCiC<br>Mi trayectoria profesional ha estado orientada al sector comercial internacional, y me he dedicado a abrir mercados para diferentes sectores (textil, DataCenters, ingeniería, construcción industrializada). He tenido experiencia internacional a través de todas mis empresas y colaboraciones profesionales.<br><br>Desde 2015 soy consultor internacional para grandes empresas; para abrir nuevos mercados internacionales (sector Real Estate e Industrial).<br>Desde 2007 estoy básicamente dedicado a analizar soluciones en el campo de la construcción modular industrializada para el sector hotelero y hospitalario teniendo en cuenta los distintos mercados y necesidades. Dentro de los proyectos elaborados, los más interesantes e innovadores serían el primer hotel 100% modular en África (Dakar), de 90 habitaciones (5+1 plantas) y un hospital en las islas Mauricio, también 100% modular.<br>Desde hace dos años, soy uno de los fundadores del CCiC, la plataforma de innovación en el sector de la construcción y su transformación hacia la industrialización, digitalización, sostenibilidad y formación específica."
+        "SEMBLANCE": "Estudios de ingeniería técnica y PDD IESE 2004<br>Socio fundador de Aykos Healthcare / Kosmo / Bosq / ClusterCIIM<br>Mi trayectoria profesional ha estado orientada al sector comercial internacional, y me he dedicado a abrir mercados para diferentes sectores (textil, DataCenters, ingeniería, construcción industrializada). He tenido experiencia internacional a través de todas mis empresas y colaboraciones profesionales.<br><br>Desde 2015 soy consultor internacional para grandes empresas; para abrir nuevos mercados internacionales (sector Real Estate e Industrial).<br>Desde 2007 estoy básicamente dedicado a analizar soluciones en el campo de la construcción modular industrializada para el sector hotelero y hospitalario teniendo en cuenta los distintos mercados y necesidades. Dentro de los proyectos elaborados, los más interesantes e innovadores serían el primer hotel 100% modular en África (Dakar), de 90 habitaciones (5+1 plantas) y un hospital en las islas Mauricio, también 100% modular.<br>Desde hace dos años, soy uno de los fundadores del ClusterCIIM, la plataforma de innovación en el sector de la construcción y su transformación hacia la industrialización, digitalización, sostenibilidad y formación específica."
       },
       {
         "IMG": "/Team/Directors/arnal.jpg",
@@ -510,7 +510,7 @@
       {
         "IMG": "/Team/Directors/Josep-Vila.jpg",
         "NAME": "Josep Vila",
-        "POSITION": "Director Ejecutivo / CCIC",
+        "POSITION": "Director Ejecutivo / ClusterCIIM",
         "SEMBLANCE": ""
       },
       {
@@ -562,7 +562,7 @@
     "SUBTITLE": "",
     "IMG": "/Home/a.avif",
     "ALT": "Construcción industrializada",
-    "DESCRIPTION": "<strong>El Clúster de la Construcción Industrializada de México (CCIC)</strong> nace de la unión de profesionales con trayectorias sólidas y complementarias: desde la salud aplicada a la vivienda hasta la innovación arquitectónica, la ingeniería aplicada, la eficiencia energética y la gestión industrial; esta alianza estratégica nos permite dar forma a un espacio de transformación.<br><br>Apostamos por un nuevo modelo constructivo basado en la coordinación, digitalización y eficiencia, utilizando metodologías algorítmicas con las existentes BIM, CAD, lo que <strong>permite integrar procesos industrializados personalizados de cada empresa</strong> desde la conceptualización hasta la entrega de llaves.<br><br>El mundo es digital y automatizado, plataformas de cocreación procedural que exploran la intersección entre sistemas y detalles constructivos, tecnología, diseño, sostenibilidad, marketing, seguimiento son herramientas que aportan nuevas perspectivas sobre cambios profundos en la forma de construir.<br><br>Con esta suma de visiones, nos consolidamos como un actor clave para liderar el cambio de paradigma en el sector de la construcción en México, con una mirada abierta, integradora y preparada para afrontar los retos de un mundo en continua evolución.",
+    "DESCRIPTION": "<strong>Clúster de Construcción Industrializada de México (ClusterCIIM)</strong> nace de la unión de profesionales con trayectorias sólidas y complementarias: desde la salud aplicada a la vivienda hasta la innovación arquitectónica, la ingeniería aplicada, la eficiencia energética y la gestión industrial; esta alianza estratégica nos permite dar forma a un espacio de transformación.<br><br>Apostamos por un nuevo modelo constructivo basado en la coordinación, digitalización y eficiencia, utilizando metodologías algorítmicas con las existentes BIM, CAD, lo que <strong>permite integrar procesos industrializados personalizados de cada empresa</strong> desde la conceptualización hasta la entrega de llaves.<br><br>El mundo es digital y automatizado, plataformas de cocreación procedural que exploran la intersección entre sistemas y detalles constructivos, tecnología, diseño, sostenibilidad, marketing, seguimiento son herramientas que aportan nuevas perspectivas sobre cambios profundos en la forma de construir.<br><br>Con esta suma de visiones, nos consolidamos como un actor clave para liderar el cambio de paradigma en el sector de la construcción en México, con una mirada abierta, integradora y preparada para afrontar los retos de un mundo en continua evolución.",
     "TAGS": [
       { "TITLE": "Industrialización", "HREF": "Areas#industrializacion" },
       { "TITLE": "Digitalización", "HREF": "Areas#digitalizacion" },

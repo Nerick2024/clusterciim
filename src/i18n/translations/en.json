@@ -73,7 +73,7 @@
     }
   ],
   "CONTACT": {
-    "EMAIL": "cluster@ccic.cat",
+    "EMAIL": "info@clusterciim.org",
     "PERSONS": [
       { "NAME": "Josep Vila", "PHONE": "+34 626 931 144" },
       { "NAME": "Pere Armora", "PHONE": "+34 639 108 574" },
@@ -164,7 +164,7 @@
     "SUBMIT": "Send",
     "TITLE": "Welcome to the Future of Construction",
     "SUBTITLE": "Be part of the change. Connect. Transform. Build.",
-    "BODY": "The Industrialized Construction Cluster of Mexico is not just a business network: it is the hub where those redesigning the sector converge. Being part of the CCIC means joining an active community of innovation, where experience meets disruption and real opportunities for collaboration, visibility and growth open up.<br><br><b>Here, connections are forged with leading companies in the sector alongside a diverse range of SMEs and visionary professionals</b>. We are rethinking every construction process for industrialization, seeking to improve efficiency and sustainability. From new products and modular systems to algorithms that move faster than regulations, the ecosystem advances… and you can be part of it.<br><br><i>If you believe that industrialization, data and applied intelligence can transform the way we build, you are in the right place. If you are looking to add capabilities, share projects or scale your impact, join today.</i><br><br><b>Pre-register, and I will get in touch with you and send you detailed information to access our network.</b>"
+    "BODY": "The Industrialized Construction Cluster of Mexico is not just a business network: it is the hub where those redesigning the sector converge. Being part of the ClusterCIIM means joining an active community of innovation, where experience meets disruption and real opportunities for collaboration, visibility and growth open up.<br><br><b>Here, connections are forged with leading companies in the sector alongside a diverse range of SMEs and visionary professionals</b>. We are rethinking every construction process for industrialization, seeking to improve efficiency and sustainability. From new products and modular systems to algorithms that move faster than regulations, the ecosystem advances… and you can be part of it.<br><br><i>If you believe that industrialization, data and applied intelligence can transform the way we build, you are in the right place. If you are looking to add capabilities, share projects or scale your impact, join today.</i><br><br><b>Pre-register, and I will get in touch with you and send you detailed information to access our network.</b>"
   },
   "ASSOCIATS": {
     "TITLE": "Strategic Associates",
@@ -431,14 +431,14 @@
     "BANNER": ["BIM / BAM"],
     "SECTIONS": [
       {
-        "TAG":"Innovation",
+        "TAG": "Innovation",
         "TITLE": "Innovation",
-        "DESCRIPTION": "Innovation is the engine of transformation. At CCIC, we foster an environment where disruptive solutions are developed that revolutionize the construction value chain."
+        "DESCRIPTION": "Innovation is the engine of transformation. At ClusterCIIM, we foster an environment where disruptive solutions are developed that revolutionize the construction value chain."
       },
       {
-        "TAG":"Sustainability",
+        "TAG": "Sustainability",
         "TITLE": "Sustainability",
-        "DESCRIPTION": "CCIC promotes sustainability in construction, encouraging practices that reduce environmental impact and advance the circular economy."
+        "DESCRIPTION": "ClusterCIIM promotes sustainability in construction, encouraging practices that reduce environmental impact and advance the circular economy."
       }
     ]
   },
@@ -459,7 +459,7 @@
   },
   "CO_FACTORY_CONTENT": {
     "TITLE": "Asset Investment <br> Operations Investment",
-    "DESCRIPTION": "We foster a collaborative space with SMEs from the CCiC, startups and industry professionals. Our public-private collaboration is essential for business development.<br><br>At CCiC we do not work only on short-term solutions; we have created a collaboration and debate tool to find the solutions the sector needs as it undergoes transformation.",
+    "DESCRIPTION": "We foster a collaborative space with SMEs from the ClusterCIIM, startups and industry professionals. Our public-private collaboration is essential for business development.<br><br>At ClusterCIIM we do not work only on short-term solutions; we have created a collaboration and debate tool to find the solutions the sector needs as it undergoes transformation.",
     "BUTTON_1": "Shall we join forces?",
     "HREF_1": "Join",
     "BUTTON_2": "More about Co-Factory",
@@ -491,7 +491,7 @@
   },
   "TEAM": {
     "TITLE": "A great team",
-    "DESCRIPTION": "<b>The Industrialized Construction Council of Mexico (CCIC) was born as a coordinated response by the country's leading public and private stakeholders to drive a stable space for debate, action and real transformation of the construction sector.</b> With the support of key institutions such as the Chamber of Commerce of Mexico, the National Business Council and the Government of Mexico, the CCIC has become the meeting point where the master lines of the country's constructive future are defined.<br><br>Since its inception, the cluster has oriented its activity toward the deep modernization of processes, with special attention to the integration of digital technologies, new organizational models and industrialized systems. This collective commitment to structural transformation — grounded in innovation, sustainability and collaboration — has made the CCIC the benchmark space for all initiatives seeking to rethink how the habitat of the future is designed, built and managed.",
+    "DESCRIPTION": "<b>The Industrialized Construction Council of Mexico (ClusterCIIM) was born as a coordinated response by the country's leading public and private stakeholders to drive a stable space for debate, action and real transformation of the construction sector.</b> With the support of key institutions such as the Chamber of Commerce of Mexico, the National Business Council and the Government of Mexico, the ClusterCIIM has become the meeting point where the master lines of the country's constructive future are defined.<br><br>Since its inception, the cluster has oriented its activity toward the deep modernization of processes, with special attention to the integration of digital technologies, new organizational models and industrialized systems. This collective commitment to structural transformation — grounded in innovation, sustainability and collaboration — has made the ClusterCIIM the benchmark space for all initiatives seeking to rethink how the habitat of the future is designed, built and managed.",
     "CTA": "Collaborate with Us",
     "BACK": "Back to team members",
     "DIRECTORS": [
@@ -499,7 +499,7 @@
         "IMG": "/Team/Directors/PereArmora.jpg",
         "NAME": "Pedro Armora",
         "POSITION": "President / Aykos Healthcare",
-        "SEMBLANCE": "Technical engineering studies and PDD IESE 2004<br>Founding partner of Aykos Healthcare / Kosmo / Bosq / CCiC<br>My professional career has been oriented toward international commercial activity, focused on opening markets across different sectors (textiles, DataCenters, engineering, industrialized construction). I have gained international experience through all my companies and professional collaborations.<br><br>Since 2015 I have been an international consultant for large companies, helping to open new international markets (Real Estate and Industrial sector).<br>Since 2007 I have been primarily dedicated to analyzing solutions in the field of industrialized modular construction for the hotel and hospital sector, taking into account different markets and needs. Among the projects developed, the most interesting and innovative are the first 100% modular hotel in Africa (Dakar), with 90 rooms (5+1 floors), and a hospital in Mauritius, also 100% modular.<br>For the past two years, I have been one of the founders of CCiC, the innovation platform in the construction sector and its transformation toward industrialization, digitalization, sustainability and specialized training."
+        "SEMBLANCE": "Technical engineering studies and PDD IESE 2004<br>Founding partner of Aykos Healthcare / Kosmo / Bosq / ClusterCIIM<br>My professional career has been oriented toward international commercial activity, focused on opening markets across different sectors (textiles, DataCenters, engineering, industrialized construction). I have gained international experience through all my companies and professional collaborations.<br><br>Since 2015 I have been an international consultant for large companies, helping to open new international markets (Real Estate and Industrial sector).<br>Since 2007 I have been primarily dedicated to analyzing solutions in the field of industrialized modular construction for the hotel and hospital sector, taking into account different markets and needs. Among the projects developed, the most interesting and innovative are the first 100% modular hotel in Africa (Dakar), with 90 rooms (5+1 floors), and a hospital in Mauritius, also 100% modular.<br>For the past two years, I have been one of the founders of ClusterCIIM, the innovation platform in the construction sector and its transformation toward industrialization, digitalization, sustainability and specialized training."
       },
       {
         "IMG": "/Team/Directors/arnal.jpg",
@@ -510,7 +510,7 @@
       {
         "IMG": "/Team/Directors/Josep-Vila.jpg",
         "NAME": "Josep Vila",
-        "POSITION": "Executive Director / CCIC",
+        "POSITION": "Executive Director / ClusterCIIM",
         "SEMBLANCE": ""
       },
       {
@@ -562,7 +562,7 @@
     "SUBTITLE": "",
     "IMG": "/Home/a.avif",
     "ALT": "Industrialized construction",
-    "DESCRIPTION": "<strong>The Industrialized Construction Cluster of Mexico (CCIC)</strong> was born from the union of professionals with solid and complementary backgrounds: from health applied to housing to architectural innovation, applied engineering, energy efficiency and industrial management; this strategic alliance allows us to shape a space of transformation.<br><br>We champion a new construction model based on coordination, digitalization and efficiency, using algorithmic methodologies alongside existing BIM and CAD tools, which <strong>enables the integration of customized industrialized processes for each company</strong> from concept to key handover.<br><br>The world is digital and automated; procedural co-creation platforms that explore the intersection of construction systems and details, technology, design, sustainability, marketing and monitoring are tools that bring new perspectives on deep changes in the way we build.<br><br>With this convergence of visions, we consolidate ourselves as a key player in leading the paradigm shift in the construction sector in Mexico, with an open, integrative outlook prepared to face the challenges of an ever-evolving world.",
+    "DESCRIPTION": "<strong>The Industrialized Construction Cluster of Mexico (ClusterCIIM)</strong> was born from the union of professionals with solid and complementary backgrounds: from health applied to housing to architectural innovation, applied engineering, energy efficiency and industrial management; this strategic alliance allows us to shape a space of transformation.<br><br>We champion a new construction model based on coordination, digitalization and efficiency, using algorithmic methodologies alongside existing BIM and CAD tools, which <strong>enables the integration of customized industrialized processes for each company</strong> from concept to key handover.<br><br>The world is digital and automated; procedural co-creation platforms that explore the intersection of construction systems and details, technology, design, sustainability, marketing and monitoring are tools that bring new perspectives on deep changes in the way we build.<br><br>With this convergence of visions, we consolidate ourselves as a key player in leading the paradigm shift in the construction sector in Mexico, with an open, integrative outlook prepared to face the challenges of an ever-evolving world.",
     "TAGS": [
       { "TITLE": "Industrialization", "HREF": "Areas#industrializacion" },
       { "TITLE": "Digitalization", "HREF": "Areas#digitalizacion" },
