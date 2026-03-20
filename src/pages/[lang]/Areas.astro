@@ -16,7 +16,7 @@ const i18n = await useTranslation(lang);
 
 <Layout title="ClusterCIIM">
   <Banner CONTENT={i18n.AREAS} MT />
-  <SectionCards CONTENT={i18n.AREAS.SECTIONS[0]} tag="Inovación" />
+  <SectionCards CONTENT={i18n.AREAS.SECTIONS[0]} tag={i18n.AREAS.SECTIONS[0].TAG} />
   <main id="hero" class="relative text-white flex items-center JUWS h-[50vh]">
     <div
       class="h-full w-full absolute after:absolute after:inset-0 after:bg-[var(--color-primary)]/25 after:z-10"
@@ -41,5 +41,5 @@ const i18n = await useTranslation(lang);
       }
     </div>
   </main>
-  <SectionCards CONTENT={i18n.AREAS.SECTIONS[1]} tag="Sostenibilidad" />
+  <SectionCards CONTENT={i18n.AREAS.SECTIONS[1]} tag={i18n.AREAS.SECTIONS[1].TAG} />
 </Layout>
