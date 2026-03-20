@@ -1,11 +1,12 @@
 ---
 id: "open-future-digitalization-data-shared-culture"
 title: "El futuro está abierto: digitalización, datos y cultura compartida"
-description: "La construcción del futuro pasa por la digitalización y la colaboración. Desde el Clúster de la Construcción Industrializada de Cataluña"
+description: "La construcción del futuro pasa por la digitalización y la colaboración. Desde el Clúster de la Construcción Industrializada de Mexico"
 image: "/News/new-3/a.jpg"
 date: 2026-02-12
 category: "Sostenibilidad"
 ---
+
 # El futuro está abierto: digitalización, datos y cultura compartida
 
 ![foto](/News/new-3/a.jpg)
@@ -23,4 +24,4 @@ Por eso impulsamos:
 Sólo así podemos asegurar que la **industrialización sea un cambio estructural e inclusivo**, capaz de beneficiar a todo el sector, no sólo a varios actores.
 
 El futuro de la construcción será **colaborativo o no será**.  
-Y desde el **Clúster de la Construcción Industrializada de Cataluña**, continuaremos trabajando para que **Cataluña sea referencia internacional** en una **nueva cultura constructiva: abierta, digital, sostenible y compartida**.
+Y desde el **Clúster de la Construcción Industrializada de Mexico**, continuaremos trabajando para que **Mexico sea referencia internacional** en una **nueva cultura constructiva: abierta, digital, sostenible y compartida**.

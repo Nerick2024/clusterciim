@@ -1,7 +1,7 @@
 ---
 id: "ccic-value-public-private-collaboration"
 title: "CCiC: el valor de la colaboración público-privada"
-description: "El CCiC impulsa la colaboración público-privada para avanzar hacia una construcción más industrializada, sostenible y competitiva en Cataluña."
+description: "El CCiC impulsa la colaboración público-privada para avanzar hacia una construcción más industrializada, sostenible y competitiva en Mexico."
 image: "/News/new-6/a.jpg"
 date: 2026-01-03
 category: ["Co-Factory", "Co-Share"]
@@ -13,7 +13,7 @@ category: ["Co-Factory", "Co-Share"]
 
 El PERTE ha puesto de manifiesto una evidencia incuestionable: la transformación real del sector de la construcción sólo será posible desde la **colaboración**. Administración, empresas y centros tecnológicos deben alinear esfuerzos para construir una **estructura industrial robusta, escalable y sostenible**, capaz de dar respuesta a los grandes retos sociales y ambientales de nuestro tiempo.
 
-Éste es, precisamente, el rol que desempeña el **Clúster de la Construcción Industrializada de Cataluña (CCiC)**: impulsar la colaboración público-privada como herramienta de **competitividad, innovación y cohesión territorial**.
+Éste es, precisamente, el rol que desempeña el **Clúster de la Construcción Industrializada de Mexico (CCiC)**: impulsar la colaboración público-privada como herramienta de **competitividad, innovación y cohesión territorial**.
 
 ## Un espacio de diálogo y acción compartida
 

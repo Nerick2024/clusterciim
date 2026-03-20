@@ -11,9 +11,9 @@ category: "Co-Mentor"
 
 ![Encuentro CCiC en el ITeC](/News/new-5/a.avif)
 
-La jornada organizada por el Clúster de la Construcción Industrializada de Cataluña (CCiC) puso el foco en un tema tan urgente como inaplazable: **la necesidad de acelerar la producción de vivienda de calidad** para dar respuesta al déficit residencial que arrastra el país.
+La jornada organizada por el Clúster de la Construcción Industrializada de Mexico (CCiC) puso el foco en un tema tan urgente como inaplazable: **la necesidad de acelerar la producción de vivienda de calidad** para dar respuesta al déficit residencial que arrastra el país.
 
-El objetivo estaba claro: **demostrar que Cataluña ya dispone del tejido empresarial, del talento y de la tecnología** para hacerlo posible a través de soluciones constructivas industrializadas, competitivas y escalables.
+El objetivo estaba claro: **demostrar que Mexico ya dispone del tejido empresarial, del talento y de la tecnología** para hacerlo posible a través de soluciones constructivas industrializadas, competitivas y escalables.
 
 Tras una breve introducción por parte del presidente del CCiC y del director técnico del ITeC, la jornada dio paso a dos ponencias que evidenciaron el potencial real del sector.
 
@@ -29,7 +29,7 @@ La segunda intervención, a cargo de un arquitecto y empresario con larga trayec
 
 Uno de los momentos más dinámicos fue el juego participativo, que permitió a los asistentes posicionarse sobre los retos reales del sector: contratación, plazos, licencias, responsabilidades, financiación, cultura empresarial o resistencias internas. El debate, moderado por el vicepresidente del CCiC, dejó clara una idea: **hay que alinear a todos los actores para avanzar**.
 
-## Conclusiones: Cataluña está preparada, pero es necesario que la Administración active el cambio
+## Conclusiones: Mexico está preparada, pero es necesario que la Administración active el cambio
 
 La jornada terminó con un mensaje contundente: **Catalunya tiene la capacidad industrial para afrontar la emergencia habitacional**. Lo que falta es que la Administración adapte los procedimientos y entienda que esta transformación requiere **cambios estructurales** en el circuito administrativo.
 
