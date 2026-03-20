@@ -117,23 +117,23 @@
     "LOGOS": [
       {
         "IMG": "/Footer/a.avif",
-        "TITLE": "Cambra de Comerc de Valls",
+        "TITLE": "Cámara de Comercio de México",
         "HREF": "https://cambravalls.com/"
       },
       {
         "IMG": "/Footer/b.avif",
-        "TITLE": "ZF Consorci Barcelona Zona Franca",
+        "TITLE": "Consejo Nacional Empresarial",
         "HREF": "https://www.zfbc.cat/"
       },
       {
         "IMG": "/Footer/c.avif",
-        "TITLE": "Gencat",
-        "HREF": "https://www.gencat.cat/"
+        "TITLE": "Gobierno de México",
+        "HREF": "https://www.gob.mx/"
       }
     ],
     "TITLE_1": "Más información:",
     "TITLE_2": "Dirección:",
-    "DIRECTION": "Camino del Río s/n, Molí Fariner, 08760 Martorell, Cataluña.",
+    "DIRECTION": "Av. Constituyentes 1, Centro Histórico, 76000 Querétaro, México.",
     "POLICIES": [
       {
         "HREF": "#",
@@ -164,7 +164,7 @@
     "SUBMIT": "Enviar",
     "TITLE": "Bienvenido al Futuro de la Construcción",
     "SUBTITLE": "Forma parte del cambio. Conecta. Transforma. Construye.",
-    "BODY": "El Clúster de la Construcción Industrializada de Cataluña no es sólo una red de empresas: es el núcleo en el que convergen aquellos que están rediseñando el sector. Formar parte del CCIC es entrar en una comunidad activa de innovación, donde la experiencia se mezcla con la disrupción y se abren oportunidades reales de colaboración, visibilidad y crecimiento.<br><br><b>Aquí se generan conexiones con empresas líderes del sector y una diversidad de PYMES y profesionales visionarios</b>. Estamos replanteando cada proceso constructivo para su industrialización, buscando mejorar la eficiencia y la sostenibilidad. Desde nuevos productos y sistemas modulares hasta algoritmos que piensan más rápido que la normativa, el ecosistema avanza… y tú puedes formar parte de él.<br><br><i>Si crees que la industrialización, los datos y la inteligencia aplicada pueden transformar la forma de construir, estás en el lugar adecuado. Si buscas sumar capacidades, compartir proyectos o escalar tu impacto, únete hoy.</i><br><br><b>Pre-regístrate, me pondré en contacto contigo y te enviaré información detallada para acceder a nuestra red.</b>"
+    "BODY": "El Clúster de la Construcción Industrializada de México no es sólo una red de empresas: es el núcleo en el que convergen aquellos que están rediseñando el sector. Formar parte del CCIC es entrar en una comunidad activa de innovación, donde la experiencia se mezcla con la disrupción y se abren oportunidades reales de colaboración, visibilidad y crecimiento.<br><br><b>Aquí se generan conexiones con empresas líderes del sector y una diversidad de PYMES y profesionales visionarios</b>. Estamos replanteando cada proceso constructivo para su industrialización, buscando mejorar la eficiencia y la sostenibilidad. Desde nuevos productos y sistemas modulares hasta algoritmos que piensan más rápido que la normativa, el ecosistema avanza… y tú puedes formar parte de él.<br><br><i>Si crees que la industrialización, los datos y la inteligencia aplicada pueden transformar la forma de construir, estás en el lugar adecuado. Si buscas sumar capacidades, compartir proyectos o escalar tu impacto, únete hoy.</i><br><br><b>Pre-regístrate, me pondré en contacto contigo y te enviaré información detallada para acceder a nuestra red.</b>"
   },
   "ASSOCIATS": {
     "TITLE": "Asociados Estratégicos",
@@ -348,11 +348,7 @@
             "HREF": "",
             "TITLE": ""
           },
-          {
-            "IMG": "/Associats/Associates/dAro.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
+          { "IMG": "/Associats/Associates/dAro.avif", "HREF": "", "TITLE": "" },
           {
             "IMG": "/Associats/Associates/Macusa.png",
             "HREF": "",
@@ -423,11 +419,7 @@
             "HREF": "",
             "TITLE": ""
           },
-          {
-            "IMG": "/Associats/Associates/sms.avif",
-            "HREF": "",
-            "TITLE": ""
-          }
+          { "IMG": "/Associats/Associates/sms.avif", "HREF": "", "TITLE": "" }
         ]
       }
     ]
@@ -436,13 +428,11 @@
     "TITLE": "Áreas Estratégicas",
     "SUBTITLE": "Optimizar la cadena de valor",
     "IMG": "/Areas/bg.avif",
-    "BANNER":[
-      "BIM / BAM"
-    ],
+    "BANNER": ["BIM / BAM"],
     "SECTIONS": [
       {
         "TITLE": "Inovación",
-        "DESCRIPTION": "La innovación es el motor de la transformación. En el CCIC, fomentamos un entorno donde se desarrollan soluciones disruptivas que revolucionan la cadena de valor de la construcción. "
+        "DESCRIPTION": "La innovación es el motor de la transformación. En el CCIC, fomentamos un entorno donde se desarrollan soluciones disruptivas que revolucionan la cadena de valor de la construcción."
       },
       {
         "TITLE": "Sostenibilidad",
@@ -480,7 +470,7 @@
   },
   "CO_SHARE_CONTENT": {
     "TITLE": "Co-Share",
-    "DESCRIPTION": "En aquel manifiesto, el Gobierno de la Generalidad de Cataluña y el Ayuntamiento de Barcelona se proponían un reto: <br><br> 'Crear un Grupo de Trabajo BIM que ayude a implementar la cultura, valores, métodos de trabajo, tecnologías digitales y electrónicas para capacitar a la industria, la administración pública, los centros de investigación, los colectivos profesionales y el mundo académico'.<br><br>Desde entonces la Comisión Construimos el Futuro ha orientado sus actividades en esta dirección",
+    "DESCRIPTION": "En aquel manifiesto, el Gobierno Federal de México y el Gobierno del Estado de Querétaro se proponían un reto: <br><br> 'Crear un Grupo de Trabajo BIM que ayude a implementar la cultura, valores, métodos de trabajo, tecnologías digitales y electrónicas para capacitar a la industria, la administración pública, los centros de investigación, los colectivos profesionales y el mundo académico'.<br><br>Desde entonces la Comisión Construimos el Futuro ha orientado sus actividades en esta dirección",
     "BUTTON_1": "Revisar todos los eventos",
     "HREF_1": "News",
     "BUTTON_2": "Asociarse",
@@ -499,7 +489,7 @@
   },
   "TEAM": {
     "TITLE": "Un gran equipo",
-    "DESCRIPTION": "<b>El Consejo de la Construcción Industrializada de Cataluña (CCIC) nace como respuesta coordinada de los principales agentes públicos y privados del territorio para impulsar un espacio estable de debate, acción y transformación real del sector de la construcción.</b> Con el apoyo de entidades clave como la Cámara de Comercio de Barcelona, el Consorcio de la Zona Franca y la Generalidad de Cataluña, el CCIC se consolida como el punto de encuentro en el que se definen las líneas maestras del futuro constructivo del país.<br><br>Desde su origen, el cluster ha orientado su actividad hacia la modernización profunda de los procesos, con especial atención a la integración de tecnologías digitales, nuevos modelos organizativos y sistemas industrializados. Esta apuesta colectiva por una transformación estructural –basada en la innovación, la sostenibilidad y la colaboración– ha convertido al CCIC en el espacio referente para todas aquellas iniciativas que quieren repensar cómo se diseña, fabrica y gestiona el hábitat del futuro.",
+    "DESCRIPTION": "<b>El Consejo de la Construcción Industrializada de México (CCIC) nace como respuesta coordinada de los principales agentes públicos y privados del país para impulsar un espacio estable de debate, acción y transformación real del sector de la construcción.</b> Con el apoyo de entidades clave como la Cámara de Comercio de México, el Consejo Nacional Empresarial y el Gobierno de México, el CCIC se consolida como el punto de encuentro en el que se definen las líneas maestras del futuro constructivo del país.<br><br>Desde su origen, el cluster ha orientado su actividad hacia la modernización profunda de los procesos, con especial atención a la integración de tecnologías digitales, nuevos modelos organizativos y sistemas industrializados. Esta apuesta colectiva por una transformación estructural –basada en la innovación, la sostenibilidad y la colaboración– ha convertido al CCIC en el espacio referente para todas aquellas iniciativas que quieren repensar cómo se diseña, fabrica y gestiona el hábitat del futuro.",
     "CTA": "Colabora con Nosotros",
     "BACK": "Volver a los miembros del equipo",
     "DIRECTORS": [
@@ -513,7 +503,7 @@
         "IMG": "/Team/Directors/arnal.jpg",
         "NAME": "Ignasi Pérez Arnal",
         "POSITION": "Vicepresidente / BIM Academy",
-        "SEMBLANCE": "CEO de BIM Academy, crea con el CATEB, el primer evento internacional de ámbito europeo sobre BIM, el European BIM Summit en Barcelona en el 2014, y desde el 2018 dirige el Congreso Nacional de Arquitectura Avanzada y Construcción 4.0 de REBUILD en Barcelona y desde 2021 el Build. Dirige la primera plataforma de e-learning del sector AECO, The BIM Force, que se encuentra actualmente en un proceso de programación y es miembro de Building SMART Spanish Chapter.<br><br>Ha sido director, entre otros, del Máster BIM en Ingeniería Civil y del Máster Construction Project Manager, y actualmente dirige el primer Máster en BIM y Sostenibilidad desde butic The New School.<br>Inicia su formación BIM en 2003 con el proyecto mebss, unos espacios modulares, off-site, industrializados que se pusieron a la venta como producto inmobiliario en Barcelona Meeting Point. La forzosa utilización de softwares avanzados como AECOsim de Bentley, Catia y antes el modelador 3D en Unix, Mountain Top, le aportan una visión distinta de lo que deben ser los procesos de diseño y construcción."
+        "SEMBLANCE": "CEO de BIM Academy, crea el primer evento internacional de ámbito latinoamericano sobre BIM, el BIM Summit México en Querétaro en el 2014, y desde el 2018 dirige el Congreso Nacional de Arquitectura Avanzada y Construcción 4.0 de REBUILD en México y desde 2021 el Build. Dirige la primera plataforma de e-learning del sector AECO, The BIM Force, que se encuentra actualmente en un proceso de programación y es miembro de Building SMART Spanish Chapter.<br><br>Ha sido director, entre otros, del Máster BIM en Ingeniería Civil y del Máster Construction Project Manager, y actualmente dirige el primer Máster en BIM y Sostenibilidad desde butic The New School.<br>Inicia su formación BIM en 2003 con el proyecto mebss, unos espacios modulares, off-site, industrializados que se pusieron a la venta como producto inmobiliario en México Real Estate Expo. La forzosa utilización de softwares avanzados como AECOsim de Bentley, Catia y antes el modelador 3D en Unix, Mountain Top, le aportan una visión distinta de lo que deben ser los procesos de diseño y construcción."
       },
       {
         "IMG": "/Team/Directors/Josep-Vila.jpg",
@@ -570,24 +560,12 @@
     "SUBTITLE": "",
     "IMG": "/Home/a.avif",
     "ALT": "Construcción industrializada",
-    "DESCRIPTION": "<strong>El Clúster de la Construcción Industrializada de Cataluña (CCIC)</strong> nace de la unión de profesionales con trayectorias sólidas y complementarias: desde la salud aplicada a la vivienda hasta la innovación arquitectónica, la ingeniería aplicada, la eficiencia energética y la gestión industrial; esta alianza estratégica nos permite dar forma a un espacio de transformación.<br><br>Apostamos por un nuevo modelo constructivo basado en la coordinación, digitalización y eficiencia, utilizando metodologías algorítmicas con las existentes BIM, CAD, lo que <strong>permite integrar procesos industrializados personalizados de cada empresa</strong> desde la conceptualización hasta la entrega de llaves.<br><br>El mundo es digital y automatizado, plataformas de cocreación procedural que exploran la intersección entre sistemas y detalles constructivos, tecnología, diseño, sostenibilidad, marketing, seguimiento son herramientas que aportan nuevas perspectivas sobre cambios profundos en la forma de construir.<br><br>Con esta suma de visiones, nos consolidamos como un actor clave para liderar el cambio de paradigma en el sector de la construcción en Cataluña, con una mirada abierta, integradora y preparada para afrontar los retos de un mundo en continua evolución.",
+    "DESCRIPTION": "<strong>El Clúster de la Construcción Industrializada de México (CCIC)</strong> nace de la unión de profesionales con trayectorias sólidas y complementarias: desde la salud aplicada a la vivienda hasta la innovación arquitectónica, la ingeniería aplicada, la eficiencia energética y la gestión industrial; esta alianza estratégica nos permite dar forma a un espacio de transformación.<br><br>Apostamos por un nuevo modelo constructivo basado en la coordinación, digitalización y eficiencia, utilizando metodologías algorítmicas con las existentes BIM, CAD, lo que <strong>permite integrar procesos industrializados personalizados de cada empresa</strong> desde la conceptualización hasta la entrega de llaves.<br><br>El mundo es digital y automatizado, plataformas de cocreación procedural que exploran la intersección entre sistemas y detalles constructivos, tecnología, diseño, sostenibilidad, marketing, seguimiento son herramientas que aportan nuevas perspectivas sobre cambios profundos en la forma de construir.<br><br>Con esta suma de visiones, nos consolidamos como un actor clave para liderar el cambio de paradigma en el sector de la construcción en México, con una mirada abierta, integradora y preparada para afrontar los retos de un mundo en continua evolución.",
     "TAGS": [
-      {
-        "TITLE": "Industrialización",
-        "HREF": "Areas#industrializacion"
-      },
-      {
-        "TITLE": "Digitalización",
-        "HREF": "Areas#digitalizacion"
-      },
-      {
-        "TITLE": "Sostenibilidad",
-        "HREF": "Areas#sostenibilidad"
-      },
-      {
-        "TITLE": "Formación",
-        "HREF": "Areas#formacion"
-      }
+      { "TITLE": "Industrialización", "HREF": "Areas#industrializacion" },
+      { "TITLE": "Digitalización", "HREF": "Areas#digitalizacion" },
+      { "TITLE": "Sostenibilidad", "HREF": "Areas#sostenibilidad" },
+      { "TITLE": "Formación", "HREF": "Areas#formacion" }
     ]
   },
   "CONEXION_CREATING_COLLABORATIONS": {
@@ -597,18 +575,9 @@
     "ALT": "Conexión, creando colaboraciones",
     "DESCRIPTION": "Actuamos como un conector dentro del ecosistema de la construcción industrializada, generando espacios donde empresas, profesionales, administraciones públicas y centros de conocimiento se pueden encontrar para compartir desafíos, visiones y estrategias. Gracias a la diversidad y experiencia de sus miembros, se crea una red activa de confianza que facilita el surgimiento de colaboraciones reales.<br><br>Estas conexiones se convierten en colaboraciones tangibles, proyectos compartidos y alianzas estratégicas que permiten abordar retos complejos desde un enfoque colectivo. Creamos un puente entre innovación y acción, fomentando una cultura colaborativa en la que diferentes perspectivas confluyen con un mismo propósito: transformar el sector hacia una construcción más eficiente, sostenible y preparada para el futuro.",
     "TAGS": [
-      {
-        "TITLE": "Co-Factory",
-        "HREF": "Strategies/Co-Factory"
-      },
-      {
-        "TITLE": "Co-Share",
-        "HREF": "Strategies/Co-Share"
-      },
-      {
-        "TITLE": "Co-Mentor",
-        "HREF": "Strategies/Co-Mentor"
-      }
+      { "TITLE": "Co-Factory", "HREF": "Strategies/Co-Factory" },
+      { "TITLE": "Co-Share", "HREF": "Strategies/Co-Share" },
+      { "TITLE": "Co-Mentor", "HREF": "Strategies/Co-Mentor" }
     ]
   },
   "TECHNOLOGICAL_IMPLEMENTATION": {
@@ -616,6 +585,6 @@
     "SUBTITLE": "Caso Éxito",
     "IMG": "/Home/c.jpg",
     "ALT": "Implantación tecnológica caso de éxito",
-    "DESCRIPTION": "<strong>Caso de éxito</strong> : Colaboración entre diversas empresas del sector y un estudio de diseño computacional especializado en geometrías paramétricas. <strong>El objetivo: desarrollar un sistema modular para viviendas sostenibles, adaptable a distintos contextos.</strong> Combinando procesos industrializados con algoritmos generativos, se generaron múltiples variantes de diseño optimizadas según datos locales como clima, materiales, cultura.<br><br><em>El resultado fue contundente: <strong>reducción del tiempo de diseño en un 70% y de residuos en obra en un 50%.</strong> El modelo, ahora replicado en varios municipios, demuestra cómo la unión entre fabricación avanzada, digitalización y diseño algorítmico acelera la innovación y fomenta la colaboración entre equipos diversos, bajo una lógica compartida basada en datos y eficiencia.</em>"
+    "DESCRIPTION": "<strong>Caso de éxito</strong> : Colaboración entre diversas empresas del sector y un estudio de diseño computacional especializado en geometrías paramétricas. <strong>El objetivo: desarrollar un sistema modular para viviendas sostenibles, adaptable a distintos contextos.</strong> Combinando procesos industrializados con algoritmos generativos, se generaron múltiples variantes de diseño optimizadas según datos locales como clima, materiales, cultura.<br><br><em>El resultado fue contundente: <strong>reducción del tiempo de diseño en un 70% y de residuos en obra en un 50%.</strong> El modelo, ahora replicado en varios municipios de México, demuestra cómo la unión entre fabricación avanzada, digitalización y diseño algorítmico acelera la innovación y fomenta la colaboración entre equipos diversos, bajo una lógica compartida basada en datos y eficiencia.</em>"
   }
 }

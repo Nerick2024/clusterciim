@@ -27,7 +27,7 @@
     },
     {
       "HREF": "Associats",
-      "TITLE": "Partners"
+      "TITLE": "Associates"
     },
     {
       "HREF": "Join",
@@ -48,7 +48,7 @@
   ],
   "ACCESS": {
     "HREF": "Access",
-    "TITLE": "Access"
+    "TITLE": "Log In"
   },
   "NETWORKS": [
     {
@@ -84,10 +84,10 @@
     "ADDRESS": "Camí del Riu s/n.",
     "ADDRESS_HREF": "https://maps.google.com/?q=Camí+del+Riu",
     "FORM": {
-      "HEADING": "Become a Member / Request Information:",
-      "DESCRIPTION": "The main purpose of the association is to promote and enhance the industrial and professional fabric within the construction sector, the companies and organizations working to define a new model of industrialized construction (off-site, prefabricated, sustainable, and meeting circular economy criteria), fostering competitiveness and collaboration among member infrastructures within the construction sector.",
+      "HEADING": "Join the Association / Request Information:",
+      "DESCRIPTION": "The association's main purpose is to promote and highlight the industrial and professional fabric within the construction sector, the companies and organizations working to define a new model of industrialized construction (off-site, prefabricated, sustainable and meeting circular economy criteria), fostering competitiveness and collaboration among member associates and infrastructure within the construction sector.",
       "NAME_LABEL": "Your name",
-      "EMAIL_LABEL": "Your email",
+      "EMAIL_LABEL": "Your email address",
       "PHONE_LABEL": "Mobile phone",
       "MESSAGE_LABEL": "Your message",
       "SUBMIT_LABEL": "Send"
@@ -117,23 +117,23 @@
     "LOGOS": [
       {
         "IMG": "/Footer/a.avif",
-        "TITLE": "Valls Chamber of Commerce",
+        "TITLE": "Chamber of Commerce of Mexico",
         "HREF": "https://cambravalls.com/"
       },
       {
         "IMG": "/Footer/b.avif",
-        "TITLE": "ZF Barcelona Free Trade Zone Consortium",
+        "TITLE": "National Business Council",
         "HREF": "https://www.zfbc.cat/"
       },
       {
         "IMG": "/Footer/c.avif",
-        "TITLE": "Government of Catalonia",
-        "HREF": "https://www.gencat.cat/"
+        "TITLE": "Government of Mexico",
+        "HREF": "https://www.gob.mx/"
       }
     ],
     "TITLE_1": "More information:",
     "TITLE_2": "Address:",
-    "DIRECTION": "Camí del Riu s/n, Molí Fariner, 08760 Martorell, Catalonia.",
+    "DIRECTION": "Av. Constituyentes 1, Historic Center, 76000 Querétaro, Mexico.",
     "POLICIES": [
       {
         "HREF": "#",
@@ -155,19 +155,19 @@
   },
   "STRATEGIC": {
     "TITLE": "Strategic Pillars",
-    "CTA": "We transform companies"
+    "CTA": "We Transform Companies"
   },
   "NEWSLETTER": {
-    "FORM_TITLE": "Pre-register",
+    "FORM_TITLE": "Pre-Register",
     "NAME_LABEL": "Your name",
-    "EMAIL_LABEL": "Your email",
+    "EMAIL_LABEL": "Your email address",
     "SUBMIT": "Send",
     "TITLE": "Welcome to the Future of Construction",
     "SUBTITLE": "Be part of the change. Connect. Transform. Build.",
-    "BODY": "The Cluster of Industrialized Construction of Catalonia is not just a network of companies: it is the core where those who are redesigning the sector converge. Being part of the CCIC means entering an active community of innovation, where expertise mixes with disruption and real opportunities for collaboration, visibility, and growth open up.<br><br><b>Here, connections are generated with leading sector companies and a diversity of SMEs and visionary professionals</b>. We are rethinking every construction process for its industrialization, seeking to improve efficiency and sustainability. From new products and modular systems to algorithms that think faster than regulations, the ecosystem advances… and you can be part of it.<br><br><i>If you believe that industrialization, data, and applied intelligence can transform the way we build, you are in the right place. If you seek to combine capabilities, share projects, or scale your impact, join today.</i><br><br><b>Pre-register, I will contact you and send you detailed information to access our network.</b>"
+    "BODY": "The Industrialized Construction Cluster of Mexico is not just a business network: it is the hub where those redesigning the sector converge. Being part of the CCIC means joining an active community of innovation, where experience meets disruption and real opportunities for collaboration, visibility and growth open up.<br><br><b>Here, connections are forged with leading companies in the sector alongside a diverse range of SMEs and visionary professionals</b>. We are rethinking every construction process for industrialization, seeking to improve efficiency and sustainability. From new products and modular systems to algorithms that move faster than regulations, the ecosystem advances… and you can be part of it.<br><br><i>If you believe that industrialization, data and applied intelligence can transform the way we build, you are in the right place. If you are looking to add capabilities, share projects or scale your impact, join today.</i><br><br><b>Pre-register, and I will get in touch with you and send you detailed information to access our network.</b>"
   },
   "ASSOCIATS": {
-    "TITLE": "Strategic Partners",
+    "TITLE": "Strategic Associates",
     "IMG": "/Associats/bg.avif",
     "PARTNERS": [
       {
@@ -348,11 +348,7 @@
             "HREF": "",
             "TITLE": ""
           },
-          {
-            "IMG": "/Associats/Associates/dAro.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
+          { "IMG": "/Associats/Associates/dAro.avif", "HREF": "", "TITLE": "" },
           {
             "IMG": "/Associats/Associates/Macusa.png",
             "HREF": "",
@@ -423,11 +419,7 @@
             "HREF": "",
             "TITLE": ""
           },
-          {
-            "IMG": "/Associats/Associates/sms.avif",
-            "HREF": "",
-            "TITLE": ""
-          }
+          { "IMG": "/Associats/Associates/sms.avif", "HREF": "", "TITLE": "" }
         ]
       }
     ]
@@ -436,9 +428,7 @@
     "TITLE": "Strategic Areas",
     "SUBTITLE": "Optimizing the value chain",
     "IMG": "/Areas/bg.avif",
-    "BANNER":[
-      "BIM / BAM"
-    ],
+    "BANNER": ["BIM / BAM"],
     "SECTIONS": [
       {
         "TITLE": "Innovation",
@@ -446,7 +436,7 @@
       },
       {
         "TITLE": "Sustainability",
-        "DESCRIPTION": "CCIC promotes sustainability in construction, encouraging practices that reduce environmental impact and promote the circular economy."
+        "DESCRIPTION": "CCIC promotes sustainability in construction, encouraging practices that reduce environmental impact and advance the circular economy."
       }
     ]
   },
@@ -466,24 +456,24 @@
     "SUBTITLE": "We drive the industrialization of construction"
   },
   "CO_FACTORY_CONTENT": {
-    "TITLE": "Asset Investment <br> Investment in Operations",
-    "DESCRIPTION": "We foster a collaborative space with CCIC SMEs, start-ups, and sector professionals. Our public-private collaboration is fundamental for business development.<br><br>At CCIC, we don't just work on short-term solutions; we have created a collaboration and discussion tool to find the solutions needed by a sector in need of transformation.",
-    "BUTTON_1": "Shall we combine synergies?",
+    "TITLE": "Asset Investment <br> Operations Investment",
+    "DESCRIPTION": "We foster a collaborative space with SMEs from the CCiC, startups and industry professionals. Our public-private collaboration is essential for business development.<br><br>At CCiC we do not work only on short-term solutions; we have created a collaboration and debate tool to find the solutions the sector needs as it undergoes transformation.",
+    "BUTTON_1": "Shall we join forces?",
     "HREF_1": "Join",
-    "BUTTON_2": "More about Co-factory",
+    "BUTTON_2": "More about Co-Factory",
     "HREF_2": "News"
   },
   "CO_SHARE": {
     "IMG": "/Strategies/Co-Share/a.jpg",
     "TITLE": "Co-Share",
-    "SUBTITLE": "The cluster organizes bimonthly events with partners in emblematic locations, fostering networking."
+    "SUBTITLE": "The cluster organizes bimonthly events with partners at iconic venues, fostering network creation."
   },
   "CO_SHARE_CONTENT": {
     "TITLE": "Co-Share",
-    "DESCRIPTION": "In that manifesto, the Government of Catalonia and the Barcelona City Council set themselves a challenge: <br><br> 'Create a BIM Working Group to help implement the culture, values, work methods, digital and electronic technologies to train the industry, public administration, research centers, professional groups, and academia.'<br><br>Since then, the 'Construïm el Futur' Commission has oriented its activities in this direction.",
+    "DESCRIPTION": "In that manifesto, the Federal Government of Mexico and the Government of the State of Querétaro set themselves a challenge: <br><br> 'To create a BIM Working Group to help implement the culture, values, working methods, digital and electronic technologies to empower the industry, public administration, research centers, professional associations and academia'.<br><br>Since then, the Construimos el Futuro Commission has oriented its activities in this direction.",
     "BUTTON_1": "View all events",
     "HREF_1": "News",
-    "BUTTON_2": "Become a Partner",
+    "BUTTON_2": "Become a Member",
     "HREF_2": "Contact"
   },
   "CO_MENTOR": {
@@ -493,13 +483,13 @@
   },
   "CO_MENTOR_CONTENT": {
     "TITLE": "Co-Mentor",
-    "DESCRIPTION": "We accompany companies undergoing transition processes within their organization, based on the experience of Cluster members who have driven disruptive changes.",
+    "DESCRIPTION": "We support companies that are in the midst of an organizational transition, drawing on the experience of Cluster members who have driven disruptive change.",
     "BUTTON_2": "Request your Mentorship",
     "HREF_2": "Contact"
   },
   "TEAM": {
     "TITLE": "A great team",
-    "DESCRIPTION": "<b>The Cluster of Industrialized Construction of Catalonia (CCIC) was born as a coordinated response from the main public and private agents in the region to promote a stable space for debate, action, and real transformation of the construction sector.</b> With the support of key entities such as the Barcelona Chamber of Commerce, the Barcelona Free Trade Zone Consortium, and the Government of Catalonia, the CCIC consolidates itself as the meeting point where the master lines of the country's constructive future are defined.<br><br>Since its inception, the cluster has oriented its activity towards the deep modernization of processes, with special attention to the integration of digital technologies, new organizational models, and industrialized systems. This collective commitment to a structural transformation – based on innovation, sustainability, and collaboration – has made the CCIC the reference space for all those initiatives that want to rethink how the habitat of the future is designed, manufactured, and managed.",
+    "DESCRIPTION": "<b>The Industrialized Construction Council of Mexico (CCIC) was born as a coordinated response by the country's leading public and private stakeholders to drive a stable space for debate, action and real transformation of the construction sector.</b> With the support of key institutions such as the Chamber of Commerce of Mexico, the National Business Council and the Government of Mexico, the CCIC has become the meeting point where the master lines of the country's constructive future are defined.<br><br>Since its inception, the cluster has oriented its activity toward the deep modernization of processes, with special attention to the integration of digital technologies, new organizational models and industrialized systems. This collective commitment to structural transformation — grounded in innovation, sustainability and collaboration — has made the CCIC the benchmark space for all initiatives seeking to rethink how the habitat of the future is designed, built and managed.",
     "CTA": "Collaborate with Us",
     "BACK": "Back to team members",
     "DIRECTORS": [
@@ -507,13 +497,13 @@
         "IMG": "/Team/Directors/PereArmora.jpg",
         "NAME": "Pedro Armora",
         "POSITION": "President / Aykos Healthcare",
-        "SEMBLANCE": "Technical engineering studies and PDD IESE 2004<br>Founding partner of Aykos Healthcare / Kosmo / Bosq / CCiC<br>My professional career has been oriented towards the international commercial sector, and I have dedicated myself to opening markets for different sectors (textile, DataCenters, engineering, industrialized construction). I have had international experience through all my companies and professional collaborations.<br><br>Since 2015, I have been an international consultant for large companies; to open new international markets (Real Estate and Industrial sector).<br>Since 2007, I have been basically dedicated to analyzing solutions in the field of industrialized modular construction for the hotel and hospital sectors, considering the different markets and needs. Among the projects developed, the most interesting and innovative would be the first 100% modular hotel in Africa (Dakar), with 90 rooms (5+1 floors) and a hospital in Mauritius, also 100% modular.<br>For two years now, I have been one of the founders of the CCiC, the innovation platform in the construction sector and its transformation towards industrialization, digitalization, sustainability, and specific training."
+        "SEMBLANCE": "Technical engineering studies and PDD IESE 2004<br>Founding partner of Aykos Healthcare / Kosmo / Bosq / CCiC<br>My professional career has been oriented toward international commercial activity, focused on opening markets across different sectors (textiles, DataCenters, engineering, industrialized construction). I have gained international experience through all my companies and professional collaborations.<br><br>Since 2015 I have been an international consultant for large companies, helping to open new international markets (Real Estate and Industrial sector).<br>Since 2007 I have been primarily dedicated to analyzing solutions in the field of industrialized modular construction for the hotel and hospital sector, taking into account different markets and needs. Among the projects developed, the most interesting and innovative are the first 100% modular hotel in Africa (Dakar), with 90 rooms (5+1 floors), and a hospital in Mauritius, also 100% modular.<br>For the past two years, I have been one of the founders of CCiC, the innovation platform in the construction sector and its transformation toward industrialization, digitalization, sustainability and specialized training."
       },
       {
         "IMG": "/Team/Directors/arnal.jpg",
         "NAME": "Ignasi Pérez Arnal",
         "POSITION": "Vice President / BIM Academy",
-        "SEMBLANCE": "CEO of BIM Academy, creates with CATEB the first international event of European scope on BIM, the European BIM Summit in Barcelona in 2014, and since 2018 directs the National Congress of Advanced Architecture and Construction 4.0 at REBUILD in Barcelona and since 2021 Build. He directs the first e-learning platform for the AECO sector, The BIM Force, which is currently in a programming process and is a member of Building SMART Spanish Chapter.<br><br>He has been director, among others, of the Master's in BIM in Civil Engineering and the Master's in Construction Project Manager, and currently directs the first Master's in BIM and Sustainability at butic The New School.<br>He began his BIM training in 2003 with the mebss project, modular, off-site, industrialized spaces that were put up for sale as real estate products at Barcelona Meeting Point. The forced use of advanced software such as AECOsim from Bentley, Catia, and previously the 3D modeler on Unix, Mountain Top, gave him a different vision of what design and construction processes should be."
+        "SEMBLANCE": "CEO of BIM Academy, he created the first international Latin American BIM event, the BIM Summit Mexico in Querétaro in 2014, and since 2018 has directed the National Congress of Advanced Architecture and Construction 4.0 of REBUILD in Mexico and since 2021 the Build. He leads the first e-learning platform for the AECO sector, The BIM Force, currently in a development process, and is a member of Building SMART Spanish Chapter.<br><br>He has directed, among others, the Master in BIM in Civil Engineering and the Master in Construction Project Manager, and currently leads the first Master in BIM and Sustainability at butic The New School.<br>He began his BIM training in 2003 with the mebss project, modular, off-site, industrialized spaces marketed as a real estate product at Mexico Real Estate Expo. The intensive use of advanced software such as Bentley's AECOsim, Catia and the earlier Unix-based 3D modeler Mountain Top gave him a different perspective on what design and construction processes should be."
       },
       {
         "IMG": "/Team/Directors/Josep-Vila.jpg",
@@ -566,56 +556,35 @@
     ]
   },
   "TRANSFORMATION_OF_THE_CONSTRUCTION_SECTOR": {
-    "TITLE": "Transformation of the construction sector",
+    "TITLE": "Transformation of the Construction Sector",
     "SUBTITLE": "",
     "IMG": "/Home/a.avif",
     "ALT": "Industrialized construction",
-    "DESCRIPTION": "<strong>The Cluster of Industrialized Construction of Catalonia (CCIC)</strong> was born from the union of professionals with solid and complementary backgrounds: from health applied to housing to architectural innovation, applied engineering, energy efficiency, and industrial management; this strategic alliance allows us to shape a space for transformation.<br><br>We are committed to a new construction model based on coordination, digitalization, and efficiency, using algorithmic methodologies with existing BIM, CAD, which <strong>allows integrating personalized industrialized processes for each company</strong> from conceptualization to the handover of keys.<br><br>The world is digital and automated; procedural co-creation platforms that explore the intersection between systems and construction details, technology, design, sustainability, marketing, monitoring are tools that provide new perspectives on profound changes in the way of building.<br><br>With this sum of visions, we consolidate ourselves as a key player to lead the paradigm shift in the construction sector in Catalonia, with an open, inclusive perspective ready to face the challenges of a constantly evolving world.",
+    "DESCRIPTION": "<strong>The Industrialized Construction Cluster of Mexico (CCIC)</strong> was born from the union of professionals with solid and complementary backgrounds: from health applied to housing to architectural innovation, applied engineering, energy efficiency and industrial management; this strategic alliance allows us to shape a space of transformation.<br><br>We champion a new construction model based on coordination, digitalization and efficiency, using algorithmic methodologies alongside existing BIM and CAD tools, which <strong>enables the integration of customized industrialized processes for each company</strong> from concept to key handover.<br><br>The world is digital and automated; procedural co-creation platforms that explore the intersection of construction systems and details, technology, design, sustainability, marketing and monitoring are tools that bring new perspectives on deep changes in the way we build.<br><br>With this convergence of visions, we consolidate ourselves as a key player in leading the paradigm shift in the construction sector in Mexico, with an open, integrative outlook prepared to face the challenges of an ever-evolving world.",
     "TAGS": [
-      {
-        "TITLE": "Industrialization",
-        "HREF": "Areas#industrializacion"
-      },
-      {
-        "TITLE": "Digitalization",
-        "HREF": "Areas#digitalizacion"
-      },
-      {
-        "TITLE": "Sustainability",
-        "HREF": "Areas#sostenibilidad"
-      },
-      {
-        "TITLE": "Training",
-        "HREF": "Areas#formacion"
-      }
+      { "TITLE": "Industrialization", "HREF": "Areas#industrializacion" },
+      { "TITLE": "Digitalization", "HREF": "Areas#digitalizacion" },
+      { "TITLE": "Sustainability", "HREF": "Areas#sostenibilidad" },
+      { "TITLE": "Training", "HREF": "Areas#formacion" }
     ]
   },
   "CONEXION_CREATING_COLLABORATIONS": {
-    "TITLE": "Connection, creating collaborations",
+    "TITLE": "Connection, Creating Collaborations",
     "SUBTITLE": "",
     "IMG": "/Home/b.avif",
     "ALT": "Connection, creating collaborations",
-    "DESCRIPTION": "We act as a connector within the industrialized construction ecosystem, generating spaces where companies, professionals, public administrations, and knowledge centers can meet to share challenges, visions, and strategies. Thanks to the diversity and experience of its members, an active trust network is created that facilitates the emergence of real collaborations.<br><br>These connections become tangible collaborations, shared projects, and strategic alliances that make it possible to tackle complex challenges from a collective approach. We create a bridge between innovation and action, fostering a collaborative culture where different perspectives converge with the same purpose: transforming the sector towards more efficient, sustainable construction prepared for the future.",
+    "DESCRIPTION": "We act as a connector within the industrialized construction ecosystem, creating spaces where companies, professionals, public administrations and knowledge centers can come together to share challenges, visions and strategies. Thanks to the diversity and experience of its members, an active network of trust is built that facilitates the emergence of real collaborations.<br><br>These connections become tangible partnerships, shared projects and strategic alliances that allow complex challenges to be tackled from a collective approach. We build a bridge between innovation and action, fostering a collaborative culture in which different perspectives converge toward a single purpose: transforming the sector into a more efficient, sustainable and future-ready form of construction.",
     "TAGS": [
-      {
-        "TITLE": "Co-Factory",
-        "HREF": "Strategies/Co-Factory"
-      },
-      {
-        "TITLE": "Co-Share",
-        "HREF": "Strategies/Co-Share"
-      },
-      {
-        "TITLE": "Co-Mentor",
-        "HREF": "Strategies/Co-Mentor"
-      }
+      { "TITLE": "Co-Factory", "HREF": "Strategies/Co-Factory" },
+      { "TITLE": "Co-Share", "HREF": "Strategies/Co-Share" },
+      { "TITLE": "Co-Mentor", "HREF": "Strategies/Co-Mentor" }
     ]
   },
   "TECHNOLOGICAL_IMPLEMENTATION": {
-    "TITLE": "Technological implementation",
+    "TITLE": "Technological Implementation",
     "SUBTITLE": "Success Story",
     "IMG": "/Home/c.jpg",
     "ALT": "Technological implementation success story",
-    "DESCRIPTION": "<strong>Success story</strong>: Collaboration between various companies in the sector and a computational design studio specialized in parametric geometries. <strong>The objective: to develop a modular system for sustainable housing, adaptable to different contexts.</strong> Combining industrialized processes with generative algorithms, multiple design variants optimized according to local data such as climate, materials, culture were generated.<br><br><em>The result was resounding: <strong>a 70% reduction in design time and a 50% reduction in on-site waste.</strong> The model, now replicated in several municipalities, demonstrates how the union of advanced manufacturing, digitalization, and algorithmic design accelerates innovation and fosters collaboration between diverse teams, under a shared logic based on data and efficiency.</em>"
+    "DESCRIPTION": "<strong>Success story</strong>: Collaboration between various companies in the sector and a computational design studio specializing in parametric geometries. <strong>The goal: to develop a modular system for sustainable housing, adaptable to different contexts.</strong> Combining industrialized processes with generative algorithms, multiple design variants were generated and optimized according to local data such as climate, materials and culture.<br><br><em>The results were remarkable: <strong>a 70% reduction in design time and a 50% reduction in construction waste.</strong> The model, now replicated across several municipalities in Mexico, demonstrates how the combination of advanced manufacturing, digitalization and algorithmic design accelerates innovation and fosters collaboration among diverse teams, under a shared logic based on data and efficiency.</em>"
   }
 }
