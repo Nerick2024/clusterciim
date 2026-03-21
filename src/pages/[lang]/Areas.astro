@@ -5,6 +5,7 @@ import { translations } from "@/i18n/config";
 import Layout from "@/layouts/Layout.astro";
 import Banner from "@/components/Banner.astro";
 import SectionCards from "@/components/SectionCards.astro";
+import Divisor from "@/components/Areas/Divisor.astro";
 
 export function getStaticPaths() {
   return Object.keys(translations).map((lang) => ({ params: { lang } }));
@@ -17,29 +18,6 @@ const i18n = await useTranslation(lang);
 <Layout title="ClusterCIIM">
   <Banner CONTENT={i18n.AREAS} MT />
   <SectionCards CONTENT={i18n.AREAS.SECTIONS[0]} tag={i18n.AREAS.SECTIONS[0].TAG} />
-  <main id="hero" class="relative text-white flex items-center JUWS h-[50vh]">
-    <div
-      class="h-full w-full absolute after:absolute after:inset-0 after:bg-[var(--color-primary)]/25 after:z-10"
-    >
-      <img
-        src="/Areas/a.avif"
-        alt="banner background"
-        class="w-full h-full object-cover brightness-80"
-      />
-    </div>
-    <div
-      class={`max-w-7xl w-full lg:mx-auto flex items-start justify-center flex-col relative z-20 px-6 gap-4 mt-12 lg:mt-32`}
-    >
-      {
-        i18n.AREAS.BANNER[0] && (
-          <h1
-            data-aos="fade-left"
-            class="text-5xl lg:text-6xl font-bold !text-right w-full text-white"
-            set:html={i18n.AREAS.BANNER[0]}
-          />
-        )
-      }
-    </div>
-  </main>
+  <Divisor CONTENT={i18n.AREAS.DIVISOR[0]} />
   <SectionCards CONTENT={i18n.AREAS.SECTIONS[1]} tag={i18n.AREAS.SECTIONS[1].TAG} />
 </Layout>
