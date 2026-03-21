@@ -428,7 +428,7 @@
     "TITLE": "Áreas Estratégicas",
     "SUBTITLE": "Optimizar la cadena de valor",
     "IMG": "/Areas/bg.avif",
-    "BANNER": ["BIM / BAM"],
+    "DIVISOR": [{ "TITLE": "BIM / BAM", "IMG": "/Areas/a.avif" }],
     "SECTIONS": [
       {
         "TAG": "Inovación",
