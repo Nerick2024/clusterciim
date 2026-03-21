@@ -23,8 +23,8 @@ if (tag) {
   const collectionName = `news-${lang}` as "news-es" | "news-en";
   const allNews = await getCollection(collectionName);
   filteredNews = allNews.filter((news) => {
-    const newsCategories = Array.isArray(news.data.category) 
-      ? news.data.category 
+    const newsCategories = Array.isArray(news.data.category)
+      ? news.data.category
       : [news.data.category];
     return newsCategories.includes(tag);
   });
@@ -39,38 +39,40 @@ if (tag) {
       CONTENT.BUTTON_1 && CONTENT.HREF_1 && (
         <a
           href={`/${lang}/${CONTENT.HREF_1}`}
-          class="bg-[var(--color-primary)] hover:bg-black !text-white text-sm italic font-bold px-10 py-4 transition-colors duration-300"
+          class="bg-[var(--color-primary)] hover:bg-gray-600 !text-white text-sm italic font-bold px-10 py-4 transition-colors duration-300"
         >
           {CONTENT.BUTTON_1}
         </a>
       )
     }
-    {filteredNews.length > 0 && (
-      <div class="w-full">
-        <div class="splide carousel-global">
-          <div class="splide__track">
-            <ul class="splide__list !pt-10 !pb-16">
-              {filteredNews.map((news) => (
-                <li class="splide__slide">
-                  <CardNews
-                    title={news.data.title}
-                    description={news.data.description}
-                    image={news.data.image}
-                    slug={news.id.replace(".md", "")}
-                    lang={lang}
-                  />
-                </li>
-              ))}
-            </ul>
+    {
+      filteredNews.length > 0 && (
+        <div class="w-full">
+          <div class="splide carousel-global">
+            <div class="splide__track">
+              <ul class="splide__list !pt-10 !pb-16">
+                {filteredNews.map((news) => (
+                  <li class="splide__slide">
+                    <CardNews
+                      title={news.data.title}
+                      description={news.data.description}
+                      image={news.data.image}
+                      slug={news.id.replace(".md", "")}
+                      lang={lang}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    )}
+      )
+    }
     {
       CONTENT.BUTTON_2 && CONTENT.HREF_2 && (
         <a
           href={`/${lang}/${CONTENT.HREF_2}`}
-          class="bg-[var(--color-primary)] hover:bg-black mx-auto !text-white text-sm italic font-bold px-10 py-4 transition-colors duration-300"
+          class="bg-[var(--color-primary)] hover:bg-gray-600 mx-auto !text-white text-sm italic font-bold px-10 py-4 transition-colors duration-300"
         >
           {CONTENT.BUTTON_2}
         </a>
@@ -80,21 +82,21 @@ if (tag) {
 </section>
 
 <script>
-  import { Splide } from '@splidejs/splide';
-  import '@splidejs/splide/css';
+  import { Splide } from "@splidejs/splide";
+  import "@splidejs/splide/css";
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const carousels = document.querySelectorAll('.carousel-global');
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousels = document.querySelectorAll(".carousel-global");
     carousels.forEach((carousel: Element) => {
       new Splide(carousel as HTMLElement, {
-        type: 'loop',
+        type: "loop",
         perPage: 3,
         perMove: 1,
-        gap: '1rem',
+        gap: "1rem",
         breakpoints: {
           1024: { perPage: 2 },
-          768: { perPage: 1 }
-        }
+          768: { perPage: 1 },
+        },
       }).mount();
     });
   });
