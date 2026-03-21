@@ -35,7 +35,7 @@ const i18n = await useTranslation(lang);
           i18n.CONTACT.ELEMENTS.map((items: any) => (
             <li class="flex flex-row gap-2">
               <p class="!text-white italic">{items.TYPE}:</p>
-              <a href={items.HREF} class="!text-white italic">
+              <a href={items.HREF} target="_blank" class="!text-white italic">
                 {items.DATA}
               </a>
             </li>
