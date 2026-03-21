@@ -36,7 +36,6 @@ async function getPath(lang: string) {
     const pathParts = path.split("/").filter(Boolean);
     const pagePath = pathParts.slice(1).join("/");
 
-    // Check if this is a news article page
     if (pathParts[1] === "news" && pathParts[2]) {
       const currentSlug = pathParts[2];
       const targetLang = lang === "es" ? "es" : "en";
@@ -47,13 +46,11 @@ async function getPath(lang: string) {
         const currentNews = await getCollection(currentCollection);
         const targetNews = await getCollection(targetCollection);
 
-        // Find current article
         const currentArticle = currentNews.find(
           (article) => article.id.replace(".md", "") === currentSlug,
         );
 
         if (currentArticle && currentArticle.data.id) {
-          // Find equivalent article in target language using the same id
           const equivalentArticle = targetNews.find(
             (article) => article.data.id === currentArticle.data.id,
           );
@@ -61,13 +58,13 @@ async function getPath(lang: string) {
           if (equivalentArticle) {
             newPath = `/${lang}/News/${equivalentArticle.id.replace(".md", "")}/`;
           } else {
-            newPath = `/${lang}/News/`; // Fallback to news list
+            newPath = `/${lang}/News/`;
           }
         } else {
-          newPath = `/${lang}/News/`; // Fallback to news list
+          newPath = `/${lang}/News/`;
         }
       } catch (error) {
-        newPath = `/${lang}/News/`; // Fallback to news list
+        newPath = `/${lang}/News/`;
       }
     } else if (pagePath) {
       newPath = `/${lang}/${pagePath}/`;
@@ -75,114 +72,109 @@ async function getPath(lang: string) {
   }
   return newPath;
 }
+
+const otherLangs = await Promise.all(
+  Object.entries(locales)
+    .filter(([lang]) => lang !== currentLang)
+    .map(async ([lang, label]) => ({
+      lang,
+      label,
+      path: await getPath(lang),
+    }))
+);
 ---
 
-<div
-  class="language-picker relative w-full lg:w-auto group"
-  data-language-picker
->
-  <button
-    class="language-toggle button-glass flex items-center justify-center gap-2 italic text-sm p-4"
-    data-language-toggle
-  >
-    <p class="group-hover:!text-[var(--color-primary)]">
-      {currentLang.toUpperCase()}
-    </p>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="language-arrow fill-current h-4 w-4 transition-transform duration-300 group"
-      viewBox="0 0 24 24"
-    >
-      <path
-        class="fill-black group-hover:fill-[var(--color-primary)]"
-        d="m12 15l5-5H7z"></path>
-    </svg>
-  </button>
-  <div
-    class="language-menu bottom-full mb-2 lg:top-full lg:bottom-auto lg:mb-0 left-0 z-20 absolute flex w-full flex-col gap-2 opacity-0 bg-[var(--color-primary)]/75 backdrop-blur-sm rounded-b-sm transition-all duration-200 pointer-events-none"
-    data-language-menu
-  >
-    {
-      Object.entries(locales).map(async ([lang, label]) => {
-        if (lang !== currentLang) {
-          const linkPath = await getPath(lang);
-          return (
-            <a
-              href={linkPath}
-              class="block text-center !text-white w-full italic text-xs py-2 transition-colors hover:bg-gray-600"
-            >
-              {lang.toUpperCase()}
-            </a>
-          );
-        }
-      })
-    }
-  </div>
-</div>
+<!-- Desktop: hover dropdown | Mobile: click accordion -->
+<div class="language-picker relative w-full lg:w-auto" data-language-picker>
 
-<style>
-  @media (min-width: 1024px) {
-    .language-picker:hover .language-menu {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    .language-picker:hover .language-arrow {
-      transform: rotate(180deg);
-    }
-  }
-</style>
+  <!-- Desktop trigger (hover) -->
+  <div class="hidden lg:block group">
+    <span
+      class="flex items-center text-sm italic p-4 transition-colors duration-300 border-b-2 border-transparent hover:text-[var(--color-primary)]! hover:border-[var(--color-primary)] cursor-default gap-1"
+    >
+      {currentLang.toUpperCase()}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="fill-current h-4 w-4 transition-transform group-hover:rotate-180 duration-300"
+        viewBox="0 0 24 24"
+      >
+        <path class="group-hover:fill-[var(--color-primary)] fill-black" d="m12 15l5-5H7z" />
+      </svg>
+    </span>
+    <div
+      class="bg-[var(--color-primary)]/75 backdrop-blur-sm absolute w-full top-full left-0 shadow-xl rounded-b-sm flex flex-col opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20"
+    >
+      {otherLangs.map(({ lang, path }) => (
+        <a
+          href={path}
+          class="block py-2 w-full text-center text-xs italic !text-white transition-colors hover:bg-gray-600 whitespace-nowrap"
+        >
+          {lang.toUpperCase()}
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <!-- Mobile trigger (click accordion) -->
+  <div class="lg:hidden flex flex-col border-b border-gray-100">
+    <button
+      class="mobile-lang-btn flex items-center justify-between text-lg font-medium p-2 transition-colors duration-300 border-b-2 border-transparent hover:text-[var(--color-primary)]! hover:border-[var(--color-primary)] w-full text-left"
+      data-language-toggle
+    >
+      <span>{currentLang.toUpperCase()}</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="language-arrow h-5 w-5 transition-transform duration-300 fill-current"
+        viewBox="0 0 24 24"
+      >
+        <path d="m12 15l5-5H7z" />
+      </svg>
+    </button>
+    <div
+      class="language-menu max-h-0 overflow-hidden transition-all duration-300 flex flex-col border-l-2 border-[var(--color-primary)] ml-2"
+      data-language-menu
+    >
+      <div class="flex flex-col">
+        {otherLangs.map(({ lang, path }) => (
+          <a
+            href={path}
+            class="block text-sm italic w-full py-2 pl-4 transition-colors duration-300 text-gray-600 hover:bg-[var(--color-primary)]/25 hover:text-[var(--color-primary)]!"
+          >
+            {lang.toUpperCase()}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <script is:inline>
   (function () {
-    let initialized = false;
-
     function setupPicker(picker) {
       if (picker.dataset.initialized) return;
       picker.dataset.initialized = "true";
 
       const toggle = picker.querySelector("[data-language-toggle]");
       const menu = picker.querySelector("[data-language-menu]");
-      const arrow = picker.querySelector("[data-language-arrow]");
+      const arrow = picker.querySelector(".language-arrow");
 
-      if (!toggle || !menu || !arrow) return;
+      if (!toggle || !menu) return;
 
-      // Solo agregar funcionalidad de click en móvil
-      const isMobile = () => window.innerWidth < 1024;
-
-      toggle.addEventListener("click", function (e) {
-        if (!isMobile()) return; // En desktop usar hover
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        const isOpen = menu.classList.contains("opacity-100");
-
+      toggle.addEventListener("click", function () {
+        const isOpen = menu.style.maxHeight && menu.style.maxHeight !== "0px";
         if (isOpen) {
-          menu.classList.remove("opacity-100", "pointer-events-auto");
-          menu.classList.add("opacity-0", "pointer-events-none");
-          arrow.classList.remove("rotate-180");
+          menu.style.maxHeight = "0px";
+          arrow?.classList.remove("rotate-180");
         } else {
-          menu.classList.remove("opacity-0", "pointer-events-none");
-          menu.classList.add("opacity-100", "pointer-events-auto");
-          arrow.classList.add("rotate-180");
-        }
-      });
-
-      document.addEventListener("click", function (e) {
-        if (!isMobile() || !picker.contains(e.target)) {
-          menu.classList.remove("opacity-100", "pointer-events-auto");
-          menu.classList.add("opacity-0", "pointer-events-none");
-          arrow.classList.remove("rotate-180");
+          menu.style.maxHeight = menu.scrollHeight + "px";
+          arrow?.classList.add("rotate-180");
         }
       });
     }
 
     function init() {
-      if (initialized) return;
-      initialized = true;
-
-      const pickers = document.querySelectorAll("[data-language-picker]");
-      pickers.forEach(setupPicker);
+      document.querySelectorAll("[data-language-picker]").forEach(setupPicker);
     }
 
     if (document.readyState === "loading") {
@@ -190,5 +182,7 @@ async function getPath(lang: string) {
     } else {
       init();
     }
+
+    document.addEventListener("astro:page-load", init);
   })();
 </script>
