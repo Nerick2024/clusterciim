@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
 
 import Navbar from "@/components/Navbar.astro";
 import Footer from "@/components/Footer.astro";
@@ -58,12 +59,15 @@ const { title } = Astro.props;
     <meta name="googlebot" content="index, follow" />
     <meta name="theme-color" content="#00010b" />
     <meta name="generator" content={Astro.generator} />
+    <ClientRouter />
 
     <title>{title}</title>
   </head>
   <body>
     <Navbar />
-    <slot />
+    <main style="flex: 1;">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>
@@ -76,7 +80,7 @@ const { title } = Astro.props;
   });
 </script>
 <style is:global>
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
   :root {
     --color-text: #000000;
     --color-bg: #ffffff;
@@ -84,7 +88,10 @@ const { title } = Astro.props;
   }
   html,
   body {
-    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   html {
@@ -96,7 +103,7 @@ const { title } = Astro.props;
 
   h1,
   h2 {
-  font-family: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif;
   }
 
   h3,
@@ -110,7 +117,7 @@ const { title } = Astro.props;
   button,
   input,
   textarea {
-  font-family: "Karla", sans-serif;
+    font-family: "Karla", sans-serif;
     color: var(--color-text);
     font-size: 0.875rem;
   }
