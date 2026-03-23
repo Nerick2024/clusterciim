@@ -13,6 +13,7 @@ const i18n = await useTranslation(lang);
         i18n.FOOTER.LOGOS.map((logo: any) => (
           <a href={logo.HREF} class="flex flex-row gap-2 p-6">
             <img
+              loading="lazy"
               src={logo.IMG}
               alt={logo.TITLE}
               title={logo.TITLE}

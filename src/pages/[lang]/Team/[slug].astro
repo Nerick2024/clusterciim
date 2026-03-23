@@ -55,6 +55,7 @@ const i18n = await useTranslation(lang);
         transition:name={`director-photo-${Astro.params.slug}`}
       >
         <img
+          loading="lazy"
           src={director.IMG}
           alt={director.NAME}
           class="w-full h-full object-cover"

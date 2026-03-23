@@ -15,9 +15,9 @@ function splitName(name: string): [string, string] {
   const words = name.trim().split(/\s+/);
   // Si la segunda palabra es un conector (≤2 letras), agrupar palabras 2 y 3 en la segunda línea
   if (words[1] && words[1].length <= 2 && words[2]) {
-    return [words[0], words.slice(1, 3).join(' ')];
+    return [words[0], words.slice(1, 3).join(" ")];
   }
-  return [words[0] ?? '', words[1] ?? ''];
+  return [words[0] ?? "", words[1] ?? ""];
 }
 
 const lang = getLangFromUrl(Astro.url);
@@ -46,6 +46,7 @@ const i18n = await useTranslation(lang);
               transition:name={`director-photo-${createSlug(item.NAME)}`}
             >
               <img
+                loading="lazy"
                 src={item.IMG}
                 alt={item.NAME}
                 class="w-full h-full object-cover"
@@ -53,10 +54,12 @@ const i18n = await useTranslation(lang);
             </div>
             <div class="w-1/2 p-3 flex flex-col gap-2">
               <h3 class="!text-lg lg:!text-2xl italic font-bold text-left flex flex-col leading-tight">
-                {splitName(item.NAME)[0]} <br>
+                {splitName(item.NAME)[0]} <br />
                 {splitName(item.NAME)[1]}
               </h3>
-              <p class="italic !text-black/75 font-semibold text-left">{item.POSITION}</p>
+              <p class="italic !text-black/75 font-semibold text-left">
+                {item.POSITION}
+              </p>
               <p
                 class="!text-sm"
                 set:html={
