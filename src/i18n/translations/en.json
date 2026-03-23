@@ -496,64 +496,28 @@
     "BACK": "Back to team members",
     "DIRECTORS": [
       {
-        "IMG": "/Team/Directors/PereArmora.jpg",
-        "NAME": "Pedro Armora",
-        "POSITION": "President / Aykos Healthcare",
-        "SEMBLANCE": "Technical engineering studies and PDD IESE 2004<br>Founding partner of Aykos Healthcare / Kosmo / Bosq / ClusterCIIM<br>My professional career has been oriented toward international commercial activity, focused on opening markets across different sectors (textiles, DataCenters, engineering, industrialized construction). I have gained international experience through all my companies and professional collaborations.<br><br>Since 2015 I have been an international consultant for large companies, helping to open new international markets (Real Estate and Industrial sector).<br>Since 2007 I have been primarily dedicated to analyzing solutions in the field of industrialized modular construction for the hotel and hospital sector, taking into account different markets and needs. Among the projects developed, the most interesting and innovative are the first 100% modular hotel in Africa (Dakar), with 90 rooms (5+1 floors), and a hospital in Mauritius, also 100% modular.<br>For the past two years, I have been one of the founders of ClusterCIIM, the innovation platform in the construction sector and its transformation toward industrialization, digitalization, sustainability and specialized training."
+        "IMG": "/Team/Directors/hector.webp",
+        "NAME": "Héctor Miranda Martínez",
+        "POSITION": "President",
+        "SEMBLANCE": "Expert in road construction, with extensive experience in planning, execution, and quality control of infrastructure projects in public and industrial sectors."
       },
       {
-        "IMG": "/Team/Directors/arnal.jpg",
-        "NAME": "Ignasi Pérez Arnal",
-        "POSITION": "Vice President / BIM Academy",
-        "SEMBLANCE": "CEO of BIM Academy, he created the first international Latin American BIM event, the BIM Summit Mexico in Querétaro in 2014, and since 2018 has directed the National Congress of Advanced Architecture and Construction 4.0 of REBUILD in Mexico and since 2021 the Build. He leads the first e-learning platform for the AECO sector, The BIM Force, currently in a development process, and is a member of Building SMART Spanish Chapter.<br><br>He has directed, among others, the Master in BIM in Civil Engineering and the Master in Construction Project Manager, and currently leads the first Master in BIM and Sustainability at butic The New School.<br>He began his BIM training in 2003 with the mebss project, modular, off-site, industrialized spaces marketed as a real estate product at Mexico Real Estate Expo. The intensive use of advanced software such as Bentley's AECOsim, Catia and the earlier Unix-based 3D modeler Mountain Top gave him a different perspective on what design and construction processes should be."
+        "IMG": "/Team/Directors/osvaldo.webp",
+        "NAME": "Osvaldo Mireles",
+        "POSITION": "Vice President",
+        "SEMBLANCE": "Expert in technology and sustainable development, specialized in Smart Cities, BIM, Blockchain, AI, and the New Urban Agenda."
       },
       {
-        "IMG": "/Team/Directors/Josep-Vila.jpg",
-        "NAME": "Josep Vila",
-        "POSITION": "Executive Director / ClusterCIIM",
-        "SEMBLANCE": ""
+        "IMG": "/Team/Directors/jorge.webp",
+        "NAME": "Jorge Moreno Vargas",
+        "POSITION": "Treasurer",
+        "SEMBLANCE": "Expert in disruptive technologies, MIT Certified. 13 years leading innovation in smart cities, IoT, and sustainable projects."
       },
       {
-        "IMG": "/Team/Directors/cuevas.jpg",
-        "NAME": "Jorge Cuevas",
-        "POSITION": "Secretary / JC Arquitectos asociados",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/David-Cervera.avif",
-        "NAME": "David Cervera",
-        "POSITION": "Treasurer / Elecnor",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/RaulLuna.jpg",
-        "NAME": "Raúl Luna",
-        "POSITION": "Board Member / Rubau",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/ferranbermejo.jpg",
-        "NAME": "Ferran Bermejo",
-        "POSITION": "Board Member / ITEC",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/TeresaBatlle.jpg",
-        "NAME": "Teresa Batlle",
-        "POSITION": "Board Member / Pich Aguilera",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/claramunt.jpg",
-        "NAME": "Xavier Claramunt",
-        "POSITION": "Board Member / Smartliving",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/Sandra-Gali.avif",
-        "NAME": "Sandra Gali",
-        "POSITION": "Communications Consultant",
-        "SEMBLANCE": ""
+        "IMG": "/Team/Directors/teresitaDeJesus.webp",
+        "NAME": "Teresita de Jesus Guerrero Escamilla",
+        "POSITION": "Secretary",
+        "SEMBLANCE": "Civil Engineer, graduated from the Autonomous University of Querétaro in 2004. Her academic background and career reflect her commitment to engineering and the development of civil projects."
       }
     ]
   },

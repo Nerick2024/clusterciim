@@ -496,64 +496,28 @@
     "BACK": "Volver a los miembros del equipo",
     "DIRECTORS": [
       {
-        "IMG": "/Team/Directors/PereArmora.jpg",
-        "NAME": "Pedro Armora",
-        "POSITION": "Presidente / Aykos Healthcare",
-        "SEMBLANCE": "Estudios de ingeniería técnica y PDD IESE 2004<br>Socio fundador de Aykos Healthcare / Kosmo / Bosq / ClusterCIIM<br>Mi trayectoria profesional ha estado orientada al sector comercial internacional, y me he dedicado a abrir mercados para diferentes sectores (textil, DataCenters, ingeniería, construcción industrializada). He tenido experiencia internacional a través de todas mis empresas y colaboraciones profesionales.<br><br>Desde 2015 soy consultor internacional para grandes empresas; para abrir nuevos mercados internacionales (sector Real Estate e Industrial).<br>Desde 2007 estoy básicamente dedicado a analizar soluciones en el campo de la construcción modular industrializada para el sector hotelero y hospitalario teniendo en cuenta los distintos mercados y necesidades. Dentro de los proyectos elaborados, los más interesantes e innovadores serían el primer hotel 100% modular en África (Dakar), de 90 habitaciones (5+1 plantas) y un hospital en las islas Mauricio, también 100% modular.<br>Desde hace dos años, soy uno de los fundadores del ClusterCIIM, la plataforma de innovación en el sector de la construcción y su transformación hacia la industrialización, digitalización, sostenibilidad y formación específica."
+        "IMG": "/Team/Directors/hector.webp",
+        "NAME": "Héctor Miranda Martínez",
+        "POSITION": "Presidente",
+        "SEMBLANCE": "Experto en construcción de vias terrestres con amplia experiencia en planeación, ejecución y control de calidad en proyectos de infraestructura en sectores público e industrial."
       },
       {
-        "IMG": "/Team/Directors/arnal.jpg",
-        "NAME": "Ignasi Pérez Arnal",
-        "POSITION": "Vicepresidente / BIM Academy",
-        "SEMBLANCE": "CEO de BIM Academy, crea el primer evento internacional de ámbito latinoamericano sobre BIM, el BIM Summit México en Querétaro en el 2014, y desde el 2018 dirige el Congreso Nacional de Arquitectura Avanzada y Construcción 4.0 de REBUILD en México y desde 2021 el Build. Dirige la primera plataforma de e-learning del sector AECO, The BIM Force, que se encuentra actualmente en un proceso de programación y es miembro de Building SMART Spanish Chapter.<br><br>Ha sido director, entre otros, del Máster BIM en Ingeniería Civil y del Máster Construction Project Manager, y actualmente dirige el primer Máster en BIM y Sostenibilidad desde butic The New School.<br>Inicia su formación BIM en 2003 con el proyecto mebss, unos espacios modulares, off-site, industrializados que se pusieron a la venta como producto inmobiliario en México Real Estate Expo. La forzosa utilización de softwares avanzados como AECOsim de Bentley, Catia y antes el modelador 3D en Unix, Mountain Top, le aportan una visión distinta de lo que deben ser los procesos de diseño y construcción."
+        "IMG": "/Team/Directors/osvaldo.webp",
+        "NAME": "Osvaldo Mireles",
+        "POSITION": "Vicepresidente",
+        "SEMBLANCE": "Experto en tecnología y desarrollo sostenible con especialización en Smart Cities, BIM, Blockchain, AI y la Nueva Agenda Urbana."
       },
       {
-        "IMG": "/Team/Directors/Josep-Vila.jpg",
-        "NAME": "Josep Vila",
-        "POSITION": "Director Ejecutivo / ClusterCIIM",
-        "SEMBLANCE": ""
+        "IMG": "/Team/Directors/jorge.webp",
+        "NAME": "Jorge Moreno Vargas",
+        "POSITION": "Tesorero",
+        "SEMBLANCE": "Experto en tecnologías disruptivas, MIT Certified. 13 años liderando innovación en smart cities, IoT y proyectos sostenibles."
       },
       {
-        "IMG": "/Team/Directors/cuevas.jpg",
-        "NAME": "Jorge Cuevas",
-        "POSITION": "Secretario / JC Arquitectos asociados",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/David-Cervera.avif",
-        "NAME": "David Cervera",
-        "POSITION": "Tesorero / Elecnor",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/RaulLuna.jpg",
-        "NAME": "Raúl Luna",
-        "POSITION": "Vocal / Rubau",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/ferranbermejo.jpg",
-        "NAME": "Ferran Bermejo",
-        "POSITION": "Vocal / ITEC",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/TeresaBatlle.jpg",
-        "NAME": "Teresa Batlle",
-        "POSITION": "Vocal / Pich Aguilera",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/claramunt.jpg",
-        "NAME": "Xavier Claramunt",
-        "POSITION": "Vocal / Smartliving",
-        "SEMBLANCE": ""
-      },
-      {
-        "IMG": "/Team/Directors/Sandra-Gali.avif",
-        "NAME": "Sandra Gali",
-        "POSITION": "Consultora en Comunicación",
-        "SEMBLANCE": ""
+        "IMG": "/Team/Directors/teresitaDeJesus.webp",
+        "NAME": "Teresita de Jesus Guerrero Escamilla",
+        "POSITION": "Secretaria",
+        "SEMBLANCE": "Ingeniería Civil, egresada de la Universidad Autónoma de Querétaro en 2004. Su formación y trayectoria reflejan su compromiso con la ingeniería y el desarrollo de proyectos civiles."
       }
     ]
   },
