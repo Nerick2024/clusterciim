@@ -41,7 +41,10 @@ const i18n = await useTranslation(lang);
             data-aos="zoom-in"
             class="flex flex-row bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow rounded-lg"
           >
-            <div class="w-1/2 bg-gradient-to-b from-[var(--color-primary)]/10 to-[var(--color-primary)]/50">
+            <div
+              class="w-1/2 bg-gradient-to-b from-[var(--color-primary)]/10 to-[var(--color-primary)]/50"
+              transition:name={`director-photo-${createSlug(item.NAME)}`}
+            >
               <img
                 src={item.IMG}
                 alt={item.NAME}

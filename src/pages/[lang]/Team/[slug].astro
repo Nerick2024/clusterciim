@@ -50,7 +50,10 @@ const i18n = await useTranslation(lang);
       ← {i18n.TEAM.BACK}
     </a>
     <div class="md:flex">
-      <div class="md:w-2/5 rounded-lg bg-gradient-to-b from-[var(--color-primary)]/10 to-[var(--color-primary)]/50">
+      <div
+        class="md:w-2/5 rounded-lg bg-gradient-to-b from-[var(--color-primary)]/10 to-[var(--color-primary)]/50"
+        transition:name={`director-photo-${Astro.params.slug}`}
+      >
         <img
           src={director.IMG}
           alt={director.NAME}
