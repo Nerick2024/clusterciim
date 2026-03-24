@@ -14,7 +14,7 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<Layout title="cluster CIIM">
+<Layout title={`CCIIM - ${i18n.NAVBAR[4].TITLE.toUpperCase()}`}>
   <Newsletter />
   <StrategicAxes showTitle={false} showCta={false} />
 </Layout>
