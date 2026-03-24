@@ -12,7 +12,7 @@
     },
     { "HREF": "Associats", "TITLE": "Associates" },
     { "HREF": "Join", "TITLE": "Join" },
-    { "HREF": "News", "TITLE": "News" },
+    { "HREF": "", "TITLE": "News" },
     { "HREF": "Team", "TITLE": "Team" },
     { "HREF": "Contact", "TITLE": "Contact" }
   ],
