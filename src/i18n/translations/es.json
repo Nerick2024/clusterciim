@@ -168,7 +168,7 @@
   },
   "ASSOCIATS": {
     "TITLE": "Asociados Estratégicos",
-    "IMG": "/Associats/bg.avif",
+    "IMG": "/Associats/bg.webp",
     "PARTNERS": [
       {
         "TITLE": "Socios Fundadores",
@@ -427,13 +427,13 @@
   "AREAS": {
     "TITLE": "Áreas Estratégicas",
     "SUBTITLE": "Optimizar la cadena de valor",
-    "IMG": "/Areas/bg.avif",
+    "IMG": "/Areas/bg.webp",
     "DIVISOR": [
       { "TITLE": "", "IMG": "" },
-      { "TITLE": "BIM / BAM", "IMG": "/Areas/a.avif" },
-      { "TITLE": "Digitalización profunda", "IMG": "/Areas/b.avif" },
-      { "TITLE": "Casa Pasiva", "IMG": "/Areas/c.avif" },
-      { "TITLE": "Transformación profesional", "IMG": "/Areas/d.avif" }
+      { "TITLE": "BIM / BAM", "IMG": "/Areas/a.webp" },
+      { "TITLE": "Digitalización profunda", "IMG": "/Areas/b.webp" },
+      { "TITLE": "Casa Pasiva", "IMG": "/Areas/c.webp" },
+      { "TITLE": "Transformación profesional", "IMG": "/Areas/d.webp" }
     ],
     "SECTIONS": [
       {
@@ -467,7 +467,7 @@
   },
   "NEWS": {
     "TITLE": "Noticias",
-    "IMG": "/News/bg.avif",
+    "IMG": "/News/bg.webp",
     "SORT_BY_DATE": "Ordenar por:",
     "NEWEST_FIRST": "Más Reciente",
     "OLDEST_FIRST": "Más Antiguo",
@@ -480,7 +480,7 @@
     "DESCRIPTION": "Co-Factory es un espacio industrial. Proporciona una infraestructura fabril que permite acceder a proyectos que superen la capacidad productiva y técnica de las empresas.<br><br>Nos comprometemos a crear un espacio productivo, con equipos formados específicamente para la industrialización, infraestructura técnica y soporte estratégico.",
     "DIVISOR": "/Strategies/Co-Factory/b.avif",
     "BANNER": {
-      "IMG": "/Strategies/Co-Factory/a.png",
+      "IMG": "/Strategies/Co-Factory/a.webp",
       "TITLE": "Co-Factory",
       "SUBTITLE": "Impulsamos la industrialización de la construcción"
     },
@@ -495,7 +495,7 @@
   },
   "CO_SHARE": {
     "BANNER": {
-      "IMG": "/Strategies/Co-Share/a.jpg",
+      "IMG": "/Strategies/Co-Share/a.webp",
       "TITLE": "Co-Share",
       "SUBTITLE": "El cluster organiza eventos bimensuales con partners en lugares emblemáticos, fomentando la creación de red."
     },
@@ -516,7 +516,7 @@
   },
   "CO_MENTOR": {
     "BANNER": {
-      "IMG": "/Strategies/Co-Mentor/a.jpg",
+      "IMG": "/Strategies/Co-Mentor/a.webp",
       "TITLE": "Co-Mentor",
       "SUBTITLE": "Ayudamos a construir futuro"
     },
@@ -568,7 +568,7 @@
   "TRANSFORMATION_OF_THE_CONSTRUCTION_SECTOR": {
     "TITLE": "Transformación del sector de la construcción",
     "SUBTITLE": "",
-    "IMG": "/Home/a.avif",
+    "IMG": "/Home/a.webp",
     "ALT": "Construcción industrializada",
     "DESCRIPTION": "<strong>Clúster de Construcción Industrializada de México (ClusterCIIM)</strong> nace de la unión de profesionales con trayectorias sólidas y complementarias: desde la salud aplicada a la vivienda hasta la innovación arquitectónica, la ingeniería aplicada, la eficiencia energética y la gestión industrial; esta alianza estratégica nos permite dar forma a un espacio de transformación.<br><br>Apostamos por un nuevo modelo constructivo basado en la coordinación, digitalización y eficiencia, utilizando metodologías algorítmicas con las existentes BIM, CAD, lo que <strong>permite integrar procesos industrializados personalizados de cada empresa</strong> desde la conceptualización hasta la entrega de llaves.<br><br>El mundo es digital y automatizado, plataformas de cocreación procedural que exploran la intersección entre sistemas y detalles constructivos, tecnología, diseño, sostenibilidad, marketing, seguimiento son herramientas que aportan nuevas perspectivas sobre cambios profundos en la forma de construir.<br><br>Con esta suma de visiones, nos consolidamos como un actor clave para liderar el cambio de paradigma en el sector de la construcción en México, con una mirada abierta, integradora y preparada para afrontar los retos de un mundo en continua evolución.",
     "TAGS": [
@@ -581,7 +581,7 @@
   "CONEXION_CREATING_COLLABORATIONS": {
     "TITLE": "Conexión, creando colaboraciones",
     "SUBTITLE": "",
-    "IMG": "/Home/b.avif",
+    "IMG": "/Home/b.webp",
     "ALT": "Conexión, creando colaboraciones",
     "DESCRIPTION": "Actuamos como un conector dentro del ecosistema de la construcción industrializada, generando espacios donde empresas, profesionales, administraciones públicas y centros de conocimiento se pueden encontrar para compartir desafíos, visiones y estrategias. Gracias a la diversidad y experiencia de sus miembros, se crea una red activa de confianza que facilita el surgimiento de colaboraciones reales.<br><br>Estas conexiones se convierten en colaboraciones tangibles, proyectos compartidos y alianzas estratégicas que permiten abordar retos complejos desde un enfoque colectivo. Creamos un puente entre innovación y acción, fomentando una cultura colaborativa en la que diferentes perspectivas confluyen con un mismo propósito: transformar el sector hacia una construcción más eficiente, sostenible y preparada para el futuro.",
     "TAGS": [
