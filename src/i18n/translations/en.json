@@ -428,17 +428,38 @@
     "TITLE": "Strategic Areas",
     "SUBTITLE": "Optimizing the value chain",
     "IMG": "/Areas/bg.avif",
-    "DIVISOR": [{ "TITLE": "BIM / BAM", "IMG": "/Areas/a.avif" }],
+    "DIVISOR": [
+      { "TITLE": "", "IMG": "" },
+      { "TITLE": "BIM / BAM", "IMG": "/Areas/a.avif" },
+      { "TITLE": "Deep Digitalization", "IMG": "/Areas/b.avif" },
+      { "TITLE": "Passive House", "IMG": "/Areas/c.avif" },
+      { "TITLE": "Professional Transformation", "IMG": "/Areas/d.avif" }
+    ],
     "SECTIONS": [
       {
-        "TAG": "Innovation",
-        "TITLE": "Innovation",
-        "DESCRIPTION": "Innovation is the engine of transformation. At ClusterCIIM, we foster an environment where disruptive solutions are developed that revolutionize the construction value chain."
+        "TAG": "Industrialization",
+        "TITLE": "Industrialization",
+        "DESCRIPTION": "Any stakeholder, company, association, or professional who wants to contribute to the process of improving and modernizing the sector. Not only industrial companies, but also suppliers, SMEs, or professionals who, through their experience, products, or solutions, can contribute to the common goal."
+      },
+      {
+        "TAG": "Digitalization",
+        "TITLE": "Digitalization",
+        "DESCRIPTION": "This layer of applications applied to a sector traditionally resistant to digital technology. Adding sensors to buildings, facilities, or any construction to evolve the concept of home automation and bring it up to date with available technology."
+      },
+      {
+        "TAG": "Deep Digitalization",
+        "TITLE": "Deep Digitalization",
+        "DESCRIPTION": "Within the transformation process driven by ClusterCIIM, there is an emerging vision we call deep digitalization, summarized in the <b>MAIA</b> concept: Modular + Algorithms + Artificial Intelligence. This approach allows rethinking the construction lifecycle from the ground up, connecting design, manufacturing, operation, commercialization, and management through intelligent data flows and adaptive modular structures. Based on advances in algorithmic design and procedural co-creation platforms, it shows how processes are not only optimized, but also open the door to a more evolutionary, connected, and resilient construction model."
       },
       {
         "TAG": "Sustainability",
         "TITLE": "Sustainability",
-        "DESCRIPTION": "ClusterCIIM promotes sustainability in construction, encouraging practices that reduce environmental impact and advance the circular economy."
+        "DESCRIPTION": "Applying the latest trends and solutions to create passive buildings, or even energy-positive ones. We must act as evangelists for new green energy and reduced consumption. Construction may be the sector with the greatest potential for improvement in carbon footprint, circular economy, and waste reduction."
+      },
+      {
+        "TAG": "Training",
+        "TITLE": "Training",
+        "DESCRIPTION": "A new way of building requires a new way of teaching. Trades evolve from those we already know, while new ones emerge. Professionals' knowledge must evolve with the market and new realities. That is why training is a crucial element in the sector’s transformation. We aim to collaborate with universities, vocational training centers, schools, and companies to define and educate the next generation of professionals."
       }
     ]
   },

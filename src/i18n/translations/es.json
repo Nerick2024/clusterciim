@@ -428,17 +428,38 @@
     "TITLE": "Áreas Estratégicas",
     "SUBTITLE": "Optimizar la cadena de valor",
     "IMG": "/Areas/bg.avif",
-    "DIVISOR": [{ "TITLE": "BIM / BAM", "IMG": "/Areas/a.avif" }],
+    "DIVISOR": [
+      { "TITLE": "", "IMG": "" },
+      { "TITLE": "BIM / BAM", "IMG": "/Areas/a.avif" },
+      { "TITLE": "Digitalización profunda", "IMG": "/Areas/b.avif" },
+      { "TITLE": "Casa Pasiva", "IMG": "/Areas/c.avif" },
+      { "TITLE": "Transformación profesional", "IMG": "/Areas/d.avif" }
+    ],
     "SECTIONS": [
       {
-        "TAG": "Inovación",
-        "TITLE": "Inovación",
-        "DESCRIPTION": "La innovación es el motor de la transformación. En el ClusterCIIM, fomentamos un entorno donde se desarrollan soluciones disruptivas que revolucionan la cadena de valor de la construcción."
+        "TAG": "Industrialización",
+        "TITLE": "Industrialización",
+        "DESCRIPTION": "Cualquier actor, empresa, asociación o profesional que desee aportar en el proceso de mejora y modernización del sector. No sólo empresas industriales, sino también proveedores, pymes, o profesionales que a través de su experiencia, producto o soluciones, puedan aportar al objetivo común."
+      },
+      {
+        "TAG": "Digitalización",
+        "TITLE": "Digitalización",
+        "DESCRIPTION": "Esta capa de aplicaciones a un sector reticente a la tecnología digital. Sensorizar edificios, instalaciones o cualquier construcción para evolucionar el concepto de domótica y llevarlo a un nivel de actualización con la tecnología disponible."
+      },
+      {
+        "TAG": "Digitalización profunda",
+        "TITLE": "Digitalización profunda",
+        "DESCRIPTION": "Dentro del proceso de transformación que impulsa el ClusterCIIM, existe una visión emergente que llamamos digitalización profunda, resumida en el concepto <b>MAIA</b> : Modular + Algoritmos + Inteligencia Artificial. Este enfoque permite repensar el ciclo constructivo desde la raíz, conectando diseño, fabricación, operación, comercialización y administración mediante flujos de datos inteligentes y estructuras modulares adaptativas. Basados ​​en el avance del diseño algorítmico y de plataformas de co-creación procedural, se muestra cómo no sólo se optimizan procesos, sino que se abre la puerta a una construcción más evolutiva, conectada y resiliente."
       },
       {
         "TAG": "Sostenibilidad",
         "TITLE": "Sostenibilidad",
-        "DESCRIPTION": "El ClusterCIIM promueve la sostenibilidad en la construcción, fomentando prácticas que reducen el impacto ambiental y promueven la economía circular."
+        "DESCRIPTION": "Aplicar las últimas tendencias y soluciones para realizar edificios pasivos, o positivos en la generación de energía. Debemos ser un evangelizador de las nuevas energías verdes y de la reducción del consumo. La construcción quizá sea el sector que tiene mayor potencial de mejora en la huella de carbono, la economía circular y la reducción de basura y residuos."
+      },
+      {
+        "TAG": "Formación",
+        "TITLE": "Formación",
+        "DESCRIPTION": "Una nueva forma de construir necesita una nueva forma de enseñar. Los oficios son la evolución de los que ya conocemos, pero aparecen otros nuevos. Los conocimientos de los profesionales deben evolucionar con el mercado y las nuevas realidades. Por eso la Formación es un tema crucial en el cambio en el sector. Queremos participar con las universidades, centros FP, escuelas y empresas, para definir y formar a los nuevos profesionales."
       }
     ]
   },
