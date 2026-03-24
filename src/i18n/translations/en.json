@@ -1,76 +1,31 @@
 {
   "NAVBAR": [
-    {
-      "HREF": "/",
-      "TITLE": "Home"
-    },
-    {
-      "HREF": "Areas",
-      "TITLE": "Areas"
-    },
+    { "HREF": "/", "TITLE": "Home" },
+    { "HREF": "Areas", "TITLE": "Areas" },
     {
       "TITLE": "Strategies",
       "MORE": [
-        {
-          "HREF": "Strategies/Co-Factory",
-          "TITLE": "Co-Factory"
-        },
-        {
-          "HREF": "Strategies/Co-Share",
-          "TITLE": "Co-Share"
-        },
-        {
-          "HREF": "Strategies/Co-Mentor",
-          "TITLE": "Co-Mentor"
-        }
+        { "HREF": "Strategies/Co-Factory", "TITLE": "Co-Factory" },
+        { "HREF": "Strategies/Co-Share", "TITLE": "Co-Share" },
+        { "HREF": "Strategies/Co-Mentor", "TITLE": "Co-Mentor" }
       ]
     },
-    {
-      "HREF": "Associats",
-      "TITLE": "Associates"
-    },
-    {
-      "HREF": "Join",
-      "TITLE": "Join"
-    },
-    {
-      "HREF": "News",
-      "TITLE": "News"
-    },
-    {
-      "HREF": "Team",
-      "TITLE": "Team"
-    },
-    {
-      "HREF": "Contact",
-      "TITLE": "Contact"
-    }
+    { "HREF": "Associats", "TITLE": "Associates" },
+    { "HREF": "Join", "TITLE": "Join" },
+    { "HREF": "News", "TITLE": "News" },
+    { "HREF": "Team", "TITLE": "Team" },
+    { "HREF": "Contact", "TITLE": "Contact" }
   ],
-  "ACCESS": {
-    "HREF": "Access",
-    "TITLE": "Log In"
-  },
+  "ACCESS": { "HREF": "Access", "TITLE": "Login" },
   "NETWORKS": [
-    {
-      "IMG": "/icons/networks/email.svg",
-      "TITLE": "EMAIL",
-      "HREF": ""
-    },
-    {
-      "IMG": "/icons/networks/facebook.svg",
-      "TITLE": "FACEBOOK",
-      "HREF": ""
-    },
+    { "IMG": "/icons/networks/email.svg", "TITLE": "EMAIL", "HREF": "" },
+    { "IMG": "/icons/networks/facebook.svg", "TITLE": "FACEBOOK", "HREF": "" },
     {
       "IMG": "/icons/networks/instagram.svg",
       "TITLE": "INSTAGRAM",
       "HREF": ""
     },
-    {
-      "IMG": "/icons/networks/linkedin.svg",
-      "TITLE": "LINKEDIN",
-      "HREF": ""
-    }
+    { "IMG": "/icons/networks/linkedin.svg", "TITLE": "LINKEDIN", "HREF": "" }
   ],
   "CONTACT": {
     "EMAIL": "info@clusterciim.org",
@@ -85,7 +40,7 @@
     "ADDRESS_HREF": "https://maps.google.com/?q=Camí+del+Riu",
     "FORM": {
       "HEADING": "Join the Association / Request Information:",
-      "DESCRIPTION": "The association's main purpose is to promote and highlight the industrial and professional fabric within the construction sector, the companies and organizations working to define a new model of industrialized construction (off-site, prefabricated, sustainable and meeting circular economy criteria), fostering competitiveness and collaboration among member associates and infrastructure within the construction sector.",
+      "DESCRIPTION": "The main purpose of the association is to promote and highlight the industrial and professional fabric within the construction sector, companies and organizations working to define a new model of industrialized construction (off-site, prefabricated, sustainable and meeting circular economy criteria), fostering competitiveness and collaboration among member associates within the construction sector.",
       "NAME_LABEL": "Your name",
       "EMAIL_LABEL": "Your email address",
       "PHONE_LABEL": "Mobile phone",
@@ -135,18 +90,9 @@
     "TITLE_2": "Address:",
     "DIRECTION": "Av. Constituyentes 1, Historic Center, 76000 Querétaro, Mexico.",
     "POLICIES": [
-      {
-        "HREF": "#",
-        "TITLE": "Privacy Policy"
-      },
-      {
-        "HREF": "#",
-        "TITLE": "Cookie Policy"
-      },
-      {
-        "HREF": "#",
-        "TITLE": "Legal Notice"
-      }
+      { "HREF": "#", "TITLE": "Privacy policy" },
+      { "HREF": "#", "TITLE": "Cookie policy" },
+      { "HREF": "#", "TITLE": "Legal notice" }
     ],
     "COPYRIGHT": "All rights reserved."
   },
@@ -155,7 +101,7 @@
   },
   "STRATEGIC": {
     "TITLE": "Strategic Pillars",
-    "CTA": "We Transform Companies"
+    "CTA": "We transform companies"
   },
   "NEWSLETTER": {
     "FORM_TITLE": "Pre-Register",
@@ -164,7 +110,7 @@
     "SUBMIT": "Send",
     "TITLE": "Welcome to the Future of Construction",
     "SUBTITLE": "Be part of the change. Connect. Transform. Build.",
-    "BODY": "Clúster de Construcción Industrializada de México is not just a business network: it is the hub where those redesigning the sector converge. Being part of the ClusterCIIM means joining an active community of innovation, where experience meets disruption and real opportunities for collaboration, visibility and growth open up.<br><br><b>Here, connections are forged with leading companies in the sector alongside a diverse range of SMEs and visionary professionals</b>. We are rethinking every construction process for industrialization, seeking to improve efficiency and sustainability. From new products and modular systems to algorithms that move faster than regulations, the ecosystem advances… and you can be part of it.<br><br><i>If you believe that industrialization, data and applied intelligence can transform the way we build, you are in the right place. If you are looking to add capabilities, share projects or scale your impact, join today.</i><br><br><b>Pre-register, and I will get in touch with you and send you detailed information to access our network.</b>"
+    "BODY": "The Industrialized Construction Cluster of Mexico is not just a business network: it is the hub where those who are redesigning the sector converge. Joining ClusterCIIM means entering an active innovation community, where experience meets disruption and real opportunities for collaboration, visibility and growth open up.<br><br><b>Here you connect with leading companies in the sector and a diverse range of visionary SMEs and professionals</b>. We are rethinking every construction process for industrialization, seeking to improve efficiency and sustainability. From new products and modular systems to algorithms that think faster than regulations, the ecosystem moves forward… and you can be part of it.<br><br><i>If you believe that industrialization, data and applied intelligence can transform the way we build, you are in the right place. If you are looking to combine capabilities, share projects or scale your impact, join us today.</i><br><br><b>Pre-register, I will get in touch with you and send you detailed information to access our network.</b>"
   },
   "ASSOCIATS": {
     "TITLE": "Strategic Associates",
@@ -439,28 +385,28 @@
       {
         "TAG": "Industrialization",
         "TITLE": "Industrialization",
-        "DESCRIPTION": "Any stakeholder, company, association, or professional who wants to contribute to the process of improving and modernizing the sector. Not only industrial companies, but also suppliers, SMEs, or professionals who, through their experience, products, or solutions, can contribute to the common goal."
+        "DESCRIPTION": "Any actor, company, association or professional who wishes to contribute to the process of improvement and modernization of the sector. Not only industrial companies, but also suppliers, SMEs, or professionals who, through their experience, products or solutions, can contribute to the common goal."
       },
       {
         "TAG": "Digitalization",
         "TITLE": "Digitalization",
-        "DESCRIPTION": "This layer of applications applied to a sector traditionally resistant to digital technology. Adding sensors to buildings, facilities, or any construction to evolve the concept of home automation and bring it up to date with available technology."
+        "DESCRIPTION": "This layer of applications to a sector resistant to digital technology. Sensorizing buildings, facilities or any construction to evolve the concept of home automation and bring it to a level of alignment with available technology."
       },
       {
         "TAG": "Deep Digitalization",
         "TITLE": "Deep Digitalization",
-        "DESCRIPTION": "Within the transformation process driven by ClusterCIIM, there is an emerging vision we call deep digitalization, summarized in the <b>MAIA</b> concept: Modular + Algorithms + Artificial Intelligence. This approach allows rethinking the construction lifecycle from the ground up, connecting design, manufacturing, operation, commercialization, and management through intelligent data flows and adaptive modular structures. Based on advances in algorithmic design and procedural co-creation platforms, it shows how processes are not only optimized, but also open the door to a more evolutionary, connected, and resilient construction model."
+        "DESCRIPTION": "Within the transformation process driven by ClusterCIIM, there is an emerging vision we call deep digitalization, summarized in the concept <b>MAIA</b>: Modular + Algorithms + Artificial Intelligence. This approach allows rethinking the construction cycle from the ground up, connecting design, manufacturing, operation, commercialization and administration through intelligent data flows and adaptive modular structures. Based on advances in algorithmic design and procedural co-creation platforms, it shows how not only processes are optimized, but the door is opened to a more evolutionary, connected and resilient construction."
       },
       {
         "TAG": "Sustainability",
         "TITLE": "Sustainability",
-        "DESCRIPTION": "Applying the latest trends and solutions to create passive buildings, or even energy-positive ones. We must act as evangelists for new green energy and reduced consumption. Construction may be the sector with the greatest potential for improvement in carbon footprint, circular economy, and waste reduction."
+        "DESCRIPTION": "Applying the latest trends and solutions to build passive or energy-positive buildings. We must be an advocate for new green energies and consumption reduction. Construction may be the sector with the greatest potential for improvement in carbon footprint, circular economy and waste reduction."
       },
       {
         "TAG": "Training",
         "TITLE": "Training",
-        "DESCRIPTION": "A new way of building requires a new way of teaching. Trades evolve from those we already know, while new ones emerge. Professionals' knowledge must evolve with the market and new realities. That is why training is a crucial element in the sector’s transformation. We aim to collaborate with universities, vocational training centers, schools, and companies to define and educate the next generation of professionals.",
-        "BUTTON_2": "Join",
+        "DESCRIPTION": "A new way of building requires a new way of teaching. Trades are the evolution of those we already know, but new ones are emerging. Professionals' knowledge must evolve with the market and new realities. That is why Training is a crucial issue in the sector's transformation. We want to work with universities, vocational training centers, schools and companies to define and train the new professionals.",
+        "BUTTON_2": "Join us",
         "HREF_2": "Join"
       }
     ]
@@ -469,24 +415,24 @@
     "TITLE": "News",
     "IMG": "/News/bg.avif",
     "SORT_BY_DATE": "Sort by:",
-    "NEWEST_FIRST": "Newest First",
-    "OLDEST_FIRST": "Oldest First",
+    "NEWEST_FIRST": "Newest",
+    "OLDEST_FIRST": "Oldest",
     "CATEGORIES": "Categories:",
     "ALL": "All",
     "READ_MORE": "Read More →"
   },
   "CO_FACTORY": {
-    "IMG": "/Strategies/Co-Factory/a.png",
-    "TITLE": "Co-Factory",
-    "SUBTITLE": "We drive the industrialization of construction"
-  },
-  "CO_FACTORY_CONTENT": {
-    "TITLE": "A New Way of Working",
-    "DESCRIPTION": "Co-Factory is an industrial space. It provides manufacturing infrastructure that enables access to projects exceeding companies' productive and technical capacity.<br><br>We are committed to creating a productive environment, with teams specifically trained in industrialization, technical infrastructure, and strategic support.",
+    "TITLE": "A new way of working",
+    "DESCRIPTION": "Co-Factory is an industrial space. It provides a manufacturing infrastructure that allows access to projects that exceed the productive and technical capacity of companies.<br><br>We are committed to creating a productive space, with teams specifically trained for industrialization, technical infrastructure and strategic support.",
     "DIVISOR": "/Strategies/Co-Factory/b.avif",
+    "BANNER": {
+      "IMG": "/Strategies/Co-Factory/a.png",
+      "TITLE": "Co-Factory",
+      "SUBTITLE": "We drive the industrialization of construction"
+    },
     "SECTION": {
-      "TITLE": "Asset Investment <br> Operational Investment",
-      "DESCRIPTION": "We promote a collaborative space with SMEs from ClusterCIIM, startups, and industry professionals. Our public-private collaboration is essential for business development.<br><br>At ClusterCIIM, we do not focus only on short-term solutions; we have created a collaboration and discussion platform to find the solutions the sector needs in order to transform.",
+      "TITLE": "Asset Investment <br> Operations Investment",
+      "DESCRIPTION": "We foster a collaborative space with ClusterCIIM SMEs, startups and industry professionals. Our public-private collaboration is essential for business development.<br><br>At ClusterCIIM we do not only work on short-term solutions, but have created a collaboration and debate tool to find the solutions needed by a sector that must transform itself.",
       "BUTTON_1": "Shall we join forces?",
       "HREF_1": "Join",
       "BUTTON_2": "More about Co-Factory",
@@ -494,32 +440,48 @@
     }
   },
   "CO_SHARE": {
-    "IMG": "/Strategies/Co-Share/a.jpg",
-    "TITLE": "Co-Share",
-    "SUBTITLE": "The cluster organizes bimonthly events with partners at iconic venues, fostering network creation."
-  },
-  "CO_SHARE_CONTENT": {
-    "TITLE": "Co-Share",
-    "DESCRIPTION": "In that manifesto, the Federal Government of Mexico and the Government of the State of Querétaro set themselves a challenge: <br><br> 'To create a BIM Working Group to help implement the culture, values, working methods, digital and electronic technologies to empower the industry, public administration, research centers, professional associations and academia'.<br><br>Since then, the Construimos el Futuro Commission has oriented its activities in this direction.",
-    "BUTTON_1": "View all events",
-    "HREF_1": "News",
-    "BUTTON_2": "Become a Member",
-    "HREF_2": "Contact"
+    "BANNER": {
+      "IMG": "/Strategies/Co-Share/a.jpg",
+      "TITLE": "Co-Share",
+      "SUBTITLE": "The cluster organizes bimonthly events with partners in iconic venues, fostering networking."
+    },
+    "SECTION": {
+      "TITLE": "Co-Share",
+      "DESCRIPTION": "In that manifesto, the Federal Government of Mexico and the Government of the State of Querétaro set a challenge: <br><br> 'Create a BIM Working Group to help implement the culture, values, working methods, digital and electronic technologies to train industry, public administration, research centers, professional associations and the academic world'.<br><br>Since then, the Construimos el Futuro Commission has directed its activities in this direction.",
+      "BUTTON_1": "See all events",
+      "HREF_1": "News",
+      "BUTTON_2": "Join us",
+      "HREF_2": "Contact"
+    },
+    "BANNER_INFO": {
+      "IMG": "/Strategies/Co-Share/b.avif",
+      "TITLE": "Industrialization experiences",
+      "DESCRIPTION": "These events are linked to the CCiC and its associates, offering collaboration opportunities with entities with potential projects, external guests who share experiences aligned with CCiC objectives, and visits to industrial spaces to understand sustainable processes, solutions and digitalization."
+    },
+    "FOOTER": "The gatherings offer a unique platform to learn, collaborate and explore advances in the industry."
   },
   "CO_MENTOR": {
-    "IMG": "/Strategies/Co-Mentor/a.jpg",
-    "TITLE": "Co-Mentor",
-    "SUBTITLE": "We help build the future"
-  },
-  "CO_MENTOR_CONTENT": {
-    "TITLE": "Co-Mentor",
-    "DESCRIPTION": "We support companies that are in the midst of an organizational transition, drawing on the experience of Cluster members who have driven disruptive change.",
-    "BUTTON_2": "Request your Mentorship",
-    "HREF_2": "Contact"
+    "BANNER": {
+      "IMG": "/Strategies/Co-Mentor/a.jpg",
+      "TITLE": "Co-Mentor",
+      "SUBTITLE": "We help build the future"
+    },
+    "SECTION": {
+      "TITLE": "Co-Mentor",
+      "DESCRIPTION": "We accompany companies going through an organizational transition, drawing on the experience of Cluster members who have driven disruptive change.",
+      "BUTTON_2": "Request your Mentorship",
+      "HREF_2": "Contact"
+    },
+    "BANNER_INFO": {
+      "IMG": "/Strategies/Co-Mentor/b.avif",
+      "TITLE": "",
+      "DESCRIPTION": "We offer 5 two-hour meetings with two Cluster mentors to get to know the company: Structure, product, market, channels, financial position. We carry out an internal analysis and a short, medium and long-term strategic plan. It also includes a LEAN Startup agreement to test new models and analyze impacts, and the validation and adaptation of the model, including the possibility of financing."
+    },
+    "FOOTER": "This accompaniment seeks to be a practical boost for companies in transformation."
   },
   "TEAM": {
     "TITLE": "A great team",
-    "DESCRIPTION": "<b>Clúster de Construcción Industrializada de México (ClusterCIIM) was born as a coordinated response by the country's leading public and private stakeholders to drive a stable space for debate, action and real transformation of the construction sector.</b> With the support of key institutions such as the Chamber of Commerce of Mexico, the National Business Council and the Government of Mexico, the ClusterCIIM has become the meeting point where the master lines of the country's constructive future are defined.<br><br>Since its inception, the cluster has oriented its activity toward the deep modernization of processes, with special attention to the integration of digital technologies, new organizational models and industrialized systems. This collective commitment to structural transformation — grounded in innovation, sustainability and collaboration — has made the ClusterCIIM the benchmark space for all initiatives seeking to rethink how the habitat of the future is designed, built and managed.",
+    "DESCRIPTION": "<b>The Industrialized Construction Cluster of Mexico (ClusterCIIM) was born as a coordinated response from the country's leading public and private stakeholders to drive a stable space for debate, action and real transformation of the construction sector.</b> With the support of key entities such as the Chamber of Commerce of Mexico, the National Business Council and the Government of Mexico, ClusterCIIM has consolidated itself as the meeting point where the master lines of the country's constructive future are defined.<br><br>Since its inception, the cluster has directed its activity towards the deep modernization of processes, with special attention to the integration of digital technologies, new organizational models and industrialized systems. This collective commitment to structural transformation — based on innovation, sustainability and collaboration — has made ClusterCIIM the reference space for all those initiatives that want to rethink how the habitat of the future is designed, manufactured and managed.",
     "CTA": "Collaborate with Us",
     "BACK": "Back to team members",
     "DIRECTORS": [
@@ -527,34 +489,34 @@
         "IMG": "/Team/Directors/hector.webp",
         "NAME": "Héctor Miranda Martínez",
         "POSITION": "President",
-        "SEMBLANCE": "Expert in road construction, with extensive experience in planning, execution, and quality control of infrastructure projects in public and industrial sectors."
+        "SEMBLANCE": "Expert in road construction with extensive experience in planning, execution and quality control in infrastructure projects in the public and industrial sectors."
       },
       {
         "IMG": "/Team/Directors/osvaldo.webp",
         "NAME": "Osvaldo Mireles",
         "POSITION": "Vice President",
-        "SEMBLANCE": "Expert in technology and sustainable development, specialized in Smart Cities, BIM, Blockchain, AI, and the New Urban Agenda."
+        "SEMBLANCE": "Expert in technology and sustainable development with specialization in Smart Cities, BIM, Blockchain, AI and the New Urban Agenda."
       },
       {
         "IMG": "/Team/Directors/jorge.webp",
         "NAME": "Jorge Moreno Vargas",
         "POSITION": "Treasurer",
-        "SEMBLANCE": "Expert in disruptive technologies, MIT Certified. 13 years leading innovation in smart cities, IoT, and sustainable projects."
+        "SEMBLANCE": "Expert in disruptive technologies, MIT Certified. 13 years leading innovation in smart cities, IoT and sustainable projects."
       },
       {
         "IMG": "/Team/Directors/teresitaDeJesus.webp",
         "NAME": "Teresita de Jesus Guerrero Escamilla",
         "POSITION": "Secretary",
-        "SEMBLANCE": "Civil Engineer, graduated from the Autonomous University of Querétaro in 2004. Her academic background and career reflect her commitment to engineering and the development of civil projects."
+        "SEMBLANCE": "Civil Engineer, graduated from the Autonomous University of Querétaro in 2004. Her training and career reflect her commitment to engineering and the development of civil projects."
       }
     ]
   },
   "TRANSFORMATION_OF_THE_CONSTRUCTION_SECTOR": {
-    "TITLE": "Transformation of the Construction Sector",
+    "TITLE": "Transformation of the construction sector",
     "SUBTITLE": "",
     "IMG": "/Home/a.avif",
     "ALT": "Industrialized construction",
-    "DESCRIPTION": "<strong>Clúster de Construcción Industrializada de México (ClusterCIIM)</strong> was born from the union of professionals with solid and complementary backgrounds: from health applied to housing to architectural innovation, applied engineering, energy efficiency and industrial management; this strategic alliance allows us to shape a space of transformation.<br><br>We champion a new construction model based on coordination, digitalization and efficiency, using algorithmic methodologies alongside existing BIM and CAD tools, which <strong>enables the integration of customized industrialized processes for each company</strong> from concept to key handover.<br><br>The world is digital and automated; procedural co-creation platforms that explore the intersection of construction systems and details, technology, design, sustainability, marketing and monitoring are tools that bring new perspectives on deep changes in the way we build.<br><br>With this convergence of visions, we consolidate ourselves as a key player in leading the paradigm shift in the construction sector in Mexico, with an open, integrative outlook prepared to face the challenges of an ever-evolving world.",
+    "DESCRIPTION": "<strong>The Industrialized Construction Cluster of Mexico (ClusterCIIM)</strong> was born from the union of professionals with solid and complementary backgrounds: from health applied to housing to architectural innovation, applied engineering, energy efficiency and industrial management; this strategic alliance allows us to shape a space for transformation.<br><br>We are committed to a new construction model based on coordination, digitalization and efficiency, using algorithmic methodologies alongside existing BIM and CAD tools, which <strong>allows the integration of customized industrialized processes for each company</strong> from conceptualization to key handover.<br><br>The world is digital and automated; procedural co-creation platforms that explore the intersection between systems and construction details, technology, design, sustainability, marketing and monitoring are tools that bring new perspectives on deep changes in the way we build.<br><br>With this convergence of visions, we consolidate ourselves as a key player to lead the paradigm shift in the construction sector in Mexico, with an open, integrative and forward-looking approach prepared to face the challenges of a world in constant evolution.",
     "TAGS": [
       { "TITLE": "Industrialization", "HREF": "Areas#industrializacion" },
       { "TITLE": "Digitalization", "HREF": "Areas#digitalizacion" },
@@ -563,11 +525,11 @@
     ]
   },
   "CONEXION_CREATING_COLLABORATIONS": {
-    "TITLE": "Connection, Creating Collaborations",
+    "TITLE": "Connection, creating collaborations",
     "SUBTITLE": "",
     "IMG": "/Home/b.avif",
     "ALT": "Connection, creating collaborations",
-    "DESCRIPTION": "We act as a connector within the industrialized construction ecosystem, creating spaces where companies, professionals, public administrations and knowledge centers can come together to share challenges, visions and strategies. Thanks to the diversity and experience of its members, an active network of trust is built that facilitates the emergence of real collaborations.<br><br>These connections become tangible partnerships, shared projects and strategic alliances that allow complex challenges to be tackled from a collective approach. We build a bridge between innovation and action, fostering a collaborative culture in which different perspectives converge toward a single purpose: transforming the sector into a more efficient, sustainable and future-ready form of construction.",
+    "DESCRIPTION": "We act as a connector within the industrialized construction ecosystem, creating spaces where companies, professionals, public administrations and knowledge centers can come together to share challenges, visions and strategies. Thanks to the diversity and experience of its members, an active network of trust is created that facilitates the emergence of real collaborations.<br><br>These connections become tangible collaborations, shared projects and strategic alliances that allow complex challenges to be addressed from a collective approach. We create a bridge between innovation and action, fostering a collaborative culture in which different perspectives converge with one common purpose: to transform the sector towards a more efficient, sustainable and future-ready construction.",
     "TAGS": [
       { "TITLE": "Co-Factory", "HREF": "Strategies/Co-Factory" },
       { "TITLE": "Co-Share", "HREF": "Strategies/Co-Share" },
@@ -575,10 +537,10 @@
     ]
   },
   "TECHNOLOGICAL_IMPLEMENTATION": {
-    "TITLE": "Technological Implementation",
+    "TITLE": "Technological implementation",
     "SUBTITLE": "Success Story",
     "IMG": "/Home/c.jpg",
     "ALT": "Technological implementation success story",
-    "DESCRIPTION": "<strong>Success story</strong>: Collaboration between various companies in the sector and a computational design studio specializing in parametric geometries. <strong>The goal: to develop a modular system for sustainable housing, adaptable to different contexts.</strong> Combining industrialized processes with generative algorithms, multiple design variants were generated and optimized according to local data such as climate, materials and culture.<br><br><em>The results were remarkable: <strong>a 70% reduction in design time and a 50% reduction in construction waste.</strong> The model, now replicated across several municipalities in Mexico, demonstrates how the combination of advanced manufacturing, digitalization and algorithmic design accelerates innovation and fosters collaboration among diverse teams, under a shared logic based on data and efficiency.</em>"
+    "DESCRIPTION": "<strong>Success story</strong>: Collaboration between various companies in the sector and a computational design studio specialized in parametric geometries. <strong>The goal: to develop a modular system for sustainable housing, adaptable to different contexts.</strong> Combining industrialized processes with generative algorithms, multiple design variants were generated, optimized according to local data such as climate, materials and culture.<br><br><em>The result was striking: <strong>a 70% reduction in design time and a 50% reduction in construction waste.</strong> The model, now replicated in several municipalities in Mexico, demonstrates how the combination of advanced manufacturing, digitalization and algorithmic design accelerates innovation and fosters collaboration among diverse teams, under a shared logic based on data and efficiency.</em>"
   }
 }

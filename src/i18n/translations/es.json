@@ -476,15 +476,15 @@
     "READ_MORE": "Leer Más →"
   },
   "CO_FACTORY": {
-    "IMG": "/Strategies/Co-Factory/a.png",
-    "TITLE": "Co-Factory",
-    "SUBTITLE": "Impulsamos la industrialización de la construcción"
-  },
-  "CO_FACTORY_CONTENT": {
     "TITLE": "Nueva forma de trabajar",
-    "DESCRIPTION":"Co-Factory es un espacio industrial. Proporciona una infraestructura fabril que permite acceder a proyectos que superen la capacidad productiva y técnica de las empresas.<br><br>Nos comprometemos a crear un espacio productivo, con equipos formados específicamente para la industrialización, infraestructura técnica y soporte estratégico.",
+    "DESCRIPTION": "Co-Factory es un espacio industrial. Proporciona una infraestructura fabril que permite acceder a proyectos que superen la capacidad productiva y técnica de las empresas.<br><br>Nos comprometemos a crear un espacio productivo, con equipos formados específicamente para la industrialización, infraestructura técnica y soporte estratégico.",
     "DIVISOR": "/Strategies/Co-Factory/b.avif",
-    "SECTION":{
+    "BANNER": {
+      "IMG": "/Strategies/Co-Factory/a.png",
+      "TITLE": "Co-Factory",
+      "SUBTITLE": "Impulsamos la industrialización de la construcción"
+    },
+    "SECTION": {
       "TITLE": "Inversión de activos <br> Inversión en operaciones",
       "DESCRIPTION": "Fomentamos un espacio colaborativo con PYMES del ClusterCIIM, start ups y profesionales del sector. Nuestra colaboración público-privada es fundamental para el desarrollo empresarial.<br><br>El ClusterCIIM no trabajamos sólo en soluciones a corto plazo, sino que hemos creado una herramienta de colaboración y de debate para encontrar las soluciones que necesita el sector que debe transformarse.",
       "BUTTON_1": "¿Unimos sinergias?",
@@ -494,28 +494,44 @@
     }
   },
   "CO_SHARE": {
-    "IMG": "/Strategies/Co-Share/a.jpg",
-    "TITLE": "Co-Share",
-    "SUBTITLE": "El cluster organiza eventos bimensuales con partners en lugares emblemáticos, fomentando la creación de red."
-  },
-  "CO_SHARE_CONTENT": {
-    "TITLE": "Co-Share",
-    "DESCRIPTION": "En aquel manifiesto, el Gobierno Federal de México y el Gobierno del Estado de Querétaro se proponían un reto: <br><br> 'Crear un Grupo de Trabajo BIM que ayude a implementar la cultura, valores, métodos de trabajo, tecnologías digitales y electrónicas para capacitar a la industria, la administración pública, los centros de investigación, los colectivos profesionales y el mundo académico'.<br><br>Desde entonces la Comisión Construimos el Futuro ha orientado sus actividades en esta dirección",
-    "BUTTON_1": "Revisar todos los eventos",
-    "HREF_1": "News",
-    "BUTTON_2": "Asociarse",
-    "HREF_2": "Contact"
+    "BANNER": {
+      "IMG": "/Strategies/Co-Share/a.jpg",
+      "TITLE": "Co-Share",
+      "SUBTITLE": "El cluster organiza eventos bimensuales con partners en lugares emblemáticos, fomentando la creación de red."
+    },
+    "SECTION": {
+      "TITLE": "Co-Share",
+      "DESCRIPTION": "En aquel manifiesto, el Gobierno Federal de México y el Gobierno del Estado de Querétaro se proponían un reto: <br><br> 'Crear un Grupo de Trabajo BIM que ayude a implementar la cultura, valores, métodos de trabajo, tecnologías digitales y electrónicas para capacitar a la industria, la administración pública, los centros de investigación, los colectivos profesionales y el mundo académico'.<br><br>Desde entonces la Comisión Construimos el Futuro ha orientado sus actividades en esta dirección",
+      "BUTTON_1": "Revisar todos los eventos",
+      "HREF_1": "News",
+      "BUTTON_2": "Asociarse",
+      "HREF_2": "Contact"
+    },
+    "BANNER_INFO": {
+      "IMG": "/Strategies/Co-Share/b.avif",
+      "TITLE": "Experiencias de industrialización",
+      "DESCRIPTION": "Estos eventos están ligados al CCiC y sus asociados, ofreciendo oportunidades de colaboración con entidades con proyectos potenciales, invitados externos que comparten experiencias alineadas con los objetivos del CCiC y visitas a espacios industriales para entender procesos o soluciones sostenibles y digitalización."
+    },
+    "FOOTER": "Los encuentros ofrecen una plataforma única para aprender, colaborar y explorar avances en la industria."
   },
   "CO_MENTOR": {
-    "IMG": "/Strategies/Co-Mentor/a.jpg",
-    "TITLE": "Co-Mentor",
-    "SUBTITLE": "Ayudamos a construir futuro"
-  },
-  "CO_MENTOR_CONTENT": {
-    "TITLE": "Co-Mentor",
-    "DESCRIPTION": "Acompañamos a empresas que estén en proceso de transición dentro de su organización, basándonos en la experiencia de miembros del Clúster que han impulsado cambios disruptivos.",
-    "BUTTON_2": "Pide tu Mentoría",
-    "HREF_2": "Contact"
+    "BANNER": {
+      "IMG": "/Strategies/Co-Mentor/a.jpg",
+      "TITLE": "Co-Mentor",
+      "SUBTITLE": "Ayudamos a construir futuro"
+    },
+    "SECTION": {
+      "TITLE": "Co-Mentor",
+      "DESCRIPTION": "Acompañamos a empresas que estén en proceso de transición dentro de su organización, basándonos en la experiencia de miembros del Clúster que han impulsado cambios disruptivos.",
+      "BUTTON_2": "Pide tu Mentoría",
+      "HREF_2": "Contact"
+    },
+    "BANNER_INFO": {
+      "IMG": "/Strategies/Co-Mentor/b.avif",
+      "TITLE": "",
+      "DESCRIPTION": "Ofrecemos 5 reuniones de 2 horas con dos mentores del Clúster para conocer la empresa: Estructura, producto, mercado, canales, posición financiera. Realizamos un análisis interno y un planteamiento estratégico a corto, medio y largo plazo. También incluye un acuerdo LEAN Startup para probar nuevos modelos y analizar impactos, y la validación y adaptación del modelo, incluida la posibilidad de financiación"
+    },
+    "FOOTER": "Este acompañamiento busca ser un impulso práctico para empresas en transformación."
   },
   "TEAM": {
     "TITLE": "Un gran equipo",
