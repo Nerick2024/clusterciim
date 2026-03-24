@@ -5,7 +5,7 @@ import { translations } from "@/i18n/config";
 import Layout from "@/layouts/Layout.astro";
 import Banner from "@/components/Banner.astro";
 import SectionCards from "@/components/SectionCards.astro";
-import Divisor from "@/components/Areas/Divisor.astro";
+import Divisor from "@/components/Divisor.astro";
 
 export function getStaticPaths() {
   return Object.keys(translations).map((lang) => ({ params: { lang } }));
