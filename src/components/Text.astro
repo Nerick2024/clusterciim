@@ -1,0 +1,17 @@
+---
+interface Props {
+  CONTENT: {
+    TITLE?: string;
+    DESCRIPTION?: string;
+  };
+}
+
+const { CONTENT } = Astro.props;
+---
+
+<section class="py-20 px-6">
+  <div class=`max-w-7xl mx-auto flex flex-col gap-6 items-start`>
+    {CONTENT.TITLE && <h2 set:html={CONTENT.TITLE} />}
+    {CONTENT.DESCRIPTION && <p set:html={CONTENT.DESCRIPTION} />}
+  </div>
+</section>

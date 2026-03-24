@@ -4,7 +4,9 @@ import { translations } from "@/i18n/config";
 
 import Layout from "@/layouts/Layout.astro";
 import Banner from "@/components/Banner.astro";
+import Text from "@/components/Text.astro";
 import SectionCards from "@/components/SectionCards.astro";
+import Divisor from "@/components/Divisor.astro";
 
 export function getStaticPaths() {
   return Object.keys(translations).map((lang) => ({ params: { lang } }));
@@ -16,5 +18,7 @@ const i18n = await useTranslation(lang);
 
 <Layout title="ClusterCIIM">
   <Banner CONTENT={i18n.CO_FACTORY} />
-  <SectionCards CONTENT={i18n.CO_FACTORY_CONTENT} tag="Co-Factory" />
+  <Text CONTENT={i18n.CO_FACTORY_CONTENT} />
+  <Divisor CONTENT={{ IMG: i18n.CO_FACTORY_CONTENT.DIVISOR }} />
+  <SectionCards CONTENT={i18n.CO_FACTORY_CONTENT.SECTION} tag="Co-Factory" />
 </Layout>
