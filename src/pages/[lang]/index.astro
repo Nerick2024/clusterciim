@@ -4,7 +4,7 @@ import { translations } from "@/i18n/config";
 
 import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/Home/Hero.astro";
-import InfoBanner from "@/components/InfoBanner.astro";
+import SectionInfo from "@/components/SectionInfo.astro";
 import StrategicAxes from "@/components/Home/StrategicAxes.astro";
 
 export function getStaticPaths() {
@@ -17,8 +17,8 @@ const i18n = await useTranslation(lang);
 
 <Layout title="ClusterCIIM">
   <Hero />
-  <InfoBanner CONTENT={i18n.TRANSFORMATION_OF_THE_CONSTRUCTION_SECTOR} />
-  <InfoBanner CONTENT={i18n.CONEXION_CREATING_COLLABORATIONS} REVERSE />
-  <InfoBanner CONTENT={i18n.TECHNOLOGICAL_IMPLEMENTATION} />
+  <SectionInfo CONTENT={i18n.TRANSFORMATION_OF_THE_CONSTRUCTION_SECTOR} />
+  <SectionInfo CONTENT={i18n.CONEXION_CREATING_COLLABORATIONS} REVERSE />
+  <SectionInfo CONTENT={i18n.TECHNOLOGICAL_IMPLEMENTATION} />
   <StrategicAxes />
 </Layout>
