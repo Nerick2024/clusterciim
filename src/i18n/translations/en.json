@@ -459,7 +459,9 @@
       {
         "TAG": "Training",
         "TITLE": "Training",
-        "DESCRIPTION": "A new way of building requires a new way of teaching. Trades evolve from those we already know, while new ones emerge. Professionals' knowledge must evolve with the market and new realities. That is why training is a crucial element in the sector’s transformation. We aim to collaborate with universities, vocational training centers, schools, and companies to define and educate the next generation of professionals."
+        "DESCRIPTION": "A new way of building requires a new way of teaching. Trades evolve from those we already know, while new ones emerge. Professionals' knowledge must evolve with the market and new realities. That is why training is a crucial element in the sector’s transformation. We aim to collaborate with universities, vocational training centers, schools, and companies to define and educate the next generation of professionals.",
+        "BUTTON_2": "Join",
+        "HREF_2": "Join"
       }
     ]
   },

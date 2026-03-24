@@ -459,7 +459,9 @@
       {
         "TAG": "Formación",
         "TITLE": "Formación",
-        "DESCRIPTION": "Una nueva forma de construir necesita una nueva forma de enseñar. Los oficios son la evolución de los que ya conocemos, pero aparecen otros nuevos. Los conocimientos de los profesionales deben evolucionar con el mercado y las nuevas realidades. Por eso la Formación es un tema crucial en el cambio en el sector. Queremos participar con las universidades, centros FP, escuelas y empresas, para definir y formar a los nuevos profesionales."
+        "DESCRIPTION": "Una nueva forma de construir necesita una nueva forma de enseñar. Los oficios son la evolución de los que ya conocemos, pero aparecen otros nuevos. Los conocimientos de los profesionales deben evolucionar con el mercado y las nuevas realidades. Por eso la Formación es un tema crucial en el cambio en el sector. Queremos participar con las universidades, centros FP, escuelas y empresas, para definir y formar a los nuevos profesionales.",
+        "BUTTON_2": "Asociate",
+        "HREF_2": "Join"
       }
     ]
   },
