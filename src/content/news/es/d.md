@@ -51,4 +51,4 @@ CoFactory no es sólo una infraestructura: es un manifiesto implícito de cómo 
 
 Ref: [construnews.com](https://construnews.com/construccion/cofactory-un-nuevo-paradigma-industrial-para-la-construccion-colaborativa/)
 
-Seguimos trabajando [www.ClusterCIIM.cat](https://www.ClusterCIIM.cat)
+Seguimos trabajando [www.cluster CIIM.cat](https://www.cluster CIIM.cat)
