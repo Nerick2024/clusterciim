@@ -30,8 +30,8 @@ if (tag) {
   });
 }
 ---
-
-<section class="py-20 px-6">
+<!-- py-20  -->
+<section class="py-48 px-6">
   <div class=`max-w-7xl mx-auto flex flex-col gap-6 items-start`>
     {CONTENT.TITLE && <h2 set:html={CONTENT.TITLE} />}
     {CONTENT.DESCRIPTION && <p set:html={CONTENT.DESCRIPTION} />}
@@ -39,13 +39,13 @@ if (tag) {
       CONTENT.BUTTON_1 && CONTENT.HREF_1 && (
         <a
           href={`/${lang}/${CONTENT.HREF_1}`}
-          class="bg-[var(--color-primary)] hover:bg-gray-600 !text-white text-sm italic font-bold px-10 py-4 transition-colors duration-300"
+          class="bg-[var(--color-primary)] mx-auto lg:mx-0 hover:bg-gray-600 !text-white text-sm italic font-bold px-10 py-4 transition-colors duration-300"
         >
           {CONTENT.BUTTON_1}
         </a>
       )
     }
-    {
+    <!-- {
       filteredNews.length > 0 && (
         <div class="w-full">
           <div class="splide carousel-global">
@@ -67,7 +67,7 @@ if (tag) {
           </div>
         </div>
       )
-    }
+    } -->
     {
       CONTENT.BUTTON_2 && CONTENT.HREF_2 && (
         <a
