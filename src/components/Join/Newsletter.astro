@@ -14,15 +14,16 @@ const i18n = await useTranslation(lang);
       {i18n.NEWSLETTER.FORM_TITLE}
     </h2>
 
-    <form class="flex flex-col gap-5" method="POST">
+    <form id="newsletter-form" class="flex flex-col gap-5">
       <div class="flex flex-col">
-        <label for="nombre" class="text-sm">
+        <label for="name" class="text-sm">
           {i18n.NEWSLETTER.NAME_LABEL}
         </label>
         <input
-          id="nombre"
-          name="nombre"
+          id="name"
+          name="name"
           type="text"
+          required
           class="border border-gray-400 w-full px-3 py-2 text-sm focus:outline-none focus:border-gray-700 bg-white"
         />
       </div>
@@ -35,16 +36,21 @@ const i18n = await useTranslation(lang);
           id="email"
           name="email"
           type="email"
+          required
           class="border border-gray-400 w-full px-3 py-2 text-sm focus:outline-none focus:border-gray-700 bg-white"
         />
       </div>
 
       <button
+        id="newsletter-submit"
+        data-text={i18n.NEWSLETTER.SUBMIT}
         type="submit"
         class="bg-[var(--color-primary)] hover:bg-gray-600 !text-white text-sm font-medium px-6 py-2.5 w-fit transition-colors duration-200 cursor-pointer"
       >
         {i18n.NEWSLETTER.SUBMIT}
       </button>
+
+      <p id="newsletter-status" class="text-sm hidden"></p>
     </form>
   </div>
 
@@ -70,3 +76,62 @@ const i18n = await useTranslation(lang);
     </div>
   </div>
 </section>
+
+<script is:inline>
+  const GAS_URL =
+    "https://script.google.com/macros/s/AKfycbwBWgZ4i8p0rz-qyx13IxQV3k4xVnj7xi6iqHt4l-ACjVQ_WkBLOAnCT8ZIMuLC3Z6H3w/exec";
+
+  const form = document.getElementById("newsletter-form");
+  const statusEl = document.getElementById("newsletter-status");
+  const submitBtn = document.getElementById("newsletter-submit");
+
+  const originalText = submitBtn.dataset.text;
+
+  function setStatus(message, type) {
+    statusEl.textContent = message;
+    statusEl.classList.remove("hidden", "text-green-600", "text-red-600");
+    statusEl.classList.add(
+      type === "success" ? "text-green-600" : "text-red-600",
+    );
+  }
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const fd = new FormData(form);
+    const name = (fd.get("name") || "").toString().trim();
+    const email = (fd.get("email") || "").toString().trim();
+
+    if (!name || !email) {
+      setStatus("Completa nombre y email.", "error");
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Enviando...";
+    statusEl.classList.add("hidden");
+
+    try {
+      const body = new URLSearchParams();
+      body.append("name", name);
+      body.append("email", email);
+
+      await fetch(GAS_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+        },
+        body,
+      });
+
+      form.reset();
+      setStatus("Te suscribiste correctamente.", "success");
+    } catch (err) {
+      setStatus("No se pudo enviar. Intenta de nuevo.", "error");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    }
+  });
+</script>
