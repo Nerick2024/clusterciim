@@ -481,12 +481,17 @@
     "SUBTITLE": "We drive the industrialization of construction"
   },
   "CO_FACTORY_CONTENT": {
-    "TITLE": "Asset Investment <br> Operations Investment",
-    "DESCRIPTION": "We foster a collaborative space with SMEs from the ClusterCIIM, startups and industry professionals. Our public-private collaboration is essential for business development.<br><br>At ClusterCIIM we do not work only on short-term solutions; we have created a collaboration and debate tool to find the solutions the sector needs as it undergoes transformation.",
-    "BUTTON_1": "Shall we join forces?",
-    "HREF_1": "Join",
-    "BUTTON_2": "More about Co-Factory",
-    "HREF_2": "News"
+    "TITLE": "A New Way of Working",
+    "DESCRIPTION": "Co-Factory is an industrial space. It provides manufacturing infrastructure that enables access to projects exceeding companies' productive and technical capacity.<br><br>We are committed to creating a productive environment, with teams specifically trained in industrialization, technical infrastructure, and strategic support.",
+    "DIVISOR": "/Strategies/Co-Factory/b.avif",
+    "SECTION": {
+      "TITLE": "Asset Investment <br> Operational Investment",
+      "DESCRIPTION": "We promote a collaborative space with SMEs from ClusterCIIM, startups, and industry professionals. Our public-private collaboration is essential for business development.<br><br>At ClusterCIIM, we do not focus only on short-term solutions; we have created a collaboration and discussion platform to find the solutions the sector needs in order to transform.",
+      "BUTTON_1": "Shall we join forces?",
+      "HREF_1": "Join",
+      "BUTTON_2": "More about Co-Factory",
+      "HREF_2": "News"
+    }
   },
   "CO_SHARE": {
     "IMG": "/Strategies/Co-Share/a.jpg",
