@@ -30,14 +30,14 @@
   "CONTACT": {
     "EMAIL": "info@clusterciim.org",
     "PERSONS": [
-      { "NAME": "Josep Vila", "PHONE": "+34 626 931 144" },
-      { "NAME": "Pere Armora", "PHONE": "+34 639 108 574" },
-      { "NAME": "Jorge Cuevas", "PHONE": "+34 600 434 105" },
-      { "NAME": "Ignasi Pérez Arnal", "PHONE": "+34 616 393 806" }
+      { "NAME": "Héctor Miranda Martínez", "PHONE": "" },
+      { "NAME": "Osvaldo Mireles", "PHONE": "" },
+      { "NAME": "Jorge Moreno Vargas", "PHONE": "" },
+      { "NAME": "Teresita de Jesus Guerrero Escamilla", "PHONE": "" }
     ],
     "LINKEDIN": "https://linkedin.com/...",
-    "ADDRESS": "Camí del Riu s/n.",
-    "ADDRESS_HREF": "https://maps.google.com/?q=Camí+del+Riu",
+    "ADDRESS": "36 San Pedro St., La Cruz neighborhood, Celaya, GTO 38028, Guanajuato, Mexico",
+    "ADDRESS_HREF": "https://maps.app.goo.gl/EXXrBnYsBWzdfyDYA",
     "FORM": {
       "HEADING": "Join the Association / Request Information:",
       "DESCRIPTION": "The main purpose of the association is to promote and highlight the industrial and professional fabric within the construction sector, companies and organizations working to define a new model of industrialized construction (off-site, prefabricated, sustainable and meeting circular economy criteria), fostering competitiveness and collaboration among member associates within the construction sector.",
