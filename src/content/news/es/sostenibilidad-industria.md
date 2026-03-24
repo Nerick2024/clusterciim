@@ -13,7 +13,7 @@ category: "Sostenibilidad"
 
 La **industrialización de la construcción** no puede avanzar sin una **transformación digital profunda**. Tecnologías como el **BIM**, la **inteligencia artificial** o los **mercados digitales de componentes** están redefiniendo la forma en que proyectamos, producimos y gestionamos los edificios. ¿El resultado? Un proceso **más eficiente, más conectado y más transparente**.
 
-Desde el **CCIIM**, apostamos por un **modelo abierto e interoperable**, donde **los datos, los diseños y los procesos se compartan** para generar **innovación colectiva**. Creemos que la creación de un **ecosistema digital común** es la clave para escalar el modelo industrializado y hacerlo llegar a todo el territorio.
+Desde el **CCIM**, apostamos por un **modelo abierto e interoperable**, donde **los datos, los diseños y los procesos se compartan** para generar **innovación colectiva**. Creemos que la creación de un **ecosistema digital común** es la clave para escalar el modelo industrializado y hacerlo llegar a todo el territorio.
 
 Por eso impulsamos:
 

@@ -15,7 +15,7 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<Layout title={`CCIIM - ${i18n.NAVBAR[1].TITLE.toUpperCase()}`}>
+<Layout title={`CCIM - ${i18n.NAVBAR[1].TITLE.toUpperCase()}`}>
   <Banner CONTENT={i18n.AREAS} MT />
   <SectionCards
     CONTENT={i18n.AREAS.SECTIONS[0]}

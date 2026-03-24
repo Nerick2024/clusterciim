@@ -16,7 +16,7 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<Layout title="CCIIM - CO-FACTORY">
+<Layout title="CCIM - CO-FACTORY">
   <Banner CONTENT={i18n.CO_FACTORY.BANNER} />
   <Text CONTENT={i18n.CO_FACTORY} />
   <Divisor CONTENT={{ IMG: i18n.CO_FACTORY.DIVISOR }} />

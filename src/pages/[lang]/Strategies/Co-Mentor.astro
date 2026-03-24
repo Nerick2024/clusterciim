@@ -16,7 +16,7 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<Layout title="CCIIM - CO-MENTOR">
+<Layout title="CCIM - CO-MENTOR">
   <Banner CONTENT={i18n.CO_MENTOR.BANNER} />
   <SectionCards CONTENT={i18n.CO_MENTOR.SECTION} tag="Co-Mentor" />
   <BannerInfo CONTENT={i18n.CO_MENTOR.BANNER_INFO} REVERSE />

@@ -54,24 +54,25 @@ try {
     $mail->CharSet = 'UTF-8';
 
     // Remitente y destinatario
-    $mail->setFrom('no-reply@clusterciim.org', 'CCIIM - Web');
-    $mail->addAddress('info@clusterciim.org', 'CCIIM');
+    $mail->setFrom('no-reply@clusterciim.org', 'CCIM - Web');
+    $mail->addAddress('info@clusterciim.org', 'CCIM');
     $mail->addReplyTo($email, $name); // Para responder directo al visitante
 
     // Contenido
     $mail->isHTML(true);
-    $mail->Subject = "Nuevo mensaje de contacto de $name";    $mail->Body = "
+    $mail->Subject = "Nuevo mensaje de contacto de $name";
+    $mail->Body = "
 <!DOCTYPE html>
 <html>
 <body style='margin:0; padding:0; background:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;'>
   <div style='max-width:560px; margin:2rem auto; background:#ffffff; border:0.5px solid #e0e0e0; border-radius:4px; overflow:hidden;'>
     
     <div style='padding:2rem 2.5rem 1.5rem; border-bottom:0.5px solid #e8e8e8;'>
-      <img src='https://clusterciim.org/Logo/logo.webp' alt='CCIIM' style='height:36px; display:block;' />
+      <img src='https://clusterciim.org/Logo/logo.webp' alt='CCIM' style='height:36px; display:block;' />
     </div>
 
     <div style='padding:2rem 2.5rem;'>
-      <p style='font-size:11px; letter-spacing:0.08em; color:#999; text-transform:uppercase; margin:0 0 0.5rem;'>Nuevo mensaje de contacto</p>
+      <p style='font-size:11px; letter-spacing:0.08em; color:#999; text-transform:uppercase; margin:0 0 0.5rem;'>Formulario de contacto</p>
       <h1 style='font-size:20px; font-weight:500; color:#111; margin:0 0 1.75rem;'>Tienes un nuevo mensaje</h1>
 
       <div style='border:0.5px solid #e8e8e8; border-radius:4px; overflow:hidden; margin-bottom:1.75rem;'>

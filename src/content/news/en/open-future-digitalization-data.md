@@ -13,7 +13,7 @@ category: "Sustainability"
 
 The **industrialization of construction** cannot advance without a **deep digital transformation**. Technologies such as **BIM**, **artificial intelligence** or **digital component markets** are redefining the way we design, produce and manage buildings. The result? A **more efficient, more connected and more transparent** process.
 
-From **CCIIM**, we are committed to an **open and interoperable model**, where **data, designs and processes are shared** to generate **collective innovation**. We believe that creating a **common digital ecosystem** is the key to scaling the industrialized model and bringing it to the entire territory.
+From **CCIM**, we are committed to an **open and interoperable model**, where **data, designs and processes are shared** to generate **collective innovation**. We believe that creating a **common digital ecosystem** is the key to scaling the industrialized model and bringing it to the entire territory.
 
 That's why we promote:
 

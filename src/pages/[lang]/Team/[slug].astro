@@ -42,10 +42,8 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<Layout title={`CCIIM - ${director.NAME}`}>
-  <div
-    class="max-w-7xl mx-auto px-6 my-12 mt-32 lg:mt-44 flex flex-col gap-6"
-  >
+<Layout title={`CCIM - ${director.NAME}`}>
+  <div class="max-w-7xl mx-auto px-6 my-12 mt-32 lg:mt-44 flex flex-col gap-6">
     <a href={`/${lang}/Team`} class="font-semibold italic">
       ← {i18n.TEAM.BACK}
     </a>

@@ -16,7 +16,7 @@ const lang = getLangFromUrl(Astro.url);
 const i18n = await useTranslation(lang);
 ---
 
-<Layout title="CCIIM - CO-SHARE">
+<Layout title="CCIM - CO-SHARE">
   <Banner CONTENT={i18n.CO_SHARE.BANNER} />
   <SectionCards CONTENT={i18n.CO_SHARE.SECTION} tag="Co-Share" />
   <BannerInfo CONTENT={i18n.CO_SHARE.BANNER_INFO} REVERSE />
