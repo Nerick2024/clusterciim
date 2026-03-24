@@ -1,0 +1,53 @@
+---
+interface Props {
+  CONTENT: {
+    IMG?: string;
+    TITLE?: string;
+    DESCRIPTION?: string;
+  };
+  REVERSE?: boolean;
+}
+
+const { CONTENT, REVERSE = false } = Astro.props;
+---
+
+<main id="hero" class="relative text-white flex items-center min-h-[50vh]">
+  <div
+    class="parallax-hero h-full w-full absolute after:absolute after:inset-0 after:bg-[var(--color-primary)]/25 after:z-10 brightness-80"
+    style={`background-image: url('${CONTENT.IMG}');`}
+    role="img"
+    aria-label="banner background"
+  >
+  </div>
+  <div
+    class={`max-w-7xl w-full lg:mx-auto flex items-center justify-center flex-col relative z-20 m-6 gap-4 ${REVERSE ? "lg:flex-row-reverse" : "lg:flex-row"}`}
+  >
+    {
+      CONTENT.TITLE && (
+        <h2
+          data-aos="fade-left"
+          class="text-5xl lg:text-6xl font-bold text-left w-full text-white lg:w-1/3"
+          set:html={CONTENT.TITLE}
+        />
+      )
+    }
+    {
+      CONTENT.DESCRIPTION && (
+        <p
+          data-aos="fade-right"
+          class="!font-normal !text-xl lg:!text-2xl text-left !text-white"
+          set:html={CONTENT.DESCRIPTION}
+        />
+      )
+    }
+  </div>
+</main>
+
+<style>
+  .parallax-hero {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
