@@ -3,6 +3,7 @@ interface Props {
   CONTENT: {
     TITLE?: string;
     DESCRIPTION?: string;
+    FOOTER?: string;
   };
 }
 
@@ -13,5 +14,6 @@ const { CONTENT } = Astro.props;
   <div class=`max-w-7xl mx-auto flex flex-col gap-6 items-start`>
     {CONTENT.TITLE && <h2 set:html={CONTENT.TITLE} />}
     {CONTENT.DESCRIPTION && <p set:html={CONTENT.DESCRIPTION} />}
+    {CONTENT.FOOTER && <h2 class="!text-2xl lg:!text-4xl !text-center lg:!text-left" set:html={CONTENT.FOOTER} />}
   </div>
 </section>

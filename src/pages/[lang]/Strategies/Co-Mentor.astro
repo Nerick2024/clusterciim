@@ -5,6 +5,8 @@ import { translations } from "@/i18n/config";
 import Layout from "@/layouts/Layout.astro";
 import Banner from "@/components/Banner.astro";
 import SectionCards from "@/components/SectionCards.astro";
+import BannerInfo from "@/components/BannerInfo.astro";
+import Text from "@/components/Text.astro";
 
 export function getStaticPaths() {
   return Object.keys(translations).map((lang) => ({ params: { lang } }));
@@ -15,6 +17,8 @@ const i18n = await useTranslation(lang);
 ---
 
 <Layout title="ClusterCIIM">
-  <Banner CONTENT={i18n.CO_MENTOR} />
-  <SectionCards CONTENT={i18n.CO_MENTOR_CONTENT} tag="Co-Mentor" />
+  <Banner CONTENT={i18n.CO_MENTOR.BANNER} />
+  <SectionCards CONTENT={i18n.CO_MENTOR.SECTION} tag="Co-Mentor" />
+  <BannerInfo CONTENT={i18n.CO_MENTOR.BANNER_INFO} REVERSE />
+  <Text CONTENT={i18n.CO_MENTOR} />
 </Layout>
