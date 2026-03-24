@@ -5,26 +5,26 @@ const { CONTENT, MB = false } = Astro.props;
 <section
   class={`flex flex-col max-w-7xl mx-6 lg:mx-auto mt-24 gap-4 ${MB ? "mb-24" : ""}`}
 >
-  <h2>
-    {CONTENT.TITLE}
-  </h2>
-  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
-    {
-      CONTENT.ITEMS.map((item: any, index: number) => (
-        <a
-          data-aos="zoom-in-up"
-          href={item.HREF}
-          target="_blank"
-          class="w-full h-16 lg:h-28 flex items-center justify-center"
-        >
-          <img
-            loading="lazy"
-            src={item.IMG}
-            alt={item.TITLE}
-            class="w-full h-full object-contain"
-          />
-        </a>
-      ))
-    }
-  </div>
+  {CONTENT && <h2>{CONTENT.TITLE}</h2>}
+  {
+    CONTENT && (
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
+        {CONTENT.ITEMS.map((item: any, index: number) => (
+          <a
+            data-aos="zoom-in-up"
+            href={item.HREF}
+            target="_blank"
+            class="w-full h-16 lg:h-28 flex items-center justify-center"
+          >
+            <img
+              loading="lazy"
+              src={item.IMG}
+              alt={item.TITLE}
+              class="w-full h-full object-contain"
+            />
+          </a>
+        ))}
+      </div>
+    )
+  }
 </section>

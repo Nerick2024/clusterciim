@@ -84,7 +84,7 @@
       "DESCRIPTION": "La asociación tiene como finalidad principal promover y poner en valor el tejido industrial y profesional dentro del sector de la construcción, las empresas y las organizaciones que trabajan para definir un nuevo modelo de construcción industrializada (off-site, prefabricada, sostenible y cumpliendo criterios de economía circular), favoreciendo la competitividad y la colaboración entre los miembros asociados infraestructuras dentro del sector de la construcción.",
       "NAME_LABEL": "Tu nombre",
       "EMAIL_LABEL": "Tu correo electrónico",
-      "PHONE_LABEL": "teléfono celular",
+      "PHONE_LABEL": "Teléfono celular",
       "MESSAGE_LABEL": "Tu mensaje",
       "SUBMIT_LABEL": "Enviar"
     },
@@ -170,44 +170,19 @@
         "TITLE": "Socios Fundadores",
         "ITEMS": [
           {
-            "IMG": "/Associats/FoundingPartners/logo-aykos.png",
+            "IMG": "/Associats/FoundingPartners/ANMIRA.webp",
             "HREF": "",
-            "TITLE": ""
+            "TITLE": "ANMIRA"
           },
           {
-            "IMG": "/Associats/FoundingPartners/logo-bim-768x209.png",
-            "HREF": "",
-            "TITLE": ""
+            "IMG": "/Associats/FoundingPartners/DESCC.webp",
+            "HREF": "https://www.desccingenieria.com/",
+            "TITLE": "DESCC"
           },
           {
-            "IMG": "/Associats/FoundingPartners/logo-jorgecuevas-768x209.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/FoundingPartners/logo-smart-768x136.png",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/FoundingPartners/logo-elecnor-768x296.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/FoundingPartners/logo-rubau.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/FoundingPartners/logo-pich-768x128.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/FoundingPartners/logo-itec.avif",
-            "HREF": "",
-            "TITLE": ""
+            "IMG": "/Associats/FoundingPartners/EICON.webp",
+            "HREF": "https://www.eicon.com.mx/",
+            "TITLE": "EICON"
           }
         ]
       },
@@ -216,31 +191,6 @@
         "ITEMS": [
           {
             "IMG": "/Associats/CorporatePartners/logo-cambra.png",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/CorporatePartners/logo-consorci.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/CorporatePartners/logo-martorell.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/CorporatePartners/logo-eurecat.jpg",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/CorporatePartners/cambra-de-terrassa.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/CorporatePartners/cambra-de-valls.avif",
             "HREF": "",
             "TITLE": ""
           }
@@ -253,169 +203,7 @@
             "IMG": "/Associats/Associates/logo-exe-768x98.avif",
             "HREF": "",
             "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-seed.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-enginesa.png",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-simbiosy.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-cambra-empreses.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-apce.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-buildlovers-768x258.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-mepal.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-iraco.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-sj12.jpg",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-costa.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-jfg.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-sga.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-ddv.jpg",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/evsagroup.com_.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-gobain.jpg",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-cd4iot.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/logo-ccoc.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/compacthabit.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          { "IMG": "/Associats/Associates/dAro.avif", "HREF": "", "TITLE": "" },
-          {
-            "IMG": "/Associats/Associates/Macusa.png",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/pmp-pretaporter.com_-768x154.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/https___www.lamp_.es_.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/https_www.tallfusta.com_es_inicio-2_.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/https___www.certis.cat_-1.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/https___isoltex.com_.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/evsagroup.com_.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/https___edalso.com_.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/https___armangue.net_.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/constructoracardoner.comX_.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/blakrea.com_.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/https___alier.com_-1.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/ardex.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          {
-            "IMG": "/Associats/Associates/salas.avif",
-            "HREF": "",
-            "TITLE": ""
-          },
-          { "IMG": "/Associats/Associates/sms.avif", "HREF": "", "TITLE": "" }
+          }
         ]
       }
     ]
@@ -497,16 +285,16 @@
     },
     "SECTION": {
       "TITLE": "Co-Share",
-      "DESCRIPTION": "En aquel manifiesto, el Gobierno Federal de México y el Gobierno del Estado de Querétaro se proponían un reto: <br><br> 'Crear un Grupo de Trabajo BIM que ayude a implementar la cultura, valores, métodos de trabajo, tecnologías digitales y electrónicas para capacitar a la industria, la administración pública, los centros de investigación, los colectivos profesionales y el mundo académico'.<br><br>Desde entonces la Comisión Construimos el Futuro ha orientado sus actividades en esta dirección",
+      "DESCRIPTION": "En aquel manifiesto, el Gobierno Federal de México se proponían un reto: <br><br> 'Crear un Grupo de Trabajo BIM que ayude a implementar la cultura, valores, métodos de trabajo, tecnologías digitales y electrónicas para capacitar a la industria, la administración pública, los centros de investigación, los colectivos profesionales y el mundo académico'.<br><br>Desde entonces construimos el Futuro que ha orientado sus actividades en esta dirección",
       "BUTTON_1": "Revisar todos los eventos",
       "HREF_1": "News",
       "BUTTON_2": "Asociarse",
       "HREF_2": "Contact"
     },
     "BANNER_INFO": {
-      "IMG": "/Strategies/Co-Share/b.avif",
+      "IMG": "/Strategies/Co-Share/b.webp",
       "TITLE": "Experiencias de industrialización",
-      "DESCRIPTION": "Estos eventos están ligados al CCiC y sus asociados, ofreciendo oportunidades de colaboración con entidades con proyectos potenciales, invitados externos que comparten experiencias alineadas con los objetivos del CCiC y visitas a espacios industriales para entender procesos o soluciones sostenibles y digitalización."
+      "DESCRIPTION": "Estos eventos están ligados a ClusterCIIM y sus asociados, ofreciendo oportunidades de colaboración con entidades con proyectos potenciales, invitados externos que comparten experiencias alineadas con los objetivos del ClusterCIIM y visitas a espacios industriales para entender procesos o soluciones sostenibles y digitalización."
     },
     "FOOTER": "Los encuentros ofrecen una plataforma única para aprender, colaborar y explorar avances en la industria."
   },
@@ -523,15 +311,15 @@
       "HREF_2": "Contact"
     },
     "BANNER_INFO": {
-      "IMG": "/Strategies/Co-Mentor/b.avif",
+      "IMG": "/Strategies/Co-Mentor/b.webp",
       "TITLE": "",
-      "DESCRIPTION": "Ofrecemos 5 reuniones de 2 horas con dos mentores del Clúster para conocer la empresa: Estructura, producto, mercado, canales, posición financiera. Realizamos un análisis interno y un planteamiento estratégico a corto, medio y largo plazo. También incluye un acuerdo LEAN Startup para probar nuevos modelos y analizar impactos, y la validación y adaptación del modelo, incluida la posibilidad de financiación"
+      "DESCRIPTION": "Ofrecemos reuniones con dos mentores del ClústerCIIM para conocer la empresa: Estructura, producto, mercado, canales, posición financiera. Realizamos un análisis interno y un planteamiento estratégico a corto, medio y largo plazo. También incluye un acuerdo LEAN Startup para probar nuevos modelos y analizar impactos, y la validación y adaptación del modelo, incluida la posibilidad de financiación"
     },
     "FOOTER": "Este acompañamiento busca ser un impulso práctico para empresas en transformación."
   },
   "TEAM": {
     "TITLE": "Un gran equipo",
-    "DESCRIPTION": "<b>Clúster de Construcción Industrializada de México (ClusterCIIM) nace como respuesta coordinada de los principales agentes públicos y privados del país para impulsar un espacio estable de debate, acción y transformación real del sector de la construcción.</b> Con el apoyo de entidades clave como la Cámara de Comercio de México, el Consejo Nacional Empresarial y el Gobierno de México, el ClusterCIIM se consolida como el punto de encuentro en el que se definen las líneas maestras del futuro constructivo del país.<br><br>Desde su origen, el cluster ha orientado su actividad hacia la modernización profunda de los procesos, con especial atención a la integración de tecnologías digitales, nuevos modelos organizativos y sistemas industrializados. Esta apuesta colectiva por una transformación estructural –basada en la innovación, la sostenibilidad y la colaboración– ha convertido al ClusterCIIM en el espacio referente para todas aquellas iniciativas que quieren repensar cómo se diseña, fabrica y gestiona el hábitat del futuro.",
+    "DESCRIPTION": "<b>Clúster de Construcción Industrializada de México (ClusterCIIM) nace como respuesta coordinada de los principales agentes públicos y privados del país para impulsar un espacio estable de debate, acción y transformación real del sector de la construcción.</b> Con el apoyo de entidades clave como la Cámara de Comercio de México, el Consejo Nacional Empresarial y el Gobierno de México, el ClusterCIIM se consolida como el punto de encuentro en el que se definen las líneas maestras del futuro constructivo del país.<br><br>Desde su origen, el cluster ha orientado su actividad hacia la modernización profunda de los procesos, con especial atención a la integración de tecnologías digitales, nuevos modelos organizativos y sistemas industrializados. Esta apuesta colectiva por una transformación estructural –basada en la innovación, la sostenibilidad y la colaboración– ha convertido a ClusterCIIM en el espacio referente para todas aquellas iniciativas que quieren repensar cómo se diseña, fabrica y gestiona el hábitat del futuro.",
     "CTA": "Colabora con Nosotros",
     "BACK": "Volver a los miembros del equipo",
     "DIRECTORS": [
