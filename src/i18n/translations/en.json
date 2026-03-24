@@ -535,12 +535,5 @@
       { "TITLE": "Co-Share", "HREF": "Strategies/Co-Share" },
       { "TITLE": "Co-Mentor", "HREF": "Strategies/Co-Mentor" }
     ]
-  },
-  "TECHNOLOGICAL_IMPLEMENTATION": {
-    "TITLE": "Technological implementation",
-    "SUBTITLE": "Success Story",
-    "IMG": "/Home/c.jpg",
-    "ALT": "Technological implementation success story",
-    "DESCRIPTION": "<strong>Success story</strong>: Collaboration between various companies in the sector and a computational design studio specialized in parametric geometries. <strong>The goal: to develop a modular system for sustainable housing, adaptable to different contexts.</strong> Combining industrialized processes with generative algorithms, multiple design variants were generated, optimized according to local data such as climate, materials and culture.<br><br><em>The result was striking: <strong>a 70% reduction in design time and a 50% reduction in construction waste.</strong> The model, now replicated in several municipalities in Mexico, demonstrates how the combination of advanced manufacturing, digitalization and algorithmic design accelerates innovation and fosters collaboration among diverse teams, under a shared logic based on data and efficiency.</em>"
   }
 }

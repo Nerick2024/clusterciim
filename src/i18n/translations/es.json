@@ -589,12 +589,5 @@
       { "TITLE": "Co-Share", "HREF": "Strategies/Co-Share" },
       { "TITLE": "Co-Mentor", "HREF": "Strategies/Co-Mentor" }
     ]
-  },
-  "TECHNOLOGICAL_IMPLEMENTATION": {
-    "TITLE": "Implantación tecnológica",
-    "SUBTITLE": "Caso Éxito",
-    "IMG": "/Home/c.jpg",
-    "ALT": "Implantación tecnológica caso de éxito",
-    "DESCRIPTION": "<strong>Caso de éxito</strong> : Colaboración entre diversas empresas del sector y un estudio de diseño computacional especializado en geometrías paramétricas. <strong>El objetivo: desarrollar un sistema modular para viviendas sostenibles, adaptable a distintos contextos.</strong> Combinando procesos industrializados con algoritmos generativos, se generaron múltiples variantes de diseño optimizadas según datos locales como clima, materiales, cultura.<br><br><em>El resultado fue contundente: <strong>reducción del tiempo de diseño en un 70% y de residuos en obra en un 50%.</strong> El modelo, ahora replicado en varios municipios de México, demuestra cómo la unión entre fabricación avanzada, digitalización y diseño algorítmico acelera la innovación y fomenta la colaboración entre equipos diversos, bajo una lógica compartida basada en datos y eficiencia.</em>"
   }
 }
