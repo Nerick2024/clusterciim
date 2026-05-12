@@ -42,7 +42,7 @@ const lang = getLangFromUrl(Astro.url);
             {CONTENT.TAGS.map((tag) => (
               <a
                 href={tag.HREF ? `/${lang}/${tag.HREF}` : "#"}
-                class="border-2 bg-[var(--color-primary)] !text-white italic px-5 py-2 rounded-full"
+                class="border-2 bg-[var(--color-primary)] !text-white italic px-5 py-2 rounded-full hover:scale-105 transition-all duration-300"
               >
                 {tag.TITLE}
               </a>
@@ -55,7 +55,7 @@ const lang = getLangFromUrl(Astro.url);
     <!-- Columna imagen -->
     {
       CONTENT.IMG && (
-        <div class="w-full lg:w-1/3 aspect-square rounded-lg overflow-hidden">
+        <div class="w-full lg:w-1/3 aspect-square rounded-lg overflow-hidden shadow-lg">
           <img
             loading="lazy"
             src={CONTENT.IMG}
