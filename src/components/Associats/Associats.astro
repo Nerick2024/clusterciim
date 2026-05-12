@@ -3,7 +3,7 @@ const { CONTENT, MB = false } = Astro.props;
 ---
 
 <section
-  class={`flex flex-col max-w-7xl mx-6 lg:mx-auto mt-24 gap-4 ${MB ? "mb-24" : ""}`}
+  class={`flex flex-col max-w-7xl mx-6 lg:mx-auto mt-24 gap-6 ${MB ? "mb-24" : ""}`}
 >
   {CONTENT && <h2>{CONTENT.TITLE}</h2>}
   {
