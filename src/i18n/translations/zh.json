@@ -1,0 +1,445 @@
+{
+    "NAVBAR": [
+        {
+            "HREF": "/",
+            "TITLE": "首页"
+        },
+        {
+            "HREF": "Areas",
+            "TITLE": "领域"
+        },
+        {
+            "TITLE": "战略",
+            "MORE": [
+                {
+                    "HREF": "Strategies/Co-Factory",
+                    "TITLE": "合作工厂"
+                },
+                {
+                    "HREF": "Strategies/Co-Share",
+                    "TITLE": "合作共享"
+                },
+                {
+                    "HREF": "Strategies/Co-Mentor",
+                    "TITLE": "合作指导"
+                }
+            ]
+        },
+        {
+            "HREF": "Associats",
+            "TITLE": "合作伙伴"
+        },
+        {
+            "HREF": "Join",
+            "TITLE": "加入"
+        },
+        {
+            "HREF": "Team",
+            "TITLE": "团队"
+        },
+        {
+            "HREF": "Contact",
+            "TITLE": "联系"
+        }
+    ],
+    "ACCESS": {
+        "HREF": "Access",
+        "TITLE": "登录"
+    },
+    "NETWORKS": [
+        {
+            "IMG": "/icons/networks/email.svg",
+            "TITLE": "电子邮件",
+            "HREF": ""
+        },
+        {
+            "IMG": "/icons/networks/facebook.svg",
+            "TITLE": "脸书",
+            "HREF": ""
+        },
+        {
+            "IMG": "/icons/networks/instagram.svg",
+            "TITLE": "照片墙",
+            "HREF": ""
+        },
+        {
+            "IMG": "/icons/networks/linkedin.svg",
+            "TITLE": "领英",
+            "HREF": ""
+        }
+    ],
+    "CONTACT": {
+        "EMAIL": "info@clusterciim.org",
+        "PERSONS": [
+            {
+                "NAME": "埃克托·米兰达·马丁内斯",
+                "PHONE": ""
+            },
+            {
+                "NAME": "奥斯瓦尔多·米雷莱斯",
+                "PHONE": ""
+            },
+            {
+                "NAME": "豪尔赫·莫雷诺·巴尔加斯",
+                "PHONE": ""
+            },
+            {
+                "NAME": "特雷西塔·德赫苏斯·格雷罗·埃斯卡米利亚",
+                "PHONE": ""
+            },
+            {
+                "NAME": "伊格纳西·佩雷斯·阿尔纳尔",
+                "PHONE": ""
+            }
+        ],
+        "LINKEDIN": "https://linkedin.com/...",
+        "ADDRESS": "圣佩德罗街36号，拉克鲁斯区，塞拉亚市，瓜纳华托州 38028，墨西哥",
+        "ADDRESS_HREF": "https://maps.app.goo.gl/EXXrBnYsBWzdfyDYA",
+        "FORM": {
+            "HEADING": "申请加入协会 / 索取信息：",
+            "DESCRIPTION": "该协会的主要宗旨是促进和提升建筑行业、企业及组织的工业与专业结构价值，致力于定义一种新型工业化建筑模式（场外、预制、可持续并符合循环经济标准），提升协会成员之间的竞争力与协作能力，推动建筑行业内基础设施的发展。",
+            "NAME_LABEL": "您的姓名",
+            "EMAIL_LABEL": "您的电子邮箱",
+            "PHONE_LABEL": "手机号码",
+            "MESSAGE_LABEL": "您的留言",
+            "SUBMIT_LABEL": "发送"
+        },
+        "ELEMENTS": [
+            {
+                "ICON": "/icons/contact/email.svg",
+                "TYPE": "电子邮件",
+                "DATA": "info@clusterciim.org",
+                "HREF": "mailto:info@clusterciim.org"
+            },
+            {
+                "ICON": "/icons/contact/phone.svg",
+                "TYPE": "电话",
+                "DATA": "+52 442 415 3053",
+                "HREF": "tel:+524424153053"
+            },
+            {
+                "ICON": "/icons/contact/whatsapp.svg",
+                "TYPE": "Whatsapp",
+                "DATA": "+52 442 415 3053",
+                "HREF": "https://wa.me/5214424153053"
+            }
+        ]
+    },
+    "FOOTER": {
+        "LOGOS": [
+            {
+                "IMG": "/Footer/a.avif",
+                "TITLE": "墨西哥商会",
+                "HREF": "https://cambravalls.com/"
+            },
+            {
+                "IMG": "/Footer/b.avif",
+                "TITLE": "全国企业委员会",
+                "HREF": "https://www.zfbc.cat/"
+            },
+            {
+                "IMG": "/Footer/c.avif",
+                "TITLE": "墨西哥政府",
+                "HREF": "https://www.gob.mx/"
+            }
+        ],
+        "TITLE_1": "更多信息：",
+        "TITLE_2": "地址：",
+        "DIRECTION": "圣佩德罗街36号，拉克鲁斯区，塞拉亚市，瓜纳华托州 38028，墨西哥",
+        "POLICIES": [
+            {
+                "HREF": "#",
+                "TITLE": "隐私政策"
+            },
+            {
+                "HREF": "#",
+                "TITLE": "Cookie政策"
+            },
+            {
+                "HREF": "#",
+                "TITLE": "法律声明"
+            }
+        ],
+        "COPYRIGHT": "版权所有。"
+    },
+    "HERO": {
+        "TITLE": "建筑业的未来<br>就在这里"
+    },
+    "STRATEGIC": {
+        "TITLE": "战略轴心",
+        "CTA": "我们助力企业转型"
+    },
+    "NEWSLETTER": {
+        "FORM_TITLE": "预先注册",
+        "NAME_LABEL": "您的姓名",
+        "EMAIL_LABEL": "您的电子邮箱",
+        "SUBMIT": "发送",
+        "TITLE": "欢迎来到建筑业的未来",
+        "SUBTITLE": "加入变革。连接。转型。建造。",
+        "BODY": "墨西哥工业化建造与创新集群（CCIM）不仅仅是一个企业网络：它是那些正在重塑行业的人们的汇聚核心。加入CCIM意味着进入一个活跃的创新社区，在这里经验与颠覆性思维交融，开辟真实的合作、 visibility 和成长机会。<br><br><b>在这里，您可以与行业领先企业以及多元化的中小企业和有远见的专业人士建立联系</b>。我们正在重新思考每一个建造流程，以实现工业化，提高效率和可持续性。从新产品和模块化系统到比法规思考得更快的算法，整个生态系统正在向前发展……你也可以成为其中的一员。<br><br><i>如果你相信工业化、数据和人工智能应用能够改变建筑方式，那么你来对地方了。如果你希望整合能力、分享项目或扩大影响力，今天就加入我们。</i><br><br><b>请预先注册，我将与您联系并向您发送访问我们网络的详细信息。</b>"
+    },
+    "ASSOCIATS": {
+        "TITLE": "战略合作伙伴",
+        "IMG": "/Associats/bg.webp",
+        "PARTNERS": [
+            {
+                "TITLE": "创始合作伙伴",
+                "ITEMS": [
+                    {
+                        "IMG": "/Associats/FoundingPartners/ANMIRA.webp",
+                        "HREF": "",
+                        "TITLE": "ANMIRA"
+                    },
+                    {
+                        "IMG": "/Associats/FoundingPartners/DESCC.webp",
+                        "HREF": "https://www.desccingenieria.com/",
+                        "TITLE": "DESCC"
+                    },
+                    {
+                        "IMG": "/Associats/FoundingPartners/EICON.webp",
+                        "HREF": "https://www.eicon.com.mx/",
+                        "TITLE": "EICON"
+                    },
+                    {
+                        "IMG": "/Associats/FoundingPartners/SUT.webp",
+                        "HREF": "https://wesut.mx/",
+                        "TITLE": "SUT SMART URBAN TERA"
+                    },
+                    {
+                        "IMG": "/Associats/FoundingPartners/TERA.webp",
+                        "HREF": "https://www.instagram.com/teraeit/",
+                        "TITLE": "TERA"
+                    }
+                ]
+            },
+            {
+                "TITLE": "企业合作伙伴",
+                "ITEMS": [
+                    {
+                        "IMG": "/Associats/CorporatePartners/logo-cambra.png",
+                        "HREF": "",
+                        "TITLE": ""
+                    }
+                ]
+            },
+            {
+                "TITLE": "协会成员",
+                "ITEMS": [
+                    {
+                        "IMG": "/Associats/Associates/logo-exe-768x98.avif",
+                        "HREF": "",
+                        "TITLE": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "AREAS": {
+        "TITLE": "战略领域",
+        "SUBTITLE": "优化价值链",
+        "IMG": "/Areas/bg.webp",
+        "DIVISOR": [
+            {
+                "TITLE": "",
+                "IMG": ""
+            },
+            {
+                "TITLE": "BIM / BAM",
+                "IMG": "/Areas/a.webp"
+            },
+            {
+                "TITLE": "深度数字化",
+                "IMG": "/Areas/b.webp"
+            },
+            {
+                "TITLE": "被动房",
+                "IMG": "/Areas/c.webp"
+            },
+            {
+                "TITLE": "专业转型",
+                "IMG": "/Areas/d.webp"
+            }
+        ],
+        "SECTIONS": [
+            {
+                "TAG": "工业化",
+                "TITLE": "工业化",
+                "DESCRIPTION": "任何希望参与行业改善和现代化进程的参与者、公司、协会或专业人士。不仅是工业企业，也包括供应商、中小企业或通过其经验、产品或解决方案能为共同目标做出贡献的专业人士。"
+            },
+            {
+                "TAG": "数字化",
+                "TITLE": "数字化",
+                "DESCRIPTION": "这一应用层面向对数字技术持保留态度的行业。通过传感器化建筑、设施或任何构造，将家庭自动化的概念提升到与现有技术水平同步的层次。"
+            },
+            {
+                "TAG": "深度数字化",
+                "TITLE": "深度数字化",
+                "DESCRIPTION": "在CCIM推动的转型过程中，有一种新兴的愿景，我们称之为深度数字化，概括为<b>MAIA</b>概念：模块化 + 算法 + 人工智能。这种方法使我们能够从根本上重新思考建造周期，通过智能数据流和自适应模块化结构连接设计、制造、运营、营销和管理。基于算法设计和程序化共创平台的进步，我们展示了如何不仅优化流程，而且为更具进化性、互联性和韧性的建筑打开大门。"
+            },
+            {
+                "TAG": "可持续性",
+                "TITLE": "可持续性",
+                "DESCRIPTION": "应用最新趋势和解决方案来建造被动式或正能量建筑。我们必须成为新绿色能源和减少消耗的倡导者。建筑行业可能是碳足迹、循环经济和废物减少方面最具改进潜力的行业。"
+            },
+            {
+                "TAG": "培训",
+                "TITLE": "培训",
+                "DESCRIPTION": "新的建造方式需要新的教学方式。手艺是已知技能的演进，但新的技能也在出现。专业人员的知识必须随着市场和新的现实而发展。因此，培训是行业变革中的关键议题。我们希望与大学、职业培训中心、学校和企业合作，定义和培养新的专业人才。",
+                "BUTTON_2": "加入协会",
+                "HREF_2": "Join"
+            }
+        ]
+    },
+    "NEWS": {
+        "TITLE": "新闻",
+        "IMG": "/News/bg.webp",
+        "SORT_BY_DATE": "排序方式：",
+        "NEWEST_FIRST": "最新优先",
+        "OLDEST_FIRST": "最早优先",
+        "CATEGORIES": "分类：",
+        "ALL": "全部",
+        "READ_MORE": "了解更多 →"
+    },
+    "CO_FACTORY": {
+        "TITLE": "新的工作方式",
+        "DESCRIPTION": "合作工厂是一个工业空间。它提供生产基础设施，使企业能够承接超出其生产和技术能力的项目。<br><br>我们致力于创建一个生产性空间，配备专门为工业化培训的团队、技术基础设施和战略支持。",
+        "DIVISOR": "/Strategies/Co-Factory/b.webp",
+        "BANNER": {
+            "IMG": "/Strategies/Co-Factory/a.webp",
+            "TITLE": "合作工厂",
+            "SUBTITLE": "我们推动建筑工业化"
+        },
+        "SECTION": {
+            "TITLE": "资产投资 <br> 运营投资",
+            "DESCRIPTION": "我们促进与CCIM的中小企业、初创企业和行业专业人士的合作空间。我们的公私合作对企业发展至关重要。<br><br>CCIM不仅致力于短期解决方案，而且创建了一个协作和讨论的工具，以找到需要转型的行业所需的解决方案。",
+            "BUTTON_1": "我们协同合作？",
+            "HREF_1": "Join",
+            "BUTTON_2": "更多关于合作工厂",
+            "HREF_2": "News"
+        }
+    },
+    "CO_SHARE": {
+        "BANNER": {
+            "IMG": "/Strategies/Co-Share/a.webp",
+            "TITLE": "合作共享",
+            "SUBTITLE": "集群每两个月与合作伙伴在标志性地点组织活动，促进网络建设。"
+        },
+        "SECTION": {
+            "TITLE": "合作共享",
+            "DESCRIPTION": "在那份宣言中，墨西哥联邦政府给自己提出了一项挑战：<br><br>'创建一个BIM工作组，帮助实施文化、价值观、工作方法、数字和电子技术，以培训工业、公共行政、研究中心、专业团体和学术界'。<br><br>从那时起，我们便朝着这个方向建设未来，并一直指引着我们的活动。",
+            "BUTTON_1": "查看所有活动",
+            "HREF_1": "News",
+            "BUTTON_2": "加入协会",
+            "HREF_2": "Contact"
+        },
+        "BANNER_INFO": {
+            "IMG": "/Strategies/Co-Share/b.webp",
+            "TITLE": "工业化经验",
+            "DESCRIPTION": "这些活动与CCIM及其合作伙伴相关，提供与拥有潜在项目的实体合作的机会，邀请外部嘉宾分享与CCIM目标一致的经验，并参观工业空间以了解流程或可持续解决方案及数字化。"
+        },
+        "FOOTER": "这些聚会提供了一个独特的平台，供学习、合作和探索行业进步。"
+    },
+    "CO_MENTOR": {
+        "BANNER": {
+            "IMG": "/Strategies/Co-Mentor/a.webp",
+            "TITLE": "合作指导",
+            "SUBTITLE": "我们帮助建设未来"
+        },
+        "SECTION": {
+            "TITLE": "合作指导",
+            "DESCRIPTION": "我们基于集群成员推动颠覆性变革的经验，陪伴处于组织转型过程中的企业。",
+            "BUTTON_2": "申请指导",
+            "HREF_2": "Contact"
+        },
+        "BANNER_INFO": {
+            "IMG": "/Strategies/Co-Mentor/b.webp",
+            "TITLE": "",
+            "DESCRIPTION": "我们提供与两位ClusterCIIM导师的会面，以了解企业：结构、产品、市场、渠道、财务状况。我们进行内部分析并制定短期、中期和长期的战略规划。还包括一份LEAN Startup协议，用于测试新模型和分析影响，以及模型的验证和调整，包括融资的可能性。"
+        },
+        "FOOTER": "这种陪伴旨在为转型中的企业提供实际助力。"
+    },
+    "TEAM": {
+        "TITLE": "优秀的团队",
+        "DESCRIPTION": "<b>墨西哥工业化建造与创新集群（CCIM）的诞生，是墨西哥主要公共和私营参与者协调一致的回应，旨在推动一个稳定的空间，用于辩论、行动和建筑行业的真正转型。</b> 在墨西哥商会、全国企业委员会和墨西哥政府等关键实体的支持下，CCIM巩固了其作为核心聚点的地位，定义了国家建筑未来的主要路线。<br><br>自成立以来，该集群一直将其活动重点放在流程的深度现代化上，特别关注数字技术、新组织模式和工业化系统的整合。这种基于创新、可持续性和合作的集体结构性转型承诺，使CCIM成为所有希望重新思考未来人居环境设计、制造和管理方式倡议的参照空间。",
+        "CTA": "与我们合作",
+        "BACK": "返回团队成员",
+        "DIRECTORS": [
+            {
+                "IMG": "/Team/Directors/hector.webp",
+                "NAME": "埃克托·米兰达·马丁内斯",
+                "POSITION": "主席",
+                "SEMBLANCE": "陆路交通建设专家，在公共和工业领域基础设施项目的规划、执行和质量控制方面拥有丰富经验。"
+            },
+            {
+                "IMG": "/Team/Directors/osvaldo.webp",
+                "NAME": "奥斯瓦尔多·米雷莱斯",
+                "POSITION": "副主席",
+                "SEMBLANCE": "技术和可持续发展专家，专长于智慧城市、BIM、区块链、人工智能和新城市议程。"
+            },
+            {
+                "IMG": "/Team/Directors/jorge.webp",
+                "NAME": "豪尔赫·莫雷诺·巴尔加斯",
+                "POSITION": "财务主管",
+                "SEMBLANCE": "颠覆性技术专家，MIT认证。拥有13年领导智慧城市、物联网和可持续项目创新的经验。"
+            },
+            {
+                "IMG": "/Team/Directors/teresitaDeJesus.webp",
+                "NAME": "特雷西塔·德赫苏斯·格雷罗·埃斯卡米利亚",
+                "POSITION": "秘书",
+                "SEMBLANCE": "土木工程师，2004年毕业于克雷塔罗自治大学。拥有超过二十年的经验，她以对工程和具有高影响力的土木项目发展的承诺塑造了自己的职业生涯。她积极参与机构性倡议，体现了她的服务精神以及推动加强行业增长和创新的技术解决方案的能力。"
+            },
+            {
+                "IMG": "/Team/Directors/ignasi.webp",
+                "NAME": "伊格纳西·佩雷斯·阿尔纳尔",
+                "POSITION": "联合创始人",
+                "SEMBLANCE": "欧洲BIM先驱，西班牙BIM学院联合创始人，欧洲BIM峰会创办人。他是西班牙建筑与先进建筑领域领先活动The Rebuild的主任。此外，他还领导着知名机构的BIM和数字化转型培训，推动可持续发展和城市规划领域的创新项目。"
+            }
+        ]
+    },
+    "TRANSFORMATION_OF_THE_CONSTRUCTION_SECTOR": {
+        "TITLE": "建筑业的转型",
+        "SUBTITLE": "",
+        "IMG": "/Home/a.webp",
+        "ALT": "工业化建造",
+        "DESCRIPTION": "<strong>墨西哥工业化建造与创新集群（CCIM）</strong> 源于具有坚实且互补职业轨迹的专业人士的联合：从应用于住房的健康到建筑创新、应用工程、能源效率和工业管理；这一战略联盟使我们能够打造一个转型空间。<br><br>我们致力于一种基于协调、数字化和效率的新建筑模式，使用算法方法与现有的BIM、CAD相结合，这使得 <strong>整合每个企业的个性化工业化流程</strong> 从概念到交付钥匙成为可能。<br><br>世界是数字化的和自动化的，程序化共创平台探索系统与建筑细节、技术、设计、可持续性、营销、跟踪之间的交叉点，这些工具为深刻改变建筑方式提供了新视角。<br><br>通过这种愿景的融合，我们巩固了自己作为领导墨西哥建筑行业范式变革的关键角色，以开放、包容的眼光，准备好迎接持续发展的世界所带来的挑战。",
+        "TAGS": [
+            {
+                "TITLE": "工业化",
+                "HREF": "Areas#industrializacion"
+            },
+            {
+                "TITLE": "数字化",
+                "HREF": "Areas#digitalizacion"
+            },
+            {
+                "TITLE": "可持续性",
+                "HREF": "Areas#sostenibilidad"
+            },
+            {
+                "TITLE": "培训",
+                "HREF": "Areas#formacion"
+            }
+        ]
+    },
+    "CONEXION_CREATING_COLLABORATIONS": {
+        "TITLE": "连接，创造合作",
+        "SUBTITLE": "",
+        "IMG": "/Home/b.webp",
+        "ALT": "连接，创造合作",
+        "DESCRIPTION": "我们在工业化建造生态系统中充当连接器，创造空间让企业、专业人士、公共行政机构和知识中心能够汇聚一堂，分享挑战、愿景和战略。凭借其成员的多样性和经验，一个活跃且值得信赖的网络得以建立，促进真实合作的产生。<br><br>这些连接转化为具体的合作、共同项目和战略联盟，使得能够从集体的角度应对复杂的挑战。我们在创新与行动之间架起桥梁，培养一种协作文化，让不同的视角为了一个共同的目标而汇聚：将行业转型为更高效、更可持续和面向未来的建造方式。",
+        "TAGS": [
+            {
+                "TITLE": "合作工厂",
+                "HREF": "Strategies/Co-Factory"
+            },
+            {
+                "TITLE": "合作共享",
+                "HREF": "Strategies/Co-Share"
+            },
+            {
+                "TITLE": "合作指导",
+                "HREF": "Strategies/Co-Mentor"
+            }
+        ]
+    }
+}

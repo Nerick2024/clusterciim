@@ -148,7 +148,7 @@
     "COPYRIGHT": "Todos los derechos reservados."
   },
   "HERO": {
-    "TITLE": "El Futuro<br>De La Construcción<br>está Aquí"
+    "TITLE": "El Futuro<br>de la Construcción<br>está aquí"
   },
   "STRATEGIC": {
     "TITLE": "Ejes estratégicos",
@@ -273,7 +273,7 @@
   "CO_FACTORY": {
     "TITLE": "Nueva forma de trabajar",
     "DESCRIPTION": "Co-Factory es un espacio industrial. Proporciona una infraestructura fabril que permite acceder a proyectos que superen la capacidad productiva y técnica de las empresas.<br><br>Nos comprometemos a crear un espacio productivo, con equipos formados específicamente para la industrialización, infraestructura técnica y soporte estratégico.",
-    "DIVISOR": "/Strategies/Co-Factory/b.avif",
+    "DIVISOR": "/Strategies/Co-Factory/b.webp",
     "BANNER": {
       "IMG": "/Strategies/Co-Factory/a.webp",
       "TITLE": "Co-Factory",

@@ -1,0 +1,445 @@
+{
+    "NAVBAR": [
+        {
+            "HREF": "/",
+            "TITLE": "Startseite"
+        },
+        {
+            "HREF": "Areas",
+            "TITLE": "Bereiche"
+        },
+        {
+            "TITLE": "Strategien",
+            "MORE": [
+                {
+                    "HREF": "Strategies/Co-Factory",
+                    "TITLE": "Co-Factory"
+                },
+                {
+                    "HREF": "Strategies/Co-Share",
+                    "TITLE": "Co-Share"
+                },
+                {
+                    "HREF": "Strategies/Co-Mentor",
+                    "TITLE": "Co-Mentor"
+                }
+            ]
+        },
+        {
+            "HREF": "Associats",
+            "TITLE": "Partner"
+        },
+        {
+            "HREF": "Join",
+            "TITLE": "Beitreten"
+        },
+        {
+            "HREF": "Team",
+            "TITLE": "Team"
+        },
+        {
+            "HREF": "Contact",
+            "TITLE": "Kontakt"
+        }
+    ],
+    "ACCESS": {
+        "HREF": "Access",
+        "TITLE": "Anmelden"
+    },
+    "NETWORKS": [
+        {
+            "IMG": "/icons/networks/email.svg",
+            "TITLE": "E-MAIL",
+            "HREF": ""
+        },
+        {
+            "IMG": "/icons/networks/facebook.svg",
+            "TITLE": "FACEBOOK",
+            "HREF": ""
+        },
+        {
+            "IMG": "/icons/networks/instagram.svg",
+            "TITLE": "INSTAGRAM",
+            "HREF": ""
+        },
+        {
+            "IMG": "/icons/networks/linkedin.svg",
+            "TITLE": "LINKEDIN",
+            "HREF": ""
+        }
+    ],
+    "CONTACT": {
+        "EMAIL": "info@clusterciim.org",
+        "PERSONS": [
+            {
+                "NAME": "Héctor Miranda Martínez",
+                "PHONE": ""
+            },
+            {
+                "NAME": "Osvaldo Mireles",
+                "PHONE": ""
+            },
+            {
+                "NAME": "Jorge Moreno Vargas",
+                "PHONE": ""
+            },
+            {
+                "NAME": "Teresita de Jesus Guerrero Escamilla",
+                "PHONE": ""
+            },
+            {
+                "NAME": "Ignasi Pérez Arnal",
+                "PHONE": ""
+            }
+        ],
+        "LINKEDIN": "https://linkedin.com/...",
+        "ADDRESS": "San Pedro No. 36, Col. La Cruz, Celaya, GTO 38028, Guanajuato, Mexiko",
+        "ADDRESS_HREF": "https://maps.app.goo.gl/EXXrBnYsBWzdfyDYA",
+        "FORM": {
+            "HEADING": "Mitgliedschaft anfragen / Informationen anfordern:",
+            "DESCRIPTION": "Der Hauptzweck des Vereins ist die Förderung und Aufwertung der industriellen und professionellen Struktur im Bausektor, der Unternehmen und Organisationen, die an der Definition eines neuen Modells der industrialisierten Bauweise arbeiten (Off-Site, vorgefertigt, nachhaltig und unter Berücksichtigung von Kreislaufwirtschaftskriterien), wodurch die Wettbewerbsfähigkeit und die Zusammenarbeit zwischen den Mitgliedern und Infrastrukturen im Bausektor gefördert werden.",
+            "NAME_LABEL": "Ihr Name",
+            "EMAIL_LABEL": "Ihre E-Mail-Adresse",
+            "PHONE_LABEL": "Mobiltelefon",
+            "MESSAGE_LABEL": "Ihre Nachricht",
+            "SUBMIT_LABEL": "Senden"
+        },
+        "ELEMENTS": [
+            {
+                "ICON": "/icons/contact/email.svg",
+                "TYPE": "E-Mail",
+                "DATA": "info@clusterciim.org",
+                "HREF": "mailto:info@clusterciim.org"
+            },
+            {
+                "ICON": "/icons/contact/phone.svg",
+                "TYPE": "Telefon",
+                "DATA": "+52 442 415 3053",
+                "HREF": "tel:+524424153053"
+            },
+            {
+                "ICON": "/icons/contact/whatsapp.svg",
+                "TYPE": "Whatsapp",
+                "DATA": "+52 442 415 3053",
+                "HREF": "https://wa.me/5214424153053"
+            }
+        ]
+    },
+    "FOOTER": {
+        "LOGOS": [
+            {
+                "IMG": "/Footer/a.avif",
+                "TITLE": "Handelskammer von Mexiko",
+                "HREF": "https://cambravalls.com/"
+            },
+            {
+                "IMG": "/Footer/b.avif",
+                "TITLE": "Nationaler Unternehmensrat",
+                "HREF": "https://www.zfbc.cat/"
+            },
+            {
+                "IMG": "/Footer/c.avif",
+                "TITLE": "Regierung von Mexiko",
+                "HREF": "https://www.gob.mx/"
+            }
+        ],
+        "TITLE_1": "Weitere Informationen:",
+        "TITLE_2": "Adresse:",
+        "DIRECTION": "San Pedro No. 36, Col. La Cruz, Celaya, GTO 38028, Guanajuato, Mexiko",
+        "POLICIES": [
+            {
+                "HREF": "#",
+                "TITLE": "Datenschutzrichtlinie"
+            },
+            {
+                "HREF": "#",
+                "TITLE": "Cookie-Richtlinie"
+            },
+            {
+                "HREF": "#",
+                "TITLE": "Rechtlicher Hinweis"
+            }
+        ],
+        "COPYRIGHT": "Alle Rechte vorbehalten."
+    },
+    "HERO": {
+        "TITLE": "Die Zukunft<br>des Bauens<br>ist hier"
+    },
+    "STRATEGIC": {
+        "TITLE": "Strategische Achsen",
+        "CTA": "Wir transformieren Unternehmen"
+    },
+    "NEWSLETTER": {
+        "FORM_TITLE": "Vorregistrierung",
+        "NAME_LABEL": "Ihr Name",
+        "EMAIL_LABEL": "Ihre E-Mail-Adresse",
+        "SUBMIT": "Senden",
+        "TITLE": "Willkommen in der Zukunft des Bauens",
+        "SUBTITLE": "Werde Teil der Veränderung. Vernetze dich. Transformiere. Baue.",
+        "BODY": "Der Cluster für industrialisiertes Bauen und Innovation Mexikos (CCIM) ist nicht nur ein Netzwerk von Unternehmen: Er ist der Kern, in dem diejenigen zusammenkommen, die den Sektor neu gestalten. Dem CCIM beizutreten bedeutet, Teil einer aktiven Innovationsgemeinschaft zu werden, in der Erfahrung mit Disruption verschmilzt und sich echte Möglichkeiten für Zusammenarbeit, Sichtbarkeit und Wachstum eröffnen.<br><br><b>Hier entstehen Verbindungen mit führenden Unternehmen der Branche sowie einer Vielzahl von KMUs und visionären Fachleuten</b>. Wir überdenken jeden Bauprozess im Hinblick auf seine Industrialisierung, um Effizienz und Nachhaltigkeit zu verbessern. Von neuen Produkten und Modulsystemen bis hin zu Algorithmen, die schneller denken als die Vorschriften – das Ökosystem schreitet voran ... und du kannst Teil davon sein.<br><br><i>Wenn du glaubst, dass Industrialisierung, Daten und angewandte Intelligenz die Bauweise verändern können, bist du hier richtig. Wenn du deine Fähigkeiten bündeln, Projekte teilen oder deine Wirkung vergrößern möchtest, dann tritt noch heute bei.</i><br><br><b>Registriere dich vorab, ich werde mich mit dir in Verbindung setzen und dir detaillierte Informationen senden, um auf unser Netzwerk zuzugreifen.</b>"
+    },
+    "ASSOCIATS": {
+        "TITLE": "Strategische Partner",
+        "IMG": "/Associats/bg.webp",
+        "PARTNERS": [
+            {
+                "TITLE": "Gründungspartner",
+                "ITEMS": [
+                    {
+                        "IMG": "/Associats/FoundingPartners/ANMIRA.webp",
+                        "HREF": "",
+                        "TITLE": "ANMIRA"
+                    },
+                    {
+                        "IMG": "/Associats/FoundingPartners/DESCC.webp",
+                        "HREF": "https://www.desccingenieria.com/",
+                        "TITLE": "DESCC"
+                    },
+                    {
+                        "IMG": "/Associats/FoundingPartners/EICON.webp",
+                        "HREF": "https://www.eicon.com.mx/",
+                        "TITLE": "EICON"
+                    },
+                    {
+                        "IMG": "/Associats/FoundingPartners/SUT.webp",
+                        "HREF": "https://wesut.mx/",
+                        "TITLE": "SUT SMART URBAN TERA"
+                    },
+                    {
+                        "IMG": "/Associats/FoundingPartners/TERA.webp",
+                        "HREF": "https://www.instagram.com/teraeit/",
+                        "TITLE": "TERA"
+                    }
+                ]
+            },
+            {
+                "TITLE": "Unternehmenspartner",
+                "ITEMS": [
+                    {
+                        "IMG": "/Associats/CorporatePartners/logo-cambra.png",
+                        "HREF": "",
+                        "TITLE": ""
+                    }
+                ]
+            },
+            {
+                "TITLE": "Assoziierte Mitglieder",
+                "ITEMS": [
+                    {
+                        "IMG": "/Associats/Associates/logo-exe-768x98.avif",
+                        "HREF": "",
+                        "TITLE": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "AREAS": {
+        "TITLE": "Strategische Bereiche",
+        "SUBTITLE": "Optimierung der Wertschöpfungskette",
+        "IMG": "/Areas/bg.webp",
+        "DIVISOR": [
+            {
+                "TITLE": "",
+                "IMG": ""
+            },
+            {
+                "TITLE": "BIM / BAM",
+                "IMG": "/Areas/a.webp"
+            },
+            {
+                "TITLE": "Tiefgreifende Digitalisierung",
+                "IMG": "/Areas/b.webp"
+            },
+            {
+                "TITLE": "Passivhaus",
+                "IMG": "/Areas/c.webp"
+            },
+            {
+                "TITLE": "Professionelle Transformation",
+                "IMG": "/Areas/d.webp"
+            }
+        ],
+        "SECTIONS": [
+            {
+                "TAG": "Industrialisierung",
+                "TITLE": "Industrialisierung",
+                "DESCRIPTION": "Jeder Akteur, jedes Unternehmen, jeder Verband oder jede Fachkraft, die zum Verbesserungs- und Modernisierungsprozess des Sektors beitragen möchte. Nicht nur Industrieunternehmen, sondern auch Lieferanten, KMUs oder Fachleute, die durch ihre Erfahrung, ihr Produkt oder ihre Lösungen zum gemeinsamen Ziel beitragen können."
+            },
+            {
+                "TAG": "Digitalisierung",
+                "TITLE": "Digitalisierung",
+                "DESCRIPTION": "Diese Anwendungsschicht für einen der digitalen Technologie gegenüber zurückhaltenden Sektor. Gebäude, Anlagen oder jegliche Bauwerke mit Sensoren ausstatten, um das Konzept der Gebäudeautomation weiterzuentwickeln und auf den Stand der verfügbaren Technologie zu bringen."
+            },
+            {
+                "TAG": "Tiefgreifende Digitalisierung",
+                "TITLE": "Tiefgreifende Digitalisierung",
+                "DESCRIPTION": "Innerhalb des vom CCIM geförderten Transformationsprozesses gibt es eine aufkommende Vision, die wir tiefgreifende Digitalisierung nennen, zusammengefasst im Konzept <b>MAIA</b>: Modular + Algorithmen + Künstliche Intelligenz. Dieser Ansatz ermöglicht es, den Bauzyklus von Grund auf neu zu denken, indem Entwurf, Fertigung, Betrieb, Vermarktung und Verwaltung durch intelligente Datenflüsse und adaptive modulare Strukturen verbunden werden. Basierend auf dem Fortschritt des algorithmischen Entwurfs und von Plattformen der prozeduralen Ko-Kreation wird gezeigt, wie nicht nur Prozesse optimiert werden, sondern auch die Tür zu einem evolutionäreren, vernetzteren und widerstandsfähigeren Bauen geöffnet wird."
+            },
+            {
+                "TAG": "Nachhaltigkeit",
+                "TITLE": "Nachhaltigkeit",
+                "DESCRIPTION": "Anwendung neuester Trends und Lösungen für den Bau von Passivhäusern oder Gebäuden mit positiver Energiebilanz. Wir müssen ein Evangelisator für neue grüne Energien und die Reduzierung des Verbrauchs sein. Das Baugewerbe ist vielleicht der Sektor mit dem größten Verbesserungspotenzial bei CO2-Fußabdruck, Kreislaufwirtschaft und Abfallreduzierung."
+            },
+            {
+                "TAG": "Bildung",
+                "TITLE": "Bildung",
+                "DESCRIPTION": "Eine neue Bauweise erfordert eine neue Art der Lehre. Die handwerklichen Berufe sind eine Weiterentwicklung der bereits bekannten, aber es entstehen auch neue. Das Wissen der Fachkräfte muss sich mit dem Markt und den neuen Realitäten weiterentwickeln. Deshalb ist die Bildung ein entscheidendes Thema im Wandel des Sektors. Wir möchten mit Universitäten, Berufsschulen, Schulen und Unternehmen zusammenarbeiten, um die neuen Fachkräfte zu definieren und auszubilden.",
+                "BUTTON_2": "Mitglied werden",
+                "HREF_2": "Join"
+            }
+        ]
+    },
+    "NEWS": {
+        "TITLE": "Neuigkeiten",
+        "IMG": "/News/bg.webp",
+        "SORT_BY_DATE": "Sortieren nach:",
+        "NEWEST_FIRST": "Neueste zuerst",
+        "OLDEST_FIRST": "Älteste zuerst",
+        "CATEGORIES": "Kategorien:",
+        "ALL": "Alle",
+        "READ_MORE": "Mehr lesen →"
+    },
+    "CO_FACTORY": {
+        "TITLE": "Neue Arbeitsweise",
+        "DESCRIPTION": "Co-Factory ist ein industrieller Raum. Er bietet eine Fertigungsinfrastruktur, die den Zugang zu Projekten ermöglicht, die über die produktive und technische Kapazität der Unternehmen hinausgehen.<br><br>Wir verpflichten uns, einen produktiven Raum zu schaffen, mit speziell für die Industrialisierung ausgebildeten Teams, technischer Infrastruktur und strategischer Unterstützung.",
+        "DIVISOR": "/Strategies/Co-Factory/b.webp",
+        "BANNER": {
+            "IMG": "/Strategies/Co-Factory/a.webp",
+            "TITLE": "Co-Factory",
+            "SUBTITLE": "Wir treiben die Industrialisierung des Bauwesens voran"
+        },
+        "SECTION": {
+            "TITLE": "Investition in Anlagen <br> Investition in Betrieb",
+            "DESCRIPTION": "Wir fördern einen kollaborativen Raum mit KMUs des CCIM, Start-ups und Fachleuten der Branche. Unsere öffentlich-private Zusammenarbeit ist grundlegend für die Unternehmensentwicklung.<br><br>Der CCIM arbeitet nicht nur an kurzfristigen Lösungen, sondern wir haben ein Werkzeug für Zusammenarbeit und Diskussion geschaffen, um die Lösungen zu finden, die der sich wandelnde Sektor benötigt.",
+            "BUTTON_1": "Synergien bündeln?",
+            "HREF_1": "Join",
+            "BUTTON_2": "Mehr über Co-Factory",
+            "HREF_2": "News"
+        }
+    },
+    "CO_SHARE": {
+        "BANNER": {
+            "IMG": "/Strategies/Co-Share/a.webp",
+            "TITLE": "Co-Share",
+            "SUBTITLE": "Der Cluster organisiert zweimonatliche Veranstaltungen mit Partnern an emblematischen Orten und fördert so die Netzwerkbildung."
+        },
+        "SECTION": {
+            "TITLE": "Co-Share",
+            "DESCRIPTION": "In jenem Manifest stellte sich die mexikanische Bundesregierung eine Herausforderung: <br><br>'Eine BIM-Arbeitsgruppe schaffen, die hilft, die Kultur, Werte, Arbeitsmethoden, digitalen und elektronischen Technologien zu implementieren, um die Industrie, die öffentliche Verwaltung, Forschungszentren, Berufsverbände und die akademische Welt auszubilden'.<br><br>Seitdem bauen wir die Zukunft, die ihre Aktivitäten in diese Richtung ausgerichtet hat.",
+            "BUTTON_1": "Alle Veranstaltungen ansehen",
+            "HREF_1": "News",
+            "BUTTON_2": "Mitglied werden",
+            "HREF_2": "Contact"
+        },
+        "BANNER_INFO": {
+            "IMG": "/Strategies/Co-Share/b.webp",
+            "TITLE": "Industrialisierungserfahrungen",
+            "DESCRIPTION": "Diese Veranstaltungen sind mit dem CCIM und seinen Partnern verbunden und bieten Möglichkeiten zur Zusammenarbeit mit Einrichtungen, die potenzielle Projekte haben, externen Gästen, die Erfahrungen im Einklang mit den Zielen des CCIM teilen, sowie Besuche in Industrieanlagen, um Prozesse oder nachhaltige Lösungen und Digitalisierung zu verstehen."
+        },
+        "FOOTER": "Die Treffen bieten eine einzigartige Plattform, um zu lernen, zusammenzuarbeiten und Fortschritte in der Branche zu erkunden."
+    },
+    "CO_MENTOR": {
+        "BANNER": {
+            "IMG": "/Strategies/Co-Mentor/a.webp",
+            "TITLE": "Co-Mentor",
+            "SUBTITLE": "Wir helfen, Zukunft zu bauen"
+        },
+        "SECTION": {
+            "TITLE": "Co-Mentor",
+            "DESCRIPTION": "Wir begleiten Unternehmen, die sich in einem Übergangsprozess innerhalb ihrer Organisation befinden, basierend auf der Erfahrung von Clustermitgliedern, die disruptive Veränderungen vorangetrieben haben.",
+            "BUTTON_2": "Mentoring anfragen",
+            "HREF_2": "Contact"
+        },
+        "BANNER_INFO": {
+            "IMG": "/Strategies/Co-Mentor/b.webp",
+            "TITLE": "",
+            "DESCRIPTION": "Wir bieten Treffen mit zwei Mentoren des ClusterCIIM an, um das Unternehmen kennenzulernen: Struktur, Produkt, Markt, Kanäle, finanzielle Lage. Wir führen eine interne Analyse und eine strategische Planung für kurz-, mittel- und langfristige Ziele durch. Beinhaltet außerdem eine LEAN-Startup-Vereinbarung zum Testen neuer Modelle und zur Analyse von Auswirkungen sowie die Validierung und Anpassung des Modells, einschließlich der Möglichkeit der Finanzierung."
+        },
+        "FOOTER": "Diese Begleitung soll ein praktischer Impuls für Unternehmen im Wandel sein."
+    },
+    "TEAM": {
+        "TITLE": "Ein großartiges Team",
+        "DESCRIPTION": "<b>Der Cluster für industrialisiertes Bauen und Innovation Mexikos (CCIM) entsteht als koordinierte Antwort der wichtigsten öffentlichen und privaten Akteure des Landes, um einen stabilen Raum für Debatte, Aktion und echte Transformation des Bausektors zu fördern.</b> Mit der Unterstützung von Schlüsselorganisationen wie der Handelskammer von Mexiko, dem Nationalen Unternehmensrat und der Regierung von Mexiko etabliert sich der CCIM als zentraler Treffpunkt, an dem die Leitlinien der baulichen Zukunft des Landes definiert werden.<br><br>Von seinen Anfängen an hat der Cluster seine Aktivitäten auf die tiefgreifende Modernisierung der Prozesse ausgerichtet, mit besonderem Augenmerk auf die Integration digitaler Technologien, neuer Organisationsmodelle und industrialisierter Systeme. Diese kollektive Verpflichtung zu einem strukturellen Wandel – basierend auf Innovation, Nachhaltigkeit und Zusammenarbeit – hat den CCIM zum Referenzraum für all jene Initiativen gemacht, die neu denken wollen, wie der Lebensraum der Zukunft entworfen, gefertigt und verwaltet wird.",
+        "CTA": "Arbeite mit uns zusammen",
+        "BACK": "Zurück zu den Teammitgliedern",
+        "DIRECTORS": [
+            {
+                "IMG": "/Team/Directors/hector.webp",
+                "NAME": "Héctor Miranda Martínez",
+                "POSITION": "Präsident",
+                "SEMBLANCE": "Experte für den Bau von Landverkehrswegen mit umfangreicher Erfahrung in Planung, Ausführung und Qualitätskontrolle von Infrastrukturprojekten im öffentlichen und industriellen Sektor."
+            },
+            {
+                "IMG": "/Team/Directors/osvaldo.webp",
+                "NAME": "Osvaldo Mireles",
+                "POSITION": "Vizepräsident",
+                "SEMBLANCE": "Experte für Technologie und nachhaltige Entwicklung mit Spezialisierung auf Smart Cities, BIM, Blockchain, KI und die Neue Urbane Agenda."
+            },
+            {
+                "IMG": "/Team/Directors/jorge.webp",
+                "NAME": "Jorge Moreno Vargas",
+                "POSITION": "Schatzmeister",
+                "SEMBLANCE": "Experte für disruptive Technologien, MIT-zertifiziert. 13 Jahre Erfahrung in der Führung von Innovationen in Smart Cities, IoT und nachhaltigen Projekten."
+            },
+            {
+                "IMG": "/Team/Directors/teresitaDeJesus.webp",
+                "NAME": "Teresita de Jesus Guerrero Escamilla",
+                "POSITION": "Sekretärin",
+                "SEMBLANCE": "Bauingenieurin, Absolventin der Autonomen Universität von Querétaro im Jahr 2004. Mit über zwei Jahrzehnten Erfahrung hat sie eine Karriere aufgebaut, die von Engagement für Ingenieurwesen und die Entwicklung von zivilen Projekten mit hoher Wirkung geprägt ist. Ihre aktive Teilnahme an institutionellen Initiativen spiegelt ihre Dienstbereitschaft und ihre Fähigkeit wider, technische Lösungen voranzutreiben, die Wachstum und Innovation im Sektor stärken."
+            },
+            {
+                "IMG": "/Team/Directors/ignasi.webp",
+                "NAME": "Ignasi Pérez Arnal",
+                "POSITION": "Co-Gründer",
+                "SEMBLANCE": "Pionier von BIM in Europa, Mitbegründer der BIM Academy Spain und Schöpfer des EUROPEAN BIM SUMMIT. Er ist Direktor von The Rebuild, einer führenden Veranstaltung für Bauwesen und Architektur in Spanien. Darüber hinaus leitet er die Ausbildung in BIM und digitaler Transformation an renommierten Institutionen und treibt innovative Projekte in den Bereichen Nachhaltigkeit und Stadtentwicklung voran."
+            }
+        ]
+    },
+    "TRANSFORMATION_OF_THE_CONSTRUCTION_SECTOR": {
+        "TITLE": "Transformation des Bausektors",
+        "SUBTITLE": "",
+        "IMG": "/Home/a.webp",
+        "ALT": "Industrialisiertes Bauen",
+        "DESCRIPTION": "<strong>Der Cluster für industrialisiertes Bauen und Innovation Mexikos (CCIM)</strong> entsteht aus der Vereinigung von Fachleuten mit soliden und sich ergänzenden Karrieren: von der angewandten Gesundheit im Wohnungsbau bis hin zur architektonischen Innovation, angewandten Ingenieurwissenschaften, Energieeffizienz und industriellem Management; diese strategische Allianz ermöglicht es uns, einen Raum der Transformation zu gestalten.<br><br>Wir setzen auf ein neues Baukonzept, das auf Koordination, Digitalisierung und Effizienz basiert und algorithmische Methoden mit den bestehenden BIM- und CAD-Methoden nutzt, was <strong>die Integration individueller industrialisierter Prozesse jedes Unternehmens</strong> von der Konzeption bis zur Schlüsselübergabe ermöglicht.<br><br>Die Welt ist digital und automatisiert. Plattformen der prozeduralen Ko-Kreation, die die Schnittstelle zwischen Systemen und Baudetails, Technologie, Design, Nachhaltigkeit, Marketing und Monitoring erforschen, sind Werkzeuge, die neue Perspektiven auf tiefgreifende Veränderungen in der Bauweise eröffnen.<br><br>Mit dieser Bündelung von Visionen etablieren wir uns als ein zentraler Akteur, um den Paradigmenwechsel im mexikanischen Bausektor zu führen, mit einem offenen, integrativen Blick, der bereit ist, den Herausforderungen einer sich ständig weiterentwickelnden Welt zu begegnen.",
+        "TAGS": [
+            {
+                "TITLE": "Industrialisierung",
+                "HREF": "Areas#industrializacion"
+            },
+            {
+                "TITLE": "Digitalisierung",
+                "HREF": "Areas#digitalizacion"
+            },
+            {
+                "TITLE": "Nachhaltigkeit",
+                "HREF": "Areas#sostenibilidad"
+            },
+            {
+                "TITLE": "Bildung",
+                "HREF": "Areas#formacion"
+            }
+        ]
+    },
+    "CONEXION_CREATING_COLLABORATIONS": {
+        "TITLE": "Verbindung, schafft Kooperationen",
+        "SUBTITLE": "",
+        "IMG": "/Home/b.webp",
+        "ALT": "Verbindung, schafft Kooperationen",
+        "DESCRIPTION": "Wir agieren als Verbinder innerhalb des Ökosystems des industrialisierten Bauens und schaffen Räume, in denen Unternehmen, Fachleute, öffentliche Verwaltungen und Wissenszentren zusammenkommen können, um Herausforderungen, Visionen und Strategien zu teilen. Dank der Vielfalt und Erfahrung seiner Mitglieder entsteht ein aktives, vertrauensvolles Netzwerk, das das Entstehen realer Kooperationen erleichtert.<br><br>Diese Verbindungen werden zu greifbaren Kooperationen, gemeinsamen Projekten und strategischen Allianzen, die es ermöglichen, komplexe Herausforderungen aus einer kollektiven Perspektive anzugehen. Wir schaffen eine Brücke zwischen Innovation und Aktion und fördern eine kooperative Kultur, in der unterschiedliche Perspektiven mit einem gemeinsamen Ziel zusammenfließen: den Sektor in Richtung eines effizienteren, nachhaltigeren und zukunftsfähigen Bauens zu transformieren.",
+        "TAGS": [
+            {
+                "TITLE": "Co-Factory",
+                "HREF": "Strategies/Co-Factory"
+            },
+            {
+                "TITLE": "Co-Share",
+                "HREF": "Strategies/Co-Share"
+            },
+            {
+                "TITLE": "Co-Mentor",
+                "HREF": "Strategies/Co-Mentor"
+            }
+        ]
+    }
+}
